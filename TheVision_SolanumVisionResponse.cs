@@ -60,12 +60,12 @@ namespace TheVision.CustomProps
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 3000);
+          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2000);
                 TheVision.Instance.SpawnSignals();
 
-                _solanumAnimController.StartWatchingPlayer();
+                
             }
-x
+
         }
 
         public void OnVisionEnd()

@@ -157,11 +157,19 @@ namespace TheVision
             GameObject staff = DetailBuilder.MakeDetail(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), path, position, rotation, 1, false);
 
             // Trying to load custom audio
-            ;
-            
-            
-            
-           
+
+
+            //placing orb on GD to the slot 2
+
+            var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
+            var nomaiSlotWithComponent = nomaiSlot.GetComponent<NomaiInterfaceSlot>();
+                        
+
+            var nomaiInterfaceOrb = SearchUtilities.Find("Prefab_NOM_InterfaceOrb");
+            var correctSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
+            correctSlot._occupiedSlot = nomaiSlotWithComponent;
+
+
 
         }
         public NewHorizons.External.Modules.SignalModule.SignalInfo MakeSolanumSignalInfo(Vector3 position)
@@ -193,8 +201,14 @@ namespace TheVision
             //decloaking QM on signals spawn
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
 
-            var slot = GameObject.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (2)");
-            GameObject.Find("Prefab_NOM_InterfaceOrb").transform.position = slot.transform.localPosition;
+
+            
+
+
+
+
+
+
 
 
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
