@@ -1,0 +1,9 @@
+{
+  "filename": "TheVision.dll",
+  "author": "hearthian",
+  "name": "The Vision",
+  "uniqueName": "hearthian.TheVision",
+  "version": "0.1.1",
+  "owmlVersion": "2.3.2",
+  "dependencies": [ "xen.NewHorizons" ]
+}

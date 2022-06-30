@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "q0dtVpsmANab2youvHBolgWF9OkogxABbjf3iR896Lk/sF/hErYapuAKdht5g9oSZ6GZUIohasw5YEqiNVpvQQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alternate\\AppData\\Roaming\\OuterWildsModManager\\OWML\\Mods\\hearthian.TheVision\\TheVision.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alternate\\.nuget\\packages\\harmonyx\\2.10.0\\harmonyx.2.10.0.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\json.net.unity3d\\9.0.1\\json.net.unity3d.9.0.1.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\lib.harmony\\1.2.0.1\\lib.harmony.1.2.0.1.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\mono.cecil\\0.11.4\\mono.cecil.0.11.4.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\monomod.runtimedetour\\22.3.23.4\\monomod.runtimedetour.22.3.23.4.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\monomod.utils\\22.3.23.4\\monomod.utils.22.3.23.4.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\outerwildsgamelibs\\1.1.12.168\\outerwildsgamelibs.1.1.12.168.nupkg.sha512",
+    "C:\\Users\\Alternate\\.nuget\\packages\\owml\\2.3.2\\owml.2.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}

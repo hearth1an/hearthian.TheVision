@@ -1,0 +1,10 @@
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\ModTemplate\obj\Debug\ModTemplate.csproj.AssemblyReference.cache
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\ModTemplate\obj\Debug\ModTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\ModTemplate\obj\Debug\ModTemplate.AssemblyInfoInputs.cache
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\ModTemplate\obj\Debug\ModTemplate.AssemblyInfo.cs
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\ModTemplate\obj\Debug\ModTemplate.csproj.CoreCompileInputs.cache
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\obj\Debug\ModTemplate.csproj.AssemblyReference.cache
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\obj\Debug\ModTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\obj\Debug\ModTemplate.AssemblyInfoInputs.cache
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\obj\Debug\ModTemplate.AssemblyInfo.cs
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\obj\Debug\ModTemplate.csproj.CoreCompileInputs.cache
