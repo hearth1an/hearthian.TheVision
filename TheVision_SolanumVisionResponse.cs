@@ -57,23 +57,15 @@ namespace TheVision.CustomProps
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
 
+
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(
-                TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 1500);
+          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 3000);
                 TheVision.Instance.SpawnSignals();
 
-
-
-
-
-                // trying to make appearing sound
-                //  AudioSource audio = gameObject.AddComponent<AudioSource>();
-                //  audio.PlayOneShot((AudioClip)Resources.Load("quantum_collapse.wav")
-
-
+                _solanumAnimController.StartWatchingPlayer();
             }
-
+x
         }
 
         public void OnVisionEnd()
@@ -83,21 +75,16 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2401);
+            PlayerHeadsetAudioSource.Play();
 
-
-
-
-            // AudioClip sndSource = Resources.Load<AudioClip>("quantum_collapse.wav"); 
+            
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
             visionEnded = true;
             waitFrames = MAX_WAIT_FRAMES;
-            // TODO: disable the "press E to talk to Solanum" 
+           
 
-
-
-            PlayerHeadsetAudioSource.Play();
         }
 
 
