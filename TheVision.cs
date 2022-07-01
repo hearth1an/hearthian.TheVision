@@ -78,7 +78,7 @@ namespace TheVision
 
             ProjectionInfo info = new ProjectionInfo()
             {
-                position = new Vector3(-5.254965f, -70.73996f, 1.607201f),
+                position = new Vector3(-5.6548f, -70.73996f, 1.607201f),
                 rotation = new Vector3(0, 0, 0),
                 type = ProjectionInfo.SlideShowType.VisionTorchTarget,
                 slides = slides
@@ -156,18 +156,8 @@ namespace TheVision
             Vector3 rotation = new Vector3(311.8565f, 287.9388f, 254.72f);
             GameObject staff = DetailBuilder.MakeDetail(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), path, position, rotation, 1, false);
 
-            // Trying to load custom audio
 
-
-            //placing orb on GD to the slot 2
-
-            var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
-            var nomaiSlotWithComponent = nomaiSlot.GetComponent<NomaiInterfaceSlot>();
-                        
-
-            var nomaiInterfaceOrb = SearchUtilities.Find("Prefab_NOM_InterfaceOrb");
-            var correctSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
-            correctSlot._occupiedSlot = nomaiSlotWithComponent;
+            
 
 
 
@@ -180,7 +170,7 @@ namespace TheVision
             {
                 audioFilePath = "planets/quantum.wav",
                 frequency = "Quantum Consciousness",
-                detectionRadius = 1000,
+                detectionRadius = 5000,
                 identificationRadius = 500,
                 sourceRadius = 2f,
                 name = "Solanum",
@@ -193,23 +183,25 @@ namespace TheVision
         public void SpawnSignals()
 
         {
+
+            //Playing SFX
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2400);
             PlayerHeadsetAudioSource.Play();
 
+            //placing orb on GD to the slot (1)
+
+            var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
+            var nomaiInterfaceOrb = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
+            var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
+            var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
+            // nomaiCorrectSlot._orbBody.Unsuspend(false);
+            nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
+            nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
+
             //decloaking QM on signals spawn
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
-
-
-            
-
-
-
-
-
-
-
 
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
