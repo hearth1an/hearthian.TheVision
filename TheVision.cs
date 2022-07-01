@@ -1,11 +1,6 @@
 ﻿using OWML.Common;
 using OWML.ModHelper;
-using OWML.Utils;
-using System.IO;
-using System.Collections.Generic;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Events;
 using TheVision.Utilities.ModAPIs;
 using static NewHorizons.External.Modules.PropModule;
 using NewHorizons.Builder.Props;
@@ -13,13 +8,8 @@ using System.Linq;
 using TheVision.CustomProps;
 using HarmonyLib;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using TheVision.Utilities;
-using System;
 using NewHorizons.Utility;
-using UAudioType = UnityEngine.AudioType;
-using UnityEngine.Networking;
+
 
 namespace TheVision
 {
@@ -125,22 +115,18 @@ namespace TheVision
             }
         }
 
-        // Bars to spawn SolanumCopies
+        //Bars to spawn SolanumCopies
         public void SpawnSolanumCopy(INewHorizons newHorizonsAPI)
         {
 
 
             // Spawning Solanum on TH
-
-
             string path = "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
-
             Vector3 position = new Vector3(48.5018f, 15.1183f, 249.9972f);
             Vector3 rotation = new Vector3(332.5521f, 279.0402f, 275.7439f);
             newHorizonsAPI.SpawnObject(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), path, position, rotation, 1, false);
 
             // Spawning Solanum on GD
-
             string path2 = "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
             Vector3 position2 = new Vector3(-43.62191f, -68.5414f, -31.2553654f);
             Vector3 rotation2 = new Vector3(350.740326f, 50.80401f, 261.666534f);
@@ -151,21 +137,17 @@ namespace TheVision
         // Spawning Vision Torch with code
         public void SpawnVisionTorch()
         {
+
             var path = "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem";
             Vector3 position = new Vector3(18.06051f, -50.64357f, 183.141f);
             Vector3 rotation = new Vector3(311.8565f, 287.9388f, 254.72f);
             GameObject staff = DetailBuilder.MakeDetail(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), path, position, rotation, 1, false);
 
-
-            
-
-
-
         }
         public NewHorizons.External.Modules.SignalModule.SignalInfo MakeSolanumSignalInfo(Vector3 position)
         {
 
-
+            //Solanum signal parameters
             return new NewHorizons.External.Modules.SignalModule.SignalInfo()
             {
                 audioFilePath = "planets/quantum.wav",
@@ -191,18 +173,17 @@ namespace TheVision
             PlayerHeadsetAudioSource.Play();
 
             //placing orb on GD to the slot (1)
-
             var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
             var nomaiInterfaceOrb = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
             var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
-            var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
-            // nomaiCorrectSlot._orbBody.Unsuspend(false);
+            var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();            
             nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
             nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
 
             //decloaking QM on signals spawn
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
 
+            //Spawning Solanum signals
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
