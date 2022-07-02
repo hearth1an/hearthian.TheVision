@@ -23,9 +23,6 @@ namespace TheVision
 
         private void Awake()
         {
-            // You won't be able to access OWML's mod helper in Awake.
-            // So you probably don't want to do anything here.
-            // Use Start() instead.
             Instance = this;
         }
 
@@ -33,15 +30,12 @@ namespace TheVision
         {
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
 
-
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
 
-            // Starting here, you'll have access to OWML's mod helper.
             ModHelper.Console.WriteLine($"My mod {nameof(TheVision)} is loaded!", MessageType.Success);
 
-            // Example of accessing game code.
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
             {
                 if (loadScene != OWScene.SolarSystem) return;
@@ -50,8 +44,6 @@ namespace TheVision
                 MessageType.Success);
 
             };
-
-
 
         }
 
@@ -75,29 +67,39 @@ namespace TheVision
             };
 
             GameObject visionTarget = ProjectionBuilder.MakeMindSlidesTarget(Locator._quantumMoon.gameObject, Locator._quantumMoon._sector, info, TheVision.Instance);
-            //GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").transform;
+            
             visionTarget.transform.parent =
-                GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon")
+                GameObject.Find("QuantumMoon_Body")
                 .GetComponentsInChildren<Transform>(true)
-                .Where(t => t.gameObject.name == "State_EYE")
+                .Where(t => t.gameObject.name == "Sector_QuantumMoon") 
                 .First(); // All because Find doesn't work on inactive game objects :/
+
+            var customResponce = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
+            customResponce.GetComponent<NomaiWallText>().HideTextOnStart();
+
+           // NomaiWallText responseText = customResponce;
 
             // make Solanum have the proper reaction after the vision ends
             //GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation/ResponseStone/ArcSocket/Arc_QM_SolanumConvo_Explain+Eye").GetComponent<NomaiWallText>();
-            NomaiWallText responseText =
-                Resources.FindObjectsOfTypeAll<NomaiWallText>()
-                .Where(text => text.gameObject.name == "Arc_QM_SolanumConvo_Explain+Eye")
+
+            NomaiWallText responseText = Resources.FindObjectsOfTypeAll<NomaiWallText>()
+                .Where(text => text.gameObject.name == "NomaiWallText") // was "Arc_QM_SolanumConvo_Explain+Eye" 
                 .First();
+            
 
             var nomaiConversationManager = Resources.FindObjectsOfTypeAll<NomaiConversationManager>().First(); //GameObject.FindObjectOfType<NomaiConversationManager>();
             var myConversationManager = nomaiConversationManager.gameObject.AddComponent<TheVision_SolanumVisionResponse>();
             myConversationManager._nomaiConversationManager = nomaiConversationManager;
             myConversationManager._solanumAnimController = nomaiConversationManager._solanumAnimController;
             myConversationManager.solanumVisionResponse = responseText;
-
+            
             visionTarget.GetComponent<VisionTorchTarget>().onSlidesComplete = myConversationManager.OnVisionEnd;
 
+            // customResponce.GetComponent<NomaiWallText>()._animationState = NomaiWallText.AnimationState.STANDBY; not sure if needed
+
         }
+
+
 
 
 
@@ -110,7 +112,7 @@ namespace TheVision
             {
                 SpawnSolanumProps();
                 SpawnVisionTorch();
-                
+
 
             }
         }
@@ -133,6 +135,8 @@ namespace TheVision
             newHorizonsAPI.SpawnObject(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), path2, position2, rotation2, 1, false);
 
             // Spawning Solanum 3
+
+            
         }
         // Spawning Vision Torch with code
         public void SpawnVisionTorch()
@@ -188,8 +192,10 @@ namespace TheVision
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
         }
-                
+
         
+
+
     }
 }
 

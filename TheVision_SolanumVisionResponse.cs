@@ -16,16 +16,19 @@ namespace TheVision.CustomProps
         public NomaiWallText solanumVisionResponse;
         public OWAudioSource PlayerHeadsetAudioSource;
 
+
         private static readonly int MAX_WAIT_FRAMES = 20;
 
         private int waitFrames = 0;
         private bool visionEnded = false;
         private bool doneHijacking = false;
         private bool hasStartedWriting = false;
-        
+
 
         void Update()
         {
+            
+
             if (!visionEnded) return;
             if (doneHijacking) return;
             if (waitFrames > 0) { waitFrames--; return; }
@@ -34,12 +37,25 @@ namespace TheVision.CustomProps
             {
                 // one-time code that runs after waitFrames are up
                 _solanumAnimController.OnWriteResponse += (int unused) => solanumVisionResponse.Show();
-			    _solanumAnimController.StartWritingMessage();
+                _solanumAnimController.StartWritingMessage();
                 hasStartedWriting = true;
+
+                
+
+
+
             }
+
 
             if (!_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying())
             {
+                // drawing custom text
+                // var customResponse = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
+                //customResponce.GetComponent<NomaiWallText>().Show();
+
+                var customResponse = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
+                customResponse.GetAddComponent<NomaiWallText>().Show();
+
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
@@ -50,7 +66,7 @@ namespace TheVision.CustomProps
           () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2000);
                 TheVision.Instance.SpawnSignals();
 
-                
+
             }
 
         }
@@ -58,22 +74,25 @@ namespace TheVision.CustomProps
         public void OnVisionEnd()
 
         {
+
             // SFX on QM after Solanumptojection
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2401);
             PlayerHeadsetAudioSource.Play();
 
-            
+
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
             visionEnded = true;
             waitFrames = MAX_WAIT_FRAMES;
-           
+
 
         }
 
+        
+    }
 
 
 
@@ -91,4 +110,4 @@ namespace TheVision.CustomProps
     //	_solanumAnimController.StopWritingMessage(gestureToText: true);
     //  _solanumAnimController.StopWatchingPlayer();
     //}
-}
+

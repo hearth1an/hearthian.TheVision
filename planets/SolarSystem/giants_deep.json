@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {},
+  "canShowOnTitle": true,
+  "name": "Giants Deep",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
+  "Props": {
+    "nomaiText": [
+      {
+        "arcInfo": [
+          {
+            "variation": 4
+          }
+        ],
+        "normal": {
+          "x": 0.3281521,
+          "y": -0.9155942,
+          "z": -0.2323863
+        },
+        "position": {
+          "x": 18.0532875,
+          "y": -36.55494,
+          "z": 188.295013
+        },
+        "rotation": {
+          "x": 66.29027,
+          "y": 125.304832,
+          "z": -8.49307253E-06
+        },
+        "seed": 42,
+        "xmlFile": "planets/Text/TextGD.xml"
+      }
+    ]
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
+  "ShipLog": {
+    "mapMode": {}
+  }
+}

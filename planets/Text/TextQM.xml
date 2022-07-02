@@ -1,16 +1,21 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Beep boop I am a computer.</Text>
+		<Text>Fred: Fred was here.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Making New Horizons is rotting my brain.</Text>
+		<Text>Fred: Fred was here2.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>This is a cry for help please kill me.</Text>
+		<Text>Fred: Fred was here3.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>Fred: Fred was here4.</Text>
 	</TextBlock>
 </NomaiObject>
