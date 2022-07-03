@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  
+  "name": "Timber Hearth",
+  
+  "Props": {
+    "nomaiText": [
+      {
+        "position": {
+          "x": 50.2780342,
+          "y": 15.4577,
+          "z": 249.598343
+        },
+        "rotation": {
+          "x": 45.77342,
+          "y": 96.4386139,
+          "z": 82.6844254
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderTH.xml"
+      }
+    ]
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
+  "ShipLog": {
+    "mapMode": {}
+  }
+}

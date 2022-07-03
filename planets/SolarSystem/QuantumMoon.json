@@ -11,61 +11,61 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": -5.494049,
-          "y": -68.8531342,
-          "z": 3.88804245
+          "x": -5.49425125,
+          "y": -68.85308,
+          "z": 3.88813782
         },
         "rotation": {
-          "x": 278.9946,
-          "y": 178.765854,
-          "z": 214.060974
+          "x": 278.994568,
+          "y": 178.765884,
+          "z": 214.060944
         }
-      },
-      {
-        "path": "Comet_Body/Sector_CO/Interactables_CO/Prefab_NOM_Recorder",
-        "position": {
-          "x": -3.74137115,
-          "y": -69.749176,
-          "z": 1.14797974
-        },
-        "rotation": {
-          "x": 359.5548,
-          "y": 38.84207,
-          "z": 175.861984
-        },
-        "scale": 0.999999762
-      }
+      }      
     ],
     "nomaiText": [
-      {
-        "arcInfo": [
-          {
-            "position": {
-              "x": 0.4,
-              "y": 0.5
+        {
+            "arcInfo": [
+                {
+                    "position": {
+                        "x": 0.4,
+                        "y": 0.5
+                    },
+                    "variation": 28,
+                    "zRotation": 93.0
+                }
+            ],
+            "normal": {
+                "x": -0.719040334,
+                "y": 0.0947849154,
+                "z": 0.688474655
             },
-            "variation": 28,
-            "zRotation": 93.0
-          }
-        ],
-        "normal": {
-          "x": -0.719040334,
-          "y": 0.0947849154,
-          "z": 0.688474655
+            "position": {
+                "x": -2.71077561,
+                "y": -70.5499,
+                "z": 1.55687451
+            },
+            "rotation": {
+                "x": 356.639343,
+                "y": 314.3946,
+                "z": 86.7039948
+            },
+            "seed": 42,
+            "xmlFile": "planets/Text/QMresponse.xml"
         },
-        "position": {
-          "x": -2.71077561,
-          "y": -70.5499,
-          "z": 1.55687451
-        },
-        "rotation": {
-          "x": 356.639343,
-          "y": 314.3946,
-          "z": 86.7039948
-        },
-        "seed": 42,
-        "xmlFile": "planets/Text/Arc_QM_Solanum_TheVision_response.xml"
-      }
+        {
+            "position": {
+                "x": -3.74123383,
+                "y": -69.74914,
+                "z": 1.14806461
+            },
+            "rotation": {
+                "x": 359.5548,
+                "y": 38.84208,
+                "z": 175.861984
+            },
+            "type": "recorder",
+            "xmlFile": "planets/Text/RecorderQM.xml"
+        }
     ]
   },
   "ReferenceFrame": {

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  
+  "name": "Giants Deep",
+  
+  "Props": {
+    "nomaiText": [
+        {
+
+            "position": {
+                "x": -43.44,
+                "y": -66.7862,
+                "z": -31.4336
+            },
+            "rotation": {
+                "x": 337.2365,
+                "y": 52.9308,
+                "z": 261.0757
+            },
+            "type": "recorder",
+            "xmlFile": "planets/Text/RecorderGD.xml"
+        }
+    ]
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
+  "ShipLog": {
+    "mapMode": {}
+  }
+}
