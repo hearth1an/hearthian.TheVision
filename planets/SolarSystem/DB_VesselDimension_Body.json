@@ -9,18 +9,47 @@
   "Props": {
     "details": [
       {
-        "path": "VesselHologram_EyeSignal(Clone)",
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
         "position": {
-          "x": 147.0119,
-          "y": -0.735609949,
-          "z": -17.6913471
+          "x": 148.221085,
+          "y": 25.890625,
+          "z": 0.236953676
         },
         "rotation": {
-          "x": 43.0824127,
-          "y": 331.028442,
-          "z": 316.5158
+          "x": 346.4214,
+          "y": 147.921,
+          "z": 2.71970081
+        }
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": 148.286758,
+          "y": 28.2494354,
+          "z": 0.4771422
         },
-        "scale": 0.99999994
+        "rotation": {
+          "x": 31.1370983,
+          "y": 154.335938,
+          "z": 11.5708323
+        },
+        "scale": 5.0
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 150.303391,
+          "y": 26.72461,
+          "z": -1.73777735
+        },
+        "rotation": {
+          "x": 346.358,
+          "y": 164.0878,
+          "z": 359.1451
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderDB.xml"
       }
     ]
   },
@@ -29,5 +58,23 @@
   },
   "ShipLog": {
     "mapMode": {}
+  },
+  "Signal": {
+    "signals": [
+      {
+        "audioFilePath": "planets/quantum.wav",
+        "detectionRadius": 5000.0,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500.0,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 148.221,
+          "y": 25.8914,
+          "z": 0.2369
+        },
+        "sourceRadius": 2.0
+      }
+    ]
   }
 }

@@ -58,7 +58,7 @@ namespace TheVision.CustomProps
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
           () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2000);
                 TheVision.Instance.SpawnSignals();
-                TheVision.Instance.DisabledPropsOnStart(true);
+                // TheVision.Instance.DisabledPropsOnStart(true);                
             }
 
         }

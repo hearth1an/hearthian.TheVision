@@ -11,15 +11,29 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": -5.49411774,
-          "y": -68.85328,
-          "z": 3.88808823
+          "x": -6.44916153,
+          "y": -68.75882,
+          "z": 4.139225
         },
         "rotation": {
-          "x": 278.9944,
-          "y": 178.765991,
-          "z": 214.060837
+          "x": 280.04657,
+          "y": 138.839233,
+          "z": 209.62764
         }
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": -5.5291214,
+          "y": -71.06962,
+          "z": 1.44003487
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.6591506,
+          "z": 168.477524
+        },
+        "scale": 5.0
       }
     ],
     "nomaiText": [
@@ -60,7 +74,7 @@
         },
         "rotation": {
           "x": 359.5548,
-          "y": 38.84211,
+          "y": 38.8421326,
           "z": 175.861984
         },
         "type": "recorder",
