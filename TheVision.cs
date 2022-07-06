@@ -108,24 +108,7 @@ namespace TheVision
 
 
 
-            var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
-            var hologramClone = GameObject.Instantiate(origHologram);
-            hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
-            hologramClone.transform.position = origHologram.transform.position;
-            hologramClone.transform.rotation = origHologram.transform.rotation;
-            origHologram.SetActive(false);
-
-            // GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
-            var mat = hologramClone.GetComponent<MeshRenderer>().material;
-            mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
-            hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
-            // hologramClone.transform.position = origHologram.transform.position;
-
-            // var hologramClone = GameObject.Instantiate(GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal"));
-
-            // var oldHologram = GameObject.Find("Effects_NOM_VesselHologram_d").GetComponent<Texture2D>();
-
-            TheVision.Instance.ModHelper.Console.WriteLine(mat.shader.name);
+                      
 
 
         }
@@ -197,6 +180,19 @@ namespace TheVision
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2400);
             PlayerHeadsetAudioSource.Play();
+
+            //Adding new hologram
+            var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
+            var hologramClone = GameObject.Instantiate(origHologram);
+            hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
+            hologramClone.transform.position = origHologram.transform.position;
+            hologramClone.transform.rotation = origHologram.transform.rotation;
+            origHologram.SetActive(false);
+
+            //texture path to new hologram
+            var mat = hologramClone.GetComponent<MeshRenderer>().material;
+            mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
+            hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
 
             //placing orb on GD to the slot (1)
             var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");

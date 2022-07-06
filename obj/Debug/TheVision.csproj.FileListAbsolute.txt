@@ -27,7 +27,5 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\TimberHearth.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\VesselDimention.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMresponse.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\CustomHologram.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\DB_VesselDimension_Body.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\glitch.gif
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\NewHologram.png
