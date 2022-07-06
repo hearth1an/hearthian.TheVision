@@ -11,61 +11,61 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": -5.49425125,
-          "y": -68.85308,
-          "z": 3.88813782
+          "x": -5.49411774,
+          "y": -68.85328,
+          "z": 3.88808823
         },
         "rotation": {
-          "x": 278.994568,
-          "y": 178.765884,
-          "z": 214.060944
+          "x": 278.9944,
+          "y": 178.765991,
+          "z": 214.060837
         }
-      }      
+      }
     ],
     "nomaiText": [
-        {
-            "arcInfo": [
-                {
-                    "position": {
-                        "x": 0.4,
-                        "y": 0.5
-                    },
-                    "variation": 28,
-                    "zRotation": 93.0
-                }
-            ],
-            "normal": {
-                "x": -0.719040334,
-                "y": 0.0947849154,
-                "z": 0.688474655
-            },
+      {
+        "arcInfo": [
+          {
             "position": {
-                "x": -2.71077561,
-                "y": -70.5499,
-                "z": 1.55687451
+              "x": 0.4,
+              "y": 0.5
             },
-            "rotation": {
-                "x": 356.639343,
-                "y": 314.3946,
-                "z": 86.7039948
-            },
-            "seed": 42,
-            "xmlFile": "planets/Text/QMresponse.xml"
+            "variation": 28,
+            "zRotation": 93.0
+          }
+        ],
+        "normal": {
+          "x": -0.719040334,
+          "y": 0.0947849154,
+          "z": 0.688474655
         },
-        {
-            "position": {
-                "x": -3.74123383,
-                "y": -69.74914,
-                "z": 1.14806461
-            },
-            "rotation": {
-                "x": 359.5548,
-                "y": 38.84208,
-                "z": 175.861984
-            },
-            "type": "recorder",
-            "xmlFile": "planets/Text/RecorderQM.xml"
-        }
+        "position": {
+          "x": -2.71077561,
+          "y": -70.5499,
+          "z": 1.55687451
+        },
+        "rotation": {
+          "x": 356.639343,
+          "y": 314.3946,
+          "z": 86.70398
+        },
+        "seed": 42,
+        "xmlFile": "planets/Text/QMresponse.xml"
+      },
+      {
+        "position": {
+          "x": -3.741268,
+          "y": -69.74914,
+          "z": 1.14806414
+        },
+        "rotation": {
+          "x": 359.5548,
+          "y": 38.84211,
+          "z": 175.861984
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderQM.xml"
+      }
     ]
   },
   "ReferenceFrame": {

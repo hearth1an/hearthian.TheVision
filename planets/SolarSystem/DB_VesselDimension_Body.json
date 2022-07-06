@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {},
+  "canShowOnTitle": true,
+  "name": "Vessel Dimension",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
+  "Props": {
+    "details": [
+      {
+        "path": "VesselHologram_EyeSignal(Clone)",
+        "position": {
+          "x": 147.0119,
+          "y": -0.735609949,
+          "z": -17.6913471
+        },
+        "rotation": {
+          "x": 43.0824127,
+          "y": 331.028442,
+          "z": 316.5158
+        },
+        "scale": 0.99999994
+      }
+    ]
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
+  "ShipLog": {
+    "mapMode": {}
+  }
+}

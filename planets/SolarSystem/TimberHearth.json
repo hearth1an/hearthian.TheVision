@@ -1,8 +1,11 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  
+  "Base": {},
+  "canShowOnTitle": true,
   "name": "Timber Hearth",
-  
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
   "Props": {
     "nomaiText": [
       {
@@ -12,9 +15,9 @@
           "z": 249.598343
         },
         "rotation": {
-          "x": 45.77342,
-          "y": 96.4386139,
-          "z": 82.6844254
+          "x": 45.7734337,
+          "y": 96.43863,
+          "z": 82.68443
         },
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderTH.xml"

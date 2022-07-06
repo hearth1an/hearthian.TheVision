@@ -1,63 +1,66 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-
-    "name": "DB_VesselDimension",
-
-    "Props": {
-        "details": [
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": 148.221,
-                    "y": 25.8914,
-                    "z": 0.2369
-                },
-                "rotation": {
-                    "x": 346.4214,
-                    "y": 147.921,
-                    "z": 2.7197
-                }
-            }
-        ],
-        "nomaiText": [
-            {
-                "position": {
-                    "x": 150.3032,
-                    "y": 26.7245,
-                    "z": -1.7378
-                },
-                "rotation": {
-                    "x": 346.358,
-                    "y": 164.0878,
-                    "z": 359.1451
-                },
-                "type": "recorder",
-                "xmlFile": "planets/Text/RecorderDB.xml"
-            }
-        ]
-    },
-    "Signal": {
-        "signals": [
-            {
-                "frequency": "Quantum Consciousness",
-                "name": "Solanum",
-                "audioFilePath": "planets/quantum.wav",
-                "sourceRadius": 2,
-                "position": {
-                    "x": 148.221,
-                    "y": 25.8914,
-                    "z": 0.2369
-                },
-                "identificationRadius": 500,
-                "detectionRadius": 5000,
-                "onlyAudibleToScope": false
-            }
-        ]
-    },
-    "ReferenceFrame": {
-        "bracketRadius": -1.0
-    },
-    "ShipLog": {
-        "mapMode": {}
-    }
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {},
+  "canShowOnTitle": true,
+  "name": "DB_VesselDimension",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 148.221,
+          "y": 25.8914,
+          "z": 0.2369
+        },
+        "rotation": {
+          "x": 346.4214,
+          "y": 147.921,
+          "z": 2.7197
+        }
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 150.303391,
+          "y": 26.72461,
+          "z": -1.73777735
+        },
+        "rotation": {
+          "x": 346.358,
+          "y": 164.0878,
+          "z": 359.1451
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderDB.xml"
+      }
+    ]
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
+  "ShipLog": {
+    "mapMode": {}
+  },
+  "Signal": {
+    "signals": [
+      {
+        "audioFilePath": "planets/quantum.wav",
+        "detectionRadius": 5000.0,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500.0,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 148.221,
+          "y": 25.8914,
+          "z": 0.2369
+        },
+        "sourceRadius": 2.0
+      }
+    ]
+  }
 }

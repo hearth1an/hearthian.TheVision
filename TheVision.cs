@@ -77,6 +77,13 @@ namespace TheVision
             var QMrecorder = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Prefab_NOM_Recorder(Clone)");
             QMrecorder.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_TH");
 
+            var THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)");
+            THrecorder.transform.name = "Prefab_NOM_Recorder(Clone)_TH";
+
+
+
+
+
             // NomaiWallText responseText = customResponce;
 
             // make Solanum have the proper reaction after the vision ends
@@ -99,9 +106,27 @@ namespace TheVision
             visionTarget.GetComponent<VisionTorchTarget>().onSlidesComplete = myConversationManager.OnVisionEnd;
 
 
-            // try make all text read
-            // var readIncomingMessages = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage").GetComponent<NomaiWallText>();
-            // readIncomingMessages.InitializeNomaiTextLines();
+
+
+            var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
+            var hologramClone = GameObject.Instantiate(origHologram);
+            hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
+            hologramClone.transform.position = origHologram.transform.position;
+            hologramClone.transform.rotation = origHologram.transform.rotation;
+            origHologram.SetActive(false);
+
+            // GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
+            var mat = hologramClone.GetComponent<MeshRenderer>().material;
+            mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
+            hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
+            // hologramClone.transform.position = origHologram.transform.position;
+
+            // var hologramClone = GameObject.Instantiate(GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal"));
+
+            // var oldHologram = GameObject.Find("Effects_NOM_VesselHologram_d").GetComponent<Texture2D>();
+
+            TheVision.Instance.ModHelper.Console.WriteLine(mat.shader.name);
+
 
         }
 
@@ -134,7 +159,6 @@ namespace TheVision
             Vector3 rotation2 = new Vector3(350.740326f, 50.80401f, 261.666534f);
             newHorizonsAPI.SpawnObject(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), path2, position2, rotation2, 1, false);
 
-           
 
         }
         // Spawning Vision Torch with code
@@ -193,7 +217,7 @@ namespace TheVision
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
 
-            DisabledPropsOnStart(true);
+            
         }
 
         //Props from Json files (recorders mostly)
@@ -201,19 +225,21 @@ namespace TheVision
         {
             GameObject QMrecorder = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_TH/Prefab_NOM_Recorder(Clone)");            
 
-            GameObject THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)");
+            GameObject THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)_TH");            
 
-            GameObject GDrecorder = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Recorder(Clone)");
-           
+            GameObject GDrecorder = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Recorder(Clone)");            
+
             GameObject DBrecorder = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Prefab_NOM_Recorder(Clone)");            
 
             GameObject solanumDB = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle(Clone)");
 
-            GameObject signalDB = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Signal_Solanum");
+            GameObject signalDB = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Signal_Solanum");                      
 
-            // GameObject ATPrecorder = GameObject.Find("TimeLoopRing_Body/Prefab_NOM_Recorder(Clone)");
-            // GameObject signalATP = GameObject.Find("TimeLoopRing_Body/Signal_Solanum");
-            // GameObject solanumATP = GameObject.Find("TimeLoopRing_Body/Nomai_ANIM_SkyWatching_Idle(Clone)");
+           //GameObject signalATP = GameObject.Find("TimeLoopRing_Body/Signal_Solanum");
+
+            //GameObject solanumATP = GameObject.Find("TimeLoopRing_Body/Nomai_ANIM_SkyWatching_Idle(Clone)");
+            
+            //GameObject ATPrecorder = GameObject.Find("TimeLoopRing_Body/Prefab_NOM_Recorder(Clone)");
 
             if (isActive == false)
             {
@@ -222,13 +248,13 @@ namespace TheVision
                 GDrecorder.SetActive(false);
                 DBrecorder.SetActive(false);                
                 solanumDB.SetActive(false);
-                signalDB.SetActive(false);
-
-                // ATPrecorder.SetActive(false);
+                signalDB.SetActive(false); 
+                
                 // solanumATP.SetActive(false);
                 // signalATP.SetActive(false);
+                // ATPrecorder.SetActive(false);
             }
-            else
+            else 
             {
                 QMrecorder.SetActive(true);
                 THrecorder.SetActive(true);
@@ -236,10 +262,10 @@ namespace TheVision
                 DBrecorder.SetActive(true);                
                 solanumDB.SetActive(true);                
                 signalDB.SetActive(true);
-
-                // ATPrecorder.SetActive(true);
+                
                 // solanumATP.SetActive(true);
                 // signalATP.SetActive(true);
+                // ATPrecorder.SetActive(true);
             }
         }
     }
