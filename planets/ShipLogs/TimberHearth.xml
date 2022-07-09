@@ -1,28 +1,33 @@
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>QUANTUM_MOON</ID>
+    <ID>TIMBER_HEARTH</ID>
 
     <Entry>
-        <ID>SOLANUM</ID>
-        <Name>Solanum escape</Name>
+        <ID>SOLANUM_TH</ID>
+        <Name>Solanum on Timber Hearth</Name>
 
-        <Curiosity>SOLANUM_ESCAPE</Curiosity>
-		<IsCuriosity/>
-    
-        <RumorFact>
-            <ID>SOLANUM_RUMOR</ID> 
-            <RumorName>Solanum on Quantum Moon</RumorName> 
-            <Text>Solanum is the last Nomai alive. What if I'll show her what I know with vision torch from <![CDATA[<color=green>Stranger</color>]]>?</Text> 
-        </RumorFact>
+        <Curiosity>THE_VISION_CURIOSITY</Curiosity>	       
 
         <RumorFact>
-            <ID>SOLANUM_VISION_REACTION</ID>
-            <Text>After the vision something strange happened. Clouds just disappeared, I can hear now kind of <![CDATA[<color=green>frequencies</color>]]> coming from Solanum, also that sparks on her mask - that looks bizarre. Was it good idea tho?</Text> 
+            <ID>SOLANUM_RUMOR_TH</ID> 
+            <SourceID>THE_VISION_ENTRY</SourceID>
+            <RumorName>Is Solanum on Timber Hearth?</RumorName> 
+            <Text>When I went to sleep by the campfire only Slate was here, who are these characters?</Text> 
         </RumorFact>
 
-        <RumorFact>
-            <ID>SOLANUM_TH_STATE_TEXT</ID>
-            <Text>She was here and saw what I saw. She took her recorder from the shuttle and asking me to find her ...outside the Quantum Moon?</Text> 
-        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_TH</ID>            
+            <Text>Yeah she is actually here</Text> 
+        </ExploreFact>       
 
-    </Entry>
+        <ExploreFact>
+            <ID>SOLANUM_TH_SIGNAL</ID>            
+            <Text>Solanum signal on TH!</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>SOLANUM_TH_RECORDER</ID>            
+            <Text>Solanum recorder. Looks noice</Text> 
+
+        </ExploreFact> 
+    </Entry>    
 </AstroObjectEntry>

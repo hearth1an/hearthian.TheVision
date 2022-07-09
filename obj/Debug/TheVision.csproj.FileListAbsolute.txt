@@ -15,16 +15,49 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\vision1\SlateWithAGun.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\quantum.wav
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Ship.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\Recorder.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderATP.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderDB.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderGD.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderQM.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderTH.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\GiantsDeep.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\TimberHearth.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMresponse.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\NewHologram.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\DB_VesselDimension_Body.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\GroundText.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMground.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\2124.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\QuantumMoon.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\GiantsDeep.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\QuantumMoon.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\blackhole_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\circle.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\Coordinates.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumDB.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumGD.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumTH.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SOLANUM_QM_RESPONSE_GROUND.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\THE_VISION_ENTRY.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\THE_VISION_ENTRY_2.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\CustomSprites.psd
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\daunting_confidant_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\EXAMPLES_ATTLEROCK.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\EXAMPLES_RINGED_JEWEL.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\EXAMPLES_WETROCK_ENTRY.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\frigid_pygmy_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\giants_deep_detail.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\lava_twin_funnel.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\lava_twin_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\light_gateway_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\luna_lure_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\night_light_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\ringed_jewel_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\sequestered_luminary_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\snowball_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_QM_RESPONSE_GROUND.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\terra_lure_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\THE_VISION_ENTRY.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\THE_VISION_ENTRY_2.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\TimberHearth.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\wetrock_map_mode.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\wetrock_outline.png
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\TimberHearth.xml

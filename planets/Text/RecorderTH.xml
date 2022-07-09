@@ -8,6 +8,12 @@
 		<ParentID>1</ParentID>
 		<Text>SOLANUM: I'm here, right? But how I am here? I thought about Timber Hearth and here am I... </Text>
 	</TextBlock>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_TH</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
@@ -23,4 +29,10 @@
 		<ParentID>4</ParentID>
 		<Text>SOLANUM: You saw that Orbital Probe Cannon? I need to check it's control module. Find me there.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_TH_RECORDER</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

@@ -162,11 +162,12 @@ namespace TheVision
                 audioFilePath = "planets/quantum.wav",
                 frequency = "Quantum Consciousness",
                 detectionRadius = 5000,
-                identificationRadius = 500,
+                identificationRadius = 2000,
                 sourceRadius = 2f,
                 name = "Solanum",
                 position = position,
                 onlyAudibleToScope = false,
+                reveals = "SOLANUM_TH_SIGNAL",
 
             };
         }

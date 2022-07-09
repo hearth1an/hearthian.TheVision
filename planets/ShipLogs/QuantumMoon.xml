@@ -2,27 +2,26 @@
     <ID>QUANTUM_MOON</ID>
 
     <Entry>
-        <ID>SOLANUM</ID>
-        <Name>Solanum escape</Name>
+        <ID>THE_VISION_ENTRY</ID>
+        <Name>Solanum on Quantum Moon</Name>
 
-        <Curiosity>SOLANUM_ESCAPE</Curiosity>
+        <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 		<IsCuriosity/>
     
-        <RumorFact>
-            <ID>SOLANUM_RUMOR</ID> 
-            <RumorName>Solanum on Quantum Moon</RumorName> 
-            <Text>Solanum is the last Nomai alive. What if I'll show her what I know with vision torch from <![CDATA[<color=green>Stranger</color>]]>?</Text> 
-        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_START</ID>            
+            <Text>Solanum is the last Nomai alive. What if I'll show her what I know with vision torch from <![CDATA[<color=green>Damaged Laboratory</color>]]> on <![CDATA[<color=green>Stranger</color>]]>?</Text> 
+        </ExploreFact>       
 
-        <RumorFact>
-            <ID>SOLANUM_VISION_REACTION</ID>
-            <Text>After the vision something strange happened. Clouds just disappeared, I can hear now kind of <![CDATA[<color=green>frequencies</color>]]> coming from Solanum, also that sparks on her mask - that looks bizarre. Was it good idea tho?</Text> 
-        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_QM_RESPONSE</ID>            
+            <Text>Solanum reply!</Text> 
+        </ExploreFact>
 
-        <RumorFact>
-            <ID>SOLANUM_TH_STATE_TEXT</ID>
-            <Text>She was here and saw what I saw. She took her recorder from the shuttle and asking me to find her ...outside the Quantum Moon?</Text> 
-        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_QM_RESPONSE_GROUND</ID>            
+            <Text>Solanum reply on ground</Text> 
 
-    </Entry>
+        </ExploreFact> 
+    </Entry>    
 </AstroObjectEntry>

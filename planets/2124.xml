@@ -1,0 +1,28 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>QUANTUM_MOON</ID>
+
+    <Entry>
+        <ID>SOLANUM_QM</ID>
+        <Name>Solanum on Quantum Moon</Name>
+
+        <Curiosity>SOLANUM_THE_VISION</Curiosity>
+		<IsCuriosity/>
+    
+        <RumorFact>
+            <ID>SOLANUM_QM</ID> 
+            <RumorName>Solanum on Quantum Moon</RumorName> 
+            <Text>Solanum is the last Nomai alive. What if I'll show her what I know with vision torch from <![CDATA[<color=green>Stranger</color>]]>?</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>SOLANUM_QM_RESPONSE</ID>
+            <Text>After the vision something strange happened. Clouds just disappeared, I can hear now kind of <![CDATA[<color=green>frequencies</color>]]> coming from Solanum, also that sparks on her mask - that looks bizarre. Also Solanum looks disoriented according to her reply.</Text> 
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>SOLANUM_TH_REPLY</ID>
+            <Text>She was here and saw what I saw. She took her recorder from the shuttle and asking me to find her ...outside the Quantum Moon?</Text> 
+        </ExploreFact>
+
+    </Entry>
+</AstroObjectEntry>

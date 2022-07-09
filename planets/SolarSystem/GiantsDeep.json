@@ -1,49 +1,49 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {},
-  "canShowOnTitle": true,
-  "name": "Giants Deep",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
-  "Props": {
-    "details": [
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-        "position": {
-          "x": -41.8373337,
-          "y": -68.65625,
-          "z": -32.701683
-        },
-        "rotation": {
-          "x": 344.897064,
-          "y": 353.7464,
-          "z": 285.8495
-        },
-        "scale": 5.0
-      }
-    ],
-    "nomaiText": [
-      {
-        "position": {
-          "x": -43.4399948,
-          "y": -66.7862,
-          "z": -31.4335365
-        },
-        "rotation": {
-          "x": 337.2365,
-          "y": 52.9308,
-          "z": 261.0757
-        },
-        "type": "recorder",
-        "xmlFile": "planets/Text/RecorderGD.xml"
-      }
-    ]
-  },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
-  "ShipLog": {
-    "mapMode": {}
-  }
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "Base": {},
+    "canShowOnTitle": true,
+    "name": "Giants Deep",
+    "Orbit": {
+        "semiMajorAxis": 0.0
+    },
+    "Props": {
+        "details": [
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "position": {
+                    "x": -41.8373337,
+                    "y": -68.65625,
+                    "z": -32.701683
+                },
+                "rotation": {
+                    "x": 344.897064,
+                    "y": 353.7464,
+                    "z": 285.8495
+                },
+                "scale": 5.0
+            }
+
+        ],
+
+        "nomaiText": [
+            {
+                "position": {
+                    "x": -43.4399948,
+                    "y": -66.7862,
+                    "z": -31.4335365
+                },
+                "rotation": {
+                    "x": 337.2365,
+                    "y": 52.9308,
+                    "z": 261.0757
+                },
+                "type": "recorder",
+                "xmlFile": "planets/Text/RecorderGD.xml"
+            }
+        ]
+        
+    }
+
+    
+   
 }

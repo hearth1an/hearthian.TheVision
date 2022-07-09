@@ -1,49 +1,57 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {},
-  "canShowOnTitle": true,
-  "name": "Timber Hearth",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
-  "Props": {
-    "details": [
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-        "position": {
-          "x": 48.5077,
-          "y": 15.6914063,
-          "z": 252.3102
-        },
-        "rotation": {
-          "x": 320.416016,
-          "y": 333.685059,
-          "z": 333.793854
-        },
-        "scale": 5.0
-      }
-    ],
-    "nomaiText": [
-      {
-        "position": {
-          "x": 50.2780342,
-          "y": 15.4577,
-          "z": 249.598343
-        },
-        "rotation": {
-          "x": 45.7734337,
-          "y": 96.43863,
-          "z": 82.68443
-        },
-        "type": "recorder",
-        "xmlFile": "planets/Text/RecorderTH.xml"
-      }
-    ]
-  },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
-  "ShipLog": {
-    "mapMode": {}
-  }
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "Base": {},
+    "canShowOnTitle": true,
+    "name": "Timber Hearth",
+    "Orbit": {
+        "semiMajorAxis": 0.0
+    },
+    "Props": {
+        "details": [
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "position": {
+                    "x": 48.5077,
+                    "y": 15.6914063,
+                    "z": 252.3102
+                },
+                "rotation": {
+                    "x": 320.416016,
+                    "y": 333.685059,
+                    "z": 333.793854
+                },
+                "scale": 5.0
+            }
+        ],
+        "nomaiText": [
+            {
+                "position": {
+                    "x": 50.2780342,
+                    "y": 15.4577,
+                    "z": 249.598343
+                },
+                "rotation": {
+                    "x": 45.7734337,
+                    "y": 96.43863,
+                    "z": 82.68443
+                },
+                "type": "recorder",
+                "xmlFile": "planets/Text/RecorderTH.xml"
+            }
+        ]
+    },
+    "ShipLog": {
+        "xmlFile": "planets/ShipLogs/TimberHearth.xml",
+        "spriteFolder": "planets/ShipLogs/sprites",
+        "entryPositions": [
+            {
+                "id": "SOLANUM_TH",
+                "position": {
+                    "x": 50.2780342,
+                    "y": 15.4577
+                }
+            }
+        ]
+    }
+
 }
