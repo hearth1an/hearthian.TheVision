@@ -73,33 +73,24 @@ namespace TheVision
                 .GetComponentsInChildren<Transform>(true)
                 .Where(t => t.gameObject.name == "Sector_QuantumMoon")
                 .First(); // All because Find doesn't work on inactive game objects :/
+                        
 
-            var QMrecorder = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Prefab_NOM_Recorder(Clone)");
-            QMrecorder.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_TH");
-
+            //parenting particles to Solanum
             var QMparticles = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Effects_NOM_WarpParticles(Clone)");
-            QMparticles.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
+            QMparticles.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");         
 
+            //renaming TH recorder idk why but I needed it for some reason lol
             var THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)");
             THrecorder.transform.name = "Prefab_NOM_Recorder(Clone)_TH";
-
-
-
-            
-
-
-            // NomaiWallText responseText = customResponce;
-
-            // make Solanum have the proper reaction after the vision ends
-            //GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation/ResponseStone/ArcSocket/Arc_QM_SolanumConvo_Explain+Eye").GetComponent<NomaiWallText>();
-
-            // Making custom text for reply
-            // var customResponce = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
-            // customResponce.GetComponent<NomaiWallText>().HideTextOnStart();
+              
+            // Making custom text for reply           
             NomaiWallText responseText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText").GetComponent<NomaiWallText>();
             responseText.HideTextOnStart();
             responseText.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_EYE");
 
+            //parenting QM ground text to TH state
+            var QMgroundText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
+            QMgroundText.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_TH");
 
             var nomaiConversationManager = Resources.FindObjectsOfTypeAll<NomaiConversationManager>().First(); //GameObject.FindObjectOfType<NomaiConversationManager>();
             var myConversationManager = nomaiConversationManager.gameObject.AddComponent<TheVision_SolanumVisionResponse>();
@@ -120,8 +111,6 @@ namespace TheVision
             hologramClone.SetActive(false);
 
         }
-
-
 
         // Load SolanumProps
         public void OnStarSystemLoaded(string systemName)
@@ -201,24 +190,33 @@ namespace TheVision
 
             //decloaking QM on signals spawn
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
+
+            //disabling recorder on QM Solanum shuttle
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").SetActive(false);
+                      
 
             //Spawning Solanum signals
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
 
+            //parenting QM signal to Solanum
+            var QMsignal = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Signal_Solanum");
+            QMsignal.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
+
             //Enabling hologram
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_EyeSignal(Clone)").SetActive(true);
 
+
+            //Enabling props that spawned with json I guess 
             DisabledPropsOnStart(true);
         }
 
         //Props from Json files (recorders mostly)
         public void DisabledPropsOnStart(bool isActive)
         {
-            GameObject QMrecorder = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_TH/Prefab_NOM_Recorder(Clone)");            
+            GameObject QMgroundText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_TH/NomaiWallText");            
 
             GameObject THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)_TH");            
 
@@ -248,7 +246,7 @@ namespace TheVision
 
             if (isActive == false)
             {
-                QMrecorder.SetActive(false);
+                QMgroundText.SetActive(false);
                 THrecorder.SetActive(false);
                 GDrecorder.SetActive(false);
                 DBrecorder.SetActive(false);
@@ -266,7 +264,7 @@ namespace TheVision
             }
             else
             {
-                QMrecorder.SetActive(true);
+                QMgroundText.SetActive(true);
                 THrecorder.SetActive(true);
                 GDrecorder.SetActive(true);                
                 DBrecorder.SetActive(true);                

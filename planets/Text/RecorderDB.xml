@@ -1,21 +1,26 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Dear diary.</Text>
+		<Text>SOLANUM: Guess what? Everything works despite the damage! That's incredible!</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Hi it's me Ernesto.</Text>
+		<Text>SOLANUM: Moreover the Vessel is getting incoming signals from other nomai clans...</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>I just learned how to write in Nomai yesterday.</Text>
+		<Text>SOLANUM: I don't know how but I actually managed to trace the Canna's message coordinates from Gloaming Galaxy. They should be on the hologram under the bridge.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>Wait no this is like a tape recorder right? Ok I just learned how to speak in Nomai yesterday.</Text>
+		<Text>SOLANUM: Did you brought the core? Again, we have little time.. also there's no way back and Ash Twin Project will not send back your memory this time.. Well, I'm ready for warp.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>SOLANUM: Well, I'm ready to warp.</Text>
 	</TextBlock>
 </NomaiObject>

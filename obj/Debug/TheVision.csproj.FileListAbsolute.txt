@@ -15,8 +15,6 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\vision1\SlateWithAGun.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\quantum.wav
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Ship.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\TextQM.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\WallText.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\Recorder.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderATP.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderDB.xml
@@ -25,7 +23,8 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderTH.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\GiantsDeep.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\TimberHearth.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\VesselDimention.json
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMresponse.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\NewHologram.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\DB_VesselDimension_Body.json
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\GroundText.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMground.xml

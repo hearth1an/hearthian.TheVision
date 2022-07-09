@@ -1,21 +1,26 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Dear diary.</Text>
+		<Text>SOLANUM: It's you, friend! I feel better now, but everything is different, I am different...</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Hi it's me Ernesto.</Text>
+		<Text>SOLANUM: I'm here, right? But how I am here? I thought about Timber Hearth and here am I... </Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>I just learned how to write in Nomai yesterday.</Text>
+		<Text>SOLANUM: So.. nomai are dead? All of them? Last thing I remember that Bells guided me on Quantum Moon pilgrimage like it was an hour ago...</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>Wait no this is like a tape recorder right? Ok I just learned how to speak in Nomai yesterday.</Text>
+		<Text>SOLANUM: I..  I have to apologize on behalf of the clan.. We tried to explode the Sun and it would turn your race to ashes... This is unacceptable, but I'm happy we failed.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>SOLANUM: You saw that Orbital Probe Cannon? I need to check it's control module. Find me there.</Text>
 	</TextBlock>
 </NomaiObject>

@@ -1,21 +1,21 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>Dear diary.</Text>
+		<Text>SOLANUM: We finally found the Eye...</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>Hi it's me Ernesto.</Text>
+		<Text>SOLANUM: Thank you for your knowlage, now we know exactly the reason why it was not as easy to find.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>I just learned how to write in Nomai yesterday.</Text>
+		<Text>SOLANUM: Eye of the Universe have lured not only us, but also other intelligent life forms.. and we see what happened. I don't want to know anything more about it..</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>Wait no this is like a tape recorder right? Ok I just learned how to speak in Nomai yesterday.</Text>
+		<Text>SOLANUM: Is that Memory Statue active?! It's working! I need to check it's connection with Ash Twin Project. Find me there.</Text>
 	</TextBlock>
 </NomaiObject>

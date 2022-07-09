@@ -11,74 +11,91 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": -6.44916153,
-          "y": -68.75882,
-          "z": 4.139225
+          "x": -6.19646454,
+          "y": -68.76589,
+          "z": 4.528076
         },
         "rotation": {
-          "x": 280.04657,
-          "y": 138.839233,
-          "z": 209.62764
+          "x": 280.039642,
+          "y": 167.336014,
+          "z": 203.659485
         }
       },
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": -5.5291214,
-          "y": -71.06962,
-          "z": 1.44003487
+          "x": -5.52926064,
+          "y": -71.06964,
+          "z": 1.4400177
         },
         "rotation": {
           "x": 317.328369,
-          "y": 2.6591506,
+          "y": 2.65915227,
           "z": 168.477524
         },
-        "scale": 5.0
+        "scale": 5.00000048
       }
     ],
     "nomaiText": [
+        {
+            "arcInfo": [
+                {
+                    "position": {
+                        "x": 0.4,
+                        "y": 0.5
+                    },
+                    "variation": 28,
+                    "zRotation": 93.0
+                }
+            ],
+            "normal": {
+                "x": -0.719040334,
+                "y": 0.0947849154,
+                "z": 0.688474655
+            },
+            "position": {
+                "x": -2.71077561,
+                "y": -70.5499,
+                "z": 1.55687451
+            },
+            "rotation": {
+                "x": 356.639343,
+                "y": 314.3946,
+                "z": 86.70398
+            },
+            "seed": 42,
+            "xmlFile": "planets/Text/QMresponse.xml"
+        },
+
       {
         "arcInfo": [
           {
+            "mirror": true,
             "position": {
-              "x": 0.4,
-              "y": 0.5
+              "x": 1.4,
+              "y": 0.6
             },
             "variation": 28,
             "zRotation": 93.0
           }
         ],
         "normal": {
-          "x": -0.719040334,
-          "y": 0.0947849154,
-          "z": 0.688474655
+          "x": -0.0513425469,
+          "y": -0.997363269,
+          "z": 0.05129242
         },
         "position": {
-          "x": -2.71077561,
-          "y": -70.5499,
-          "z": 1.55687451
+          "x": -2.00549316,
+          "y": -69.83115,
+          "z": 1.29344177
         },
         "rotation": {
-          "x": 356.639343,
-          "y": 314.3946,
-          "z": 86.70398
+          "x": 85.83826,
+          "y": 314.971863,
+          "z": 133.163391
         },
         "seed": 42,
-        "xmlFile": "planets/Text/QMresponse.xml"
-      },
-      {
-        "position": {
-          "x": -3.741268,
-          "y": -69.74914,
-          "z": 1.14806414
-        },
-        "rotation": {
-          "x": 359.5548,
-          "y": 38.8421326,
-          "z": 175.861984
-        },
-        "type": "recorder",
-        "xmlFile": "planets/Text/RecorderQM.xml"
+        "xmlFile": "planets/Text/QMground.xml"
       }
     ]
   },
@@ -86,7 +103,37 @@
     "bracketRadius": -1.0,
     "maxTargetDistance": -1.0
   },
-  "ShipLog": {
-    "mapMode": {}
-  }
+  "ShipLog" : {
+        "xmlFile": "planets/ShipLogs/QuantumMoon.xml",
+		"spriteFolder": "planets/ShipLogs/sprites",
+		"initialReveal": [
+			"SOLANUM_RUMOR"
+		],
+		"Curiosities": [
+            {
+                "id": "SOLANUM_ESCAPE",
+                "color": {
+                    "R": 0,
+                    "G": 255,
+                    "B": 255,
+                    "A": 255
+                },
+                "highlightColor": {
+                    "R": 132,
+                    "G": 255,
+                    "B": 255,
+                    "A": 255
+                }
+            }
+		],
+		"entryPositions": [
+			{
+				"id": "SOLANUM",
+				"position": {
+					"x": 800,
+					"y": -1400
+				}
+			}
+		]
+    }
 }

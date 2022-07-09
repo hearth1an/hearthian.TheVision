@@ -1,0 +1,9 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>SOLANUM: I.. I can't exist? That's me but... How is it possible? I need to get out of here, I'll take a recorder... find me..</Text>
+	</TextBlock>
+	<RevealFacts>
+        <FactID>SOLANUM_TH_STATE_TEXT</FactID>
+    </RevealFacts>
+</NomaiObject>
