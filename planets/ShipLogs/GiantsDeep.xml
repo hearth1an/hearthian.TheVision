@@ -10,16 +10,16 @@
         <RumorFact>
             <ID>SOLANUM_GD</ID> 
             <SourceID>SOLANUM_TH</SourceID> 
-            <RumorName>Solanum on Giants Deep</RumorName> 
-            <Text>Seems like she can just appear anywhere? She want me to find her at the Probe Cannon panel this time.</Text> 
+            <RumorName>Solanum on Giant's Deep</RumorName> 
+            <Text>Solanum asked me to find her on Giant's Deep.</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>SOLANUM_ON_GD</ID> 
-            <Text>Yep she is here</Text> 
+            <Text>I found Solanum observing the probe logs.</Text> 
         </ExploreFact> 
         <ExploreFact>
             <ID>SOLANUM_GD_RECORDER</ID> 
-            <Text>Giants Deep recorder!</Text> 
+            <Text>Solanum feels sad about the Eye of the Universe. She realized that she was right since her childhood - the Eye have no wishes at all. I'm not surprised that she don't want to know anything more about it. One thing that catched her eye here was the active Memory Statue.</Text> 
         </ExploreFact> 
 
     </Entry>    

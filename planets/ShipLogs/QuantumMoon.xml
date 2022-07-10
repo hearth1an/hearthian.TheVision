@@ -15,23 +15,23 @@
 
         <ExploreFact>
             <ID>SOLANUM_QM_RESPONSE</ID>            
-            <Text>Solanum reply!</Text> 
+            <Text>After the vision something strange happened. Clouds just disappeared! I can hear now kind of <![CDATA[<color=green>frequencies</color>]]> coming from Solanum, also that sparks on her mask - that looks bizarre. Solanum looks disoriented according to her reply.</Text> 
         </ExploreFact>
 
         <Entry>        
             <ID>SOLANUM_QM_TH</ID> 
-            <Name>Solanum QM TH response</Name>
+            <Name>Insctiption near Solanum body</Name>
             <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
             <RumorFact>
                 <ID>SOLANUM_QM_TH_RESPONSE_RUMOR</ID>
-                <RumorName>Solanum left a sign</RumorName>
-                <Text>Yeah and it's on the ground</Text>
+                <RumorName>Solanum left some text near her body.</RumorName>
+                <Text>There's some new inscriptions left recently</Text>
             </RumorFact>
 
             <ExploreFact>
             <ID>SOLANUM_QM_RESPONSE_GROUND</ID>            
-            <Text>Solanum reply on ground</Text> 
+            <Text>It should be very strange to see your own body. I'm not surprised Solanum want to leave this place as soon as possible. She took her recorder and asking me to find her somehow. Maybe start search from Timber Hearth?</Text> 
             </ExploreFact>  
         </Entry> 
         

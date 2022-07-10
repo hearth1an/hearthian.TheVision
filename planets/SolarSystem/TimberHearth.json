@@ -11,14 +11,14 @@
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": 48.5076065,
+          "x": 48.5078926,
           "y": 15.6914063,
-          "z": 252.310272
+          "z": 252.31131
         },
         "rotation": {
-          "x": 276.160034,
+          "x": 276.159943,
           "y": 320.478241,
-          "z": 312.779083
+          "z": 312.779053
         },
         "scale": 5.0
       }
@@ -45,20 +45,20 @@
   },
   "ShipLog": {
     "entryPositions": [
-        {
-            "id": "SOLANUM_TH",
-            "position": {
-                "x": 400.0,
-                "y": -1500.0
-            }
-        },
-        {
-            "id": "NEW_QUANTUM_RULE",
-            "position": {
-                "x": 350.0,
-                "y": -1600.0
-            }
+      {
+        "id": "SOLANUM_TH",
+        "position": {
+          "x": 400.0,
+          "y": -1500.0
         }
+      },
+      {
+        "id": "NEW_QUANTUM_RULE",
+        "position": {
+          "x": 350.0,
+          "y": -1600.0
+        }
+      }
     ],
     "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",

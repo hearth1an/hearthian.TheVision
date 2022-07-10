@@ -11,26 +11,26 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": -5.550642,
-          "y": -68.6895752,
-          "z": 6.05847168
+          "x": -5.31728,
+          "y": -68.7938156,
+          "z": 4.8491
         },
         "rotation": {
-          "x": 279.2182,
-          "y": 177.262756,
-          "z": 213.4868
+          "x": 279.391663,
+          "y": 174.833435,
+          "z": 210.5076
         }
       },
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": -5.529455,
-          "y": -71.06955,
-          "z": 1.44007874
+          "x": -5.52977,
+          "y": -71.06961,
+          "z": 1.439642
         },
         "rotation": {
           "x": 317.328369,
-          "y": 2.65915632,
+          "y": 2.65915656,
           "z": 168.477524
         },
         "scale": 4.99999952
@@ -89,9 +89,9 @@
           "z": 1.29369223
         },
         "rotation": {
-          "x": 85.83826,
+          "x": 85.83839,
           "y": 314.971832,
-          "z": 133.163376
+          "z": 133.163361
         },
         "seed": 42,
         "xmlFile": "planets/Text/QMground.xml"
@@ -118,21 +118,20 @@
       }
     ],
     "entryPositions": [
-        {
-            "id": "THE_VISION_ENTRY",
-            "position": {
-                "x": 800.0,
-                "y": -1400.0
-            }
-
-        },
-        {
-            "id": "SOLANUM_QM_TH",
-            "position": {
-                "x": 900.0,
-                "y": -1550.0
-            }
+      {
+        "id": "THE_VISION_ENTRY",
+        "position": {
+          "x": 800.0,
+          "y": -1400.0
         }
+      },
+      {
+        "id": "SOLANUM_QM_TH",
+        "position": {
+          "x": 900.0,
+          "y": -1550.0
+        }
+      }
     ],
     "initialReveal": [
       "SOLANUM_START"

@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>no spoiler please</Text>
+		<Text>SOLANUM: I.. I don't understand.. wh.. what just.. what is this feeling? What is this?</Text>
 	</TextBlock>	
 	<ShipLogConditions>
         <RevealFact>	

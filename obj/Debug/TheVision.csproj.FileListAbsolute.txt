@@ -49,5 +49,6 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_QM_TH.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_TH.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\TimeLoopRing.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\TimeLoopRing.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\RecorderATP copy.xml
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\TimeLoopRing.json
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\DB_AnglerNestDimension_Body.json
+C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\SolarSystem\DB_HubDimension_Body.json

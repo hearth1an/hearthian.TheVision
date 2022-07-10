@@ -1,17 +1,17 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>SOLANUM: Guess what? Everything works despite the damage! That's incredible!</Text>
+		<Text>SOLANUM: Guess what? Everything works despite the damage! That's incredible! I am Nomai, I think can handle it's system.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>SOLANUM: Moreover the Vessel is getting incoming signals from other nomai clans...</Text>
+		<Text>SOLANUM: You see this whiteboard? The Vessel is still getting incoming signals from other Nomai even here, inside the Dark Bramble.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>SOLANUM: I don't know how but I actually managed to trace the Canna's message coordinates from Gloaming Galaxy. They should be on the hologram under the bridge.</Text>
+		<Text>SOLANUM: Wait, is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the Canna's messages location from the Gloaming Galaxy. She saying that there's a safe place called "Blackrock". That's exactly what we need! It's coordinates should be shown on the hologram panel under the bridge.</Text>
 	</TextBlock>
 	<ShipLogConditions>
         <RevealFact>	
@@ -22,13 +22,23 @@
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>SOLANUM: Did you brought the core? Again, we have little time.. also there's no way back and Ash Twin Project will not send back your memory this time.. Well, I'm ready for warp.</Text>
+		<Text>SOLANUM: Did you brought the Warp Core? Again, we have little time, unfortunately. There's no way back and Ash Twin Project will not send back your memories this time.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>SOLANUM: Well, I'm ready to warp.</Text>
+		<Text>SOLANUM: ...</Text>
 	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>5</ParentID>
+		<Text>SOLANUM: Such many things happened here in our Solar System, mine and yours. Whole lifes but same destiny. And.. I'm sorry about your friends and your kind. We can't help them, sadly. I knew this will happened one day, even Conoy told me once it won't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselfs for now, this is just the Universe laws, we can't stop this...</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<ParentID>6</ParentID>
+		<Text>SOLANUM: I am ready my friend, but decision is yours.</Text>
+	</TextBlock>	
 	<ShipLogConditions>
         <RevealFact>	
         <FactID>SOLANUM_DB_RECORDER</FactID>

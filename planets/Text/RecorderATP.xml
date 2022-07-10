@@ -1,26 +1,26 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>spoiler</Text>
+		<Text>SOLANUM: Have you seen this? Our Sun is diying and you.. are you connected with the one of statue? Someone also connected from Giant's deep, do you know who is it?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>spoiler</Text>
+		<Text>SOLANUM: Oh, I forgot that you can't respond, I mean I can't understand your language so nevermind. That means that you're in the Time Loop before the Sun explotion. Lucky day, huh? Or not. Sorry.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>spoiler</Text>
+		<Text>SOLANUM: I just realized that we're running out of time. Most likely I'll get back on Quantum Moon after the reset according to your memories, right? That's how it works?</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>spoiler</Text>
+		<Text>SOLANUM: Or... can we actually escape? Explotion should be really huge, but what if we just fly away from it? Warp Core is charged by last loop so we can try to get out of here before the supernova explosion.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>spoiler</Text>
-	</TextBlock>
+		<Text>SOLANUM: I saw the Vessel from your vision, it's in a Dark Bramble, right? What if it's still working? Not sure if I can get there, but I need to try at least. See you!</Text>
+	</TextBlock>	
 </NomaiObject>

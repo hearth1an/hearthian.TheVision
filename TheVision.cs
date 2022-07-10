@@ -73,16 +73,16 @@ namespace TheVision
                 .GetComponentsInChildren<Transform>(true)
                 .Where(t => t.gameObject.name == "Sector_QuantumMoon")
                 .First(); // All because Find doesn't work on inactive game objects :/
-                        
+
 
             //parenting particles to Solanum
             var QMparticles = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Effects_NOM_WarpParticles(Clone)");
-            QMparticles.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");         
+            QMparticles.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
 
             //renaming TH recorder idk why but I needed it for some reason lol
             var THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)");
             THrecorder.transform.name = "Prefab_NOM_Recorder(Clone)_TH";
-              
+
             // Making custom text for reply           
             NomaiWallText responseText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText").GetComponent<NomaiWallText>();
             responseText.HideTextOnStart();
@@ -107,9 +107,8 @@ namespace TheVision
             hologramClone.transform.rotation = origHologram.transform.rotation;
             var mat = hologramClone.GetComponent<MeshRenderer>().material;
             mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
-            hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;            
+            hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
             hologramClone.SetActive(false);
-
         }
 
         // Load SolanumProps
@@ -140,8 +139,9 @@ namespace TheVision
             Vector3 position2 = new Vector3(-43.62191f, -68.5414f, -31.2553654f);
             Vector3 rotation2 = new Vector3(350.740326f, 50.80401f, 261.666534f);
             newHorizonsAPI.SpawnObject(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), path2, position2, rotation2, 1, false);
-                       
 
+
+           
         }
         // Spawning Vision Torch with code
         public void SpawnVisionTorch()
@@ -156,12 +156,12 @@ namespace TheVision
         public NewHorizons.External.Modules.SignalModule.SignalInfo MakeSolanumSignalInfo(Vector3 position)
         {
 
-            //Solanum signal parameters
+            //Solanum signal parameters, reveal ship log about new quantum rule
             return new NewHorizons.External.Modules.SignalModule.SignalInfo()
             {
                 audioFilePath = "planets/quantum.wav",
                 frequency = "Quantum Consciousness",
-                detectionRadius = 5000,
+                detectionRadius = 20000,
                 identificationRadius = 2000,
                 sourceRadius = 2f,
                 name = "Solanum",
@@ -200,6 +200,9 @@ namespace TheVision
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
             SignalBuilder.Make(Locator._quantumMoon.gameObject, Locator._quantumMoonAstroObj.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-5.254965f, -70.73996f, 1.607201f)), TheVision.Instance);
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
+            SignalBuilder.Make(Locator._darkBramble.gameObject, Locator._darkBramble.GetRootSector(), MakeSolanumSignalInfo(new Vector3(148.221f, 25.8914f, -0.2369f)), TheVision.Instance);
+
+
 
             //parenting QM signal to Solanum
             var QMsignal = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Signal_Solanum");
