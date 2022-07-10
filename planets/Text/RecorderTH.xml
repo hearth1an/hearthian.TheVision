@@ -3,17 +3,17 @@
 		<ID>1</ID>
 		<Text>SOLANUM: It's you, friend! I feel better now, but everything is different, I am different...</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
-		<ParentID>1</ParentID>
-		<Text>SOLANUM: I'm here, right? But how I am here? I thought about Timber Hearth and here am I... </Text>
-	</TextBlock>
 	<ShipLogConditions>
         <RevealFact>	
         <FactID>SOLANUM_TH</FactID>
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>SOLANUM: I'm here, right? But how I am here? I thought about Timber Hearth and here am I... </Text>
+	</TextBlock>	
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
@@ -31,7 +31,37 @@
 	</TextBlock>
 	<ShipLogConditions>
         <RevealFact>	
+        <FactID>SOLANUM_GD</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
         <FactID>SOLANUM_TH_RECORDER</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>NEW_QUANTUM_RULE_QC</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>NEW_QUANTUM_RULE_QC_SIGNAL</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>NEW_QUANTUM_RULE_QC_PARTICLES</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>NEW_QUANTUM_RULE_QC_ABILITY</FactID>
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>

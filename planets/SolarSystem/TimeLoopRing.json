@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Time Loop Ring",
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 26.3102,
+          "y": 6.239,
+          "z": -2.236
+        },
+        "rotation": {
+          "x": 329.464,
+          "y": 353.79,
+          "z": 90.0
+        }
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 26.3085,
+          "y": 7.9437,
+          "z": -1.7772
+        },
+        "rotation": {
+          "x": 281.9006,
+          "y": 3.0624,
+          "z": 90.0
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderATP.xml"
+      }
+    ]
+  },
+  "ShipLog": {
+    "entryPositions": [
+      {
+        "id": "SOLANUM_ATP",
+        "position": {
+            "x": 900.0,
+            "y": -1800.0
+        }
+      }
+    ],
+    "mapMode": {},
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/TimeLoopRing.xml"
+  }
+}

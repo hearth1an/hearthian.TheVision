@@ -1,0 +1,26 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMELOOPRING_BODY</ID>
+
+    <Entry>
+        <ID>SOLANUM_ATP</ID>
+        <Name>Solanum on Ash Twin Project</Name>
+
+        <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+    
+        <RumorFact>
+            <ID>SOLANUM_ATP</ID> 
+            <SourceID>SOLANUM_GD</SourceID> 
+            <RumorName>Solanum on Ash Twin Project</RumorName> 
+            <Text>Solanum want me to find her at the Ash Twin Project, she want to take a look at the Time Loop control panel.</Text> 
+        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_ON_ATP</ID> 
+            <Text>Yep she is here</Text> 
+        </ExploreFact> 
+        <ExploreFact>
+            <ID>SOLANUM_ATP_RECORDER</ID> 
+            <Text>ATP recorder!</Text>
+        </ExploreFact> 
+
+    </Entry>    
+</AstroObjectEntry>

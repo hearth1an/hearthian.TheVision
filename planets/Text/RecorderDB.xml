@@ -13,6 +13,12 @@
 		<ParentID>2</ParentID>
 		<Text>SOLANUM: I don't know how but I actually managed to trace the Canna's message coordinates from Gloaming Galaxy. They should be on the hologram under the bridge.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_DB_VESSEL</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
@@ -23,4 +29,22 @@
 		<ParentID>4</ParentID>
 		<Text>SOLANUM: Well, I'm ready to warp.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_DB_RECORDER</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>IS_HOLOGRAM_CHANGED</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>HOLOGRAM_CHANGED</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

@@ -2,11 +2,25 @@
 	<TextBlock>
 		<ID>1</ID>
 		<Text>SOLANUM: I.. Can't I exist? That's me but... How is it possible? I need to get out of here, I'll take a recorder... please find me..</Text>
-	</TextBlock>	
+	</TextBlock>
+		
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_QM_TH_RESPONSE_RUMOR</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_QM_RESPONSE_GROUND</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 	<ShipLogConditions>
         <RevealFact>	
         <FactID>SOLANUM_RUMOR_TH</FactID>
-		<Condition>1</Condition>
+		<Condition>1</Condition>		
     </RevealFact>
 	</ShipLogConditions>	
+	
 </NomaiObject>

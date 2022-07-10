@@ -8,20 +8,32 @@
         <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 		<IsCuriosity/>
     
-        <ExploreFact>
+        <RumorFact>
             <ID>SOLANUM_START</ID>            
             <Text>Solanum is the last Nomai alive. What if I'll show her what I know with vision torch from <![CDATA[<color=green>Damaged Laboratory</color>]]> on <![CDATA[<color=green>Stranger</color>]]>?</Text> 
-        </ExploreFact>       
+        </RumorFact>       
 
         <ExploreFact>
             <ID>SOLANUM_QM_RESPONSE</ID>            
             <Text>Solanum reply!</Text> 
         </ExploreFact>
 
-        <ExploreFact>
+        <Entry>        
+            <ID>SOLANUM_QM_TH</ID> 
+            <Name>Solanum QM TH response</Name>
+            <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+            <RumorFact>
+                <ID>SOLANUM_QM_TH_RESPONSE_RUMOR</ID>
+                <RumorName>Solanum left a sign</RumorName>
+                <Text>Yeah and it's on the ground</Text>
+            </RumorFact>
+
+            <ExploreFact>
             <ID>SOLANUM_QM_RESPONSE_GROUND</ID>            
             <Text>Solanum reply on ground</Text> 
-
-        </ExploreFact> 
+            </ExploreFact>  
+        </Entry> 
+        
     </Entry>    
 </AstroObjectEntry>

@@ -1,0 +1,43 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>DB_VesselDimension_Body</ID>
+
+    <Entry>
+        <ID>SOLANUM_DB</ID>
+        <Name>Solanum on Vessel</Name>
+
+        <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+    
+        <RumorFact>
+            <ID>SOLANUM_ON_DB</ID> 
+            <SourceID>SOLANUM_GD</SourceID> 
+            <RumorName>Solanum on Vessel</RumorName> 
+            <Text>Solanum want me to find her at the Vessel.</Text> 
+        </RumorFact>
+        <ExploreFact>
+            <ID>SOLANUM_DB_VESSEL</ID> 
+            <Text>Yep she is here</Text> 
+        </ExploreFact> 
+        <ExploreFact>
+            <ID>SOLANUM_DB_RECORDER</ID> 
+            <Text>ATP recorder!</Text>
+        </ExploreFact>
+
+        <Entry>        
+            <ID>SOLANUM_DB_HOLOGRAM</ID> 
+            <Name>New Hologram</Name>
+            <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+            <RumorFact>
+                <ID>IS_HOLOGRAM_CHANGED</ID>
+                <RumorName>Gloaming Galaxy coordinates</RumorName>
+                <Text>Child entry as Hologram</Text>
+            </RumorFact>
+
+            <ExploreFact>
+                <ID>HOLOGRAM_CHANGED</ID>
+                <Text>Yeah there's new hologram there</Text>
+            </ExploreFact>    
+        
+        </Entry> 
+    </Entry>    
+</AstroObjectEntry>

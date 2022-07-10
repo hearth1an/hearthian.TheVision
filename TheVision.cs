@@ -167,7 +167,7 @@ namespace TheVision
                 name = "Solanum",
                 position = position,
                 onlyAudibleToScope = false,
-                reveals = "SOLANUM_TH_SIGNAL",
+                reveals = "WHAT_IS_NEW_QR",
 
             };
         }

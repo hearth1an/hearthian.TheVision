@@ -1,26 +1,26 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>SOLANUM: So.. your Sun is diying and you.. connected with the one of statue? Someone also connected from Giant's deep, do you know who is it?</Text>
+		<Text>spoiler</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
-		<Text>SOLANUM: Oh my bad, I forgot that you can't respond, I mean I can't translate so whatever .. let's just move on..</Text>
+		<Text>spoiler</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
 		<ParentID>2</ParentID>
-		<Text>SOLANUM: I just realized that we're running out of time.. Seems like I'll back on Quantum Moon after the reset, that's how it works?</Text>
+		<Text>spoiler</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
 		<ParentID>3</ParentID>
-		<Text>SOLANUM: or... can we escape? Core is charged so we can try to get out of here before the supernova explosion.</Text>
+		<Text>spoiler</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
 		<ParentID>4</ParentID>
-		<Text>SOLANUM: I saw the Vessel from your vision, what if it's still working? I need to find out! Find me there.</Text>
+		<Text>spoiler</Text>
 	</TextBlock>
 </NomaiObject>
