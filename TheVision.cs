@@ -95,6 +95,10 @@ namespace TheVision
             hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
             hologramClone.SetActive(false);
 
+
+            // I don't like it. It's better place for torch
+            GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance/OtherComponentsGroup/Props_IP_WrenchStaff").SetActive(false);
+
         }
 
         // Load SolanumProps
