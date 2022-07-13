@@ -1,0 +1,24 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>RINGWORLD_BODY</ID>
+
+    <Entry>
+        <ID>VISION_TORCH_ENTRY</ID>
+        <Name>Vision torch in Damaged Laboratory</Name>
+
+        <Curiosity>THE_TORCH_CURIOSITY</Curiosity>
+       
+    
+        <RumorFact>
+            <ID>VISION_TORCH_RUMOR</ID>  
+             <SourceID>THE_VISION_ENTRY</SourceID>        
+            <RumorName>Vision torch in Damaged Laboratory</RumorName> 
+            <Text>I believe it's vision torch somewhere in Damaged Laboratory. Wonder if it's still working.</Text> 
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>VISION_TORCH_FOUND</ID> 
+            <Text>I found that vision torch. In fact, it's flames working even in space with no oxygen needed. Very unique thing.</Text> 
+        </ExploreFact>     
+
+    </Entry>    
+</AstroObjectEntry>

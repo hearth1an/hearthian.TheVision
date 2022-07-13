@@ -48,30 +48,14 @@ namespace TheVision
         }
 
         private static void SpawnSolanumProps()
-        {
-            // find all slides for vision1
-            var pathToVisionSlidesFolder = "/images/vision1";
-
-            string[] files = System.IO.Directory.GetFiles(TheVision.Instance.ModHelper.Manifest.ModFolderPath + pathToVisionSlidesFolder, "*.png");
-            SlideInfo[] slides = files.Select(f => f.Remove(0, TheVision.Instance.ModHelper.Manifest.ModFolderPath.Length)).Select(f => new SlideInfo() { imagePath = f }).ToArray();
-
-            // slides[0].backdropAudio = "SunStation"; // "OW_NM_SunStation";
-            // slides[251].backdropAudio = "SadNomaiTheme"; // "OW NM Nomai Ruins 081718 AP";
-
-            ProjectionInfo info = new ProjectionInfo()
-            {
-                position = new Vector3(-5.6548f, -70.73996f, 1.607201f),
-                rotation = new Vector3(0, 0, 0),
-                type = ProjectionInfo.SlideShowType.VisionTorchTarget,
-                slides = slides
-            };
-
-            GameObject visionTarget = ProjectionBuilder.MakeMindSlidesTarget(Locator._quantumMoon.gameObject, Locator._quantumMoon._sector, info, TheVision.Instance);
+        {                 
+           
+            GameObject visionTarget = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/VisionStaffDetector");
 
             visionTarget.transform.parent =
-                GameObject.Find("QuantumMoon_Body")
+                GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon")
                 .GetComponentsInChildren<Transform>(true)
-                .Where(t => t.gameObject.name == "Sector_QuantumMoon")
+                .Where(t => t.gameObject.name == "State_EYE")
                 .First(); // All because Find doesn't work on inactive game objects :/
 
 
@@ -100,6 +84,7 @@ namespace TheVision
 
             visionTarget.GetComponent<VisionTorchTarget>().onSlidesComplete = myConversationManager.OnVisionEnd;
 
+            // Replacing new Hologram
             var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
             var hologramClone = GameObject.Instantiate(origHologram);
             hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
@@ -109,6 +94,7 @@ namespace TheVision
             mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
             hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
             hologramClone.SetActive(false);
+
         }
 
         // Load SolanumProps
@@ -119,7 +105,7 @@ namespace TheVision
             if (systemName == "SolarSystem")
             {
                 SpawnSolanumProps();
-                SpawnVisionTorch();
+                SpawnVisionTorch(); // then DELETE when everything is ready
                 DisabledPropsOnStart(false);
 
             }
@@ -140,8 +126,10 @@ namespace TheVision
             Vector3 rotation2 = new Vector3(350.740326f, 50.80401f, 261.666534f);
             newHorizonsAPI.SpawnObject(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), path2, position2, rotation2, 1, false);
 
+            
 
            
+
         }
         // Spawning Vision Torch with code
         public void SpawnVisionTorch()
@@ -175,11 +163,14 @@ namespace TheVision
         public void SpawnSignals()
 
         {
-            //Playing SFX
+            // Playing SFX on Vision End
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2400);
             PlayerHeadsetAudioSource.Play();
+
+            //Enabling props that spawned with json I guess 
+            DisabledPropsOnStart(true);
 
             //placing orb on GD to the slot (1)
             var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
@@ -191,10 +182,11 @@ namespace TheVision
 
             //decloaking QM on signals spawn
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
+            GameObject.Find("QuantumMoon_Body/Atmosphere_QM/FogSphere").SetActive(false);
 
             //disabling recorder on QM Solanum shuttle
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").SetActive(false);
-                      
+                     
 
             //Spawning Solanum signals
             SignalBuilder.Make(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), MakeSolanumSignalInfo(new Vector3(48.5018f, 15.1183f, 249.9972f)), TheVision.Instance);
@@ -212,9 +204,8 @@ namespace TheVision
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_EyeSignal(Clone)").SetActive(true);
 
+            
 
-            //Enabling props that spawned with json I guess 
-            DisabledPropsOnStart(true);
         }
 
         //Props from Json files (recorders mostly)

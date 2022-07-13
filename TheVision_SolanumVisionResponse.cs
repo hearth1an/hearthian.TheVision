@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using TheVision.Utilities.ModAPIs;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 
@@ -68,17 +72,17 @@ namespace TheVision.CustomProps
         {
 
             // SFX on QM after Solanumptojection
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
-            PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2401);
-            PlayerHeadsetAudioSource.Play();
+            // PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+           // PlayerHeadsetAudioSource.enabled = true;
+           // PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2401);
+            // PlayerHeadsetAudioSource.Play();
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
             visionEnded = true;
             waitFrames = MAX_WAIT_FRAMES;
 
-            _solanumAnimController.StartWatchingPlayer();
+           // _solanumAnimController.StartWatchingPlayer();
         }
 
     }

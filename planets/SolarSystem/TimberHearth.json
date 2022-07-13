@@ -48,14 +48,14 @@
       {
         "id": "SOLANUM_TH",
         "position": {
-          "x": 400.0,
+          "x": 800.0,
           "y": -1500.0
         }
       },
       {
         "id": "NEW_QUANTUM_RULE",
         "position": {
-          "x": 350.0,
+          "x": 750.0,
           "y": -1600.0
         }
       }

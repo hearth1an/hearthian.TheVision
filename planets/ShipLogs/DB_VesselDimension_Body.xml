@@ -9,13 +9,13 @@
     
         <RumorFact>
             <ID>SOLANUM_ON_DB</ID> 
-            <SourceID>SOLANUM_GD</SourceID> 
+            <SourceID>SOLANUM_ATP</SourceID> 
             <RumorName>Solanum on the Vessel</RumorName> 
             <Text>Solanum will try to get on the Vessel. Since Dark Bramble is sort of other dimension, can she reach it?</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>SOLANUM_DB_VESSEL</ID> 
-            <Text>She did it! I don't know what is her power, but she is here and waiting for me again.</Text> 
+            <Text>She did it! I don't know what is her power, but she is here and waiting for me again</Text> 
         </ExploreFact> 
         <ExploreFact>
             <ID>SOLANUM_DB_RECORDER</ID> 
@@ -29,13 +29,14 @@
 
             <RumorFact>
                 <ID>IS_HOLOGRAM_CHANGED</ID>
-                <RumorName>New coordinates should be shown under the Vessel's bridge.</RumorName>
+                <RumorName>New coordinates</RumorName>
                 <Text>Let's take a look.</Text>
             </RumorFact>
 
             <ExploreFact>
                 <ID>HOLOGRAM_CHANGED</ID>
                 <Text>I found new coordinates to other Galaxy. We can use the Warp Core from Ash Twin Project to warp. There's no way back then. Am I ready to do this?</Text>
+                <Condition>IS_HOLOGRAM_CHANGED</Condition>
             </ExploreFact>    
         
         </Entry> 
