@@ -61,7 +61,7 @@ namespace TheVision.CustomProps
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2200);                
+          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 10);                
                 TheVision.Instance.SpawnSignals();
                 // TheVision.Instance.DisabledPropsOnStart(true);                
             }
@@ -79,9 +79,11 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
             PlayerHeadsetAudioSource.Play();
 
+
+           // var lightning = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/LightningGenerator_GD_CloudLightningInstance(Clone)").GetComponent<CloudLightning>();
+          // lightning._lightTimer = 5f;
             
 
-            
 
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
@@ -90,7 +92,7 @@ namespace TheVision.CustomProps
             waitFrames = MAX_WAIT_FRAMES;
 
             var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 7f, onDuration: 0.5f);
+            effect.FlickerOffAndOn(offDuration: 6.5f, onDuration: 0.5f);
             
             // QuantumMoonLightningGenerator generator
 

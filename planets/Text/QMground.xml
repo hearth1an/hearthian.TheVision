@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
 	<TextBlock>
 		<ID>1</ID>
-		<Text>SOLANUM: I.. Am I exist? That's me but... How is it possible? I'm not suppose to be here, I'm leaving. I'll take a recorder... If tou reading this - please find me.</Text>
+		<Text>SOLANUM: I.. Am I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving. I'll take my recorder. If tou reading this - please find me outside.</Text>
 	</TextBlock>
 		
 	<ShipLogConditions>

@@ -11,14 +11,14 @@
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": -41.8373337,
+          "x": -41.837883,
           "y": -68.65625,
-          "z": -32.701683
+          "z": -32.69957
         },
         "rotation": {
-          "x": 318.9964,
+          "x": 318.996368,
           "y": 35.5540123,
-          "z": 231.38887
+          "z": 231.388855
         },
         "scale": 5.0
       }
@@ -45,9 +45,9 @@
           "z": -29.45578
         },
         "rotation": {
-          "x": 0,
-          "y": 45,
-          "z": 0
+          "x": 333.902618,
+          "y": 283.609924,
+          "z": 153.185333
         },
         "type": "computer",
         "xmlFile": "planets/Text/ComputerGD.xml"

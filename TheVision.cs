@@ -151,7 +151,7 @@ namespace TheVision
                // s_dmg._invincible = true;               
 
                 
-                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
+                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -90f, 0f));
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
@@ -188,6 +188,8 @@ namespace TheVision
             // Deactivating it so it will be no sound or flickers
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/VisionStaffDetector").SetActive(false);
             
+            // Disabling music on QM
+            GameObject.Find("QuantumMoon_Body/Volumes/AudioVolume_QM_Music").SetActive(false);
 
 
 
