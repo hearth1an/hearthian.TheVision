@@ -6,67 +6,54 @@
   "Orbit": {
     "semiMajorAxis": 0.0
   },
-    "Props": {
-        "details": [
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": 148.221252,
-                    "y": 25.890625,
-                    "z": 0.236915529
-                },
-                "rotation": {
-                    "x": 346.4214,
-                    "y": 147.921,
-                    "z": 2.71970248
-                }
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-                "position": {
-                    "x": 148.28685,
-                    "y": 28.25,
-                    "z": 0.477222323
-                },
-                "rotation": {
-                    "x": 354.762848,
-                    "y": 127.60054,
-                    "z": 331.5797
-                },
-                "scale": 5.0
-            },
-            {
-                "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
-                "position": {
-                    "x": 147.808548,
-                    "y": 27.27415,
-                    "z": 0.06449507
-                },
-                "rotation": {
-                    "x": 78.43273,
-                    "y": 266.1925,
-                    "z": 52.41787
-                },
-                "scale": 0.99999994
-            }
-        ],        
-        "nomaiText": [
-            {
-                "position": {
-                    "x": 150.303391,
-                    "y": 26.72461,
-                    "z": -1.73777735
-                },
-                "rotation": {
-                    "x": 346.358,
-                    "y": 164.0878,
-                    "z": 359.1451
-                },
-                "type": "recorder",
-                "xmlFile": "planets/Text/RecorderDB.xml"
-            }
-        ]
-    },
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 148.221634,
+          "y": 25.890625,
+          "z": 0.23684305
+        },
+        "rotation": {
+          "x": 346.4214,
+          "y": 147.921,
+          "z": 2.71970272
+        }
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": 148.286835,
+          "y": 28.25,
+          "z": 0.4772185
+        },
+        "rotation": {
+          "x": 354.762848,
+          "y": 127.60054,
+          "z": 331.5797
+        },
+        "scale": 5.0
+      }
+      
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 150.303391,
+          "y": 26.72461,
+          "z": -1.73777735
+        },
+        "rotation": {
+          "x": 346.358,
+          "y": 164.0878,
+          "z": 359.1451
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderDB.xml"
+      }
+    ]
+  },
   "ReferenceFrame": {
     "bracketRadius": -1.0
   },
@@ -93,20 +80,20 @@
   },
   "Signal": {
     "signals": [
-        {
-            "audioFilePath": "planets/quantum.wav",            
-            "detectionRadius": 500.0,
-            "frequency": "Quantum Consciousness",
-            "identificationRadius": 500.0,
-            "name": "Solanum",
-            "onlyAudibleToScope": false,
-            "position": {
-                "x": 148.221,
-                "y": 25.8914,
-                "z": 0.2369
-            },
-            "sourceRadius": 5.0
-        }
+      {
+        "audioFilePath": "planets/quantum.wav",
+        "detectionRadius": 500.0,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500.0,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 148.221,
+          "y": 25.8914,
+          "z": 0.2369
+        },
+        "sourceRadius": 5.0
+      }
     ]
   }
 }

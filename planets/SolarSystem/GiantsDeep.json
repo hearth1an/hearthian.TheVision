@@ -16,9 +16,9 @@
           "z": -32.701683
         },
         "rotation": {
-          "x": 318.996429,
-          "y": 35.554,
-          "z": 231.388885
+          "x": 318.9964,
+          "y": 35.5540123,
+          "z": 231.38887
         },
         "scale": 5.0
       }
@@ -37,10 +37,26 @@
         },
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderGD.xml"
+      },
+      {
+        "position": {
+          "x": -41.5140533,
+          "y": -68.2207,
+          "z": -29.45578
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        },
+        "type": "computer",
+        "xmlFile": "planets/Text/ComputerGD.xml"
       }
     ]
-  },  
-  
+  },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
   "ShipLog": {
     "entryPositions": [
       {

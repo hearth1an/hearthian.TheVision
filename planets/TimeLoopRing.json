@@ -1,6 +1,11 @@
 {
-  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {},
+  "canShowOnTitle": true,
   "name": "Time Loop Ring",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
   "Props": {
     "details": [
       {
@@ -34,13 +39,16 @@
       }
     ]
   },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
   "ShipLog": {
     "entryPositions": [
       {
         "id": "SOLANUM_ATP",
         "position": {
-            "x": 1200.0,
-            "y": -1850.0
+          "x": 1200.0,
+          "y": -1850.0
         }
       }
     ],

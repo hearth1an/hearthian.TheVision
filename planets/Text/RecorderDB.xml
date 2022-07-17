@@ -51,4 +51,10 @@
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>	
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>HOLOGRAM_CHANGED</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>	
 </NomaiObject>

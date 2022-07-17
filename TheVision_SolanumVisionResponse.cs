@@ -57,10 +57,11 @@ namespace TheVision.CustomProps
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
 
+                
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2000);
+          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 2200);                
                 TheVision.Instance.SpawnSignals();
                 // TheVision.Instance.DisabledPropsOnStart(true);                
             }
@@ -72,17 +73,28 @@ namespace TheVision.CustomProps
         {
 
             // SFX on QM after Solanumptojection
-            // PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
-           // PlayerHeadsetAudioSource.enabled = true;
-           // PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2401);
-            // PlayerHeadsetAudioSource.Play();
+            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2252); // shattering sound 2428 //2697 - station flicker
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
+            PlayerHeadsetAudioSource.Play();
+
+            
+
+            
+
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
             visionEnded = true;
             waitFrames = MAX_WAIT_FRAMES;
 
-           // _solanumAnimController.StartWatchingPlayer();
+            var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            effect.FlickerOffAndOn(offDuration: 7f, onDuration: 0.5f);
+            
+            // QuantumMoonLightningGenerator generator
+
+
         }
 
     }
