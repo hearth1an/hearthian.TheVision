@@ -14,11 +14,11 @@ namespace TheVision
 
             while (elapsed < duration)
             {
-                float x = UnityEngine.Random.Range(-4f, 4f) * magnitude;
-                float y = UnityEngine.Random.Range(-4f, 4f) * magnitude;
-                float z = UnityEngine.Random.Range(-0.65f, -0.8f) * magnitude;
+                float x = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+                float y = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+                //float z = UnityEngine.Random.Range(-0.65f, -0.8f) * magnitude;
 
-                transform.position = new Vector3(x, y, z);
+                transform.position = new Vector3(x, y, 0f);
                 elapsed += Time.deltaTime;
                 yield return 0;
 

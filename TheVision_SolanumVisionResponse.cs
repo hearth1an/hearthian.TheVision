@@ -76,16 +76,16 @@ namespace TheVision.CustomProps
         public void OnVisionEnd()
 
         {
+            
+
             PlayFadeInSound();
             PlayWindSound();
             PlayStartSound();
             PlayEnergySound();
-            // PlayEndSound();
+           
 
-           var cameraShake = GameObject.Find("Player_Body/PlayerCamera").AddComponent<CameraShake>();
-            cameraShake.Shake(5f, 10f);
-
-            StartCoroutine(cameraShake.Shake(6f, 0.03f));
+            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>(); // /PlayerCamera
+            StartCoroutine(cameraShake.Shake(6f, 0.25f));
 
 
 
@@ -139,7 +139,7 @@ namespace TheVision.CustomProps
         public void PlayFadeInSound()
         {
             // SFX on QM after Solanumptojection
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation/").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2460); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);

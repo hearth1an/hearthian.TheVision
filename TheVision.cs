@@ -160,6 +160,7 @@ namespace TheVision
 
                 await Task.Yield();
 
+
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
 
                 break; // or it will teleport it forever
@@ -244,21 +245,10 @@ namespace TheVision
         public void SpawnSignals()
 
         {
-
-
-            // PlayerHeadsetAudioSource.Stop();
-
             PlayThunderSound();
             PlayRevealSound();
             PlaySFXSound();
             PlayGaspSound();
-
-
-            //PlayerCameraEffectController playerCameraEffectController = ;
-            // playerCameraEffectController.PlayRealityShatterEffect();
-
-
-
 
             //Enabling props that spawned with json I guess 
             DisabledPropsOnStart(true);
@@ -291,18 +281,13 @@ namespace TheVision
             SignalBuilder.Make(Locator._giantsDeep.gameObject, Locator._giantsDeep.GetRootSector(), MakeSolanumSignalInfo(new Vector3(-43.62191f, -68.5414f, -31.2553654f)), TheVision.Instance);
             SignalBuilder.Make(Locator._darkBramble.gameObject, Locator._darkBramble.GetRootSector(), MakeSolanumSignalInfo(new Vector3(148.221f, 25.8914f, -0.2369f)), TheVision.Instance);
 
-
-
             //parenting QM signal to Solanum
             var QMsignal = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Signal_Solanum");
             QMsignal.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
 
-
-
             //Enabling hologram
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
             GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_EyeSignal(Clone)").SetActive(true);
-
 
 
         }
@@ -315,7 +300,6 @@ namespace TheVision
             GameObject THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)_TH");
 
             GameObject GDrecorder = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Recorder(Clone)");
-
 
             GameObject GDcomputer = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)");
 
@@ -393,13 +377,14 @@ namespace TheVision
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2007); // GD_Lightning = 2007
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
             PlayerHeadsetAudioSource.PlayOneShot();
+
         }
         public void PlayRevealSound()
         {
             PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2903); // EyeTemple_Stinger = 2903
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.4f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
             PlayerHeadsetAudioSource.Play(delay: 1);
         }
         public void PlaySFXSound()
@@ -408,7 +393,7 @@ namespace TheVision
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2402); // SingularityOnPlayerEnterExit = 2402            
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
-            PlayerHeadsetAudioSource.PlayOneShot();
+            PlayerHeadsetAudioSource.PlayOneShot();            
         }
 
         public void PlayGaspSound()
@@ -417,7 +402,7 @@ namespace TheVision
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)854); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
-            PlayerHeadsetAudioSource.PlayOneShot(); 
+            PlayerHeadsetAudioSource.PlayOneShot();            
         }
 
 
