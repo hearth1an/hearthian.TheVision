@@ -11,13 +11,13 @@
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": 48.50915,
+          "x": 48.5099373,
           "y": 15.6914063,
-          "z": 252.311554
+          "z": 252.312668
         },
         "rotation": {
-          "x": 276.1599,
-          "y": 320.47818,
+          "x": 276.159821,
+          "y": 320.4782,
           "z": 312.779144
         },
         "scale": 5.0

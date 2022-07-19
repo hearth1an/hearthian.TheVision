@@ -11,9 +11,9 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": 190.50769,
-          "y": -147.495361,
-          "z": 195.831757
+          "x": 190.507355,
+          "y": -147.495392,
+          "z": 195.831436
         },
         "rotation": {
           "x": 90.0,

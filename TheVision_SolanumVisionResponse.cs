@@ -5,7 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using NewHorizons.External.Modules;
+using NewHorizons.Utility;
+using OWML.Common;
+using NewHorizons.Builder.Atmosphere;
+using System.Collections;
 
 
 namespace TheVision.CustomProps
@@ -19,6 +23,7 @@ namespace TheVision.CustomProps
         public SolanumAnimController _solanumAnimController;
         public NomaiWallText solanumVisionResponse;
         public OWAudioSource PlayerHeadsetAudioSource;
+        
 
         private static readonly int MAX_WAIT_FRAMES = 20;
         private int waitFrames = 0;
@@ -29,7 +34,7 @@ namespace TheVision.CustomProps
 
         void Update()
         {
-            
+
 
             if (!visionEnded) return;
             if (doneHijacking) return;
@@ -38,7 +43,7 @@ namespace TheVision.CustomProps
             if (!hasStartedWriting)
             {
                 NomaiWallText responseText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/NomaiWallText").GetComponent<NomaiWallText>();
-                
+
                 // one-time code that runs after waitFrames are up
                 _solanumAnimController.OnWriteResponse += (int unused) => responseText.Show();
                 _solanumAnimController.StartWritingMessage();
@@ -50,18 +55,18 @@ namespace TheVision.CustomProps
             if (!_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying())
             {
                 // drawing custom text                
-               // var customResponse = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_Eye/NomaiWallText");
-               // customResponse.GetAddComponent<NomaiWallText>().Show();
+                // var customResponse = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_Eye/NomaiWallText");
+                // customResponse.GetAddComponent<NomaiWallText>().Show();
 
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
 
-                
+                ;
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 10);                
+          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 10);
                 TheVision.Instance.SpawnSignals();
                 // TheVision.Instance.DisabledPropsOnStart(true);                
             }
@@ -71,20 +76,41 @@ namespace TheVision.CustomProps
         public void OnVisionEnd()
 
         {
+            PlayFadeInSound();
+            PlayWindSound();
+            PlayStartSound();
+            PlayEnergySound();
+            // PlayEndSound();
 
-            // SFX on QM after Solanumptojection
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
-            PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2252); // shattering sound 2428 //2697 - station flicker
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
-            PlayerHeadsetAudioSource.Play();
+           var cameraShake = GameObject.Find("Player_Body/PlayerCamera").AddComponent<CameraShake>();
+            cameraShake.Shake(5f, 10f);
 
-
-           // var lightning = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/LightningGenerator_GD_CloudLightningInstance(Clone)").GetComponent<CloudLightning>();
-          // lightning._lightTimer = 5f;
-            
+            StartCoroutine(cameraShake.Shake(6f, 0.03f));
 
 
+
+
+
+
+
+            //GameObject lightningGO = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
+            //lightningGO.
+
+            // actually adding working lightninng but none of them is showing
+            // var lightning = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState/Effects_QM_EyeVortex/EyeVortex_Cloudlayer_Interior").AddComponent<CloudLightningGenerator>();                        
+            // Vector3 localVector = new Vector3(4.2105f, -0.1138f, 1.9017f);
+            // lightning.SpawnLightning(localVector);
+
+            /* GameObject lightning = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD");
+            GameObject QMsphere = GameObject.Find("QuantumMoon_Body/Atmosphere_QM/FogSphere");
+            var lightnings = lightning.InstantiateInactive();
+            lightnings.transform.parent = QMsphere.transform;
+            lightnings.transform.position = QMsphere.transform.position;
+
+            var lightningGenerator = lightnings.GetComponent<CloudLightningGenerator>();
+
+            lightnings.SetActive(true);
+            // lightningGenerator._audioSector = _vortexAudio; */
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
@@ -92,29 +118,83 @@ namespace TheVision.CustomProps
             waitFrames = MAX_WAIT_FRAMES;
 
             var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 6.5f, onDuration: 0.5f);
-            
+            effect.FlickerOffAndOn(offDuration: 6f, onDuration: 0.5f);
+
+
             // QuantumMoonLightningGenerator generator
 
 
+        }
+
+        public void PlayWindSound()
+        {
+            // SFX on QM after Solanumptojection
+            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2252); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.5f);
+            // PlayerHeadsetAudioSource.IsFadingOut();
+            PlayerHeadsetAudioSource.Play();
+        }
+        public void PlayFadeInSound()
+        {
+            // SFX on QM after Solanumptojection
+            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2460); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
+            // PlayerHeadsetAudioSource.IsFadingOut();
+            PlayerHeadsetAudioSource.PlayDelayed(4.5f); 
+        }
+
+        public void PlayEnergySound()
+        {
+            // SFX on QM after Solanumptojection
+            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)502); // StationFlicker_RW = 2696// 2005 - electric core //502 -flicker
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 6f);
+            // PlayerHeadsetAudioSource.IsFadingOut();
+            //PlayerHeadsetAudioSource.time = 3;
+            PlayerHeadsetAudioSource.PlayOneShot();
+            
+        }
+        public void PlayStartSound()
+        {
+            // SFX on QM after Solanumptojection
+            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2011); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
+            // PlayerHeadsetAudioSource.IsFadingOut();
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
+        public void PlayEarthqwakeSound()
+        {
+            // SFX on QM after Solanumptojection
+            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2010); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.8f);
+            // PlayerHeadsetAudioSource.IsFadingOut();
+            PlayerHeadsetAudioSource.PlayOneShot();
         }
 
     }
 
 
 
-
 }
-    // hijacking Solanum's conversation controller:
+// hijacking Solanum's conversation controller:
 
-    //         // under NomaiConversationManager
-    // _activeResponseText.Show();
-    // nomaiConversationManager.enabled = false;
-    //_solanumAnimController.StartWritingMessage();
-    //         // then every frame,
-    //if (!_solanumAnimController.isStartingWrite && !_activeResponseText.IsAnimationPlaying())
-    //{
-    //	_solanumAnimController.StopWritingMessage(gestureToText: true);
-    //  _solanumAnimController.StopWatchingPlayer();
-    //}
+//         // under NomaiConversationManager
+// _activeResponseText.Show();
+// nomaiConversationManager.enabled = false;
+//_solanumAnimController.StartWritingMessage();
+//         // then every frame,
+//if (!_solanumAnimController.isStartingWrite && !_activeResponseText.IsAnimationPlaying())
+//{
+//	_solanumAnimController.StopWritingMessage(gestureToText: true);
+//  _solanumAnimController.StopWatchingPlayer();
+//}
 
