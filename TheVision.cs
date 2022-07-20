@@ -21,7 +21,7 @@ namespace TheVision
         public static TheVision Instance;
 
         public OWAudioSource PlayerHeadsetAudioSource;
-        public OWAudioSource qmAudioSourse;
+        
 
         private void Awake()
         {
@@ -102,10 +102,12 @@ namespace TheVision
             // I don't like it. It's better to place vision torch here
             GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance/OtherComponentsGroup/Props_IP_WrenchStaff").SetActive(false);
 
+            // Disabling WH on QM on the start
+            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(false);
 
             //setting nice color for this one
             var GDcomputerColor = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)/PointLight_NOM_Computer").GetComponent<Light>();
-            Color superColor = new Color { r = 1, g = 0, b = 5 };
+            Color superColor = new Color { r = 0, g = 2, b = 1};
             GDcomputerColor.color = superColor;
 
             // var GDcomputerComponent = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)");// .GetComponent<NomaiComputer>();
@@ -161,8 +163,9 @@ namespace TheVision
                 await Task.Yield();
 
 
-                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
-
+                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");               
+                
+                // TheVision.CustomProps.PlayStartSound(false);
                 break; // or it will teleport it forever
             }
         }
@@ -172,8 +175,9 @@ namespace TheVision
 
         public void SpawnSolanumCopy(INewHorizons newHorizonsAPI)
         {
-
+            
             TeleportShip();
+
 
             // Spawning Solanum on TH
             string path = "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
@@ -245,13 +249,15 @@ namespace TheVision
         public void SpawnSignals()
 
         {
-            PlayThunderSound();
             PlayRevealSound();
             PlaySFXSound();
             PlayGaspSound();
+            PlayThunderSound();
 
+            WhiteHoleMovement(false);
+            
             //Enabling props that spawned with json I guess 
-            DisabledPropsOnStart(true);
+            DisabledPropsOnStart(true); 
 
 
 
@@ -372,39 +378,64 @@ namespace TheVision
 
         public void PlayThunderSound()
         {
+            
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2007); // GD_Lightning = 2007
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-
         }
         public void PlayRevealSound()
         {
+            
             PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2903); // EyeTemple_Stinger = 2903
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play(delay: 1);
+
         }
         public void PlaySFXSound()
         {
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
-            PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2402); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
-            PlayerHeadsetAudioSource.PlayOneShot();            
+           
+             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+             PlayerHeadsetAudioSource.enabled = true;
+             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2402); // SingularityOnPlayerEnterExit = 2402            
+             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+             PlayerHeadsetAudioSource.PlayOneShot();
+            
         }
 
         public void PlayGaspSound()
         {
+            
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)854); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();            
         }
+        public void WhiteHoleMovement(bool isActive)
+        {
+            var whiteHole = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole");
 
+            if (isActive == true)
+            {
+                whiteHole.SetActive(true);
+                whiteHole.transform.Translate(Vector3.forward * Time.deltaTime);
+            }
+
+            else
+            {
+                whiteHole.SetActive(false);
+                return;
+            }
+
+        }
 
 
     }

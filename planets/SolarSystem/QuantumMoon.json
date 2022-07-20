@@ -1,6 +1,15 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",    
-    "name": "QuantumMoon", 
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "name": "QuantumMoon",
+    "Singularity": {
+        "type": "whiteHole",        
+        "size": 1.7,
+        "position": {
+            "x": -5.45,
+            "y": -71.1,
+            "z": 0.55
+        }
+    },
     "Props": {
         "details": [
             {
