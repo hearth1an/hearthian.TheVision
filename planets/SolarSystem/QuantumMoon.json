@@ -3,7 +3,7 @@
     "name": "QuantumMoon",
     "Singularity": {
         "type": "whiteHole",        
-        "size": 1.7,
+        "size": 1,
         "position": {
             "x": -5.45,
             "y": -71.1,

@@ -81,7 +81,7 @@
     "signals": [
       {
         "audioFilePath": "planets/quantum.wav",
-        "detectionRadius": 500.0,
+        "detectionRadius": 2000.0,
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,
         "name": "Solanum",
@@ -91,7 +91,7 @@
           "y": 25.8914,
           "z": 0.2369
         },
-        "sourceRadius": 5.0
+        "sourceRadius": 2.0
       }
     ]
   }

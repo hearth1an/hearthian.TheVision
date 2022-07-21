@@ -254,8 +254,9 @@ namespace TheVision
             PlayGaspSound();
             PlayThunderSound();
 
-            WhiteHoleMovement(false);
+            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(false);
             
+
             //Enabling props that spawned with json I guess 
             DisabledPropsOnStart(true); 
 
@@ -418,24 +419,7 @@ namespace TheVision
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();            
-        }
-        public void WhiteHoleMovement(bool isActive)
-        {
-            var whiteHole = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole");
-
-            if (isActive == true)
-            {
-                whiteHole.SetActive(true);
-                whiteHole.transform.Translate(Vector3.forward * Time.deltaTime);
-            }
-
-            else
-            {
-                whiteHole.SetActive(false);
-                return;
-            }
-
-        }
+        }     
 
 
     }
