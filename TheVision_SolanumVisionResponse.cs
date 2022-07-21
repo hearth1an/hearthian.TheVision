@@ -76,15 +76,13 @@ namespace TheVision.CustomProps
         public void OnVisionEnd()
 
         {
-
-
-            
+            // sfx             
             PlayWindSound();
             PlayStartSound();
             PlayEnergySound();
             PlayFadeInSound();
 
-            
+            // wh parameters
             var whiteHoleOptions = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole/AmbientLight").transform.GetComponent<Light>();
             whiteHoleOptions.color = new Color(1, 1, 2, 1);
             whiteHoleOptions.range = 30;
@@ -93,9 +91,9 @@ namespace TheVision.CustomProps
 
             GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(true);
 
-
-            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>(); // /PlayerCamera
-            StartCoroutine(cameraShake.Shake(6f, 0.03f));
+            // camera shaking amount
+            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>(); 
+            StartCoroutine(cameraShake.Shake(6f, 0.07f));
 
 
             //GameObject lightningGO = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
@@ -122,6 +120,7 @@ namespace TheVision.CustomProps
             visionEnded = true;
             waitFrames = MAX_WAIT_FRAMES;
 
+            // flicker 
             var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 7f, onDuration: 0.7f);
 
