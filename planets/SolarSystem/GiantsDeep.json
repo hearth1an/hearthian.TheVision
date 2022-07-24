@@ -1,74 +1,92 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {},
-  "canShowOnTitle": true,
-  "name": "Giants Deep",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
-  "Props": {
-    "details": [
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-        "position": {
-          "x": -41.837883,
-          "y": -68.65625,
-          "z": -32.69957
-        },
-        "rotation": {
-          "x": 318.996368,
-          "y": 35.5540123,
-          "z": 231.388855
-        },
-        "scale": 5.0
-      }
-    ],
-    "nomaiText": [
-      {
-        "position": {
-          "x": -43.4399948,
-          "y": -66.7862,
-          "z": -31.4335365
-        },
-        "rotation": {
-          "x": 337.2365,
-          "y": 52.9308,
-          "z": 261.0757
-        },
-        "type": "recorder",
-        "xmlFile": "planets/Text/RecorderGD.xml"
-      },
-      {
-        "position": {
-          "x": -41.5140533,
-          "y": -68.2207,
-          "z": -29.45578
-        },
-        "rotation": {
-          "x": 333.902618,
-          "y": 283.609924,
-          "z": 153.185333
-        },
-        "type": "computer",
-        "xmlFile": "planets/Text/ComputerGD.xml"
-      }
-    ]
-  },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
-  "ShipLog": {
-    "entryPositions": [
-      {
-        "id": "SOLANUM_GD",
-        "position": {
-          "x": 900.0,
-          "y": -1750.0
-        }
-      }
-    ],
-    "mapMode": {},
-    "spriteFolder": "planets/ShipLogs/sprites",
-    "xmlFile": "planets/ShipLogs/GiantsDeep.xml"
-  }
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "Base": {},
+    "canShowOnTitle": true,
+    "name": "Giants Deep",
+    "Orbit": {
+        "semiMajorAxis": 0.0
+    },
+    "Props": {
+        "details": [
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "position": {
+                    "x": -41.837883,
+                    "y": -68.65625,
+                    "z": -32.69957
+                },
+                "rotation": {
+                    "x": 318.996368,
+                    "y": 35.5540123,
+                    "z": 231.388855
+                },
+                "scale": 5.0
+            }
+        ],
+        "nomaiText": [
+            {
+                "position": {
+                    "x": -43.4399948,
+                    "y": -66.7862,
+                    "z": -31.4335365
+                },
+                "rotation": {
+                    "x": 337.2365,
+                    "y": 52.9308,
+                    "z": 261.0757
+                },
+                "type": "recorder",
+                "xmlFile": "planets/Text/RecorderGD.xml"
+            },
+            {
+                "position": {
+                    "x": -41.5140533,
+                    "y": -68.2207,
+                    "z": -29.45578
+                },
+                "rotation": {
+                    "x": 333.902618,
+                    "y": 283.609924,
+                    "z": 153.185333
+                },
+                "type": "computer",
+                "xmlFile": "planets/Text/ComputerGD.xml"
+            }
+        ]
+    },
+    "ReferenceFrame": {
+        "bracketRadius": -1.0
+    },
+    "ShipLog": {
+        "entryPositions": [
+            {
+                "id": "SOLANUM_GD",
+                "position": {
+                    "x": 900.0,
+                    "y": -1750.0
+                }
+            }
+        ],
+        "mapMode": {},
+        "spriteFolder": "planets/ShipLogs/sprites",
+        "xmlFile": "planets/ShipLogs/GiantsDeep.xml"
+    },
+    "Signal": {
+        "signals": [
+            {
+                "audioFilePath": "planets/quantum.wav",
+                "detectionRadius": 2000.0,
+                "frequency": "Quantum Consciousness",
+                "identificationRadius": 500.0,
+                "name": "Solanum",
+                "onlyAudibleToScope": false,
+                "position": {
+                    "x": -41.837883,
+                    "y": -68.65625,
+                    "z": -32.69957
+                },
+                "sourceRadius": 2.0
+            }
+        ]
+    }
 }

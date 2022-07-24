@@ -8,7 +8,7 @@ namespace TheVision
         public IEnumerator Shake(float duration, float magnitude)
         {
             Vector3 orignalPosition = transform.position;
-            orignalPosition.z = -5f;
+            //orignalPosition.z = -2f;
             
 
             //Vector3 newPosition = transform.position = new Vector3(x, y, 0f);
@@ -16,17 +16,18 @@ namespace TheVision
 
             while (elapsed < duration)
             {
-                float x = UnityEngine.Random.Range(-2f, 2f) * magnitude;
-                float y = UnityEngine.Random.Range(-2f, 2f) * magnitude;
-                float z = UnityEngine.Random.Range(-3f, -3.3f) * magnitude;
+                float x = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+                float y = UnityEngine.Random.Range(-1f, 1f) * magnitude;
+                //float z = UnityEngine.Random.Range(-3f, -3.3f) * magnitude;
 
-                Vector3 newPosition = transform.position = new Vector3(x, y, z);
+                Vector3 newPosition = transform.position = new Vector3(x, y, 0f);
                 elapsed += Time.deltaTime;
                 yield return 0;
                
             }
-            
+
             transform.position = orignalPosition;
+            orignalPosition.z = -1f;
            
 
 

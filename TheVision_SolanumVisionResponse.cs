@@ -68,7 +68,7 @@ namespace TheVision.CustomProps
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
           () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 10);
                 TheVision.Instance.SpawnSignals();
-                // TheVision.Instance.DisabledPropsOnStart(true);                
+                         
             }
 
         }
@@ -86,14 +86,26 @@ namespace TheVision.CustomProps
             var whiteHoleOptions = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole/AmbientLight").transform.GetComponent<Light>();
             whiteHoleOptions.color = new Color(1, 1, 2, 1);
             whiteHoleOptions.range = 30;
-            whiteHoleOptions.intensity = 2;
+            whiteHoleOptions.intensity = 3;
             whiteHoleOptions.enabled = true;
 
-            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(true);
+            var qmWhiteHole = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole");
+            qmWhiteHole.SetActive(true);
 
-            // camera shaking amount
+
+            var cameraFixedPosition = GameObject.Find("Player_Body").GetComponent<PlayerLockOnTargeting>();
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 1, false, 5);
+            cameraFixedPosition.BreakLock(10f);
+
+            // Camera shaking amount
             var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>(); 
-            StartCoroutine(cameraShake.Shake(6f, 0.07f));
+            StartCoroutine(cameraShake.Shake(5.5f, 0.05f));
+
+            
+
+            // var playerCrash = GameObject.Find("Player_Body").GetComponent<PlayerCrushedController>();
+            // playerCrash.CrushPlayer()
+
 
 
             //GameObject lightningGO = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
@@ -122,7 +134,7 @@ namespace TheVision.CustomProps
 
             // flicker 
             var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 7f, onDuration: 0.7f);
+            effect.FlickerOffAndOn(offDuration: 6f, onDuration: 1f);
 
         }
 
