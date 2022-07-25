@@ -25,18 +25,9 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\Text\QMground.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\GiantsDeep.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\QuantumMoon.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumDB.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumGD.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SolanumTH.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SOLANUM_QM_RESPONSE_GROUND.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\THE_VISION_ENTRY.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\THE_VISION_ENTRY_2.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\CustomSprites.psd
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\THE_VISION_ENTRY.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\TimberHearth.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\DB_VesselDimension_Body.xml
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\NEW_QUANTUM_RULE.png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\custom sprites\SOLANUM_DB_HOLOGRAM.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\NEW_QUANTUM_RULE.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_ATP.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_DB.png
@@ -46,8 +37,6 @@ C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheV
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\SOLANUM_TH.png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\TimeLoopRing.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\TimeLoopRing.json
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\Slide (0).png
-C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\vision.zip
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\images\vision\Slide (0).png
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\RingWorld.xml
 C:\Users\Alternate\AppData\Roaming\OuterWildsModManager\OWML\Mods\hearthian.TheVision\planets\ShipLogs\sprites\VISION_TORCH_ENTRY.png

@@ -26,7 +26,7 @@
                 },
                 "scale": 5.00000143
             },
-            {
+            /* {
                 "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
                 "position": {
                     "x": -8.394581,
@@ -39,7 +39,7 @@
                     "z": 174.113922
                 },
                 "scale": 0.9999996
-            }
+            } it's just useful to put it there */ 
             
         ],
         "nomaiText": [
@@ -297,7 +297,7 @@
                     { "imagePath": "/images/vision/Slide (216).png" },
                     { "imagePath": "/images/vision/Slide (217).png" },
                     { "imagePath": "/images/vision/Slide (218).png" },
-                    { "imagePath": "/images/vision/Slide (219).png" },
+                    { "imagePath": "/images/vision/Slide (219).png" }, 
                     { "imagePath": "/images/vision/Slide (220).png" }
                 ],
                 "type": "visionTorchTarget"

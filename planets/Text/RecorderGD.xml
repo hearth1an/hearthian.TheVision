@@ -5,7 +5,7 @@
 	</TextBlock>
 	<ShipLogConditions>
         <RevealFact>	
-        <FactID>SOLANUM_ON_GD</FactID>
+        <FactID>SOLANUM_GD</FactID>
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>
@@ -32,7 +32,13 @@
 	</ShipLogConditions>
 	<ShipLogConditions>
         <RevealFact>	
-        <FactID>SOLANUM_ON_ATP</FactID>
+        <FactID>SOLANUM_ON_GD</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_ATP</FactID>
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>

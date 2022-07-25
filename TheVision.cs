@@ -125,8 +125,7 @@ namespace TheVision
 
             if (systemName == "SolarSystem")
             {
-                SpawnStartProps();
-               // SpawnVisionTorch(); // then DELETE when everything is ready
+                SpawnStartProps();               
                 DisabledPropsOnStart(false);
             }
             if (systemName == "GloamingGalaxy")
@@ -144,7 +143,7 @@ namespace TheVision
 
             while (qmStateTH.activeSelf == false)
             {
-                await Task.Delay(7000);
+                await Task.Delay(5000);
                 TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
                 await Task.Yield();
             };
@@ -154,7 +153,7 @@ namespace TheVision
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
                 OWRigidbody s_rb = Locator.GetShipBody();
 
-                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -90f, 0f));
+                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
@@ -169,16 +168,8 @@ namespace TheVision
             }
         }       
         
-        // Spawning Vision Torch with code
-        public void SpawnVisionTorch()
-        {
-
-            var path = "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem";
-            Vector3 position = new Vector3(18.06051f, -50.64357f, 183.141f);
-            Vector3 rotation = new Vector3(311.8565f, 287.9388f, 254.72f);
-            GameObject staff = DetailBuilder.MakeDetail(Locator._timberHearth.gameObject, Locator._timberHearth.GetRootSector(), path, position, rotation, 1, false);
-
-        }     
+        
+       
 
         public void SpawnOnVisionEnd()
         {
