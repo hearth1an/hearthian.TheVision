@@ -32,7 +32,7 @@
 	</ShipLogConditions>
 	<ShipLogConditions>
         <RevealFact>	
-        <FactID>SOLANUM_ON_DB</FactID>
+        <FactID>SOLANUM_ON_ATP</FactID>
 		<Condition>1</Condition>
     </RevealFact>
 	</ShipLogConditions>

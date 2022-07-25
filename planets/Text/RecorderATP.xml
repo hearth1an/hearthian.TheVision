@@ -3,6 +3,10 @@
 		<ID>1</ID>
 		<Text>SOLANUM: Have you seen this? Our Sun is diying and you.. are you connected with the one of statue? Someone also connected from Giant's Deep, who or what is it?</Text>
 	</TextBlock>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_ON_ATP</FactID>
+		<Condition>1</Condition>
 	<TextBlock>
 		<ID>2</ID>
 		<ParentID>1</ParentID>
@@ -23,4 +27,16 @@
 		<ParentID>4</ParentID>
 		<Text>SOLANUM: I saw the Vessel from your vision, it's in the Dark Bramble. What if it's still working? Not sure if I can get there, but I need to try at least.</Text>
 	</TextBlock>	
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_ATP_RECORDER</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+        <RevealFact>	
+        <FactID>SOLANUM_ON_DB</FactID>
+		<Condition>1</Condition>
+    </RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

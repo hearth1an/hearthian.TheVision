@@ -66,8 +66,8 @@ namespace TheVision.CustomProps
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnSolanumCopy(TheVision.Instance.ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons")), 10);
-                TheVision.Instance.SpawnSignals();
+          () => TheVision.Instance.SpawnOnVisionEnd(), 10);
+                
                          
             }
 
@@ -92,16 +92,19 @@ namespace TheVision.CustomProps
             var qmWhiteHole = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole");
             qmWhiteHole.SetActive(true);
 
-
+            /*
             var cameraFixedPosition = GameObject.Find("Player_Body").GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.LockOn(qmWhiteHole.transform, 1, false, 5);
             cameraFixedPosition.BreakLock(10f);
+            */
 
             // Camera shaking amount
-            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>(); 
+            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>();
+            Vector3 orignalPosition = transform.position;
             StartCoroutine(cameraShake.Shake(5.5f, 0.05f));
+            transform.position = orignalPosition;
 
-            
+
 
             // var playerCrash = GameObject.Find("Player_Body").GetComponent<PlayerCrushedController>();
             // playerCrash.CrushPlayer()

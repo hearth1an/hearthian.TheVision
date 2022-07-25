@@ -11,20 +11,7 @@
         }
     },
     "Props": {
-        "details": [
-            {
-                "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
-                "position": {
-                    "x": 0.204155922,
-                    "y": -69.96805,
-                    "z": 3.71383667
-                },
-                "rotation": {
-                    "x": 279.528137,
-                    "y": 207.5575,
-                    "z": 167.427734
-                }
-            },
+        "details": [            
             {
                 "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
                 "position": {
