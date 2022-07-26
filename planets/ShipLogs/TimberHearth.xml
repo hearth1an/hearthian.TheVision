@@ -11,17 +11,17 @@
       <ID>SOLANUM_RUMOR_TH</ID>
       <SourceID>THE_VISION_ENTRY</SourceID>
       <RumorName>Is Solanum on Timber Hearth?</RumorName>
-      <Text>Solanum is asking to find her. Maybe I should start from Timber Hearth since it's near?</Text>
+      <Text>Solanum is asking to find them. Maybe I should start from Timber Hearth since it's nearby?</Text>
     </RumorFact>
 
     <ExploreFact>
       <ID>SOLANUM_TH</ID>
-      <Text>Solanum somehow appear on the Timber Hearth near the Village. Seems like she is observing the Hearthians.</Text>
+      <Text>Solanum somehow appeared on Timber Hearth near the Village. It seems like they are observing the Hearthians.</Text>
     </ExploreFact>
 
     <ExploreFact>
       <ID>SOLANUM_TH_RECORDER</ID>
-      <Text>She saying she just thought about the Timber Hearth and appear here then. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologize, but that's ok. She also want to know more about the probe cannon Controle Module on Giant's Deep.</Text>
+      <Text>According to them, they just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, they apologized, but that's ok. They also would like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
     </ExploreFact>
 
     <Entry>
@@ -32,27 +32,27 @@
       <RumorFact>
         <ID>WHAT_IS_NEW_QR</ID>
         <RumorName>New quantum rule?</RumorName>
-        <Text>I've discovered strange frequency called <![CDATA[<color=green>Quantum consciousness</color>]]>.</Text>
+        <Text>I've discovered strange frequency called Quantum Consciousness.</Text>
       </RumorFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC</ID>
-        <Text>This could be a new quantum rule or an quantum exeption. My theory is if a conscious observer is aware of his quantum properties, he acquires <![CDATA[<color=green>Quantum consciousness</color>]]>. Solanum probably got this knowlage from my vision.</Text>
+        <Text>This could be a new quantum rule or an quantum exception. My theory is if a conscious observer is aware of his quantum properties, they acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.</Text>
       </ExploreFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_SIGNAL</ID>
-        <Text>Quantum consciousness have strong recognizable signal and it sounds similar to Quantum fluctuations. In fact, the signal is such strong that it can be heard even without signalscope. It's interesting that Quantum consciousness frequency is not scopable on Quanum Moon itself, probably because of Quantum fluctuations frequency (it's much stonger there).</Text>
+        <Text>Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is so much stronger that it can be heard even without signalscope. It's interesting that the Quantum Consciousness frequency is not scopable on Quantum Moon itself, probably because of Quantum Fluctuations frequency (it's much stronger there).</Text>
       </ExploreFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_PARTICLES</ID>
-        <Text>Another noticable thing about Quantum consciousness - particles near the head. By the way, other quantum rules are not working with Quantum consciousness.</Text>
+        <Text>Another noticable thing about Quantum Consciousness - particles near the head. By the way, other quantum rules are not working with Quantum Consciousness.</Text>
       </ExploreFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_ABILITY</ID>
-        <Text>Quantum consciousness somehow has an ability to exist in a multiple places at the same time. Solanum declares that she can only think about the sertain location and appear there. Hypothesis: she can appear only in known places.</Text>
+        <Text>Something with Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that they can only think about the certain location and appear there. Hypothesis: they can appear only in known places.</Text>
       </ExploreFact>
     </Entry>
 

@@ -11,28 +11,28 @@
     <RumorFact>
       <ID>SOLANUM_START</ID>
       <RumorName>What if..?</RumorName>
-      <Text>Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from <![CDATA[<color=green>Damaged Laboratory</color>]]> on <![CDATA[<color=green>Stranger</color>]]>?</Text>
+      <Text>Solanum is the last Nomai alive. What if I show them all I know with vision torch from the Damaged Laboratory on The Stranger?</Text>
     </RumorFact>
 
     <ExploreFact>
       <ID>SOLANUM_QM_RESPONSE</ID>
-      <Text>After the vision something strange happened. Clouds disappeared immidiately and I can hear now unknown <![CDATA[<color=green>frequencies</color>]]> coming from Solanum. Also that sparks on her mask - that looks bizarre. Solanum looks disoriented according to her reply.</Text>
+      <Text>After the vision something strange happened. The clouds disappeared immediately and I can now hear an unknown frequency coming from Solanum. There are bizarre looking sparks on their mask. Solanum looks disoriented according to their reply.</Text>
     </ExploreFact>
 
     <Entry>
       <ID>SOLANUM_QM_TH</ID>
-      <Name>Insctiption near Solanum body</Name>
+      <Name>Inscription near Solanum's body</Name>
       <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
       <RumorFact>
         <ID>SOLANUM_QM_TH_RESPONSE_RUMOR</ID>
-        <RumorName>Solanum left some text near her body</RumorName>
-        <Text>There's some new inscriptions left recently</Text>
+        <RumorName>Solanum left some text near their body</RumorName>
+        <Text>There are some new inscriptions left very recently</Text>
       </RumorFact>
 
       <ExploreFact>
         <ID>SOLANUM_QM_RESPONSE_GROUND</ID>
-        <Text>It should be very strange to see your own body. I'm not surprised Solanum want to leave this place as soon as possible. She took her recorder and asking me to find her somehow. Maybe start search from Timber Hearth?</Text>
+        <Text>It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. They took their recorder and asked me to find them somehow. Maybe I should start by searching Timber Hearth.</Text>
       </ExploreFact>
     </Entry>
 

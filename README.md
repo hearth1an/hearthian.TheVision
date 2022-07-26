@@ -5,7 +5,7 @@ The Vision is a story mod that continues everything you knew from both base game
 
 Load the mod and check your ship logs! Don't look up in folders if you don't want any spoilers ;) 
 
-# Disclamer 
+# Disclaimer 
 
 This work is unofficial Fan Content created under permission from the Mobius Digital Fan Content Policy. It includes materials which are the property of Mobius Digital and it is neither approved nor endorsed by Mobius Digital.
 

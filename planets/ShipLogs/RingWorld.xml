@@ -3,7 +3,7 @@
 
   <Entry>
     <ID>VISION_TORCH_ENTRY</ID>
-    <Name>Vision torch in Damaged Laboratory</Name>
+    <Name>Vision Torch inside Damaged Laboratory</Name>
 
     <Curiosity>THE_TORCH_CURIOSITY</Curiosity>
 
@@ -11,13 +11,13 @@
     <RumorFact>
       <ID>VISION_TORCH_RUMOR</ID>
       <SourceID>THE_VISION_ENTRY</SourceID>
-      <RumorName>Vision torch in Damaged Laboratory</RumorName>
-      <Text>I believe it's vision torch somewhere in Damaged Laboratory. Wonder if it's still working.</Text>
+      <RumorName>Vision Torch inside Damaged Laboratory</RumorName>
+      <Text>I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.</Text>
     </RumorFact>
 
     <ExploreFact>
       <ID>VISION_TORCH_FOUND</ID>
-      <Text>I found that vision torch. In fact, it's flames working even in space with no oxygen needed. Very unique thing.</Text>
+      <Text>I found that vision torch. Its flames still work even in space where there is no oxygen. It is very unique.</Text>
     </ExploreFact>
 
   </Entry>
