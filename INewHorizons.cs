@@ -3,8 +3,8 @@ using OWML.Common;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace TheVision.Utilities.ModAPIs 
-{ 
+namespace TheVision.Utilities.ModAPIs
+{
 
     public interface INewHorizons
     {
@@ -14,7 +14,7 @@ namespace TheVision.Utilities.ModAPIs
 
         GameObject GetPlanet(string name);
 
-        string GetCurrentStarSystem(); 
+        string GetCurrentStarSystem();
 
         UnityEvent<string> GetChangeStarSystemEvent();
 
@@ -22,6 +22,6 @@ namespace TheVision.Utilities.ModAPIs
 
         GameObject SpawnObject(GameObject planet, Sector sector, string propToCopyPath, Vector3 position, Vector3 eulerAngles, float scale, bool alignWithNormal);
 
-        
+
     }
 }

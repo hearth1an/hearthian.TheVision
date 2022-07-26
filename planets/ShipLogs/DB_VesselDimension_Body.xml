@@ -1,44 +1,44 @@
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>DB_VesselDimension_Body</ID>
+  <ID>DB_VesselDimension_Body</ID>
+
+  <Entry>
+    <ID>SOLANUM_DB</ID>
+    <Name>Solanum on the Vessel</Name>
+
+    <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>SOLANUM_ON_DB</ID>
+      <SourceID>SOLANUM_ATP</SourceID>
+      <RumorName>Solanum on the Vessel</RumorName>
+      <Text>Solanum will try to get on the Vessel. Since Dark Bramble is sort of other dimension, can she reach it?</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>SOLANUM_DB_VESSEL</ID>
+      <Text>She did it! I don't know what is her power, but she is here and waiting for me again</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>SOLANUM_DB_RECORDER</ID>
+      <Text>Solanum have traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the <![CDATA[<color=green>Gloaming Galaxy</color>]]>. It's coordinates should be shown under the Vessel's bridge instead of the Eye signal hologram.</Text>
+    </ExploreFact>
 
     <Entry>
-        <ID>SOLANUM_DB</ID>
-        <Name>Solanum on the Vessel</Name>
+      <ID>SOLANUM_DB_HOLOGRAM</ID>
+      <Name>Gloaming Galaxy, Blackrock coordinates hologram</Name>
+      <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
-        <Curiosity>THE_VISION_CURIOSITY</Curiosity>
-    
-        <RumorFact>
-            <ID>SOLANUM_ON_DB</ID> 
-            <SourceID>SOLANUM_ATP</SourceID> 
-            <RumorName>Solanum on the Vessel</RumorName> 
-            <Text>Solanum will try to get on the Vessel. Since Dark Bramble is sort of other dimension, can she reach it?</Text> 
-        </RumorFact>
-        <ExploreFact>
-            <ID>SOLANUM_DB_VESSEL</ID> 
-            <Text>She did it! I don't know what is her power, but she is here and waiting for me again</Text> 
-        </ExploreFact> 
-        <ExploreFact>
-            <ID>SOLANUM_DB_RECORDER</ID> 
-            <Text>Solanum have traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the <![CDATA[<color=green>Gloaming Galaxy</color>]]>. It's coordinates should be shown under the Vessel's bridge instead of the Eye signal hologram.</Text>
-        </ExploreFact>
+      <RumorFact>
+        <ID>IS_HOLOGRAM_CHANGED</ID>
+        <RumorName>New coordinates</RumorName>
+        <Text>Let's take a look.</Text>
+      </RumorFact>
 
-        <Entry>        
-            <ID>SOLANUM_DB_HOLOGRAM</ID> 
-            <Name>Gloaming Galaxy, Blackrock coordinates hologram</Name>
-            <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+      <ExploreFact>
+        <ID>HOLOGRAM_CHANGED</ID>
+        <Text>I found new coordinates to other Galaxy. We can use the Warp Core from Ash Twin Project to warp. There's no way back then. Am I ready to do this?</Text>
+        <Condition>IS_HOLOGRAM_CHANGED</Condition>
+      </ExploreFact>
 
-            <RumorFact>
-                <ID>IS_HOLOGRAM_CHANGED</ID>
-                <RumorName>New coordinates</RumorName>
-                <Text>Let's take a look.</Text>
-            </RumorFact>
-
-            <ExploreFact>
-                <ID>HOLOGRAM_CHANGED</ID>
-                <Text>I found new coordinates to other Galaxy. We can use the Warp Core from Ash Twin Project to warp. There's no way back then. Am I ready to do this?</Text>
-                <Condition>IS_HOLOGRAM_CHANGED</Condition>
-            </ExploreFact>    
-        
-        </Entry> 
-    </Entry>    
+    </Entry>
+  </Entry>
 </AstroObjectEntry>

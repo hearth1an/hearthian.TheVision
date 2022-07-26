@@ -4,15 +4,15 @@ using System.Collections;
 namespace TheVision
 {
     public class CameraShake : MonoBehaviour
-    {        
+    {
         public IEnumerator Shake(float duration, float magnitude)
         {
             Vector3 orignalPosition = transform.position;
             //orignalPosition.z = -2f;
-            
+
 
             //Vector3 newPosition = transform.position = new Vector3(x, y, 0f);
-            float elapsed = 0f;            
+            float elapsed = 0f;
 
             while (elapsed < duration)
             {
@@ -23,12 +23,12 @@ namespace TheVision
                 Vector3 newPosition = transform.position = new Vector3(x, y, 0f);
                 elapsed += Time.deltaTime;
                 yield return 0;
-               
+
             }
 
             transform.position = orignalPosition;
             orignalPosition.z = -1f;
-           
+
 
 
         }
