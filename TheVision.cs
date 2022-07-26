@@ -282,6 +282,7 @@ namespace TheVision
 
             var solanumTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Character_NOM_Solanum");
             solanumTH.SetActive(isActive);
+            if (isActive) NewHorizons.Handlers.StreamingHandler.SetUpStreaming(solanumTH, SearchUtilities.Find("TimberHearth_Body/Sector_TH").GetComponent<Sector>());
 
             var solanumGD = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Character_NOM_Solanum");
             solanumGD.SetActive(isActive);
