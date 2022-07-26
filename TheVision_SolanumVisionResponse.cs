@@ -147,7 +147,7 @@ namespace TheVision.CustomProps
             // SFX on QM after Solanumptojection
             PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2252); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeVortex_LP); // shattering sound 2428 //2697 - station flicker // 2252 - EyeVortex_LP wind // 2005 - electric core
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.5f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
@@ -157,7 +157,7 @@ namespace TheVision.CustomProps
 
             PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation/").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2460); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.MemoryUplink_Start); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core // 2460 MemoryUplink_Start
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayDelayed(4.5f);
@@ -168,7 +168,7 @@ namespace TheVision.CustomProps
 
             PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)502); // StationFlicker_RW = 2696// 2005 - electric core //502 -flicker
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolFlashlightFlicker); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 6f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
@@ -180,7 +180,7 @@ namespace TheVision.CustomProps
 
             PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2011); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.GD_IslandLiftedByTornado); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core // 2011 - GD_IslandLiftedByTornado
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
