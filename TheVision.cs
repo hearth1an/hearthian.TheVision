@@ -52,7 +52,6 @@ namespace TheVision
 
         private static void SpawnStartProps()
         {
-
             GameObject visionTarget = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/VisionStaffDetector");
 
             visionTarget.transform.parent =
@@ -90,6 +89,7 @@ namespace TheVision
             // Replacing new Hologram
             var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
             var hologramClone = GameObject.Instantiate(origHologram);
+            hologramClone.name = "VesselHologram_GloamingGalaxy";
             hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
             hologramClone.transform.position = origHologram.transform.position;
             hologramClone.transform.rotation = origHologram.transform.rotation;
@@ -214,8 +214,8 @@ namespace TheVision
             SearchUtilities.Find("QuantumMoon_Body/Volumes/AudioVolume_QM_Music").SetActive(false);
 
             //Enabling hologram on Vessel
-            GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
-            GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_EyeSignal(Clone)").SetActive(true);
+            SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
+            SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_GloamingGalaxy").SetActive(true);
 
         }
 
@@ -298,17 +298,18 @@ namespace TheVision
         public void PlayThunderSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2007); // GD_Lightning = 2007
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
+
         public void PlayRevealSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2903); // EyeTemple_Stinger = 2903
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
@@ -319,7 +320,7 @@ namespace TheVision
         public void PlaySFXSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2402); // SingularityOnPlayerEnterExit = 2402            
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
@@ -331,7 +332,7 @@ namespace TheVision
         public void PlayGaspSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)854); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
