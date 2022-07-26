@@ -46,25 +46,10 @@
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderATP.xml"
       }
-    ]
-  },
-  "ShipLog": {
-    "entryPositions": [
-      {
-        "id": "SOLANUM_ATP",
-        "position": {
-          "x": 1200.0,
-          "y": -1850.0
-        }
-      }
     ],
-    "spriteFolder": "planets/ShipLogs/sprites",
-    "xmlFile": "planets/ShipLogs/TimeLoopRing.xml"
-  },
-  "Signal": {
     "signals": [
       {
-        "audioFilePath": "planets/quantum.wav",
+        "audio": "planets/quantum.wav",
         "detectionRadius": 2000.0,
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,
@@ -78,5 +63,9 @@
         "sourceRadius": 2.0
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/TimeLoopRing.xml"
   }
 }

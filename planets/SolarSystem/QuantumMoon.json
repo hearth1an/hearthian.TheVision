@@ -1,16 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "QuantumMoon",
-  "Singularity": {
-    "type": "whiteHole",
-    "size": 1,
-    "position": {
-      "x": -5.45,
-      "y": -71.1,
-      "z": 0.55
-    }
-  },
   "Props": {
+    "singularities": [
+      {
+        "uniqueID": "hearthian.OnVisionEnd",
+        "type": "whiteHole",
+        "size": 1,
+        "position": {
+          "x": -5.45,
+          "y": -71.1,
+          "z": 0.55
+        }
+      }
+    ],
     "details": [
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
@@ -302,58 +305,10 @@
         ],
         "type": "visionTorchTarget"
       }
-    ]
-  },
-  "ShipLog": {
-    "curiosities": [
-      {
-        "color": {
-          "g": 255,
-          "b": 132,
-          "a": 200
-        },
-        "highlightColor": {
-          "g": 255,
-          "b": 132,
-          "a": 255
-        },
-        "id": "THE_VISION_CURIOSITY"
-      }
     ],
-    "entryPositions": [
-      {
-        "id": "THE_VISION_ENTRY",
-        "position": {
-          "x": 1200.0,
-          "y": -1400.0
-        }
-      },
-      {
-        "id": "SOLANUM_QM_TH",
-        "position": {
-          "x": 1100.0,
-          "y": -1550.0
-        }
-      }
-    ],
-    "initialReveal": [
-      "SOLANUM_START"
-    ],
-    "mapMode": {
-      "details": [
-        {
-          "outlineSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY.png",
-          "revealedSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY_ALT.png"
-        }
-      ]
-    },
-    "spriteFolder": "planets/ShipLogs/sprites",
-    "xmlFile": "planets/ShipLogs/QuantumMoon.xml"
-  },
-  "Signal": {
     "signals": [
       {
-        "audioFilePath": "planets/quantum.wav",
+        "audio": "planets/quantum.wav",
         "detectionRadius": 2000.0,
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,
@@ -367,5 +322,17 @@
         "sourceRadius": 2.0
       }
     ]
+  },
+  "ShipLog": {
+    "mapMode": {
+      "details": [
+        {
+          "outlineSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY.png",
+          "revealedSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY_ALT.png"
+        }
+      ]
+    },
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/QuantumMoon.xml"
   }
 }

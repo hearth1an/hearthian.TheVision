@@ -36,7 +36,6 @@
       <ExploreFact>
         <ID>HOLOGRAM_CHANGED</ID>
         <Text>I found new coordinates to other Galaxy. We can use the Warp Core from Ash Twin Project to warp. There's no way back then. Am I ready to do this?</Text>
-        <Condition>IS_HOLOGRAM_CHANGED</Condition>
       </ExploreFact>
 
     </Entry>

@@ -46,33 +46,10 @@
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderTH.xml"
       }
-    ]
-  },
-  "ShipLog": {
-    "entryPositions": [
-      {
-        "id": "SOLANUM_TH",
-        "position": {
-          "x": 800.0,
-          "y": -1500.0
-        }
-      },
-      {
-        "id": "NEW_QUANTUM_RULE",
-        "position": {
-          "x": 750.0,
-          "y": -1600.0
-        }
-      }
     ],
-    "mapMode": {},
-    "spriteFolder": "planets/ShipLogs/sprites",
-    "xmlFile": "planets/ShipLogs/TimberHearth.xml"
-  },
-  "Signal": {
     "signals": [
       {
-        "audioFilePath": "planets/quantum.wav",
+        "audio": "planets/quantum.wav",
         "detectionRadius": 2000.0,
         "reveals": "WHAT_IS_NEW_QR",
         "frequency": "Quantum Consciousness",
@@ -87,5 +64,9 @@
         "sourceRadius": 2.0
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/TimberHearth.xml"
   }
 }
