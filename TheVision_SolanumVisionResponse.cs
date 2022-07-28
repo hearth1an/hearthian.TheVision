@@ -77,11 +77,12 @@ namespace TheVision.CustomProps
             cameraFixedPosition.BreakLock(10f);
             */
 
+            // Sometimes puts you under the ground
             // Camera shaking amount
             var cameraShake = Locator.GetPlayerTransform().gameObject.AddComponent<CameraShake>();
-            Vector3 orignalPosition = transform.position;
+            Vector3 originalPosition = Locator.GetPlayerTransform().transform.position;
             StartCoroutine(cameraShake.Shake(5.5f, 0.05f));
-            transform.position = orignalPosition;
+            Locator.GetPlayerTransform().transform.position = originalPosition;
 
 
             // var playerCrash = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerCrushedController>();
