@@ -44,7 +44,8 @@
           "z": 82.68443
         },
         "type": "recorder",
-        "xmlFile": "planets/Text/RecorderTH.xml"
+        "xmlFile": "planets/Text/RecorderTH.xml",
+        "rename": "Prefab_NOM_Recorder_TH"
       }
     ],
     "signals": [

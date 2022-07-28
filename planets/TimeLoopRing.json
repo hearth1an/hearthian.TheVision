@@ -44,7 +44,8 @@
           "z": 90.0
         },
         "type": "recorder",
-        "xmlFile": "planets/Text/RecorderATP.xml"
+        "xmlFile": "planets/Text/RecorderATP.xml",
+        "rename": "Prefab_NOM_Recorder_ATP"
       }
     ],
     "signals": [

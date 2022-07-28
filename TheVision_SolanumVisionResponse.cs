@@ -34,15 +34,13 @@ namespace TheVision.CustomProps
 
         void Update()
         {
-
-
             if (!visionEnded) return;
             if (doneHijacking) return;
             if (waitFrames > 0) { waitFrames--; return; }
 
             if (!hasStartedWriting)
             {
-                NomaiWallText responseText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/NomaiWallText").GetComponent<NomaiWallText>();
+                NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
 
                 // one-time code that runs after waitFrames are up
                 _solanumAnimController.OnWriteResponse += (int unused) => responseText.Show();
@@ -51,30 +49,22 @@ namespace TheVision.CustomProps
 
             }
 
-
             if (!_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying())
             {
                 // drawing custom text                
-                // var customResponse = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_Eye/NomaiWallText");
+                // var customResponse = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText");
                 // customResponse.GetAddComponent<NomaiWallText>().Show();
 
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
 
-                ;
-
                 // Spawning SolanumCopies and Signals on vision response
-                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(
-          () => TheVision.Instance.SpawnOnVisionEnd(), 10);
-
-
+                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
             }
-
         }
 
         public void OnVisionEnd()
-
         {
             // sfx             
             PlayWindSound();
@@ -83,44 +73,42 @@ namespace TheVision.CustomProps
             PlayFadeInSound();
 
             // wh parameters
-            var whiteHoleOptions = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole/AmbientLight").transform.GetComponent<Light>();
+            var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
             whiteHoleOptions.color = new Color(1, 1, 2, 1);
             whiteHoleOptions.range = 30;
             whiteHoleOptions.intensity = 3;
             whiteHoleOptions.enabled = true;
 
-            var qmWhiteHole = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole");
+            var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
             qmWhiteHole.SetActive(true);
 
             /*
-            var cameraFixedPosition = GameObject.Find("Player_Body").GetComponent<PlayerLockOnTargeting>();
+            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.LockOn(qmWhiteHole.transform, 1, false, 5);
             cameraFixedPosition.BreakLock(10f);
             */
 
             // Camera shaking amount
-            var cameraShake = GameObject.Find("Player_Body").AddComponent<CameraShake>();
+            var cameraShake = Locator.GetPlayerTransform().gameObject.AddComponent<CameraShake>();
             Vector3 orignalPosition = transform.position;
             StartCoroutine(cameraShake.Shake(5.5f, 0.05f));
             transform.position = orignalPosition;
 
 
-
-            // var playerCrash = GameObject.Find("Player_Body").GetComponent<PlayerCrushedController>();
+            // var playerCrash = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerCrushedController>();
             // playerCrash.CrushPlayer()
 
 
-
-            //GameObject lightningGO = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
+            //GameObject lightningGO = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
             //lightningGO.
 
             // actually adding working lightninng but none of them is showing
-            // var lightning = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState/Effects_QM_EyeVortex/EyeVortex_Cloudlayer_Interior").AddComponent<CloudLightningGenerator>();                        
+            // var lightning = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState/Effects_QM_EyeVortex/EyeVortex_Cloudlayer_Interior").gameObject.AddComponent<CloudLightningGenerator>();                        
             // Vector3 localVector = new Vector3(4.2105f, -0.1138f, 1.9017f);
             // lightning.SpawnLightning(localVector);
 
-            /* GameObject lightning = GameObject.Find("GiantsDeep_Body/Sector_GD/Clouds_GD/LightningGenerator_GD");
-            GameObject QMsphere = GameObject.Find("QuantumMoon_Body/Atmosphere_QM/FogSphere");
+            /* GameObject lightning = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Clouds_GD/LightningGenerator_GD").gameObject;
+            GameObject QMsphere = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject;
             var lightnings = lightning.InstantiateInactive();
             lightnings.transform.parent = QMsphere.transform;
             lightnings.transform.position = QMsphere.transform.position;
@@ -136,16 +124,14 @@ namespace TheVision.CustomProps
             waitFrames = MAX_WAIT_FRAMES;
 
             // flicker 
-            var effect = GameObject.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            var effect = Locator.GetPlayerCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6f, onDuration: 1f);
-
         }
 
         public void PlayWindSound()
         {
-
             // SFX on QM after Solanumptojection
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeVortex_LP); // shattering sound 2428 //2697 - station flicker // 2252 - EyeVortex_LP wind // 2005 - electric core
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.5f);
@@ -154,8 +140,7 @@ namespace TheVision.CustomProps
         }
         public void PlayFadeInSound()
         {
-
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation/").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.MemoryUplink_Start); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core // 2460 MemoryUplink_Start
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
@@ -165,8 +150,7 @@ namespace TheVision.CustomProps
         }
         public void PlayEnergySound()
         {
-
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolFlashlightFlicker); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 6f);
@@ -177,17 +161,13 @@ namespace TheVision.CustomProps
 
         public void PlayStartSound()
         {
-
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.GD_IslandLiftedByTornado); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core // 2011 - GD_IslandLiftedByTornado
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-
         }
-
-
     }
 }
 

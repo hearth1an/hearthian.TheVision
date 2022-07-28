@@ -44,7 +44,8 @@
           "z": 261.0757
         },
         "type": "recorder",
-        "xmlFile": "planets/Text/RecorderGD.xml"
+        "xmlFile": "planets/Text/RecorderGD.xml",
+        "rename": "Prefab_NOM_Recorder_GD"
       },
       {
         "position": {
@@ -58,7 +59,8 @@
           "z": 153.185333
         },
         "type": "computer",
-        "xmlFile": "planets/Text/ComputerGD.xml"
+        "xmlFile": "planets/Text/ComputerGD.xml",
+        "rename": "Prefab_NOM_Computer_GD"
       }
     ],
     "signals": [
