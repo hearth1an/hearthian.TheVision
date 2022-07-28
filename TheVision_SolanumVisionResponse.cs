@@ -21,32 +21,17 @@ namespace TheVision.CustomProps
         public NomaiWallText solanumVisionResponse;
         public OWAudioSource PlayerHeadsetAudioSource;
 
-
         private static readonly int MAX_WAIT_FRAMES = 20;
-        private int waitFrames = 0;
-        private bool visionEnded = false;
-        private bool doneHijacking = false;
-        private bool hasStartedWriting = false;
 
-
-        public void Update()
+        public void WriteMessage()
         {
-            if (!visionEnded) return;
-            if (doneHijacking) return;
-            if (waitFrames > 0) { waitFrames--; return; }
+            NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
 
-            if (!hasStartedWriting)
-            {
-                NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
+            // one-time code that runs after waitFrames are up
+            _solanumAnimController.OnWriteResponse += (int unused) => responseText.Show();
+            _solanumAnimController.StartWritingMessage();
 
-                // one-time code that runs after waitFrames are up
-                _solanumAnimController.OnWriteResponse += (int unused) => responseText.Show();
-                _solanumAnimController.StartWritingMessage();
-                hasStartedWriting = true;
-
-            }
-
-            if (!_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying())
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
             {
                 // drawing custom text                
                 // var customResponse = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText");
@@ -55,11 +40,10 @@ namespace TheVision.CustomProps
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _nomaiConversationManager._state = NomaiConversationManager.State.WatchingSky;
                 _solanumAnimController.StopWatchingPlayer();
-                doneHijacking = true;
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
-            }
+            });
         }
 
         public void OnVisionStart()
@@ -125,8 +109,8 @@ namespace TheVision.CustomProps
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             _nomaiConversationManager.enabled = false;
-            visionEnded = true;
-            waitFrames = MAX_WAIT_FRAMES;
+
+            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
 
             // flicker 
             var effect = Locator.GetPlayerCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
