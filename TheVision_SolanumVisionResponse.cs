@@ -66,7 +66,7 @@ namespace TheVision.CustomProps
         {
             if (_nomaiConversationManager._activeResponseText != null) _nomaiConversationManager._activeResponseText.Hide();
             _nomaiConversationManager._activeResponseText = null;
-            _nomaiConversationManager._pendingResponseText = null;
+            _nomaiConversationManager._pendingResponseText = solanumVisionResponse;
         }
 
         public void OnVisionEnd()
