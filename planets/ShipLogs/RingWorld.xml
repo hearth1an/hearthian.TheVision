@@ -3,7 +3,7 @@
 
   <Entry>
     <ID>VISION_TORCH_ENTRY</ID>
-    <Name>Vision Torch inside Damaged Laboratory</Name>
+    <Name>Vision Torch in Damaged Laboratory</Name>
 
     <Curiosity>THE_TORCH_CURIOSITY</Curiosity>
 
@@ -11,7 +11,7 @@
     <RumorFact>
       <ID>VISION_TORCH_RUMOR</ID>
       <SourceID>THE_VISION_ENTRY</SourceID>
-      <RumorName>Vision Torch inside Damaged Laboratory</RumorName>
+      <RumorName>Vision Torch in Damaged Laboratory</RumorName>
       <Text>I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.</Text>
     </RumorFact>
 
