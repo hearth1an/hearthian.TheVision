@@ -26,7 +26,12 @@ namespace TheVision.CustomProps
         public void WriteMessage()
         {
             // one-time code that runs after waitFrames are up
-            _solanumAnimController.OnWriteResponse += (int unused) => solanumVisionResponse.Show();
+            _solanumAnimController.OnWriteResponse += (int unused) =>
+            {
+                _nomaiConversationManager._activeResponseText = solanumVisionResponse;
+                _nomaiConversationManager._pendingResponseText = null;
+                solanumVisionResponse.Show();
+            };
             _solanumAnimController.StartWritingMessage();
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
