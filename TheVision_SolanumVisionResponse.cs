@@ -25,10 +25,8 @@ namespace TheVision.CustomProps
 
         public void WriteMessage()
         {
-            NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
-
             // one-time code that runs after waitFrames are up
-            _solanumAnimController.OnWriteResponse += (int unused) => responseText.Show();
+            _solanumAnimController.OnWriteResponse += (int unused) => solanumVisionResponse.Show();
             _solanumAnimController.StartWritingMessage();
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
