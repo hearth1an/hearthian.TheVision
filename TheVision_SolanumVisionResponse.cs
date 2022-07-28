@@ -14,10 +14,7 @@ using System.Collections;
 
 namespace TheVision.CustomProps
 {
-    class TheVision_SolanumVisionResponse : MonoBehaviour
-
-
-
+    public class TheVision_SolanumVisionResponse : MonoBehaviour
     {
         public NomaiConversationManager _nomaiConversationManager;
         public SolanumAnimController _solanumAnimController;
@@ -32,7 +29,7 @@ namespace TheVision.CustomProps
         private bool hasStartedWriting = false;
 
 
-        void Update()
+        public void Update()
         {
             if (!visionEnded) return;
             if (doneHijacking) return;
@@ -56,12 +53,20 @@ namespace TheVision.CustomProps
                 // customResponse.GetAddComponent<NomaiWallText>().Show();
 
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
+                _nomaiConversationManager._state = NomaiConversationManager.State.WatchingSky;
                 _solanumAnimController.StopWatchingPlayer();
                 doneHijacking = true;
 
                 // Spawning SolanumCopies and Signals on vision response
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
             }
+        }
+
+        public void OnVisionStart()
+        {
+            if (_nomaiConversationManager._activeResponseText != null) _nomaiConversationManager._activeResponseText.Hide();
+            _nomaiConversationManager._activeResponseText = null;
+            _nomaiConversationManager._pendingResponseText = null;
         }
 
         public void OnVisionEnd()

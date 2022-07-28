@@ -52,6 +52,7 @@ namespace TheVision
             myConversationManager.solanumVisionResponse = responseText;
 
             GameObject visionTarget = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject;
+            visionTarget.GetComponent<VisionTorchTarget>().onSlidesStart = myConversationManager.OnVisionStart;
             visionTarget.GetComponent<VisionTorchTarget>().onSlidesComplete = myConversationManager.OnVisionEnd;
 
             // Replacing new Hologram
