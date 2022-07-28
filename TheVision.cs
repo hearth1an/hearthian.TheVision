@@ -99,20 +99,16 @@ namespace TheVision
         }
 
         // Async func to teleport ship to TH State on QM so player can continue the journey
-        public static async Task TeleportShip()
+        public static void TeleportShip()
         {
             var qmStateTH = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH");
             ShipDamageController s_dmg = Locator.GetShipBody().GetComponent<ShipDamageController>();
-            s_dmg.ToggleInvincibility();
+            bool originalInvicibility = s_dmg._invincible;
+            s_dmg._invincible = true;
 
-            while (qmStateTH.gameObject.activeSelf == false)
-            {
-                await Task.Delay(5000);
-                TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
-                await Task.Yield();
-            };
+            TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
 
-            while (qmStateTH.gameObject.activeSelf != false)
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => qmStateTH.gameObject.activeSelf, () =>
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
                 OWRigidbody s_rb = Locator.GetShipBody();
@@ -123,11 +119,15 @@ namespace TheVision
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
                 s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());
 
-                await Task.Yield();
-
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
 
                 // TheVision.CustomProps.PlayStartSound(false);
+
+                s_dmg._invincible = originalInvicibility;
+            });
+
+            while (qmStateTH.gameObject.activeSelf != false)
+            {
                 break; // or it will teleport it forever
             }
         }
