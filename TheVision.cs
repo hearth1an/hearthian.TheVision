@@ -221,16 +221,16 @@ namespace TheVision
             var particlesDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Effects_NOM_WarpParticles").gameObject;
             particlesDB.SetActive(isActive);
 
-            var particlesATP = SearchUtilities.Find("TimeLoopRing_Body/Effects_NOM_WarpParticles");
+            var particlesATP = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/Effects_NOM_WarpParticles");
             particlesATP.SetActive(isActive);
 
-            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Signal_Solanum");
+            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Signal_Solanum");
             signalATP.SetActive(isActive);
 
-            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Character_NOM_Solanum");
+            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle");
             solanumATP.SetActive(isActive);
 
-            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Prefab_NOM_Recorder_ATP");
+            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Recorder_ATP");
             ATPrecorder.SetActive(isActive);
 
             var THsignal = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Signal_Solanum").gameObject;
@@ -242,11 +242,10 @@ namespace TheVision
             var QMsignal = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum").gameObject;
             QMsignal.SetActive(isActive);
 
-            var solanumTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Character_NOM_Solanum").gameObject;
+            var solanumTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Nomai_ANIM_SkyWatching_Idle").gameObject;
             solanumTH.SetActive(isActive);
-            if (isActive) NewHorizons.Handlers.StreamingHandler.SetUpStreaming(solanumTH, Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH").GetComponent<Sector>());
 
-            var solanumGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Character_NOM_Solanum").gameObject;
+            var solanumGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Nomai_ANIM_SkyWatching_Idle").gameObject;
             solanumGD.SetActive(isActive);
         }
 

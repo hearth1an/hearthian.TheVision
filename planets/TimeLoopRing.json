@@ -4,7 +4,7 @@
   "Props": {
     "details": [
       {
-        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum",
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
         "position": {
           "x": 26.3102,
           "y": 6.239,
@@ -14,7 +14,8 @@
           "x": 329.464,
           "y": 353.79,
           "z": 90.0
-        }
+        },
+        "parentPath": "Characters_TimeLoopRing"
       },
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
@@ -28,7 +29,8 @@
           "y": 353.79,
           "z": 90.0
         },
-        "scale": 5.00000143
+        "scale": 5,
+        "parentPath": "Effects_TimeLoopRing"
       }
     ],
     "nomaiText": [
@@ -45,7 +47,8 @@
         },
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderATP.xml",
-        "rename": "Prefab_NOM_Recorder_ATP"
+        "rename": "Prefab_NOM_Recorder_ATP",
+        "parentPath": "Interactibles_TimeLoopRing"
       }
     ],
     "signals": [
@@ -61,7 +64,8 @@
           "y": 6.239,
           "z": -2.236
         },
-        "sourceRadius": 2.0
+        "sourceRadius": 2.0,
+        "parentPath": "Interactibles_TimeLoopRing"
       }
     ]
   },
