@@ -178,7 +178,6 @@ namespace TheVision
             // Disabling common computer on GD, placing the right one to correct position
             var GDcommonComputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Computers/ComputerPivot (1)").gameObject;
             GDcommonComputer.SetActive(!isActive);
-            GDcomputer.transform.position = GDcommonComputer.transform.position;
             GDcomputer.transform.rotation = GDcommonComputer.transform.rotation;
 
             var DBrecorder = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Prefab_NOM_Recorder_DB").gameObject;
