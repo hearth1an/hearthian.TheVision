@@ -1,26 +1,37 @@
 <AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
-    <ID>TIMELOOPRING_BODY</ID>
+  <ID>TOWER_TWIN</ID>
+
+  <Entry>
+    <ID>SOLANUM_ATP</ID>
+    <Name>Solanum inside Ash Twin Project</Name>
+
+    <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+    <RumorFact>
+      <ID>SOLANUM_ATP</ID>
+      <SourceID>SOLANUM_GD</SourceID>
+      <RumorName>Solanum inside Ash Twin Project</RumorName>
+      <Text>Solanum wants to check the time loop control panel. I might find them inside the Ash Twin Project.</Text>
+    </RumorFact>
+    <ExploreFact>
+      <ID>SOLANUM_ON_ATP</ID>
+      <Text>Solanum is already here and is observing the time loop ring's logs.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>SOLANUM_ATP_RECORDER</ID>
+      <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape the supernova. Seems like we will meet again inside the Vessel.</Text>
+    </ExploreFact>
 
     <Entry>
-        <ID>SOLANUM_ATP</ID>
-        <Name>Solanum on Ash Twin Project</Name>
+      <ID>STATUE_ATP</ID>
+      <Name>Unlinked Statue</Name>
+      <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
-        <Curiosity>THE_VISION_CURIOSITY</Curiosity>
-    
-        <RumorFact>
-            <ID>SOLANUM_ATP</ID> 
-            <SourceID>SOLANUM_GD</SourceID> 
-            <RumorName>Solanum on Ash Twin Project</RumorName> 
-            <Text>If Solanum wants to check the time loop control panel, I might find her on Ash Twin Project.</Text> 
-        </RumorFact>
-        <ExploreFact>
-            <ID>SOLANUM_ON_ATP</ID> 
-            <Text>Solanum is already here, observing time loop ring's logs.</Text> 
-        </ExploreFact> 
-        <ExploreFact>
-            <ID>SOLANUM_ATP_RECORDER</ID> 
-            <Text>She just realized I'm in the time loop and our Sun will explode soon. With charged warp core we potentially can try to escape from explosion. Seems like we will met again on the Vessel.</Text>
-        </ExploreFact> 
+      <ExploreFact>
+        <ID>STATUE_ATP_LINK</ID>
+        <Text>Solanum just happened to pass right by the unlinked statue inside the Ash Twin Project. Now they are stuck in the time loop too.</Text>
+      </ExploreFact>
+    </Entry>
 
-    </Entry>    
+  </Entry>
 </AstroObjectEntry>

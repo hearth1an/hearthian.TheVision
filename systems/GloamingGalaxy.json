@@ -1,14 +1,16 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
-	"coords": {
-		"x": [ 5, 0, 1, 2, 4 ],
-		"y": [ 4, 0, 2, 3, 5 ],
-		"z": [ 1, 4, 0, 5, 2 ]
-	},
-	"vesselPosition": {
-		"x": 0,
-		"y": 0,
-		"z": 8000
-	},
-	"factRequiredForWarp": "HOLOGRAM_CHANGED"
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "Vessel": {
+    "coords": {
+      "x": [ 5, 0, 1, 2, 4 ],
+      "y": [ 4, 0, 2, 3, 5 ],
+      "z": [ 1, 4, 0, 5, 2 ]
+    },
+    "vesselPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 8000
+    }
+  },
+  "factRequiredForWarp": "HOLOGRAM_CHANGED"
 }

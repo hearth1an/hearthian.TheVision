@@ -1,99 +1,73 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-    "Base": {},
-    "canShowOnTitle": true,
-    "name": "Timber Hearth",
-    "Orbit": {
-        "semiMajorAxis": 0.0
-    },
-    "Props": {
-        "details": [
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-                "position": {
-                    "x": 48.5099373,
-                    "y": 15.6914063,
-                    "z": 252.312668
-                },
-                "rotation": {
-                    "x": 276.159821,
-                    "y": 320.4782,
-                    "z": 312.779144
-                },
-                "scale": 5.0
-            },
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum",
-                "position": {
-                    "x": 48.5018,
-                    "y": 15.1183,
-                    "z": 249.9972
-                },
-                "rotation": {
-                    "x": 332.5521,
-                    "y": 279.0402,
-                    "z": 275.7439
-                }
-            }
-        ],
-        "nomaiText": [
-            {
-                "position": {
-                    "x": 50.2780342,
-                    "y": 15.4577,
-                    "z": 249.598343
-                },
-                "rotation": {
-                    "x": 45.7734337,
-                    "y": 96.43863,
-                    "z": 82.68443
-                },
-                "type": "recorder",
-                "xmlFile": "planets/Text/RecorderTH.xml"
-            }
-        ]
-    },
-    "ReferenceFrame": {
-        "bracketRadius": -1.0
-    },
-    "ShipLog": {
-        "entryPositions": [
-            {
-                "id": "SOLANUM_TH",
-                "position": {
-                    "x": 800.0,
-                    "y": -1500.0
-                }
-            },
-            {
-                "id": "NEW_QUANTUM_RULE",
-                "position": {
-                    "x": 750.0,
-                    "y": -1600.0
-                }
-            }
-        ],
-        "mapMode": {},
-        "spriteFolder": "planets/ShipLogs/sprites",
-        "xmlFile": "planets/ShipLogs/TimberHearth.xml"
-    },
-    "Signal": {
-        "signals": [
-            {
-                "audioFilePath": "planets/quantum.wav",
-                "detectionRadius": 2000.0,
-                "reveals": "WHAT_IS_NEW_QR",
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": 48.5099373,
-                    "y": 15.6914063,
-                    "z": 252.312668
-                },
-                "sourceRadius": 2.0
-            }
-        ]
-    }
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Timber Hearth",
+  "Props": {
+    "details": [
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": 48.5099373,
+          "y": 15.6914063,
+          "z": 252.312668
+        },
+        "rotation": {
+          "x": 276.159821,
+          "y": 320.4782,
+          "z": 312.779144
+        },
+        "scale": 5.0
+      },
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 48.5018,
+          "y": 15.1183,
+          "z": 249.9972
+        },
+        "rotation": {
+          "x": 332.5521,
+          "y": 279.0402,
+          "z": 275.7439
+        }
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 50.2780342,
+          "y": 15.4577,
+          "z": 249.598343
+        },
+        "rotation": {
+          "x": 45.7734337,
+          "y": 96.43863,
+          "z": 82.68443
+        },
+        "type": "recorder",
+        "xmlFile": "planets/Text/RecorderTH.xml",
+        "rename": "Prefab_NOM_Recorder_TH"
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/quantum.wav",
+        "detectionRadius": 2000.0,
+        "reveals": "WHAT_IS_NEW_QR",
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500.0,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 48.5099373,
+          "y": 15.6914063,
+          "z": 252.312668
+        },
+        "sourceRadius": 2.0
+      }
+    ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/TimberHearth.xml"
+  }
 }

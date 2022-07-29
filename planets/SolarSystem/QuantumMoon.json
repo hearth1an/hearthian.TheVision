@@ -1,32 +1,36 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-    "name": "QuantumMoon",
-    "Singularity": {
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "QuantumMoon",
+  "Props": {
+    "singularities": [
+      {
+        "uniqueID": "hearthian.OnVisionEnd",
         "type": "whiteHole",
         "size": 1,
         "position": {
-            "x": -5.45,
-            "y": -71.1,
-            "z": 0.55
+          "x": -5.45,
+          "y": -71.1,
+          "z": 0.55
         }
-    },
-    "Props": {
-        "details": [            
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-                "position": {
-                    "x": -5.5298233,
-                    "y": -71.0698853,
-                    "z": 1.43963623
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65917873,
-                    "z": 168.477509
-                },
-                "scale": 5.00000143
-            },
-            /* {
+      }
+    ],
+    "details": [
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": -5.5298233,
+          "y": -71.0698853,
+          "z": 1.43963623
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65917873,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum"
+      }
+      /* {
                 "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
                 "position": {
                     "x": -8.394581,
@@ -39,336 +43,303 @@
                     "z": 174.113922
                 },
                 "scale": 0.9999996
-            } it's just useful to put it there */ 
-            
-        ],
-        "nomaiText": [
-            {
-                "arcInfo": [
-                    {
-                        "position": {
-                            "x": 0.4,
-                            "y": 0.5
-                        },
-                        "variation": 28,
-                        "zRotation": 93.0
-                    }
-                ],
-                "normal": {
-                    "x": -0.719040334,
-                    "y": 0.0947849154,
-                    "z": 0.688474655
-                },
-                "position": {
-                    "x": -2.71077561,
-                    "y": -70.5499,
-                    "z": 1.55687451
-                },
-                "rotation": {
-                    "x": 356.639343,
-                    "y": 314.3946,
-                    "z": 86.70398
-                },
-                "seed": 42,
-                "xmlFile": "planets/Text/QMresponse.xml"
+            } it's just useful to put it there */
+
+    ],
+    "nomaiText": [
+      {
+        "arcInfo": [
+          {
+            "position": {
+              "x": 0.4,
+              "y": 0.5
             },
-            {
-                "arcInfo": [
-                    {
-                        "mirror": true,
-                        "position": {
-                            "x": 1.4,
-                            "y": 0.6
-                        },
-                        "variation": 28,
-                        "zRotation": 93.0
-                    }
-                ],
-                "normal": {
-                    "x": -0.0513425469,
-                    "y": -0.997363269,
-                    "z": 0.05129242
-                },
-                "position": {
-                    "x": -2.005528,
-                    "y": -69.83115,
-                    "z": 1.29369223
-                },
-                "rotation": {
-                    "x": 85.83839,
-                    "y": 314.971832,
-                    "z": 133.163361
-                },
-                "seed": 42,
-                "xmlFile": "planets/Text/QMground.xml"
-            }
+            "variation": 28,
+            "zRotation": 93.0
+          }
         ],
-        "slideShows": [
-            {
-                "position": {
-                    "x": -5.6548,
-                    "y": -70.73996,
-                    "z": 1.607201
-                },
-                "rotation": {},
-                "slides": [
-                    { "beatAudio": "audio/VisionAudio/TheVision.mp3" },
-                    { "imagePath": "/images/vision/Slide (0).png" },
-                    { "imagePath": "/images/vision/Slide (1).png" },
-                    { "imagePath": "/images/vision/Slide (2).png" },
-                    { "imagePath": "/images/vision/Slide (3).png" },
-                    { "imagePath": "/images/vision/Slide (4).png" },
-
-                    { "imagePath": "/images/vision/Slide (6).png" },
-                    { "imagePath": "/images/vision/Slide (7).png" },
-                    { "imagePath": "/images/vision/Slide (8).png" },
-                    { "imagePath": "/images/vision/Slide (9).png" },
-                    { "imagePath": "/images/vision/Slide (10).png" },
-                    { "imagePath": "/images/vision/Slide (11).png" },
-
-                    { "imagePath": "/images/vision/Slide (12).png" },
-                    { "imagePath": "/images/vision/Slide (13).png" },
-
-                    { "imagePath": "/images/vision/Slide (15).png" },
-
-                    { "imagePath": "/images/vision/Slide (17).png" },
-                    { "imagePath": "/images/vision/Slide (18).png" },
-                    { "imagePath": "/images/vision/Slide (19).png" },
-                    { "imagePath": "/images/vision/Slide (20).png" },
-                    { "imagePath": "/images/vision/Slide (21).png" },
-                    { "imagePath": "/images/vision/Slide (22).png" },
-                    { "imagePath": "/images/vision/Slide (23).png" },
-                    { "imagePath": "/images/vision/Slide (24).png" },
-                    { "imagePath": "/images/vision/Slide (25).png" },
-                    { "imagePath": "/images/vision/Slide (26).png" },
-                    { "imagePath": "/images/vision/Slide (27).png" },
-                    { "imagePath": "/images/vision/Slide (28).png" },
-                    { "imagePath": "/images/vision/Slide (29).png" },
-                    { "imagePath": "/images/vision/Slide (30).png" },
-
-                    { "imagePath": "/images/vision/Slide (32).png" },
-                    { "imagePath": "/images/vision/Slide (33).png" },
-
-                    { "imagePath": "/images/vision/Slide (35).png" },
-                    { "imagePath": "/images/vision/Slide (36).png" },
-
-                    { "imagePath": "/images/vision/Slide (38).png" },
-                    { "imagePath": "/images/vision/Slide (39).png" },
-
-                    { "imagePath": "/images/vision/Slide (41).png" },
-
-                    { "imagePath": "/images/vision/Slide (44).png" },
-                    { "imagePath": "/images/vision/Slide (45).png" },
-
-                    { "imagePath": "/images/vision/Slide (48).png" },
-                    { "imagePath": "/images/vision/Slide (49).png" },
-                    { "imagePath": "/images/vision/Slide (50).png" },
-
-                    { "imagePath": "/images/vision/Slide (52).png" },
-
-                    { "imagePath": "/images/vision/Slide (54).png" },
-                    { "imagePath": "/images/vision/Slide (55).png" },
-
-                    { "imagePath": "/images/vision/Slide (57).png" },
-                    { "imagePath": "/images/vision/Slide (58).png" },
-                    { "imagePath": "/images/vision/Slide (59).png" },
-                    { "imagePath": "/images/vision/Slide (60).png" },
-                    { "imagePath": "/images/vision/Slide (61).png" },
-                    { "imagePath": "/images/vision/Slide (62).png" },
-                    { "imagePath": "/images/vision/Slide (63).png" },
-                    { "imagePath": "/images/vision/Slide (64).png" },
-                    { "imagePath": "/images/vision/Slide (65).png" },
-                    { "imagePath": "/images/vision/Slide (66).png" },
-                    { "imagePath": "/images/vision/Slide (68).png" },
-                    { "imagePath": "/images/vision/Slide (69).png" },
-                    { "imagePath": "/images/vision/Slide (70).png" },
-                    { "imagePath": "/images/vision/Slide (71).png" },
-                    { "imagePath": "/images/vision/Slide (72).png" },
-                    { "imagePath": "/images/vision/Slide (73).png" },
-                    { "imagePath": "/images/vision/Slide (75).png" },
-
-
-
-                    { "imagePath": "/images/vision/Slide (79).png" },
-                    { "imagePath": "/images/vision/Slide (80).png" },
-
-                    { "imagePath": "/images/vision/Slide (83).png" },
-                    { "imagePath": "/images/vision/Slide (84).png" },
-                    { "imagePath": "/images/vision/Slide (85).png" },
-                    { "imagePath": "/images/vision/Slide (86).png" },
-                    { "imagePath": "/images/vision/Slide (87).png" },
-                    { "imagePath": "/images/vision/Slide (88).png" },
-                    { "imagePath": "/images/vision/Slide (89).png" },
-                    { "imagePath": "/images/vision/Slide (91).png" },
-                    { "imagePath": "/images/vision/Slide (92).png" },
-                    { "imagePath": "/images/vision/Slide (93).png" },
-                    { "imagePath": "/images/vision/Slide (94).png" },
-                    { "imagePath": "/images/vision/Slide (95).png" },
-                    { "imagePath": "/images/vision/Slide (96).png" },
-                    { "imagePath": "/images/vision/Slide (97).png" },
-                    { "imagePath": "/images/vision/Slide (98).png" },
-                    { "imagePath": "/images/vision/Slide (99).png" },
-                    { "imagePath": "/images/vision/Slide (100).png" },
-                    { "imagePath": "/images/vision/Slide (101).png" },
-                    { "imagePath": "/images/vision/Slide (102).png" },
-                    { "imagePath": "/images/vision/Slide (103).png" },
-                    { "imagePath": "/images/vision/Slide (104).png" },
-                    { "imagePath": "/images/vision/Slide (105).png" },
-                    { "imagePath": "/images/vision/Slide (106).png" },
-                    { "imagePath": "/images/vision/Slide (107).png" },
-                    { "imagePath": "/images/vision/Slide (108).png" },
-                    { "imagePath": "/images/vision/Slide (109).png" },
-                    { "imagePath": "/images/vision/Slide (110).png" },
-                    { "imagePath": "/images/vision/Slide (111).png" },
-                    { "imagePath": "/images/vision/Slide (112).png" },
-                    { "imagePath": "/images/vision/Slide (113).png" },
-
-
-                    { "imagePath": "/images/vision/Slide (115).png" },
-                    { "imagePath": "/images/vision/Slide (116).png" },
-                    { "imagePath": "/images/vision/Slide (117).png" },
-
-                    { "imagePath": "/images/vision/Slide (119).png" },
-                    { "imagePath": "/images/vision/Slide (120).png" },
-                    { "imagePath": "/images/vision/Slide (121).png" },
-                    { "imagePath": "/images/vision/Slide (122).png" },
-                    { "imagePath": "/images/vision/Slide (123).png" },
-                    { "imagePath": "/images/vision/Slide (124).png" },
-                    { "imagePath": "/images/vision/Slide (125).png" },
-                    { "imagePath": "/images/vision/Slide (126).png" },
-
-                    { "imagePath": "/images/vision/Slide (128).png" },
-                    { "imagePath": "/images/vision/Slide (129).png" },
-                    { "imagePath": "/images/vision/Slide (130).png" },
-
-
-                    { "imagePath": "/images/vision/Slide (133).png" },
-                    { "imagePath": "/images/vision/Slide (134).png" },
-                    { "imagePath": "/images/vision/Slide (135).png" },
-                    { "imagePath": "/images/vision/Slide (136).png" },
-                    { "imagePath": "/images/vision/Slide (137).png" },
-                    { "imagePath": "/images/vision/Slide (138).png" },
-                    { "imagePath": "/images/vision/Slide (139).png" },
-                    { "imagePath": "/images/vision/Slide (140).png" },
-                    { "imagePath": "/images/vision/Slide (141).png" },
-                    { "imagePath": "/images/vision/Slide (142).png" },
-                    { "imagePath": "/images/vision/Slide (143).png" },
-                    { "imagePath": "/images/vision/Slide (144).png" },
-                    { "imagePath": "/images/vision/Slide (145).png" },
-                    { "imagePath": "/images/vision/Slide (146).png" },
-                    { "imagePath": "/images/vision/Slide (147).png" },
-                    { "imagePath": "/images/vision/Slide (148).png" },
-                    { "imagePath": "/images/vision/Slide (149).png" },
-                    { "imagePath": "/images/vision/Slide (150).png" },
-                    { "imagePath": "/images/vision/Slide (151).png" },
-                    { "imagePath": "/images/vision/Slide (152).png" },
-                    { "imagePath": "/images/vision/Slide (153).png" },
-                    { "imagePath": "/images/vision/Slide (154).png" },
-                    { "imagePath": "/images/vision/Slide (155).png" },
-                    { "imagePath": "/images/vision/Slide (156).png" },
-                    { "imagePath": "/images/vision/Slide (157).png" },
-                    { "imagePath": "/images/vision/Slide (158).png" },
-                    { "imagePath": "/images/vision/Slide (159).png" },
-                    { "imagePath": "/images/vision/Slide (160).png" },
-                    { "imagePath": "/images/vision/Slide (161).png" },
-                    { "imagePath": "/images/vision/Slide (162).png" },
-                    { "imagePath": "/images/vision/Slide (163).png" },
-                    { "imagePath": "/images/vision/Slide (164).png" },
-
-                    { "blackFrameDuration": 1 },
-
-
-                    { "imagePath": "/images/vision/Slide (199).png" },
-                    { "imagePath": "/images/vision/Slide (200).png" },
-                    { "imagePath": "/images/vision/Slide (201).png" },
-                    { "imagePath": "/images/vision/Slide (203).png" },
-                    { "imagePath": "/images/vision/Slide (204).png" },
-                    { "imagePath": "/images/vision/Slide (205).png" },
-                    { "imagePath": "/images/vision/Slide (206).png" },
-                    { "imagePath": "/images/vision/Slide (207).png" },
-                    { "imagePath": "/images/vision/Slide (208).png" },
-                    { "imagePath": "/images/vision/Slide (209).png" },
-                    { "imagePath": "/images/vision/Slide (210).png" },
-                    { "imagePath": "/images/vision/Slide (211).png" },
-                    { "imagePath": "/images/vision/Slide (212).png" },
-                    { "imagePath": "/images/vision/Slide (213).png" },
-                    { "imagePath": "/images/vision/Slide (214).png" },
-                    { "imagePath": "/images/vision/Slide (215).png" },
-                    { "imagePath": "/images/vision/Slide (216).png" },
-                    { "imagePath": "/images/vision/Slide (217).png" },
-                    { "imagePath": "/images/vision/Slide (218).png" },
-                    { "imagePath": "/images/vision/Slide (219).png" }, 
-                    { "imagePath": "/images/vision/Slide (220).png" }
-                ],
-                "type": "visionTorchTarget"
-            }
-        ]
-    },
-    "ReferenceFrame": {
-        "bracketRadius": -1.0
-    },
-    "ShipLog": {
-        "curiosities": [
-            {
-                "color": {
-                    "g": 255,
-                    "b": 132,
-                    "a": 200
-                },
-                "highlightColor": {
-                    "g": 255,
-                    "b": 132,
-                    "a": 255
-                },
-                "id": "THE_VISION_CURIOSITY"
-            }
-        ],
-        "entryPositions": [
-            {
-                "id": "THE_VISION_ENTRY",
-                "position": {
-                    "x": 1200.0,
-                    "y": -1400.0
-                }
-            },
-            {
-                "id": "SOLANUM_QM_TH",
-                "position": {
-                    "x": 1100.0,
-                    "y": -1550.0
-                }
-            }
-        ],
-        "initialReveal": [
-            "SOLANUM_START"
-        ],
-        "mapMode": {
-            "details": [
-                {
-                    "outlineSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY.png",
-                    "revealedSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY_ALT.png"
-                }
-            ]
+        "normal": {
+          "x": -0.719040334,
+          "y": 0.0947849154,
+          "z": 0.688474655
         },
-        "spriteFolder": "planets/ShipLogs/sprites",
-        "xmlFile": "planets/ShipLogs/QuantumMoon.xml"
+        "position": {
+          "x": -2.71077561,
+          "y": -70.5499,
+          "z": 1.55687451
+        },
+        "rotation": {
+          "x": 356.639343,
+          "y": 314.3946,
+          "z": 86.70398
+        },
+        "seed": 42,
+        "xmlFile": "planets/Text/QMresponse.xml",
+        "parentPath": "Sector_QuantumMoon/State_EYE",
+        "rename": "QMResponseText"
+      },
+      {
+        "arcInfo": [
+          {
+            "mirror": true,
+            "position": {
+              "x": 1.4,
+              "y": 0.6
+            },
+            "variation": 28,
+            "zRotation": 93.0
+          }
+        ],
+        "normal": {
+          "x": -0.0513425469,
+          "y": -0.997363269,
+          "z": 0.05129242
+        },
+        "position": {
+          "x": -2.005528,
+          "y": -69.83115,
+          "z": 1.29369223
+        },
+        "rotation": {
+          "x": 85.83839,
+          "y": 314.971832,
+          "z": 133.163361
+        },
+        "seed": 42,
+        "xmlFile": "planets/Text/QMground.xml",
+        "parentPath": "Sector_QuantumMoon/State_TH",
+        "rename": "QMGroundText"
+      }
+    ],
+    "slideShows": [
+      {
+        "position": {
+          "x": -5.6548,
+          "y": -70.73996,
+          "z": 1.607201
+        },
+        "rotation": {},
+        "slides": [
+          { "beatAudio": "audio/VisionAudio/TheVision.mp3" },
+          { "imagePath": "/images/vision/Slide (0).png" },
+          { "imagePath": "/images/vision/Slide (1).png" },
+          { "imagePath": "/images/vision/Slide (2).png" },
+          { "imagePath": "/images/vision/Slide (3).png" },
+          { "imagePath": "/images/vision/Slide (4).png" },
+
+          { "imagePath": "/images/vision/Slide (6).png" },
+          { "imagePath": "/images/vision/Slide (7).png" },
+          { "imagePath": "/images/vision/Slide (8).png" },
+          { "imagePath": "/images/vision/Slide (9).png" },
+          { "imagePath": "/images/vision/Slide (10).png" },
+          { "imagePath": "/images/vision/Slide (11).png" },
+
+          { "imagePath": "/images/vision/Slide (12).png" },
+          { "imagePath": "/images/vision/Slide (13).png" },
+
+          { "imagePath": "/images/vision/Slide (15).png" },
+
+          { "imagePath": "/images/vision/Slide (17).png" },
+          { "imagePath": "/images/vision/Slide (18).png" },
+          { "imagePath": "/images/vision/Slide (19).png" },
+          { "imagePath": "/images/vision/Slide (20).png" },
+          { "imagePath": "/images/vision/Slide (21).png" },
+          { "imagePath": "/images/vision/Slide (22).png" },
+          { "imagePath": "/images/vision/Slide (23).png" },
+          { "imagePath": "/images/vision/Slide (24).png" },
+          { "imagePath": "/images/vision/Slide (25).png" },
+          { "imagePath": "/images/vision/Slide (26).png" },
+          { "imagePath": "/images/vision/Slide (27).png" },
+          { "imagePath": "/images/vision/Slide (28).png" },
+          { "imagePath": "/images/vision/Slide (29).png" },
+          { "imagePath": "/images/vision/Slide (30).png" },
+
+          { "imagePath": "/images/vision/Slide (32).png" },
+          { "imagePath": "/images/vision/Slide (33).png" },
+
+          { "imagePath": "/images/vision/Slide (35).png" },
+          { "imagePath": "/images/vision/Slide (36).png" },
+
+          { "imagePath": "/images/vision/Slide (38).png" },
+          { "imagePath": "/images/vision/Slide (39).png" },
+
+          { "imagePath": "/images/vision/Slide (41).png" },
+
+          { "imagePath": "/images/vision/Slide (44).png" },
+          { "imagePath": "/images/vision/Slide (45).png" },
+
+          { "imagePath": "/images/vision/Slide (48).png" },
+          { "imagePath": "/images/vision/Slide (49).png" },
+          { "imagePath": "/images/vision/Slide (50).png" },
+
+          { "imagePath": "/images/vision/Slide (52).png" },
+
+          { "imagePath": "/images/vision/Slide (54).png" },
+          { "imagePath": "/images/vision/Slide (55).png" },
+
+          { "imagePath": "/images/vision/Slide (57).png" },
+          { "imagePath": "/images/vision/Slide (58).png" },
+          { "imagePath": "/images/vision/Slide (59).png" },
+          { "imagePath": "/images/vision/Slide (60).png" },
+          { "imagePath": "/images/vision/Slide (61).png" },
+          { "imagePath": "/images/vision/Slide (62).png" },
+          { "imagePath": "/images/vision/Slide (63).png" },
+          { "imagePath": "/images/vision/Slide (64).png" },
+          { "imagePath": "/images/vision/Slide (65).png" },
+          { "imagePath": "/images/vision/Slide (66).png" },
+          { "imagePath": "/images/vision/Slide (68).png" },
+          { "imagePath": "/images/vision/Slide (69).png" },
+          { "imagePath": "/images/vision/Slide (70).png" },
+          { "imagePath": "/images/vision/Slide (71).png" },
+          { "imagePath": "/images/vision/Slide (72).png" },
+          { "imagePath": "/images/vision/Slide (73).png" },
+          { "imagePath": "/images/vision/Slide (75).png" },
+
+
+
+          { "imagePath": "/images/vision/Slide (79).png" },
+          { "imagePath": "/images/vision/Slide (80).png" },
+
+          { "imagePath": "/images/vision/Slide (83).png" },
+          { "imagePath": "/images/vision/Slide (84).png" },
+          { "imagePath": "/images/vision/Slide (85).png" },
+          { "imagePath": "/images/vision/Slide (86).png" },
+          { "imagePath": "/images/vision/Slide (87).png" },
+          { "imagePath": "/images/vision/Slide (88).png" },
+          { "imagePath": "/images/vision/Slide (89).png" },
+          { "imagePath": "/images/vision/Slide (91).png" },
+          { "imagePath": "/images/vision/Slide (92).png" },
+          { "imagePath": "/images/vision/Slide (93).png" },
+          { "imagePath": "/images/vision/Slide (94).png" },
+          { "imagePath": "/images/vision/Slide (95).png" },
+          { "imagePath": "/images/vision/Slide (96).png" },
+          { "imagePath": "/images/vision/Slide (97).png" },
+          { "imagePath": "/images/vision/Slide (98).png" },
+          { "imagePath": "/images/vision/Slide (99).png" },
+          { "imagePath": "/images/vision/Slide (100).png" },
+          { "imagePath": "/images/vision/Slide (101).png" },
+          { "imagePath": "/images/vision/Slide (102).png" },
+          { "imagePath": "/images/vision/Slide (103).png" },
+          { "imagePath": "/images/vision/Slide (104).png" },
+          { "imagePath": "/images/vision/Slide (105).png" },
+          { "imagePath": "/images/vision/Slide (106).png" },
+          { "imagePath": "/images/vision/Slide (107).png" },
+          { "imagePath": "/images/vision/Slide (108).png" },
+          { "imagePath": "/images/vision/Slide (109).png" },
+          { "imagePath": "/images/vision/Slide (110).png" },
+          { "imagePath": "/images/vision/Slide (111).png" },
+          { "imagePath": "/images/vision/Slide (112).png" },
+          { "imagePath": "/images/vision/Slide (113).png" },
+
+
+          { "imagePath": "/images/vision/Slide (115).png" },
+          { "imagePath": "/images/vision/Slide (116).png" },
+          { "imagePath": "/images/vision/Slide (117).png" },
+
+          { "imagePath": "/images/vision/Slide (119).png" },
+          { "imagePath": "/images/vision/Slide (120).png" },
+          { "imagePath": "/images/vision/Slide (121).png" },
+          { "imagePath": "/images/vision/Slide (122).png" },
+          { "imagePath": "/images/vision/Slide (123).png" },
+          { "imagePath": "/images/vision/Slide (124).png" },
+          { "imagePath": "/images/vision/Slide (125).png" },
+          { "imagePath": "/images/vision/Slide (126).png" },
+
+          { "imagePath": "/images/vision/Slide (128).png" },
+          { "imagePath": "/images/vision/Slide (129).png" },
+          { "imagePath": "/images/vision/Slide (130).png" },
+
+
+          { "imagePath": "/images/vision/Slide (133).png" },
+          { "imagePath": "/images/vision/Slide (134).png" },
+          { "imagePath": "/images/vision/Slide (135).png" },
+          { "imagePath": "/images/vision/Slide (136).png" },
+          { "imagePath": "/images/vision/Slide (137).png" },
+          { "imagePath": "/images/vision/Slide (138).png" },
+          { "imagePath": "/images/vision/Slide (139).png" },
+          { "imagePath": "/images/vision/Slide (140).png" },
+          { "imagePath": "/images/vision/Slide (141).png" },
+          { "imagePath": "/images/vision/Slide (142).png" },
+          { "imagePath": "/images/vision/Slide (143).png" },
+          { "imagePath": "/images/vision/Slide (144).png" },
+          { "imagePath": "/images/vision/Slide (145).png" },
+          { "imagePath": "/images/vision/Slide (146).png" },
+          { "imagePath": "/images/vision/Slide (147).png" },
+          { "imagePath": "/images/vision/Slide (148).png" },
+          { "imagePath": "/images/vision/Slide (149).png" },
+          { "imagePath": "/images/vision/Slide (150).png" },
+          { "imagePath": "/images/vision/Slide (151).png" },
+          { "imagePath": "/images/vision/Slide (152).png" },
+          { "imagePath": "/images/vision/Slide (153).png" },
+          { "imagePath": "/images/vision/Slide (154).png" },
+          { "imagePath": "/images/vision/Slide (155).png" },
+          { "imagePath": "/images/vision/Slide (156).png" },
+          { "imagePath": "/images/vision/Slide (157).png" },
+          { "imagePath": "/images/vision/Slide (158).png" },
+          { "imagePath": "/images/vision/Slide (159).png" },
+          { "imagePath": "/images/vision/Slide (160).png" },
+          { "imagePath": "/images/vision/Slide (161).png" },
+          { "imagePath": "/images/vision/Slide (162).png" },
+          { "imagePath": "/images/vision/Slide (163).png" },
+          { "imagePath": "/images/vision/Slide (164).png" },
+
+          { "blackFrameDuration": 1 },
+
+
+          { "imagePath": "/images/vision/Slide (199).png" },
+          { "imagePath": "/images/vision/Slide (200).png" },
+          { "imagePath": "/images/vision/Slide (201).png" },
+          { "imagePath": "/images/vision/Slide (203).png" },
+          { "imagePath": "/images/vision/Slide (204).png" },
+          { "imagePath": "/images/vision/Slide (205).png" },
+          { "imagePath": "/images/vision/Slide (206).png" },
+          { "imagePath": "/images/vision/Slide (207).png" },
+          { "imagePath": "/images/vision/Slide (208).png" },
+          { "imagePath": "/images/vision/Slide (209).png" },
+          { "imagePath": "/images/vision/Slide (210).png" },
+          { "imagePath": "/images/vision/Slide (211).png" },
+          { "imagePath": "/images/vision/Slide (212).png" },
+          { "imagePath": "/images/vision/Slide (213).png" },
+          { "imagePath": "/images/vision/Slide (214).png" },
+          { "imagePath": "/images/vision/Slide (215).png" },
+          { "imagePath": "/images/vision/Slide (216).png" },
+          { "imagePath": "/images/vision/Slide (217).png" },
+          { "imagePath": "/images/vision/Slide (218).png" },
+          { "imagePath": "/images/vision/Slide (219).png" },
+          { "imagePath": "/images/vision/Slide (220).png" }
+        ],
+        "type": "visionTorchTarget",
+        "parentPath": "Sector_QuantumMoon/State_EYE"
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/quantum.wav",
+        "detectionRadius": 2000.0,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500.0,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": -5.45,
+          "y": -71.1,
+          "z": 0.55
+        },
+        "sourceRadius": 2.0,
+        "parentPath": "Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum"
+      }
+    ]
+  },
+  "ShipLog": {
+    "mapMode": {
+      "details": [
+        {
+          "outlineSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY.png",
+          "revealedSprite": "planets/ShipLogs/sprites/THE_VISION_ENTRY_ALT.png"
+        }
+      ]
     },
-    "Signal": {
-        "signals": [
-            {
-                "audioFilePath": "planets/quantum.wav",
-                "detectionRadius": 2000.0,
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": -5.45,
-                    "y": -71.1,
-                    "z": 0.55
-                },
-                "sourceRadius": 2.0
-            }
-        ]
-    }
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/QuantumMoon.xml"
+  }
 }

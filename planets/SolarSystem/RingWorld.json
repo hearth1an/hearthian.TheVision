@@ -1,11 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {},
-  "canShowOnTitle": true,
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "RingWorld",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
   "Props": {
     "details": [
       {
@@ -37,39 +32,7 @@
       }
     ]
   },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
   "ShipLog": {
-    "curiosities": [
-      {
-        "color": {
-          "r": 106,
-          "g": 108,
-          "b": 109,
-          "a": 100
-        },
-        "highlightColor": {
-          "r": 238,
-          "g": 239,
-          "b": 231,
-          "a": 238
-        },
-        "id": "THE_TORCH_CURIOSITY"
-      }
-    ],
-    "entryPositions": [
-      {
-        "id": "VISION_TORCH_ENTRY",
-        "position": {
-          "x": 1700.0,
-          "y": -1300.0
-        }
-      }
-    ],
-    "initialReveal": [
-      "VISION_TORCH_RUMOR"
-    ],
     "mapMode": {
       "details": [
         {

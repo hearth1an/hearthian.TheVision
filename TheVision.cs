@@ -36,48 +36,14 @@ namespace TheVision
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
 
-
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
-
-            LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
-            {
-                if (loadScene != OWScene.SolarSystem) return;
-                var playerBody = FindObjectOfType<PlayerBody>();
-                ModHelper.Console.WriteLine($"Found player body, and it's called {playerBody.name}!",
-                MessageType.Success);
-
-            };
-
         }
 
         private static void SpawnStartProps()
         {
-
-            GameObject visionTarget = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/VisionStaffDetector");
-
-            visionTarget.transform.parent =
-                GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon")
-                .GetComponentsInChildren<Transform>(true)
-                .Where(t => t.gameObject.name == "State_EYE")
-                .First(); // All because Find doesn't work on inactive game objects :/
-
-
-            //parenting particles to Solanum
-            var QMparticles = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Effects_NOM_WarpParticles");
-            QMparticles.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
-
-            //renaming TH recorder idk why but I needed it for some reason
-            var THrecorder = GameObject.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)");
-            THrecorder.transform.name = "Prefab_NOM_Recorder(Clone)_TH";
-
-            // Making custom text for reply           
-            NomaiWallText responseText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText").GetComponent<NomaiWallText>();
+            // Making custom text for reply
+            NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
             responseText.HideTextOnStart();
-            responseText.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_EYE");
-
-            //parenting QM ground text to TH state
-            var QMgroundText = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/NomaiWallText");
-            QMgroundText.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon").transform.Find("State_TH");
 
             var nomaiConversationManager = Resources.FindObjectsOfTypeAll<NomaiConversationManager>().First(); //GameObject.FindObjectOfType<NomaiConversationManager>();
             var myConversationManager = nomaiConversationManager.gameObject.AddComponent<TheVision_SolanumVisionResponse>();
@@ -85,12 +51,15 @@ namespace TheVision
             myConversationManager._solanumAnimController = nomaiConversationManager._solanumAnimController;
             myConversationManager.solanumVisionResponse = responseText;
 
+            GameObject visionTarget = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject;
+            visionTarget.GetComponent<VisionTorchTarget>().onSlidesStart = myConversationManager.OnVisionStart;
             visionTarget.GetComponent<VisionTorchTarget>().onSlidesComplete = myConversationManager.OnVisionEnd;
 
             // Replacing new Hologram
-            var origHologram = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal");
+            var origHologram = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject;
             var hologramClone = GameObject.Instantiate(origHologram);
-            hologramClone.transform.parent = GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension").transform.Find("Sector_VesselBridge");
+            hologramClone.name = "VesselHologram_GloamingGalaxy";
+            hologramClone.transform.parent = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge").transform;
             hologramClone.transform.position = origHologram.transform.position;
             hologramClone.transform.rotation = origHologram.transform.rotation;
             var mat = hologramClone.GetComponent<MeshRenderer>().material;
@@ -99,23 +68,18 @@ namespace TheVision
             hologramClone.SetActive(false);
 
             // I don't like it. It's better to place vision torch here
-            GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance/OtherComponentsGroup/Props_IP_WrenchStaff").SetActive(false);
+            Locator.GetAstroObject(AstroObject.Name.RingWorld).transform.Find("Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance/OtherComponentsGroup/Props_IP_WrenchStaff").gameObject.SetActive(false);
 
             // Disabling WH on QM on the start
-            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(false);            
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             //setting green color for this one
-            var GDcomputerColor = GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)/PointLight_NOM_Computer").GetComponent<Light>();           
+            var GDcomputerColor = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD/PointLight_NOM_Computer").GetComponent<Light>();
             GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };
 
             //setting red color for this one
-            var ATPcomputerColor = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer/PointLight_NOM_Computer").GetComponent<Light>();
+            var ATPcomputerColor = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/PointLight_NOM_Computer").GetComponent<Light>();
             ATPcomputerColor.color = new Color { r = 1, g = 0, b = 0 };
-
-            //parenting QM signal to Solanum (otherwise it will be heard on every QM sector)
-            var QMsignal = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/Signal_Solanum");
-            QMsignal.transform.parent = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot").transform.Find("Character_NOM_Solanum");
-                        
         }
 
         // Load StartProps and DisabledPropsOnStart
@@ -125,8 +89,15 @@ namespace TheVision
 
             if (systemName == "SolarSystem")
             {
-                SpawnStartProps();               
+                SpawnStartProps();
                 DisabledPropsOnStart(false);
+                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
+                {
+                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                    {
+                        DisabledPropsOnStart(true);
+                    }
+                });
             }
             if (systemName == "GloamingGalaxy")
             {
@@ -135,20 +106,16 @@ namespace TheVision
         }
 
         // Async func to teleport ship to TH State on QM so player can continue the journey
-        public static async Task TeleportShip()
+        public static void TeleportShip()
         {
-            var qmStateTH = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_TH");            
+            var qmStateTH = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH");
             ShipDamageController s_dmg = Locator.GetShipBody().GetComponent<ShipDamageController>();
-            s_dmg.ToggleInvincibility();            
+            bool originalInvicibility = s_dmg._invincible;
+            s_dmg._invincible = true;
 
-            while (qmStateTH.activeSelf == false)
-            {
-                await Task.Delay(5000);
-                TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
-                await Task.Yield();
-            };
+            TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
 
-            while (qmStateTH.activeSelf != false)
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => qmStateTH.gameObject.activeSelf, () =>
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
                 OWRigidbody s_rb = Locator.GetShipBody();
@@ -159,17 +126,13 @@ namespace TheVision
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
                 s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());
 
-                await Task.Yield();
-
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
 
                 // TheVision.CustomProps.PlayStartSound(false);
-                break; // or it will teleport it forever
-            }
-        }       
-        
-        
-       
+
+                s_dmg._invincible = originalInvicibility;
+            });
+        }
 
         public void SpawnOnVisionEnd()
         {
@@ -179,138 +142,184 @@ namespace TheVision
             PlayGaspSound();
             PlayThunderSound();
 
-            // Disabling QM WhiteHole
-            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/WhiteHole").SetActive(false);
-
             // Enabling json props
             DisabledPropsOnStart(true);
 
-            //decloaking QM on signals spawn
-            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").SetActive(false);
-            GameObject.Find("QuantumMoon_Body/Atmosphere_QM/FogSphere").SetActive(false);                       
-
-            //placing orb on GD to the slot (1)
-            var nomaiSlot = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
-            var nomaiInterfaceOrb = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
-            var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
-            var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
-            nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
-            nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);            
-
-            //disabling recorder on QM Solanum shuttle
-            GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").SetActive(false);
-
-            // Disabling common computer on GD, placing the right one to correct position
-            var GDcommonComputer = GameObject.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Computers/ComputerPivot (1)");
-            GDcommonComputer.SetActive(false);
-            GameObject.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)").transform.rotation = GDcommonComputer.transform.rotation;
+            // Disabling QM WhiteHole
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             TeleportShip();
-
-            // Deactivating it so it will be no sound or flickers
-            SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/VisionStaffDetector").SetActive(false);
-
-            // Disabling music on QM
-            SearchUtilities.Find("QuantumMoon_Body/Volumes/AudioVolume_QM_Music").SetActive(false);
-
-            //Enabling hologram on Vessel
-            GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").SetActive(false);
-            GameObject.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/VesselHologram_EyeSignal(Clone)").SetActive(true);            
-
         }
 
         //Props from Json files 
         public void DisabledPropsOnStart(bool isActive)
-
         {
-            var QMgroundText = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_TH/NomaiWallText");
+            //decloaking QM on signals spawn
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
+
+            //disabling recorder on QM Solanum shuttle
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").gameObject.SetActive(!isActive);
+
+            var QMgroundText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH/QMGroundText").gameObject;
             QMgroundText.SetActive(isActive);
 
-            var THrecorder = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_NOM_Recorder(Clone)_TH");
+            var THrecorder = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Prefab_NOM_Recorder_TH").gameObject;
             THrecorder.SetActive(isActive);
 
-            var GDrecorder = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Recorder(Clone)");
+            var GDrecorder = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Recorder_GD").gameObject;
             GDrecorder.SetActive(isActive);
 
-            var GDcomputer = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Prefab_NOM_Computer(Clone)");
+            var GDcomputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD").gameObject;
             var GDcomp = GDcomputer.GetComponent<NomaiComputer>();
             GDcomp.enabled = isActive;
             GDcomputer.SetActive(isActive);
 
-            var DBrecorder = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Prefab_NOM_Recorder(Clone)");
+            // Disabling common computer on GD, placing the right one to correct position
+            var GDcommonComputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Computers/ComputerPivot (1)").gameObject;
+            GDcommonComputer.SetActive(!isActive);
+            GDcomputer.transform.rotation = GDcommonComputer.transform.rotation;
+
+            var DBrecorder = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Prefab_NOM_Recorder_DB").gameObject;
             DBrecorder.SetActive(isActive);
 
-            var solanumDB = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle");
+            var solanumDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject;
             solanumDB.SetActive(isActive);
 
-            var signalDB = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Signal_Solanum");
-            signalDB.GetComponent<AudioSignal>();
+            var signalDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Signal_Solanum").gameObject;
             signalDB.SetActive(isActive);
 
-            var particlesTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Effects_NOM_WarpParticles");
+            var particlesTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Effects_NOM_WarpParticles").gameObject;
             particlesTH.SetActive(isActive);
 
-            var particlesGD = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Effects_NOM_WarpParticles");
+            var particlesGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Effects_NOM_WarpParticles").gameObject;
             particlesGD.SetActive(isActive);
 
-            var particlesQM = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Effects_NOM_WarpParticles");
+            var particlesQM = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Effects_NOM_WarpParticles").gameObject;
             particlesQM.SetActive(isActive);
 
-            var particlesDB = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Effects_NOM_WarpParticles");
+            var particlesDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Effects_NOM_WarpParticles").gameObject;
             particlesDB.SetActive(isActive);
 
-            var particlesATP = SearchUtilities.Find("TimeLoopRing_Body/Effects_NOM_WarpParticles");
+            var particlesATP = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/Effects_NOM_WarpParticles");
             particlesATP.SetActive(isActive);
 
-            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Signal_Solanum");
-            signalATP.SetActive(isActive);                
+            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Signal_Solanum");
+            signalATP.SetActive(isActive);
 
-            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Character_NOM_Solanum");
+            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle");
             solanumATP.SetActive(isActive);
 
-            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Prefab_NOM_Recorder(Clone)");
+            var ATPhidden = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden").transform;
+
+            var ATPrecorder = ATPhidden.Find("Prefab_NOM_Recorder_ATP").gameObject;
             ATPrecorder.SetActive(isActive);
 
-            var THsignal = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Signal_Solanum");
+            ATPhidden.GetComponentInChildren<NomaiComputerSlotInterface>().gameObject.name = "Prefab_NOM_Computer_WarpCore";
+
+            var ATPcomputerOld = ATPhidden.Find("Prefab_NOM_Computer").gameObject;
+            ATPcomputerOld.SetActive(!isActive);
+
+            var ATPcomputer = ATPhidden.Find("Prefab_NOM_Computer_ATP").gameObject;
+            var ATPcomp = ATPcomputer.GetComponent<NomaiComputer>();
+            ATPcomp.SetSector(SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior").GetComponent<Sector>());
+            ATPcomp.enabled = isActive;
+            ATPcomputer.SetActive(isActive);
+            ATPcomputer.transform.position = ATPcomputerOld.transform.position;
+            ATPcomputer.transform.rotation = ATPcomputerOld.transform.rotation;
+
+            var THsignal = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Signal_Solanum").gameObject;
             THsignal.SetActive(isActive);
 
-            var GDsignal = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Signal_Solanum");
+            var GDsignal = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Signal_Solanum").gameObject;
             GDsignal.SetActive(isActive);
 
-            var QMsignal = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum");
+            var QMsignal = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum").gameObject;
             QMsignal.SetActive(isActive);
 
-            var solanumTH = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Character_NOM_Solanum");
+            var solanumTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Nomai_ANIM_SkyWatching_Idle").gameObject;
             solanumTH.SetActive(isActive);
 
-            var solanumGD = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Character_NOM_Solanum");
+            var solanumGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Nomai_ANIM_SkyWatching_Idle").gameObject;
             solanumGD.SetActive(isActive);
+
+            var monolith = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group/Monolith");
+            monolith.SetActive(isActive);
+
+            if (isActive)
+            {
+                var statueHead = SearchUtilities.Find("TimeLoopRing_Body/Props_TimeLoopRing/OtherComponentsGroup/Props_NOM_StatueHead");
+
+                var topRotation = new Vector3(301.73f, 90, 270);
+                var bottomRotation = new Vector3(17.1f, 90, 270);
+
+                var eyelidL = statueHead.transform.Find("eyelid_l");
+                eyelidL.transform.Find("eyelid_top").localEulerAngles = topRotation;
+                eyelidL.transform.Find("eyelid_bot").localEulerAngles = bottomRotation;
+
+                var eyelidMid = statueHead.transform.Find("eyelid_mid");
+                eyelidMid.transform.Find("eyelid_top 1").localEulerAngles = topRotation;
+                eyelidMid.transform.Find("eyelid_bot 1").localEulerAngles = bottomRotation;
+
+                var eyelidR = statueHead.transform.Find("eyelid_r");
+                eyelidR.transform.Find("eyelid_top 2").localEulerAngles = topRotation;
+                eyelidR.transform.Find("eyelid_bot 2").localEulerAngles = bottomRotation;
+
+                var copperEyes = SearchUtilities.FindResourceOfTypeAndName<Material>("Structure_NOM_GlowingCopper_mat");
+                var statueEyes = statueHead.transform.Find("Statue_Eyes").GetComponent<MeshRenderer>();
+                var statueEyesOW = statueHead.transform.Find("Statue_Eyes").gameObject.GetAddComponent<OWRenderer>();
+                statueEyes.sharedMaterial = copperEyes;
+                statueEyesOW._renderer = statueEyes;
+                statueEyesOW.SetEmissionColor(Color.black);
+            }
+
+            if (isActive)
+            {
+                //placing orb on GD to the slot (1)
+                var nomaiSlot = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
+                var nomaiInterfaceOrb = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
+                var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
+                var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
+                nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
+                nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
+            }
+
+            // Deactivating it so it will be no sound or flickers
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject.SetActive(!isActive);
+
+            // Disabling music on QM
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Volumes/AudioVolume_QM_Music").gameObject.SetActive(!isActive);
+
+            //Enabling hologram on Vessel
+            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject.SetActive(!isActive);
+            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/VesselHologram_GloamingGalaxy").gameObject.SetActive(isActive);
         }
 
         public void EndGame()
         {
-            DeathManager deathManager = null;
+            DeathManager deathManager = Locator.GetDeathManager();
             deathManager._escapedTimeLoopSequenceComplete = true;
             deathManager.KillPlayer(DeathType.BlackHole);
-                        
+
         }
 
         public void PlayThunderSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2007); // GD_Lightning = 2007
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.GD_Lightning); // GD_Lightning = 2007
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
+
         public void PlayRevealSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2903); // EyeTemple_Stinger = 2903
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeTemple_Stinger); // EyeTemple_Stinger = 2903
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play(delay: 1);
@@ -319,9 +328,9 @@ namespace TheVision
         public void PlaySFXSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)2402); // SingularityOnPlayerEnterExit = 2402            
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SingularityOnPlayerEnterExit); // SingularityOnPlayerEnterExit = 2402            
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
@@ -331,9 +340,9 @@ namespace TheVision
         public void PlayGaspSound()
         {
 
-            PlayerHeadsetAudioSource = GameObject.Find("Player_Body").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip((AudioType)854); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.PlayerGasp_Heavy); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning // 854 PlayerGasp_Heavy
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();

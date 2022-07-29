@@ -1,11 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {},
-  "canShowOnTitle": true,
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Vessel Dimension",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
   "Props": {
     "details": [
       {
@@ -49,38 +44,13 @@
           "z": 359.1451
         },
         "type": "recorder",
-        "xmlFile": "planets/Text/RecorderDB.xml"
-      }
-    ]
-  },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
-  "ShipLog": {
-    "entryPositions": [
-      {
-        "id": "SOLANUM_DB",
-        "position": {
-          "x": 1600.0,
-          "y": -1700.0
-        }
-      },
-      {
-        "id": "SOLANUM_DB_HOLOGRAM",
-        "position": {
-          "x": 1600.0,
-          "y": -1800.0
-        }
+        "xmlFile": "planets/Text/RecorderDB.xml",
+        "rename": "Prefab_NOM_Recorder_DB"
       }
     ],
-    "mapMode": {},
-    "spriteFolder": "planets/ShipLogs/sprites",
-    "xmlFile": "planets/ShipLogs/DB_VesselDimension_Body.xml"
-  },
-  "Signal": {
     "signals": [
       {
-        "audioFilePath": "planets/quantum.wav",
+        "audio": "planets/quantum.wav",
         "detectionRadius": 2000.0,
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,
@@ -94,5 +64,9 @@
         "sourceRadius": 2.0
       }
     ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/DB_VesselDimension_Body.xml"
   }
 }
