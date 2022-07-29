@@ -298,7 +298,7 @@ namespace TheVision
 
         public void EndGame()
         {
-            DeathManager deathManager = null;
+            DeathManager deathManager = Locator.GetDeathManager();
             deathManager._escapedTimeLoopSequenceComplete = true;
             deathManager.KillPlayer(DeathType.BlackHole);
 
