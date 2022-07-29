@@ -31,6 +31,22 @@
         },
         "scale": 5,
         "parentPath": "Effects_TimeLoopRing"
+      },
+      {
+        "assetBundle": "planets/mask",
+        "path": "Assets/Monolith.prefab",
+        "position": {
+          "x": 0,
+          "y": 250,
+          "z": 0
+        },
+        "rotation": {
+          "x": 270,
+          "y": 90,
+          "z": 0
+        },
+        "scale": 1,
+        "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
       }
     ],
     "nomaiText": [
@@ -48,7 +64,23 @@
         "type": "recorder",
         "xmlFile": "planets/Text/RecorderATP.xml",
         "rename": "Prefab_NOM_Recorder_ATP",
-        "parentPath": "Interactibles_TimeLoopRing"
+        "parentPath": "Interactibles_TimeLoopRing_Hidden"
+      },
+      {
+        "position": {
+          "x": 26.3536,
+          "y": 0.18,
+          "z": -6.67
+        },
+        "rotation": {
+          "x": 321,
+          "y": 0,
+          "z": 90
+        },
+        "type": "computer",
+        "xmlFile": "planets/Text/ComputerATP.xml",
+        "rename": "Prefab_NOM_Computer_ATP",
+        "parentPath": "Interactibles_TimeLoopRing_Hidden"
       }
     ],
     "signals": [

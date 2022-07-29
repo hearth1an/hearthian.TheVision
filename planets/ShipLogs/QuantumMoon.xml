@@ -15,8 +15,13 @@
     </RumorFact>
 
     <ExploreFact>
+      <ID>SOLANUM_PROJECTION_COMPLETE</ID>
+      <Text>After the vision something strange happened. The clouds disappeared immediately and I can now hear an unknown frequency coming from Solanum. There are bizarre looking sparks on their mask.</Text>
+    </ExploreFact>
+
+    <ExploreFact>
       <ID>SOLANUM_QM_RESPONSE</ID>
-      <Text>After the vision something strange happened. The clouds disappeared immediately and I can now hear an unknown frequency coming from Solanum. There are bizarre looking sparks on their mask. Solanum looks disoriented according to their reply.</Text>
+      <Text>Solanum looks disoriented according to their reply.</Text>
     </ExploreFact>
 
     <Entry>

@@ -112,6 +112,7 @@ namespace TheVision.CustomProps
             // lightningGenerator._audioSector = _vortexAudio; */
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
+            Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
             _nomaiConversationManager.enabled = false;
 
             TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);

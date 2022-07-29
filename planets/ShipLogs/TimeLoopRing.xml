@@ -22,5 +22,16 @@
       <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape the supernova. Seems like we will meet again inside the Vessel.</Text>
     </ExploreFact>
 
+    <Entry>
+      <ID>STATUE_ATP</ID>
+      <Name>Unlinked Statue</Name>
+      <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+      <ExploreFact>
+        <ID>STATUE_ATP_LINK</ID>
+        <Text>Solanum just happened to pass right by the unlinked statue inside the Ash Twin Project. Now they are stuck in the time loop too.</Text>
+      </ExploreFact>
+    </Entry>
+
   </Entry>
 </AstroObjectEntry>

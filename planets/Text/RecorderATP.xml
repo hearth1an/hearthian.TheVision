@@ -6,33 +6,43 @@
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language. That means that you're trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. Lucky day, huh? Or not. Sorry.</Text>
+    <Text>SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories, right? That's how it works?</Text>
+    <Text>SOLANUM: It appears that I am also connected now. I ended up right in front of that nearby statue when I thought about this place.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.</Text>
+    <Text>SOLANUM: I guess we're both We're trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: I saw the <![CDATA[<color=orange>Vessel</color>]]> from your vision, it is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. What if it's still working? I'm not sure if I can get there, but I need to at least try.</Text>
+    <Text>SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right?</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>7</ID>
+    <ParentID>6</ParentID>
+    <Text>SOLANUM: According to your vision, the <![CDATA[<color=orange>Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ATP</FactID>
-      <Condition>1</Condition>
+      <Condition>1,</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
-      <FactID>SOLANUM_DB</FactID>
-      <Condition>1</Condition>
+      <FactID>SOLANUM_ON_DB</FactID>
+      <Condition>7</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
@@ -45,6 +55,12 @@
     <RevealFact>
       <FactID>SOLANUM_ON_ATP</FactID>
       <Condition>1</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>STATUE_ATP_LINK</FactID>
+      <Condition>3</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

@@ -11,32 +11,37 @@
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: <![CDATA[<i>Wait,</i>]]> is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>. Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under the <![CDATA[<color=orange>Vessel</color>]]> bridge.</Text>
+    <Text>SOLANUM: <![CDATA[<i>Wait,</i>]]> is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back your memories this time.</Text>
+    <Text>SOLANUM: Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under the <![CDATA[<color=orange>Vessel</color>]]> bridge.</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: ...</Text>
+    <Text>SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back your memories this time.</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.</Text>
+    <Text>SOLANUM: ...</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...</Text>
+    <Text>SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
     <ParentID>7</ParentID>
-    <Text>SOLANUM: I am ready my friend, but decision is yours.</Text>
+    <Text>SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>9</ID>
+    <ParentID>8</ParentID>
+    <Text>SOLANUM: I am ready my friend, but the decision is yours.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
@@ -59,13 +64,13 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>IS_HOLOGRAM_CHANGED</FactID>
-      <Condition>1</Condition>
+      <Condition>3</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
       <FactID>HOLOGRAM_CHANGED</FactID>
-      <Condition>1</Condition>
+      <Condition>4</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>
