@@ -73,13 +73,22 @@ namespace TheVision
             // Disabling WH on QM on the start
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
-            //setting green color for this one
+            // Setting green color for this one
             var GDcomputerColor = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD/PointLight_NOM_Computer").GetComponent<Light>();
             GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };
 
-            //setting red color for this one
-            var ATPcomputerColor = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/PointLight_NOM_Computer").GetComponent<Light>();
-            ATPcomputerColor.color = new Color { r = 1, g = 0, b = 0 };
+            /*
+            
+            SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/VisionTorchApparatus/VisionTorchRoot/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff").SetActive(false);
+            var visionTorch = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Prefab_IP_VisionTorchItem");
+            var visionTorchActive = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/VisionTorchRoot");
+
+            visionTorch.transform.position = visionTorchActive.transform.position;
+            visionTorch.transform.rotation = visionTorchActive.transform.rotation;
+
+            visionTorchActive.transform.parent = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Prefab_IP_VisionTorchItem/Prefab_IP_VisionTorchProjector/Flame").transform;
+
+            */
         }
 
         // Load StartProps and DisabledPropsOnStart
@@ -95,7 +104,7 @@ namespace TheVision
                 {
                     if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
                     {
-                        DisabledPropsOnStart(true);
+                         DisabledPropsOnStart(true);
                     }
                 });
             }
@@ -156,7 +165,7 @@ namespace TheVision
         {
             //decloaking QM on signals spawn
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);            
 
             //disabling recorder on QM Solanum shuttle
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").gameObject.SetActive(!isActive);
@@ -282,13 +291,19 @@ namespace TheVision
                 var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
                 nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
                 nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
+
+                //decloaking QM on signals spawn
+                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
+                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
+
+                //decloaking QM on signals spawn
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/WatchZone").SetActive(false);
+
             }
 
             // Deactivating it so it will be no sound or flickers
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject.SetActive(!isActive);
-
-            // Disabling music on QM
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Volumes/AudioVolume_QM_Music").gameObject.SetActive(!isActive);
 
             //Enabling hologram on Vessel
             Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject.SetActive(!isActive);
@@ -297,9 +312,9 @@ namespace TheVision
 
         public void EndGame()
         {
-            DeathManager deathManager = Locator.GetDeathManager();
-            deathManager._escapedTimeLoopSequenceComplete = true;
-            deathManager.KillPlayer(DeathType.BlackHole);
+           // DeathManager deathManager = Locator.GetDeathManager();
+           // deathManager._escapedTimeLoopSequenceComplete = true;
+           // deathManager.KillPlayer(DeathType.BlackHole);
 
         }
 

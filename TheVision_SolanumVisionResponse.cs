@@ -54,6 +54,9 @@ namespace TheVision.CustomProps
             if (_nomaiConversationManager._activeResponseText != null) _nomaiConversationManager._activeResponseText.Hide();
             _nomaiConversationManager._activeResponseText = null;
             _nomaiConversationManager._pendingResponseText = solanumVisionResponse;
+
+            // Disabling music on QM once the vision is showed
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Volumes/AudioVolume_QM_Music").gameObject.SetActive(false);
         }
 
         public void OnVisionEnd()
