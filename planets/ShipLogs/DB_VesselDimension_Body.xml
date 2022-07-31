@@ -11,11 +11,11 @@
       <ID>SOLANUM_ON_DB</ID>
       <SourceID>SOLANUM_ATP</SourceID>
       <RumorName>Solanum on the Vessel</RumorName>
-      <Text>Solanum wants to try to get to the Vessel. Is it possible for them to get inside Dark Bramble?</Text>
+      <Text>Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?</Text>
     </RumorFact>
     <ExploreFact>
       <ID>SOLANUM_DB_VESSEL</ID>
-      <Text>Solanum did it! Whatever their power is, they're here and waiting for me once again.</Text>
+      <Text>Solanum did it! Whatever her power is, she's here and waiting for me once again.</Text>
     </ExploreFact>
     <ExploreFact>
       <ID>SOLANUM_DB_RECORDER</ID>

@@ -11,7 +11,7 @@
       <ID>SOLANUM_ATP</ID>
       <SourceID>SOLANUM_GD</SourceID>
       <RumorName>Solanum inside Ash Twin Project</RumorName>
-      <Text>Solanum wants to check the time loop control panel. I might find them inside the Ash Twin Project.</Text>
+      <Text>Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.</Text>
     </RumorFact>
     <ExploreFact>
       <ID>SOLANUM_ON_ATP</ID>
@@ -29,7 +29,7 @@
 
       <ExploreFact>
         <ID>STATUE_ATP_LINK</ID>
-        <Text>Solanum just happened to pass right by the unlinked statue inside the Ash Twin Project. Now they are stuck in the time loop too.</Text>
+        <Text>Solanum just happened to pass right by the unlinked statue inside the Ash Twin Project. Now she's stuck in the time loop too.</Text>
       </ExploreFact>
     </Entry>
 

@@ -11,15 +11,15 @@
             <ID>SOLANUM_GD</ID> 
             <SourceID>SOLANUM_TH</SourceID> 
             <RumorName>Solanum on Giant's Deep</RumorName> 
-            <Text>Solanum wants to visit Giant's Deep, but they probably will stay on Timber Hearth as well.</Text> 
+            <Text>Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.</Text> 
         </RumorFact>
         <ExploreFact>
             <ID>SOLANUM_ON_GD</ID> 
-            <Text>I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. They are accessing the Main Computer to know how much time has passed.</Text> 
+            <Text>I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.</Text> 
         </ExploreFact> 
         <ExploreFact>
             <ID>SOLANUM_GD_RECORDER</ID> 
-            <Text>Solanum feels sad about the Eye of the Universe. Since childhood, they knew they were right - the Eye has no wishes at all. It's not surprising that they don't want to know anything more about it. There was an active Memory Statue here that caught their eye.</Text> 
+            <Text>Solanum feels sad about the Eye of the Universe. Since childhood, she knew they were right - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.</Text> 
         </ExploreFact> 
 
     </Entry>    
