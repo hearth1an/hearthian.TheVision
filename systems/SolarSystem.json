@@ -105,5 +105,7 @@
 	"initialReveal": [
 		"VISION_TORCH_RUMOR",
 		"SOLANUM_START"
-	]
+	],
+
+	"canEnterViaWarpDrive": false
 }

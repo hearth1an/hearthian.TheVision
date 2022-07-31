@@ -65,40 +65,69 @@ namespace TheVision
             var mat = hologramClone.GetComponent<MeshRenderer>().material;
             mat.SetTexture("_MainTex", TheVision.Instance.ModHelper.Assets.GetTexture("images/NewHologram.png"));
             hologramClone.GetComponent<MeshRenderer>().sharedMaterial = mat;
-            hologramClone.SetActive(false);
-
-            // I don't like it. It's better to place vision torch here
-            Locator.GetAstroObject(AstroObject.Name.RingWorld).transform.Find("Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance/OtherComponentsGroup/Props_IP_WrenchStaff").gameObject.SetActive(false);
+            hologramClone.SetActive(false);            
 
             // Disabling WH on QM on the start
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             // Setting green color for this one
             var GDcomputerColor = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD/PointLight_NOM_Computer").GetComponent<Light>();
-            GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };
+            GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };            
 
-            /*
-            
-            SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/VisionTorchApparatus/VisionTorchRoot/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff").SetActive(false);
-            var visionTorch = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Prefab_IP_VisionTorchItem");
-            var visionTorchActive = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/VisionTorchRoot");
-
-            visionTorch.transform.position = visionTorchActive.transform.position;
-            visionTorch.transform.rotation = visionTorchActive.transform.rotation;
-
-            visionTorchActive.transform.parent = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/Prefab_IP_VisionTorchItem/Prefab_IP_VisionTorchProjector/Flame").transform;
-
-            */
         }
 
-        // Load StartProps and DisabledPropsOnStart
-        public void OnStarSystemLoaded(string systemName)
+
+        // Makes the Vision Torch more lore-friendly to pick
+        public static void PickUpTorch()
+        {
+            // Vision Torch 1 (first room)
+            var visionTorchMesh = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Prefab_IP_VisionTorchItem/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff");
+            visionTorchMesh.SetActive(false);            
+            var visionTorch = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Prefab_IP_VisionTorchItem");            
+            var visionTorchActive = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_1/VisionTorchApparatus/VisionTorchRoot");
+            visionTorch.transform.position = visionTorchActive.transform.position;
+            visionTorch.transform.rotation = visionTorchActive.transform.rotation;
+            var visionTorchTaken = visionTorch.GetComponent<OWCollider>();
+
+            // Vision Torch 2 (third room)
+            var visionTorchMesh2 = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Prefab_IP_VisionTorchItem/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff");
+            visionTorchMesh2.SetActive(false);
+            var visionTorch2 = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Prefab_IP_VisionTorchItem");
+            var visionTorchActive2 = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/VisionTorchApparatus/VisionTorchRoot");
+            visionTorch2.transform.position = visionTorchActive2.transform.position;
+            visionTorch2.transform.rotation = visionTorchActive2.transform.rotation;
+            var visionTorchTaken2 = visionTorch2.GetComponent<OWCollider>();
+
+            // Vision Torch 1 picking up
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !visionTorchTaken._active, () =>
+            {
+
+                visionTorchMesh.SetActive(true);
+                visionTorchActive.SetActive(false);
+
+            });
+
+            // Vision Torch 2 picking up
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !visionTorchTaken2._active, () =>
+            {
+
+                visionTorchMesh2.SetActive(true);
+                visionTorchActive2.SetActive(false);
+
+            });            
+            
+        }
+
+        
+            // Load StartProps and DisabledPropsOnStart
+            public void OnStarSystemLoaded(string systemName)
         {
             ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
 
             if (systemName == "SolarSystem")
             {
                 SpawnStartProps();
+                PickUpTorch();
                 DisabledPropsOnStart(false);
                 ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
                 {
