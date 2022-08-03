@@ -132,9 +132,11 @@
             { "imagePath": "/images/vision/Slide (8).png" },
             { "imagePath": "/images/vision/Slide (9).png" },
             { "imagePath": "/images/vision/Slide (10).png" },
-            { "imagePath": "/images/vision/Slide (11).png" },
+
             { "imagePath": "/images/vision/Slide (12).png" },
-            { "imagePath": "/images/vision/Slide (13).png" },
+
+            { "blackFrameDuration": 0.4 },
+
 
             { "imagePath": "/images/vision/Slide (15).png" },
             { "imagePath": "/images/vision/Slide (16).png" },
@@ -146,16 +148,16 @@
             { "imagePath": "/images/vision/Slide (22).png" },
             { "imagePath": "/images/vision/Slide (23).png" },
             { "imagePath": "/images/vision/Slide (24).png" },
-
+            { "imagePath": "/images/vision/Slide (25).png" },
             { "imagePath": "/images/vision/Slide (26).png" },
             { "imagePath": "/images/vision/Slide (27).png" },
             { "imagePath": "/images/vision/Slide (28).png" },
             { "imagePath": "/images/vision/Slide (29).png" },
-
-
+            { "imagePath": "/images/vision/Slide (30).png" },
+            { "imagePath": "/images/vision/Slide (31).png" },
             { "imagePath": "/images/vision/Slide (32).png" },
             { "imagePath": "/images/vision/Slide (33).png" },
-
+            { "imagePath": "/images/vision/Slide (34).png" },
             { "imagePath": "/images/vision/Slide (35).png" },
             { "imagePath": "/images/vision/Slide (36).png" },
 
@@ -179,31 +181,31 @@
 
             { "imagePath": "/images/vision/Slide (57).png" },
             { "imagePath": "/images/vision/Slide (58).png" },
-            { "imagePath": "/images/vision/Slide (59).png" },
-            { "imagePath": "/images/vision/Slide (60).png" },
-            { "imagePath": "/images/vision/Slide (61).png" },
-            { "imagePath": "/images/vision/Slide (62).png" },
-            { "imagePath": "/images/vision/Slide (63).png" },
 
+
+
+
+            { "imagePath": "/images/vision/Slide (63).png" },
+            { "imagePath": "/images/vision/Slide (64).png" },
             { "imagePath": "/images/vision/Slide (65).png" },
-            { "imagePath": "/images/vision/Slide (66).png" },
+
+
             { "imagePath": "/images/vision/Slide (68).png" },
             { "imagePath": "/images/vision/Slide (69).png" },
-            { "imagePath": "/images/vision/Slide (70).png" },
+
             { "imagePath": "/images/vision/Slide (71).png" },
-            { "imagePath": "/images/vision/Slide (72).png" },
+
             { "imagePath": "/images/vision/Slide (73).png" },
 
+            { "imagePath": "/images/vision/Slide (75).png" },
             { "imagePath": "/images/vision/Slide (76).png" },
             { "imagePath": "/images/vision/Slide (77).png" },
-
-
-            { "imagePath": "/images/vision/Slide (79).png" },
             { "imagePath": "/images/vision/Slide (80).png" },
 
+            { "imagePath": "/images/vision/Slide (82).png" }, // this
             { "imagePath": "/images/vision/Slide (83).png" },
             { "imagePath": "/images/vision/Slide (84).png" },
-            { "imagePath": "/images/vision/Slide (85).png" },
+            { "imagePath": "/images/vision/Slide (85).png" }, // this
             { "imagePath": "/images/vision/Slide (86).png" },
             { "imagePath": "/images/vision/Slide (87).png" },
             { "imagePath": "/images/vision/Slide (88).png" },
@@ -220,11 +222,17 @@
             { "imagePath": "/images/vision/Slide (100).png" },
             { "imagePath": "/images/vision/Slide (101).png" },
 
+
+            { "imagePath": "/images/vision/Slide (102).png" },
             { "imagePath": "/images/vision/Slide (103).png" },
             { "imagePath": "/images/vision/Slide (104).png" },
             { "imagePath": "/images/vision/Slide (105).png" },
             { "imagePath": "/images/vision/Slide (106).png" },
             { "imagePath": "/images/vision/Slide (107).png" },
+
+            { "blackFrameDuration": 0.5 },
+
+
             { "imagePath": "/images/vision/Slide (108).png" },
             { "imagePath": "/images/vision/Slide (109).png" },
             { "imagePath": "/images/vision/Slide (110).png" },
@@ -236,6 +244,7 @@
 
             { "imagePath": "/images/vision/Slide (116).png" },
             { "imagePath": "/images/vision/Slide (117).png" },
+
 
             { "imagePath": "/images/vision/Slide (119).png" },
             { "imagePath": "/images/vision/Slide (120).png" },
@@ -249,7 +258,7 @@
             { "imagePath": "/images/vision/Slide (128).png" },
             { "imagePath": "/images/vision/Slide (129).png" },
             { "imagePath": "/images/vision/Slide (130).png" },
-
+            { "imagePath": "/images/vision/Slide (131).png" },
 
             { "imagePath": "/images/vision/Slide (133).png" },
             { "imagePath": "/images/vision/Slide (134).png" },
@@ -284,7 +293,7 @@
             { "imagePath": "/images/vision/Slide (163).png" },
             { "imagePath": "/images/vision/Slide (164).png" },
 
-            { "blackFrameDuration": 2 },
+            { "blackFrameDuration": 0.9 },
 
 
             { "imagePath": "/images/vision/Slide (199).png" },

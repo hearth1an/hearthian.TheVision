@@ -75,20 +75,25 @@ namespace TheVision.CustomProps
             whiteHoleOptions.enabled = true;
 
             var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
+            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;         
+            
             qmWhiteHole.SetActive(true);
+            
 
-            /*
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 1, false, 5);
-            cameraFixedPosition.BreakLock(10f);
-            */
+            // cameraFixedPosition._followRate = 50f;
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 70f, true, 0.25f);
+
+            var rig = cameraFixedPosition.GetComponent<Rigidbody>();
+            rig.AddForce(0, -0.01f, 0, ForceMode.Impulse);
+            
+
 
             // Sometimes puts you under the ground
             // Camera shaking amount
-            var cameraShake = Locator.GetPlayerTransform().gameObject.AddComponent<CameraShake>();
-            Vector3 originalPosition = Locator.GetPlayerTransform().transform.position;
-            StartCoroutine(cameraShake.Shake(5.5f, 0.05f));
-            Locator.GetPlayerTransform().transform.position = originalPosition;
+            var cameraShake = Locator.GetPlayerTransform().gameObject.AddComponent<CameraShake>();            
+            StartCoroutine(cameraShake.Shake(5.5f, 0.09f));
+            
 
 
             // var playerCrash = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerCrushedController>();
@@ -122,7 +127,7 @@ namespace TheVision.CustomProps
 
             // flicker 
             var effect = Locator.GetPlayerCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 6f, onDuration: 1f);
+            effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
         }
 
         public void PlayWindSound()

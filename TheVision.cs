@@ -124,7 +124,9 @@ namespace TheVision
         {
             ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
 
-            if (systemName == "SolarSystem")
+            var timeLoop = TimeLoop.GetLoopCount(); // then add && timeLoop >= 2 with system name
+
+            if (systemName == "SolarSystem" )
             {
                 SpawnStartProps();
                 PickUpTorch();
@@ -186,6 +188,20 @@ namespace TheVision
             // Disabling QM WhiteHole
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
+            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
+            cameraFixedPosition.BreakLock(0.5f);
+
+            
+
+            Locator.GetPlayerTransform().SetLocalPositionX(-1.5f);
+            
+
+           
+            
+           /* var rig = cameraFixedPosition.GetComponent<OWRigidbody>();
+            rig.UnfreezePosition();
+            rig.UnfreezeRotation();
+           */
             TeleportShip();
         }
 
