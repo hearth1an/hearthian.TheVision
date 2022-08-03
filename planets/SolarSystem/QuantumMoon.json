@@ -29,7 +29,7 @@
         },
         "scale": 5,
         "parentPath": "Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum"
-      },
+      } /*,
        {
                 "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
                 "position": {
