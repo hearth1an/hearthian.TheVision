@@ -159,13 +159,17 @@ namespace TheVision
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
                 OWRigidbody s_rb = Locator.GetShipBody();
+                OWRigidbody p_rb = Locator.GetPlayerBody();
+
+                Vector3 playerPosition = p_rb.transform.TransformPoint(new Vector3(0f, 0f, 0f));
+                p_rb.SetPosition(playerPosition);
 
                 Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
                 s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());
-
+                p_rb.SetPosition(playerPosition);
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
 
                 // TheVision.CustomProps.PlayStartSound(false);
@@ -189,19 +193,10 @@ namespace TheVision
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(0.5f);
-
-            
+            cameraFixedPosition.BreakLock(0.5f);            
 
             Locator.GetPlayerTransform().SetLocalPositionX(-1.5f);
             
-
-           
-            
-           /* var rig = cameraFixedPosition.GetComponent<OWRigidbody>();
-            rig.UnfreezePosition();
-            rig.UnfreezeRotation();
-           */
             TeleportShip();
         }
 
@@ -357,9 +352,13 @@ namespace TheVision
 
         public void EndGame()
         {
-           // DeathManager deathManager = Locator.GetDeathManager();
-           // deathManager._escapedTimeLoopSequenceComplete = true;
-           // deathManager.KillPlayer(DeathType.BlackHole);
+            GameOverController gameOver = new GameOverController();
+            
+
+            DeathManager deathManager = Locator.GetDeathManager();
+            deathManager._escapedTimeLoopSequenceComplete = true;            
+            deathManager.KillPlayer(DeathType.BlackHole);   
+          
 
         }
 

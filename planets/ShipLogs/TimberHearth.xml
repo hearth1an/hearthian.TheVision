@@ -16,12 +16,12 @@
 
     <ExploreFact>
       <ID>SOLANUM_TH</ID>
-      <Text>Solanum somehow appeared on Timber Hearth near the Village. It seems like they are observing the Hearthians.</Text>
+      <Text>Solanum somehow appeared on Timber Hearth near the Village. It seems like she's observing the Hearthians.</Text>
     </ExploreFact>
 
     <ExploreFact>
       <ID>SOLANUM_TH_RECORDER</ID>
-      <Text>According to them, they just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, they apologized, but that's ok. They also would like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
+      <Text>According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum also would like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
     </ExploreFact>
 
     <Entry>
@@ -47,7 +47,7 @@
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_PARTICLES</ID>
-        <Text>Another noticable thing about Quantum Consciousness - particles near the head. By the way, other quantum rules are not working with Quantum Consciousness.</Text>
+        <Text>Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.</Text>
       </ExploreFact>
 
       <ExploreFact>

@@ -3,20 +3,34 @@
   "name": "Time Loop Ring",
   "Props": {
     "details": [
-      {
-        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-        "position": {
-          "x": 26.3102,
-          "y": 6.239,
-          "z": -2.236
+        {
+            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+            "position": {
+                "x": 26.3102,
+                "y": 6.239,
+                "z": -2.236
+            },
+            "rotation": {
+                "x": 329.464,
+                "y": 353.79,
+                "z": 90.0
+            },
+            "parentPath": "Characters_TimeLoopRing"
         },
-        "rotation": {
-          "x": 329.464,
-          "y": 353.79,
-          "z": 90.0
+        {
+            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Lighting_EyeState",
+            "position": {
+                "x": 24.0103,
+                "y": 6.439,
+                "z": -2.036
+            },
+            "rotation": {
+                "x": 329.464,
+                "y": 353.79,
+                "z": 90.0
+            },            
+            "parentPath": "Effects_TimeLoopRing"
         },
-        "parentPath": "Characters_TimeLoopRing"
-      },
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
