@@ -35,10 +35,7 @@ namespace TheVision.CustomProps
             _solanumAnimController.StartWritingMessage();
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
-            {
-                // drawing custom text                
-                // var customResponse = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText");
-                // customResponse.GetAddComponent<NomaiWallText>().Show();
+            {              
 
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _nomaiConversationManager._state = NomaiConversationManager.State.WatchingSky;
@@ -74,50 +71,21 @@ namespace TheVision.CustomProps
             whiteHoleOptions.intensity = 3;
             whiteHoleOptions.enabled = true;
 
+
+            // QM White Hole parameters
             var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
-            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;         
+            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;             
             
             qmWhiteHole.SetActive(true);
             
+            // Camera lock on target
+            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();            
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 119.85f, true, 5f);  
 
-            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            // cameraFixedPosition._followRate = 50f;
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 70f, true, 0.25f);
-
-            var rig = cameraFixedPosition.GetComponent<Rigidbody>();
-            rig.AddForce(0, -0.01f, 0, ForceMode.Impulse);
-            
-
-
-            // Sometimes puts you under the ground
-            // Camera shaking amount
-            var cameraShake = Locator.GetPlayerTransform().gameObject.AddComponent<CameraShake>();            
-            StartCoroutine(cameraShake.Shake(5.5f, 0.09f));
-            
-
-
-            // var playerCrash = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerCrushedController>();
-            // playerCrash.CrushPlayer()
-
-
-            //GameObject lightningGO = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Clouds_GD/LightningGenerator_GD/LightningGenerator_GD_CloudLightningInstance").InstantiateInactive();
-            //lightningGO.
-
-            // actually adding working lightninng but none of them is showing
-            // var lightning = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState/Effects_QM_EyeVortex/EyeVortex_Cloudlayer_Interior").gameObject.AddComponent<CloudLightningGenerator>();                        
-            // Vector3 localVector = new Vector3(4.2105f, -0.1138f, 1.9017f);
-            // lightning.SpawnLightning(localVector);
-
-            /* GameObject lightning = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Clouds_GD/LightningGenerator_GD").gameObject;
-            GameObject QMsphere = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject;
-            var lightnings = lightning.InstantiateInactive();
-            lightnings.transform.parent = QMsphere.transform;
-            lightnings.transform.position = QMsphere.transform.position;
-
-            var lightningGenerator = lightnings.GetComponent<CloudLightningGenerator>();
-
-            lightnings.SetActive(true);
-            // lightningGenerator._audioSector = _vortexAudio; */
+            // Pushing out force for flat version and VR version
+            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
+            Vector3 pushBack = new Vector3(0, -0.007f, -0.01f);
+            applyForce.AddImpulse(pushBack);
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
@@ -126,7 +94,7 @@ namespace TheVision.CustomProps
             TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
 
             // flicker 
-            var effect = Locator.GetPlayerCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
         }
 
@@ -154,12 +122,11 @@ namespace TheVision.CustomProps
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolFlashlightFlicker); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 6f);
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeSphereInflation); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);            
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.PlayOneShot();
+            PlayerHeadsetAudioSource.PlayDelayed(0.3f);
         }
-
 
         public void PlayStartSound()
         {
@@ -172,20 +139,3 @@ namespace TheVision.CustomProps
         }
     }
 }
-
-
-
-
-// hijacking Solanum's conversation controller:
-
-//         // under NomaiConversationManager
-// _activeResponseText.Show();
-// nomaiConversationManager.enabled = false;
-//_solanumAnimController.StartWritingMessage();
-//         // then every frame,
-//if (!_solanumAnimController.isStartingWrite && !_activeResponseText.IsAnimationPlaying())
-//{
-//	_solanumAnimController.StopWritingMessage(gestureToText: true);
-//  _solanumAnimController.StopWatchingPlayer();
-//}
-

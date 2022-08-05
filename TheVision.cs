@@ -12,6 +12,7 @@ using NewHorizons.Utility;
 using System.Threading.Tasks;
 using System.Threading;
 using OWML.Utils;
+using NewHorizons.Handlers;
 
 namespace TheVision
 {
@@ -158,18 +159,13 @@ namespace TheVision
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => qmStateTH.gameObject.activeSelf, () =>
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
-                OWRigidbody s_rb = Locator.GetShipBody();
-                OWRigidbody p_rb = Locator.GetPlayerBody();
-
-                Vector3 playerPosition = p_rb.transform.TransformPoint(new Vector3(0f, 0f, 0f));
-                p_rb.SetPosition(playerPosition);
+                OWRigidbody s_rb = Locator.GetShipBody();                
 
                 Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
-                s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());
-                p_rb.SetPosition(playerPosition);
+                s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());                
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
 
                 // TheVision.CustomProps.PlayStartSound(false);
@@ -185,18 +181,20 @@ namespace TheVision
             PlaySFXSound();
             PlayGaspSound();
             PlayThunderSound();
+            PlayQuantumSound();
 
             // Enabling json props
             DisabledPropsOnStart(true);
+
+            // Trying fix  Solanum invisibility
+            StreamingHandler.SetUpStreaming(SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle"), null);
 
             // Disabling QM WhiteHole
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(0.5f);            
+            cameraFixedPosition.BreakLock(0.05f); 
 
-            Locator.GetPlayerTransform().SetLocalPositionX(-1.5f);
-            
             TeleportShip();
         }
 
@@ -352,15 +350,24 @@ namespace TheVision
 
         public void EndGame()
         {
-            GameOverController gameOver = new GameOverController();
+            //  GameOverController gameOver = null;
             
+            // var gameOver = UITextType.YouAreDeadMessage;
+            // gameOver.
 
             DeathManager deathManager = Locator.GetDeathManager();
-            deathManager._escapedTimeLoopSequenceComplete = true;            
-            deathManager.KillPlayer(DeathType.BlackHole);   
-          
+            deathManager._escapedTimeLoop = true;
+            deathManager._escapedTimeLoopSequenceComplete = true;
+            deathManager._resurrectAfterDelay = false;
 
-        }
+            var deathText = SearchUtilities.Find("FlashbackCamera/Canvas_Text/DeathText").GetComponent<UnityEngine.UI.Text>();
+            deathText.text = "Seems like you're dead";
+
+            
+
+            deathManager.KillPlayer(DeathType.Default); 
+
+        }        
 
         public void PlayThunderSound()
         {
@@ -371,6 +378,17 @@ namespace TheVision
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
+        }
+
+        public void PlayQuantumSound()
+        {
+
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeLightning); // GD_Lightning = 2007
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayDelayed(0.3f);
         }
 
         public void PlayRevealSound()

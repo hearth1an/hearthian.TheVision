@@ -29,20 +29,6 @@
                 "y": 279.0402,
                 "z": 275.7439
             }
-        },
-        {
-            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Lighting_EyeState",
-            "position": {
-                "x": 48.5099373,
-                "y": 15.6914063,
-                "z": 252.312668
-            },
-            "rotation": {
-                "x": 276.159821,
-                "y": 320.4782,
-                "z": 312.779144
-            },
-            "parentPath": "Sector_TH/Nomai_ANIM_SkyWatching_Idle"
         }
     ],
     "nomaiText": [
