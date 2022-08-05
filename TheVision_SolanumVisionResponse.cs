@@ -80,11 +80,11 @@ namespace TheVision.CustomProps
             
             // Camera lock on target
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();            
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 119f, true, 2.5f);  
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 18f, true, 3f);  
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0, -0.007f, -0.01f);
+            Vector3 pushBack = new Vector3(0, -0.075f, -0.01f);
             applyForce.AddImpulse(pushBack);
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");

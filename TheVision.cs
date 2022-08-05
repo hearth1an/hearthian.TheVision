@@ -9,14 +9,8 @@ using TheVision.CustomProps;
 using HarmonyLib;
 using System.Reflection;
 using NewHorizons.Utility;
-using System.Threading.Tasks;
-using System.Threading;
-using OWML.Utils;
 using NewHorizons.Handlers;
-using System.Text;
-using HarmonyLib;
-using OWML.Common.Menus;
-using UnityEngine.UI;
+
 
 namespace TheVision
 {
@@ -24,13 +18,13 @@ namespace TheVision
     {
         public static INewHorizons newHorizonsAPI;
         public static TheVision Instance;
-        private static Text progressText;
+        
         public OWAudioSource PlayerHeadsetAudioSource;
-
 
         private void Awake()
         {
             Instance = this;
+            Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());
         }
 
         private void Start()
@@ -77,10 +71,8 @@ namespace TheVision
 
             // Setting green color for this one
             var GDcomputerColor = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD/PointLight_NOM_Computer").GetComponent<Light>();
-            GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };            
-
+            GDcomputerColor.color = new Color { r = 0, g = 2, b = 1 };
         }
-
 
         // Makes the Vision Torch more lore-friendly to pick
         public static void PickUpTorch()
@@ -121,9 +113,7 @@ namespace TheVision
 
             });            
             
-        }
-
-        
+        }        
             // Load StartProps and DisabledPropsOnStart
             public void OnStarSystemLoaded(string systemName)
         {
@@ -144,7 +134,7 @@ namespace TheVision
             }
             if (systemName == "GloamingGalaxy")
             {
-                EndGame() ;
+                EndGame();
             }
         }
 
@@ -168,9 +158,7 @@ namespace TheVision
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
                 s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());                
-                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
-
-                // TheVision.CustomProps.PlayStartSound(false);
+                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");               
 
                 s_dmg._invincible = originalInvicibility;
             });
@@ -189,15 +177,16 @@ namespace TheVision
             DisabledPropsOnStart(true);
 
             // Trying fix  Solanum invisibility
-            StreamingHandler.SetUpStreaming(SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle"), null);
+            StreamingHandler.SetUpStreaming(SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle"), null);
+            StreamingHandler.SetUpStreaming(SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle"), null);
+            StreamingHandler.SetUpStreaming(SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle"), null);
+            StreamingHandler.SetUpStreaming(SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle"), null);
 
             // Disabling QM WhiteHole
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.BreakLock(0.05f);
-
-            
 
             TeleportShip();
         }
@@ -341,7 +330,6 @@ namespace TheVision
                 //decloaking QM on signals spawn
                 SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
                 SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/WatchZone").SetActive(false);
-
             }
 
             // Deactivating it so it will be no sound or flickers
@@ -353,28 +341,16 @@ namespace TheVision
         }
 
         public void EndGame()
-        {
-            GameOverController gameOver = new GameOverController();
-            DeathManager deathManager = Locator.GetDeathManager();
-
-            // deathManager._escapedTimeLoop = true;            
-            deathManager._escapedTimeLoop = true;
-            deathManager._timeloopEscapeType = TimeloopEscapeType.Ship;
-            deathManager._deathType = DeathType.Default;
-            deathManager.KillPlayer(DeathType.Default);
-            
-            Text death = gameOver._deathText;
-            death.text = "To be continued...";            
-
-            gameOver._deathText = death;            
-            gameOver.Start();
-
-
+        {            
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                DeathManager deathManager = Locator.GetDeathManager();
+                deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
+            });
         }
 
         public void PlayThunderSound()
         {
-
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.GD_Lightning); // GD_Lightning = 2007
@@ -385,7 +361,6 @@ namespace TheVision
 
         public void PlayQuantumSound()
         {
-
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeLightning); // GD_Lightning = 2007
@@ -396,30 +371,25 @@ namespace TheVision
 
         public void PlayRevealSound()
         {
-
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeTemple_Stinger); // EyeTemple_Stinger = 2903
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play(delay: 1);
-
         }
         public void PlaySFXSound()
         {
-
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SingularityOnPlayerEnterExit); // SingularityOnPlayerEnterExit = 2402            
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-
         }
 
         public void PlayGaspSound()
         {
-
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.PlayerGasp_Heavy); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning // 854 PlayerGasp_Heavy

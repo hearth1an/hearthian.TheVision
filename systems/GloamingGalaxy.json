@@ -12,7 +12,8 @@
             "z": 8000
         }
     },
+    "canEnterViaWarpDrive": false,
     "factRequiredForWarp": "HOLOGRAM_CHANGED"
-    // "canEnterViaWarpDrive": false  ---- make this when death manager is made correctly
+    
 
 }
