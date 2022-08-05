@@ -13,6 +13,10 @@ using System.Threading.Tasks;
 using System.Threading;
 using OWML.Utils;
 using NewHorizons.Handlers;
+using System.Text;
+using HarmonyLib;
+using OWML.Common.Menus;
+using UnityEngine.UI;
 
 namespace TheVision
 {
@@ -20,7 +24,7 @@ namespace TheVision
     {
         public static INewHorizons newHorizonsAPI;
         public static TheVision Instance;
-
+        private static Text progressText;
         public OWAudioSource PlayerHeadsetAudioSource;
 
 
@@ -123,9 +127,7 @@ namespace TheVision
             // Load StartProps and DisabledPropsOnStart
             public void OnStarSystemLoaded(string systemName)
         {
-            ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
-
-            var timeLoop = TimeLoop.GetLoopCount(); // then add && timeLoop >= 2 with system name
+            ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);           
 
             if (systemName == "SolarSystem" )
             {
@@ -142,7 +144,7 @@ namespace TheVision
             }
             if (systemName == "GloamingGalaxy")
             {
-                EndGame();
+                EndGame() ;
             }
         }
 
@@ -193,7 +195,9 @@ namespace TheVision
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(0.05f); 
+            cameraFixedPosition.BreakLock(0.05f);
+
+            
 
             TeleportShip();
         }
@@ -350,24 +354,23 @@ namespace TheVision
 
         public void EndGame()
         {
-            //  GameOverController gameOver = null;
-            
-            // var gameOver = UITextType.YouAreDeadMessage;
-            // gameOver.
-
+            GameOverController gameOver = new GameOverController();
             DeathManager deathManager = Locator.GetDeathManager();
+
+            // deathManager._escapedTimeLoop = true;            
             deathManager._escapedTimeLoop = true;
-            deathManager._escapedTimeLoopSequenceComplete = true;
-            deathManager._resurrectAfterDelay = false;
-
-            var deathText = SearchUtilities.Find("FlashbackCamera/Canvas_Text/DeathText").GetComponent<UnityEngine.UI.Text>();
-            deathText.text = "Seems like you're dead";
-
+            deathManager._timeloopEscapeType = TimeloopEscapeType.Ship;
+            deathManager._deathType = DeathType.Default;
+            deathManager.KillPlayer(DeathType.Default);
             
+            Text death = gameOver._deathText;
+            death.text = "To be continued...";            
 
-            deathManager.KillPlayer(DeathType.Default); 
+            gameOver._deathText = death;            
+            gameOver.Start();
 
-        }        
+
+        }
 
         public void PlayThunderSound()
         {

@@ -10,7 +10,7 @@
 
     <RumorFact>
       <ID>VISION_TORCH_RUMOR</ID>
-      <SourceID>THE_VISION_ENTRY</SourceID>
+      <SourceID>IP_ZONE_3_ENTRANCE</SourceID>
       <RumorName>Vision Torch in Damaged Laboratory</RumorName>
       <Text>I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.</Text>
     </RumorFact>

@@ -10,6 +10,7 @@
 
     <RumorFact>
       <ID>SOLANUM_START</ID>
+      <SourceID>VISION_TORCH_ENTRY</SourceID>
       <RumorName>What if..?</RumorName>
       <Text>Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?</Text>
     </RumorFact>
