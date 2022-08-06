@@ -170,8 +170,7 @@ namespace TheVision
             PlayRevealSound();
             PlaySFXSound();
             PlayGaspSound();
-            PlayThunderSound();
-            PlayQuantumSound();
+            PlayThunderSound();           
 
             // Enabling json props
             DisabledPropsOnStart(true);
@@ -186,7 +185,7 @@ namespace TheVision
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(0.05f);
+            cameraFixedPosition.BreakLock(0.3f);
 
             TeleportShip();
         }
@@ -341,12 +340,13 @@ namespace TheVision
         }
 
         public void EndGame()
-        {            
+        {
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 DeathManager deathManager = Locator.GetDeathManager();
                 deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
             });
+           
         }
 
         public void PlayThunderSound()
@@ -357,24 +357,14 @@ namespace TheVision
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-        }
-
-        public void PlayQuantumSound()
-        {
-            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
-            PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeLightning); // GD_Lightning = 2007
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 8f);
-            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.PlayDelayed(0.3f);
-        }
+        }       
 
         public void PlayRevealSound()
         {
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeTemple_Stinger); // EyeTemple_Stinger = 2903
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.25f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.2f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play(delay: 1);
         }
@@ -387,6 +377,7 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
+
 
         public void PlayGaspSound()
         {

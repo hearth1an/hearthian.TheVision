@@ -58,11 +58,20 @@ namespace TheVision.CustomProps
 
         public void OnVisionEnd()
         {
-            // sfx             
-            PlayWindSound();
-            PlayStartSound();
-            PlayEnergySound();
-            PlayFadeInSound();
+
+            TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                // sfx             
+                PlayWindSound();
+                PlayStartSound();
+                PlayEnergySound();
+                PlayFadeInSound();
+            });
+           
+
+            // flicker 
+            var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
 
             // wh parameters
             var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
@@ -80,11 +89,11 @@ namespace TheVision.CustomProps
             
             // Camera lock on target
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();            
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 18f, true, 3f);  
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 119.3f, true, 3f);  
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0, -0.075f, -0.01f);
+            Vector3 pushBack = new Vector3(0, -0.009f, -0.007f);
             applyForce.AddImpulse(pushBack);
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
@@ -93,9 +102,7 @@ namespace TheVision.CustomProps
 
             TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
 
-            // flicker 
-            var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
+            
         }
 
         public void PlayWindSound()
@@ -123,7 +130,7 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeSphereInflation); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);            
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayDelayed(0.3f);
         }
