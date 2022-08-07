@@ -138,54 +138,68 @@ namespace TheVision
             }
         }
 
-        // Async func to teleport ship to TH State on QM so player can continue the journey
+        // Function for teleporting ship to TH State on QM so player can continue the journey
         public static void TeleportShip()
         {
             var qmStateTH = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH");
             ShipDamageController s_dmg = Locator.GetShipBody().GetComponent<ShipDamageController>();
             bool originalInvicibility = s_dmg._invincible;
-            s_dmg._invincible = true;
+            s_dmg._invincible = true;            
 
             TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => qmStateTH.gameObject.activeSelf, () =>
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
-                OWRigidbody s_rb = Locator.GetShipBody();                
+                OWRigidbody s_rb = Locator.GetShipBody();
+                OWRigidbody p_rb = Locator.GetPlayerBody();
 
-                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
+                Vector3 originalVelocity = qm_rb.GetAngularVelocity();
+
+                Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));               
+
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
-                s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());                
-                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");               
-
+                s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());       
+                
+                TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
                 s_dmg._invincible = originalInvicibility;
+
+                TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+                {
+                    p_rb.SetAngularVelocity(new Vector3(0f, 0f, 0f));
+                });
+               
+
             });
+
+            
         }
 
         public void SpawnOnVisionEnd()
         {
-            // Playing SFX
-            PlayRevealSound();
-            PlaySFXSound();
-            PlayGaspSound();
-            PlayThunderSound();           
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                // Playing SFX
+                PlayRevealSound();
+                PlaySFXSound();
+                PlayGaspSound();
+                PlayThunderSound();
+
+            });
 
             // Enabling json props
             DisabledPropsOnStart(true);
-
-            // Trying fix  Solanum invisibility
-            StreamingHandler.SetUpStreaming(SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle"), null);
-            StreamingHandler.SetUpStreaming(SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle"), null);
-            StreamingHandler.SetUpStreaming(SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle"), null);
-            StreamingHandler.SetUpStreaming(SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle"), null);
 
             // Disabling QM WhiteHole
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.BreakLock(0.3f);
+
+            var effect2 = Locator.GetActiveCamera().transform.Find("ScreenEffects/DarkMatterBubble").GetComponent<DarkMatterBubbleController>();
+           // effect2._inDarkMatter = false;            
 
             TeleportShip();
         }

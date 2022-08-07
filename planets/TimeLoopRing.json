@@ -1,22 +1,29 @@
 {
-  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {
+    "gravityFallOff": "linear"
+  },
+  "canShowOnTitle": true,
   "name": "Time Loop Ring",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
   "Props": {
     "details": [
-        {
-            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-            "position": {
-                "x": 26.3102,
-                "y": 6.239,
-                "z": -2.236
-            },
-            "rotation": {
-                "x": 329.464,
-                "y": 353.79,
-                "z": 90.0
-            },
-            "parentPath": "Characters_TimeLoopRing"
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 26.3102,
+          "y": 6.239,
+          "z": -2.236
         },
+        "rotation": {
+          "x": 329.464,
+          "y": 353.79,
+          "z": 90.0
+        },
+        "parentPath": "Characters_TimeLoopRing"
+      },
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
@@ -29,58 +36,56 @@
           "y": 353.79,
           "z": 90.0
         },
-        "scale": 5,
+        "scale": 5.0,
         "parentPath": "Effects_TimeLoopRing"
       },
       {
         "assetBundle": "planets/mask",
         "path": "Assets/Monolith.prefab",
         "position": {
-          "x": 0,
-          "y": 250,
-          "z": 0
+          "y": 250.0
         },
         "rotation": {
-          "x": 270,
-          "y": 90,
-          "z": 0
+          "x": 270.0,
+          "y": 90.0
         },
-        "scale": 1,
         "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
       }
     ],
     "nomaiText": [
       {
         "position": {
-          "x": 26.3085,
-          "y": 7.9437,
-          "z": -1.7772
+          "x": 26.2086,
+          "y": -3.3939,
+          "z": -7.6213
         },
         "rotation": {
-          "x": 281.9006,
-          "y": 3.0624,
-          "z": 90.0
+          "x": 275,
+          "y": 70,
+          "z": 19
         },
         "type": "recorder",
+        "location": "unspecified",
         "xmlFile": "planets/Text/RecorderATP.xml",
-        "rename": "Prefab_NOM_Recorder_ATP",
-        "parentPath": "Interactibles_TimeLoopRing_Hidden"
+        "parentPath": "Interactibles_TimeLoopRing_Hidden",
+        "rename": "Prefab_NOM_Recorder_ATP"
       },
       {
         "position": {
-          "x": 26.3536,
-          "y": 0.18,
-          "z": -6.67
+          "x": 26.3537083,
+          "y": 0.179924965,
+          "z": -6.670049
         },
         "rotation": {
-          "x": 321,
-          "y": 0,
-          "z": 90
+          "x": 321.000061,
+          "y": 8.788803E-06,
+          "z": 89.99999
         },
         "type": "computer",
+        "location": "unspecified",
         "xmlFile": "planets/Text/ComputerATP.xml",
-        "rename": "Prefab_NOM_Computer_ATP",
-        "parentPath": "Interactibles_TimeLoopRing_Hidden"
+        "parentPath": "Interactibles_TimeLoopRing_Hidden",
+        "rename": "Prefab_NOM_Computer_ATP"
       }
     ],
     "signals": [
@@ -101,7 +106,11 @@
       }
     ]
   },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
   "ShipLog": {
+    "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",
     "xmlFile": "planets/ShipLogs/TimeLoopRing.xml"
   }

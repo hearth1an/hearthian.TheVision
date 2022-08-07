@@ -42,7 +42,7 @@ namespace TheVision.CustomProps
                 _solanumAnimController.StopWatchingPlayer();
 
                 // Spawning SolanumCopies and Signals on vision response
-                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
+                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 1);
             });
         }
 
@@ -73,6 +73,10 @@ namespace TheVision.CustomProps
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
 
+            var effect2 = Locator.GetActiveCamera().transform.Find("ScreenEffects/DarkMatterBubble").GetComponent<DarkMatterBubbleController>();
+            effect2._inDarkMatter = true;
+            effect2._fade = 5f;
+
             // wh parameters
             var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
             whiteHoleOptions.color = new Color(1, 1, 2, 1);
@@ -93,7 +97,7 @@ namespace TheVision.CustomProps
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0, -0.009f, -0.007f);
+            Vector3 pushBack = new Vector3(0, -0.027f, -0.02f);
             applyForce.AddImpulse(pushBack);
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
@@ -120,7 +124,7 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/NomaiConversation").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.MemoryUplink_Start); // shattering sound 2428 //2697 - station flicker // 2252 -wind // 2005 - electric core // 2460 MemoryUplink_Start
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 5f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayDelayed(4.5f);
 

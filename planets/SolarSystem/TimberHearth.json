@@ -1,35 +1,42 @@
 {
-  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {
+    "gravityFallOff": "linear"
+  },
+  "canShowOnTitle": true,
   "name": "Timber Hearth",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
   "Props": {
     "details": [
-        {
-            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-            "position": {
-                "x": 48.5099373,
-                "y": 15.6914063,
-                "z": 252.312668
-            },
-            "rotation": {
-                "x": 276.159821,
-                "y": 320.4782,
-                "z": 312.779144
-            },
-            "scale": 5.0
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+        "position": {
+          "x": 48.5101967,
+          "y": 15.6914063,
+          "z": 252.31279
         },
-        {
-            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-            "position": {
-                "x": 48.5018,
-                "y": 15.1183,
-                "z": 249.9972
-            },
-            "rotation": {
-                "x": 332.5521,
-                "y": 279.0402,
-                "z": 275.7439
-            }
+        "rotation": {
+          "x": 276.15976,
+          "y": 320.478241,
+          "z": 312.779083
+        },
+        "scale": 5.0
+      },
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 48.5017281,
+          "y": 15.1183014,
+          "z": 249.997055
+        },
+        "rotation": {
+          "x": 332.5521,
+          "y": 279.0402,
+          "z": 275.7439
         }
+      }
     ],
     "nomaiText": [
       {
@@ -44,6 +51,7 @@
           "z": 82.68443
         },
         "type": "recorder",
+        "location": "unspecified",
         "xmlFile": "planets/Text/RecorderTH.xml",
         "rename": "Prefab_NOM_Recorder_TH"
       }
@@ -52,7 +60,6 @@
       {
         "audio": "planets/quantum.wav",
         "detectionRadius": 2000.0,
-        "reveals": "WHAT_IS_NEW_QR",
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,
         "name": "Solanum",
@@ -62,11 +69,16 @@
           "y": 15.6914063,
           "z": 252.312668
         },
+        "reveals": "WHAT_IS_NEW_QR",
         "sourceRadius": 2.0
       }
     ]
   },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
   "ShipLog": {
+    "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",
     "xmlFile": "planets/ShipLogs/TimberHearth.xml"
   }

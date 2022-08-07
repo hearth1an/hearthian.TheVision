@@ -1,18 +1,25 @@
 {
-  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "Base": {
+    "gravityFallOff": "linear"
+  },
+  "canShowOnTitle": true,
   "name": "Giants Deep",
+  "Orbit": {
+    "semiMajorAxis": 0.0
+  },
   "Props": {
     "details": [
       {
         "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
         "position": {
-          "x": -43.62191,
+          "x": -43.6224327,
           "y": -68.5414,
-          "z": -31.2553654
+          "z": -31.254982
         },
         "rotation": {
           "x": 350.740326,
-          "y": 50.80401,
+          "y": 50.8040047,
           "z": 261.666534
         }
       },
@@ -44,6 +51,7 @@
           "z": 261.0757
         },
         "type": "recorder",
+        "location": "unspecified",
         "xmlFile": "planets/Text/RecorderGD.xml",
         "rename": "Prefab_NOM_Recorder_GD"
       },
@@ -54,11 +62,12 @@
           "z": -29.45578
         },
         "rotation": {
-          "x": 333.902618,
-          "y": 283.609924,
-          "z": 153.185333
+          "x": 312.465057,
+          "y": 220.367752,
+          "z": 102.23214
         },
         "type": "computer",
+        "location": "unspecified",
         "xmlFile": "planets/Text/ComputerGD.xml",
         "rename": "Prefab_NOM_Computer_GD"
       }
@@ -80,7 +89,11 @@
       }
     ]
   },
+  "ReferenceFrame": {
+    "bracketRadius": -1.0
+  },
   "ShipLog": {
+    "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",
     "xmlFile": "planets/ShipLogs/GiantsDeep.xml"
   }
