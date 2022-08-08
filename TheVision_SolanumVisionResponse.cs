@@ -42,7 +42,7 @@ namespace TheVision.CustomProps
                 _solanumAnimController.StopWatchingPlayer();
 
                 // Spawning SolanumCopies and Signals on vision response
-                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 1);
+                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
             });
         }
 
@@ -66,8 +66,7 @@ namespace TheVision.CustomProps
                 PlayStartSound();
                 PlayEnergySound();
                 PlayFadeInSound();
-            });
-           
+            });           
 
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
@@ -84,29 +83,37 @@ namespace TheVision.CustomProps
             whiteHoleOptions.intensity = 3;
             whiteHoleOptions.enabled = true;
 
-
             // QM White Hole parameters
             var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
             var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;             
             
             qmWhiteHole.SetActive(true);
-            
+
+
             // Camera lock on target
-            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();            
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 119.3f, true, 3f);  
+            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
+            cameraFixedPosition.LockOn(qmWhiteHole.transform, 20f, true, 3f);
+
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0, -0.027f, -0.02f);
-            applyForce.AddImpulse(pushBack);
+            Vector3 pushBack = new Vector3(0f, 0.007f, -0.008f);
+            applyForce.AddLocalImpulse(pushBack);
+
+
+            // Camera shaking
+            var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
+            StartCoroutine(cameraShaking.Shake(6f, 0.1f));          
+           
+
+
+
 
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
             _nomaiConversationManager.enabled = false;
 
-            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
-
-            
+            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);            
         }
 
         public void PlayWindSound()

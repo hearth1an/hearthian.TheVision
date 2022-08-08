@@ -7,7 +7,7 @@ namespace TheVision.Patches
     internal static class GameOverPatches
     {
         private static bool skipPostCredits = false;
-        private static OWAudioSource PlayerHeadsetAudioSource;
+       
 
         [HarmonyPatch(nameof(GameOverController.SetupGameOverScreen))]
         [HarmonyPrefix]

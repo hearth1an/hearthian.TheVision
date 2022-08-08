@@ -13,13 +13,13 @@
       {
         "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
         "position": {
-          "x": -43.6224327,
-          "y": -68.5414,
-          "z": -31.254982
+          "x": -43.6231842,
+          "y": -68.5415039,
+          "z": -31.2538242
         },
         "rotation": {
           "x": 350.740326,
-          "y": 50.8040047,
+          "y": 50.804,
           "z": 261.666534
         }
       },

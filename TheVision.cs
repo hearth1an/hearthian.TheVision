@@ -124,6 +124,7 @@ namespace TheVision
                 SpawnStartProps();
                 PickUpTorch();
                 DisabledPropsOnStart(false);
+
                 ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
                 {
                     if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
@@ -177,6 +178,8 @@ namespace TheVision
             
         }
 
+       
+
         public void SpawnOnVisionEnd()
         {
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
@@ -196,10 +199,9 @@ namespace TheVision
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(0.3f);
+            cameraFixedPosition.BreakLock(1f);
 
-            var effect2 = Locator.GetActiveCamera().transform.Find("ScreenEffects/DarkMatterBubble").GetComponent<DarkMatterBubbleController>();
-           // effect2._inDarkMatter = false;            
+             
 
             TeleportShip();
         }
@@ -209,7 +211,7 @@ namespace TheVision
         {
             //decloaking QM on signals spawn
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);            
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
 
             //disabling recorder on QM Solanum shuttle
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").gameObject.SetActive(!isActive);
@@ -263,9 +265,9 @@ namespace TheVision
             var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle");
             solanumATP.SetActive(isActive);
 
-            var ATPhidden = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden").transform;
+            var ATPhidden = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden").transform; 
 
-            var ATPrecorder = ATPhidden.Find("Prefab_NOM_Recorder_ATP").gameObject;
+            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP").gameObject;
             ATPrecorder.SetActive(isActive);
 
             ATPhidden.GetComponentInChildren<NomaiComputerSlotInterface>().gameObject.name = "Prefab_NOM_Computer_WarpCore";
@@ -351,6 +353,7 @@ namespace TheVision
             //Enabling hologram on Vessel
             Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject.SetActive(!isActive);
             Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/VesselHologram_GloamingGalaxy").gameObject.SetActive(isActive);
+        
         }
 
         public void EndGame()
