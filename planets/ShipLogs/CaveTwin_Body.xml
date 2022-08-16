@@ -1,0 +1,29 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+  <ID>RINGWORLD_BODY</ID>
+
+  <Entry>
+    <ID>SOLANUM_ET</ID>
+    <Name>Solanum in Sunless City</Name>
+
+    <Curiosity>THE_VISION_CURIOSITY</Curiosity>
+
+
+    <RumorFact>
+      <ID>SOLANUM_ET</ID>
+      <SourceID>THE_VISION_ENTRY</SourceID>
+      <RumorName>Solanum in Sunless City</RumorName>
+      <Text>I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.</Text>
+    </RumorFact>
+    
+     <ExploreFact>
+      <ID>SOLANUM_ET_FOUND</ID>
+      <Text>I found Solanum here!</Text>
+    </ExploreFact>
+
+    <ExploreFact>
+      <ID>SOLANUM_ET_EVENT</ID>
+      <Text>Solanum event</Text>
+    </ExploreFact>
+
+  </Entry>
+</AstroObjectEntry>

@@ -1,0 +1,135 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",   
+    "name": "Brittle Hollow", 
+    "Props": {
+        "details": [
+            {
+                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+                "position": {
+                    "x": 3.3476,
+                    "y": 153.4004,
+                    "z": -56.1326
+                },
+                "rotation": {
+                    "x": 338.3891,
+                    "y": 352.2668,
+                    "z": 0
+                },
+                "parentPath": "Sector_BH/Solanum_BH",
+                "rename": "Solanum_BH_Character"
+
+            },
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "position": {
+                    "x": 0,
+                    "y": 2.2,
+                    "z": 0.3
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": 5.0,
+                "parentPath": "Sector_BH/Solanum_BH_Character",
+                "rename": "Solanum_BH_Particles"
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
+                "position": {
+                    "x": -1.8564,
+                    "y": -0.1,
+                    "z": 0.7
+                },
+                "rotation": {
+                    "x": 348.7129,
+                    "y": 5.1213,
+                    "z": 2.3999
+                },
+                "parentPath": "Sector_BH/Solanum_BH_Character",
+                "rename": "Solanum_BH_Crystal"                
+            },
+            {
+                "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/Fragment OldSettlement 3/Core_OldSettlement 3/Interactables_Core_OldSettlement3/Prefab_NOM_GravityCrystal_Cracked",
+                "position": {
+                    "x": -1.8564,
+                    "y": -0.1,
+                    "z": 0.7
+
+                },
+                "rotation": {
+                    "x": 348.7129,
+                    "y": 5.1213,
+                    "z": 2.3999
+                },
+                "scale": 0.5,
+                "rename": "Solanum_BH_Crystal_Cracked",
+                "parentPath": "Sector_BH/Solanum_BH_Character"
+            }
+        ],
+        "reveal": [
+            {
+                "maxAngle": 180.0,
+                "maxDistance": -1.0,
+                "position": {
+                    "x": 3.3476,
+                    "y": 153.4004,
+                    "z": -56.1326
+                },
+                "radius": 3,
+                "revealOn": "enter",
+                "reveals": [
+                    "SOLANUM_BH_FOUND"
+                ]
+            }
+        ],
+        "nomaiText": [
+            {
+
+                "position": {
+                    "x": 1.2,
+                    "y": 1,
+                    "z": 1.1
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "type": "recorder",
+                "location": "unspecified",
+                "parentPath": "Sector_BH/Solanum_BH_Character",
+                "xmlFile": "planets/Text/RecorderBH.xml",
+                "rename": "Prefab_NOM_Recorder_BH"
+            }
+        ],
+        "signals": [
+            {
+                "audio": "planets/quantum.wav",
+                "detectionRadius": 2000.0,
+                "frequency": "Quantum Consciousness",
+                "identificationRadius": 500.0,
+                "name": "Solanum",
+                "onlyAudibleToScope": false,
+                "parentPath": "Sector_BH/Solanum_BH_Character",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "sourceRadius": 2.0
+            }
+        ]
+
+    },
+    "ReferenceFrame": {
+        "bracketRadius": -1.0
+    },
+    "ShipLog": {
+        "mapMode": {},
+        "spriteFolder": "planets/ShipLogs/sprites",
+        "xmlFile": "planets/ShipLogs/BrittleHollow_Body.xml"
+    }
+
+}

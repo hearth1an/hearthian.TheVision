@@ -13,23 +13,23 @@
       {
         "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
         "position": {
-          "x": 48.5099068,
+          "x": 48.510067,
           "y": 15.6914063,
-          "z": 252.312714
+          "z": 252.313049
         },
         "rotation": {
           "x": 276.159821,
-          "y": 320.4782,
-          "z": 312.7791
+          "y": 320.478241,
+          "z": 312.779083
         },
         "scale": 5.0
       },
       {
         "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
         "position": {
-          "x": 48.5015755,
+          "x": 48.5017357,
           "y": 15.1184082,
-          "z": 249.99614
+          "z": 249.996048
         },
         "rotation": {
           "x": 332.5521,

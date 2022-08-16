@@ -71,10 +71,7 @@ namespace TheVision.CustomProps
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
-
-            var effect2 = Locator.GetActiveCamera().transform.Find("ScreenEffects/DarkMatterBubble").GetComponent<DarkMatterBubbleController>();
-            effect2._inDarkMatter = true;
-            effect2._fade = 5f;
+            
 
             // wh parameters
             var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
@@ -97,7 +94,7 @@ namespace TheVision.CustomProps
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0.007f, -0.008f);
+            Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
 
 

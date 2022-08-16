@@ -13,12 +13,12 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": 207.418167,
-          "y": -169.2856,
-          "z": 177.871063
+          "x": 207.417908,
+          "y": -169.285614,
+          "z": 177.870239
         },
         "rotation": {
-          "x": 21.66899,
+          "x": 21.6689949,
           "y": 322.410034,
           "z": 89.04029
         }
@@ -26,15 +26,16 @@
       {
         "path": "DreamWorld_Body/Sector_DreamWorld/Sector_Underground/Sector_PrisonCell/Interactibles_PrisonCell/PrisonerSequence/VisionTorchWallSocket/Prefab_IP_VisionTorchItem",
         "position": {
-          "x": 184.882477,
-          "y": -169.285736,
-          "z": 200.5892
+          "x": 184.88208,
+          "y": -169.285919,
+          "z": 200.588913
         },
         "rotation": {
           "x": 15.64821,
           "y": 322.5147,
           "z": 89.07383
         },
+        "scale": 1.00000012,
         "parentPath": "Sector_RingWorld/Sector_SecretEntrance"
       }
     ],
