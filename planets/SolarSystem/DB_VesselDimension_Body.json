@@ -23,20 +23,21 @@
           "z": 2.71970558
         }
       },
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-        "position": {
-          "x": 148.287018,
-          "y": 28.25,
-          "z": 0.478176
-        },
-        "rotation": {
-          "x": 354.762848,
-          "y": 127.60054,
-          "z": 331.5797
-        },
-        "scale": 5.0
-      }
+        {
+            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+            "position": {
+                "x": 0,
+                "y": 2.2,
+                "z": 0.3
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": 5.0,
+            "parentPath": "Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle"
+        }
     ],
     "nomaiText": [
       {
@@ -57,15 +58,13 @@
       }
     ],
     "reveal": [
-      {
-        "maxAngle": 180.0,
-        "maxDistance": -1.0,
+      {        
         "position": {
-          "x": 0.0299,
-          "y": -13.6404,
-          "z": -35.12
+          "x": 146,
+          "y": -0.4,
+          "z": -18
         },
-        "radius": 2.0,
+        "radius": 10.0,
         "revealOn": "enter",
         "reveals": [
           "HOLOGRAM_CHANGED"

@@ -64,13 +64,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>IS_HOLOGRAM_CHANGED</FactID>
-      <Condition>3</Condition>
+      <Condition>9</Condition>
     </RevealFact>
-  </ShipLogConditions>
-  <ShipLogConditions>
-    <RevealFact>
-      <FactID>HOLOGRAM_CHANGED</FactID>
-      <Condition>4</Condition>
-    </RevealFact>
-  </ShipLogConditions>
+  </ShipLogConditions> 
 </NomaiObject>

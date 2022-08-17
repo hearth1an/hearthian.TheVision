@@ -93,7 +93,7 @@
                     "z": 1.1
                 },
                 "rotation": {
-                    "x": 0,
+                    "x": -10,
                     "y": 0,
                     "z": 0
                 },
@@ -118,6 +118,7 @@
                     "y": 0,
                     "z": 0
                 },
+                "reveals": "SOLANUM_BH",
                 "sourceRadius": 2.0
             }
         ]

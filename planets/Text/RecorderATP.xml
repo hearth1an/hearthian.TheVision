@@ -60,7 +60,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>STATUE_ATP_LINK</FactID>
-      <Condition>3</Condition>
+      <Condition>7</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

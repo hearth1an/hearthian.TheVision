@@ -1,0 +1,23 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",    
+    "name": "Hub Dimension",    
+    "Props": {
+        "signals": [
+            {
+                "audio": "planets/quantum.wav",
+                "detectionRadius": 2000.0,
+                "frequency": "Quantum Consciousness",
+                "identificationRadius": 500.0,
+                "name": "Solanum",
+                "onlyAudibleToScope": false,
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "parentPath": "Sector_HubDimension/Interactables_HubDimension/Pivot/InnerWarp_ToAnglerNest",
+                "sourceRadius": 2.0
+            }
+        ]
+    }
+}
