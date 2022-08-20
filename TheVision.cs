@@ -37,6 +37,15 @@ namespace TheVision
             newHorizonsAPI.LoadConfigs(this);
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
+
+            LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
+            {
+                if (loadScene == OWScene.EyeOfTheUniverse)
+                {
+                    EyeOfTheUniverseProps();
+                }
+            };
+
         }
 
         private void SpawnStartProps()
@@ -287,29 +296,24 @@ namespace TheVision
                         DisabledPropsOnStart(true);
                     }
                 });
+
+                
             }
             if (systemName == "GloamingGalaxy")
             {
                 EndGame();
             }
 
-            if (systemName == "EyeOfTheUniverse")
-            {
-                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
-                {
-                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
-                    {
-                        EyeOfTheUniverseProps();
-                    }
-                });
-            }
+            
         }
+
+        
 
         public void EyeOfTheUniverseProps()
         {
 
             var _vessel = SearchUtilities.Find("Vessel_Body");
-            var _vesselSector = SearchUtilities.Find("Vessel_Body/Secror_VesselBridge").GetComponent<Sector>();
+            var _vesselSector = SearchUtilities.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
 
             string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
             Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
@@ -318,7 +322,7 @@ namespace TheVision
 
             var SolanumCopy = SearchUtilities.Find("Vessel_Body/Sector_VesselBridge/Nomai_ANIM_Skywatching_Idle");
 
-            var SolanumAnim = SolanumCopy.GetComponent<SolanumAnimController>();
+            var SolanumAnim = SolanumCopy.AddComponent<SolanumAnimController>().GetComponent<SolanumAnimController>();
             SolanumAnim.StartWatchingPlayer();
             SolanumAnim.StartConversation();
 
@@ -326,10 +330,10 @@ namespace TheVision
             SolanumCopy.transform.position = new Vector3(0.0164f, -7.0145f, 5.3782f);
             SolanumCopy.transform.rotation = new Quaternion(0f, 7.0984f, 0f, 0f);
 
-            string path2 = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/MaskZone/Shuttle/Structure_NOM_Shuttle/Props_NOM_WarpCoreWhite";
+            string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
             Vector3 position2 = new Vector3(-2.3f, -4.8872f, 5.27452f);
             Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
-            DetailBuilder.MakeDetail(_vessel, _vesselSector, path2, position2, rotation2, 1, false);
+            DetailBuilder.MakeDetail(_vessel, _vesselSector, path2, position2, rotation2, 5, false);
 
         }
 
