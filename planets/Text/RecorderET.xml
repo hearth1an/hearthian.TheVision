@@ -1,22 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.</Text>
+    <Text>SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? Even in childhood I had this feeling about the <![CDATA[<color=orange>Eye</color>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from other star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.</Text>
+    <Text>SOLANUM: It has literally no reason to waiting for us, but my dad and others was blinded by the knowledge lust.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Who knows how many other intelligent life forms it has lured? I don't think I want to know anything more about it. Even in my childhood I knew that it was not waiting for us or anyone else.</Text>
+    <Text>SOLANUM: Whole city, elders and kids, all are turned to ashes... It's very hard to handle. Knowing I'm the last alive Nomai don't makes me feel better.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.</Text>
+    <Text>SOLANUM: At least now I can say "goodbye" to them... and... pleaase stay back. I need to turn something more to ash...</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

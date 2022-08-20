@@ -1,22 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.</Text>
+    <Text>SOLANUM: This is the place where we learnining the universe, our school. Stars, singularities, gravity and all about the space. This place wasn't such unstable before and I'm not sure, but I remember the blackhole smaller. Huh.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from other star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.</Text>
+    <Text>SOLANUM: It was easy to think about the universe collapse as a student because I've never thought something like this could happen in our life, just somewhere in future...</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Who knows how many other intelligent life forms it has lured? I don't think I want to know anything more about it. Even in my childhood I knew that it was not waiting for us or anyone else.</Text>
+    <Text>SOLANUM: Those buildings are not stable and I'm not sure if this class will not fall down, that's why I took this gravity crystall. This is the second one by the way. Strange thing happen with first one - it's freaked out somehow and invert the gravity so I had to break it.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.</Text>
+    <Text>SOLANUM: I'm not sure if this happened because of me or is it the black hole effect, but I can't be 100% sure this one will be stable too.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

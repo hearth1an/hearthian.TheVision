@@ -81,9 +81,13 @@ namespace TheVision
             var maskMesh = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Mesh:Mesh/Nomai_Mesh:Props_NOM_Mask_GearNew/Nomai_Mesh:Props_NOM_Mask_GearNew_Geo").transform;
             var particlesParenting = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Particles");
             particlesParenting.transform.SetParent(maskMesh, false);
-            particlesParenting.transform.localPosition = new Vector3(0f, 0.2084f, 0.0151f);
+            particlesParenting.transform.localPosition = new Vector3(0f, 0.2084f, 0.0151f);            
 
-
+            TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                Locator.GetShipLogManager().RevealFact("IP_ZONE_3_ENTRANCE_X1");               
+            });
+            
 
             ///////////// Making Solanum anim on Brittle Hollow !//////////
 
@@ -127,7 +131,6 @@ namespace TheVision
             {
                 SolanumGreetingsTH();
             });
-
 
 
         }
@@ -289,6 +292,45 @@ namespace TheVision
             {
                 EndGame();
             }
+
+            if (systemName == "EyeOfTheUniverse")
+            {
+                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
+                {
+                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                    {
+                        EyeOfTheUniverseProps();
+                    }
+                });
+            }
+        }
+
+        public void EyeOfTheUniverseProps()
+        {
+
+            var _vessel = SearchUtilities.Find("Vessel_Body");
+            var _vesselSector = SearchUtilities.Find("Vessel_Body/Secror_VesselBridge").GetComponent<Sector>();
+
+            string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
+            Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
+            Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
+            DetailBuilder.MakeDetail(_vessel, _vesselSector, path, position, rotation, 1, false);
+
+            var SolanumCopy = SearchUtilities.Find("Vessel_Body/Sector_VesselBridge/Nomai_ANIM_Skywatching_Idle");
+
+            var SolanumAnim = SolanumCopy.GetComponent<SolanumAnimController>();
+            SolanumAnim.StartWatchingPlayer();
+            SolanumAnim.StartConversation();
+
+            SolanumCopy.SetActive(true);
+            SolanumCopy.transform.position = new Vector3(0.0164f, -7.0145f, 5.3782f);
+            SolanumCopy.transform.rotation = new Quaternion(0f, 7.0984f, 0f, 0f);
+
+            string path2 = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/InstrumentZones/MaskZone/Shuttle/Structure_NOM_Shuttle/Props_NOM_WarpCoreWhite";
+            Vector3 position2 = new Vector3(-2.3f, -4.8872f, 5.27452f);
+            Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
+            DetailBuilder.MakeDetail(_vessel, _vesselSector, path2, position2, rotation2, 1, false);
+
         }
 
         // Function for teleporting ship to TH State on QM so player can continue the journey
