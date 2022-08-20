@@ -1,22 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? Even in childhood I had this feeling about the <![CDATA[<color=orange>Eye</color>]]>.</Text>
+    <Text>SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: It has literally no reason to waiting for us, but my dad and others was blinded by the knowledge lust.</Text>
+    <Text>SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Whole city, elders and kids, all are turned to ashes... It's very hard to handle. Knowing I'm the last alive Nomai don't makes me feel better.</Text>
+    <Text>SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: At least now I can say "goodbye" to them... and... pleaase stay back. I need to turn something more to ash...</Text>
+    <Text>SOLANUM: At least now I can say "goodbye" to them... and... please stand back.  There is more that needs to be turned into ash...</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

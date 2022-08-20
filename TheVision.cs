@@ -10,6 +10,7 @@ using HarmonyLib;
 using System.Reflection;
 using NewHorizons.Utility;
 using NewHorizons.Handlers;
+using System;
 
 
 namespace TheVision
@@ -40,7 +41,7 @@ namespace TheVision
 
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
             {
-                if (loadScene == OWScene.EyeOfTheUniverse)
+                if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
                 {
                     EyeOfTheUniverseProps();
                 }
@@ -302,39 +303,23 @@ namespace TheVision
             if (systemName == "GloamingGalaxy")
             {
                 EndGame();
-            }
-
-            
-        }
-
-        
+            }            
+        }      
 
         public void EyeOfTheUniverseProps()
         {
-
-            var _vessel = SearchUtilities.Find("Vessel_Body");
-            var _vesselSector = SearchUtilities.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
+            var _vessel = GameObject.Find("Vessel_Body");
+            var _vesselSector = GameObject.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
 
             string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
             Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
             Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
-            DetailBuilder.MakeDetail(_vessel, _vesselSector, path, position, rotation, 1, false);
-
-            var SolanumCopy = SearchUtilities.Find("Vessel_Body/Sector_VesselBridge/Nomai_ANIM_Skywatching_Idle");
-
-            var SolanumAnim = SolanumCopy.AddComponent<SolanumAnimController>().GetComponent<SolanumAnimController>();
-            SolanumAnim.StartWatchingPlayer();
-            SolanumAnim.StartConversation();
-
-            SolanumCopy.SetActive(true);
-            SolanumCopy.transform.position = new Vector3(0.0164f, -7.0145f, 5.3782f);
-            SolanumCopy.transform.rotation = new Quaternion(0f, 7.0984f, 0f, 0f);
-
+            DetailBuilder.MakeDetail(_vessel, _vesselSector, path, position, rotation, 1, false);           
+            
             string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
-            Vector3 position2 = new Vector3(-2.3f, -4.8872f, 5.27452f);
+            Vector3 position2 = new Vector3(-2.7f, -4.8872f, 5.8744f);
             Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
             DetailBuilder.MakeDetail(_vessel, _vesselSector, path2, position2, rotation2, 5, false);
-
         }
 
         // Function for teleporting ship to TH State on QM so player can continue the journey

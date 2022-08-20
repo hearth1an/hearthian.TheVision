@@ -17,12 +17,12 @@
     
      <ExploreFact>
       <ID>SOLANUM_ET_FOUND</ID>
-      <Text>I found Solanum here!</Text>
+      <Text>I found Solanum in Sunless City. At the Eye Temple district, she is staying at her "home".</Text>
     </ExploreFact>
 
     <ExploreFact>
       <ID>SOLANUM_ET_EVENT</ID>
-      <Text>Solanum event</Text>
+      <Text>Solanum feels sad about Nomai blind faith in Eye. She destroyed her old toys.</Text>
     </ExploreFact>
 
   </Entry>

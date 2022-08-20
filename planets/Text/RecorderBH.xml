@@ -1,22 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: This is the place where we learnining the universe, our school. Stars, singularities, gravity and all about the space. This place wasn't such unstable before and I'm not sure, but I remember the blackhole smaller. Huh.</Text>
+    <Text>SOLANUM: This place is our school. It teaches us about the universe, stars, singularities, gravity, and everything related to it. It wasn't so unstable before, and I'm not sure, but I remember the blackhole being smaller.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: It was easy to think about the universe collapse as a student because I've never thought something like this could happen in our life, just somewhere in future...</Text>
+    <Text>SOLANUM: As a student, it was easy for me to imagine the universe collapsing because I never imagined it could happen in my lifetime...</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Those buildings are not stable and I'm not sure if this class will not fall down, that's why I took this gravity crystall. This is the second one by the way. Strange thing happen with first one - it's freaked out somehow and invert the gravity so I had to break it.</Text>
+    <Text>SOLANUM: These buildings are not stable, so I took this gravity crystal just in case. This is the second one by the way. The first one freaked out somehow and inverted gravity, so I had to break it.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: I'm not sure if this happened because of me or is it the black hole effect, but I can't be 100% sure this one will be stable too.</Text>
+    <Text>SOLANUM: I'm not sure if this happened because of me or because of the black hole effect, but I cannot be 100% certain this one will be stable either.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
