@@ -13,7 +13,7 @@
         }
     },
 
-    "factRequiredForWarp": "HOLOGRAM_CHANGED",
+   // "factRequiredForWarp": "HOLOGRAM_CHANGED",
     "canEnterViaWarpDrive": false
     
 
