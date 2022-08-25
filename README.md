@@ -1,4 +1,5 @@
-![image_2022-07-25_12-37-41](https://user-images.githubusercontent.com/106444732/180857228-e5cc7eb7-6139-415f-9a08-cc3625112f2a.png)
+![For github](https://user-images.githubusercontent.com/106444732/186694560-4665cb15-2c78-4d36-a05e-47988c733d9a.png)
+
 
 # The Vision - unofficial story mod for Outer Wilds
 Check out [The Vision trailer!](https://youtu.be/iUcBzdljHfE)
