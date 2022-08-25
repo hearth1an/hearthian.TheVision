@@ -1,15 +1,9 @@
 ![For github](https://user-images.githubusercontent.com/106444732/186694560-4665cb15-2c78-4d36-a05e-47988c733d9a.png)
 
-<<<<<<< HEAD
-# The Vision - unofficial story mod for Outer Wilds
-Check out [The Vision trailer!](https://youtu.be/iUcBzdljHfE)
-
-=======
 
 # The Vision - unofficial story mod for Outer Wilds
 Check out [The Vision trailer!](https://youtu.be/iUcBzdljHfE)
 
->>>>>>> a7f57fe54f66dab73f0d3139aa94fd4a926b885f
 This mod continues the story from both base game and Echoes of the Eye DLC. Load the mod and check your ship logs!
 
 Works only on PC and compitable with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr))!
