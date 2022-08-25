@@ -44,11 +44,11 @@ Mods used:
 - [Sound Test](https://outerwildsmods.com/mods/soundtest)
 
 Translation credits:
-- English(grammar fix): MegaPiggy
-- Russian: hearth1an
+- English(grammar fix): [MegaPiggy](https://github.com/MegaPiggy)
+- Russian: [heart1an](https://github.com/hearth1an)
 - Spanish: Ink
 
-Other translations will be added.
+Other translations will be added later. Let me know if you want to help with translations.
 
 Music used:
 - [Andrew Prahlow](https://youtu.be/Jo7TQIxdRow)
