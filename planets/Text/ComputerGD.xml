@@ -1,18 +1,12 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-  <TextBlock>
+ <TextBlock>
     <ID>1</ID>
-    <Text>
-      MAIN COMPUTER: Log access granted, SOLANUM.
-      USER REQUEST: "Last access granted". Calculating...
-    </Text>
+    <Text>MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...</Text>    
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>
-      MAIN COMPUTER: Last access granted 281,042 years ago.
-      USER = Mallow.
-    </Text>
+    <Text>MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.</Text>    
   </TextBlock>
   <TextBlock>
     <ID>3</ID>

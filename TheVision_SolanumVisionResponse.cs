@@ -86,31 +86,52 @@ namespace TheVision.CustomProps
             
             qmWhiteHole.SetActive(true);
 
+            Invoke("ApplyForce", 0.5f);
+            Invoke("CameraShaking", 0.5f);
+
+            Invoke("SolanumAnim", 10f);
+
+            Invoke("SolanumAnim2", 25f);
 
             // Camera lock on target
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.LockOn(qmWhiteHole.transform, 20f, true, 3f);
 
 
-            // Pushing out force for flat version and VR version
-            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
-            applyForce.AddLocalImpulse(pushBack);
-
-
-            // Camera shaking
-            var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
-            StartCoroutine(cameraShaking.Shake(6f, 0.1f));          
-           
-
-
-
-
             TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
             Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
             _nomaiConversationManager.enabled = false;
 
-            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);            
+            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
+        }
+
+        public void ApplyForce()
+        {
+            // Pushing out force for flat version and VR version
+            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
+            Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
+            applyForce.AddLocalImpulse(pushBack);
+        }
+
+        public void CameraShaking()
+        {
+            // Camera shaking
+            var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
+            StartCoroutine(cameraShaking.Shake(5f, 0.05f));
+        }
+
+        public void SolanumAnim()
+        {
+            var SolanumAnim = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
+            SolanumAnim.StartWatchingPlayer();
+            SolanumAnim.StartConversation();
+        }
+
+        public void SolanumAnim2()
+        {
+            var SolanumAnim = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
+            SolanumAnim.EndConversation();
+            SolanumAnim.StopWatchingPlayer();
         }
 
         public void PlayWindSound()

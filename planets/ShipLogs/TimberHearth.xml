@@ -26,7 +26,7 @@
 
     <Entry>
       <ID>NEW_QUANTUM_RULE</ID>
-      <Name>New quantum rule</Name>
+      <Name>Quantum Consciousness</Name>
       <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
       <RumorFact>
@@ -37,12 +37,12 @@
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC</ID>
-        <Text>This could be a new quantum rule or an quantum exception. My theory is if a conscious observer is aware of his quantum properties, they acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.</Text>
+        <Text>This could be a new quantum rule or an quantum exception. My theory is if a conscious observer is aware of it's quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.</Text>
       </ExploreFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_SIGNAL</ID>
-        <Text>Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is so much stronger that it can be heard even without signalscope.</Text>
+        <Text>Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.</Text>
       </ExploreFact>
 
       <ExploreFact>
@@ -52,7 +52,7 @@
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_ABILITY</ID>
-        <Text>Something with Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that they can only think about the certain location and appear there. Hypothesis: they can appear only in known places.</Text>
+        <Text>Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about the certain location and appear there. Hypothesis: she can appear only in known places.</Text>
       </ExploreFact>
     </Entry>
 

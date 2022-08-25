@@ -27,7 +27,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_GD_RECORDER</FactID>
-      <Condition>1</Condition>
+      <Condition>4</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>

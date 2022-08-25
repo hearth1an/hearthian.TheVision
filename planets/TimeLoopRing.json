@@ -90,7 +90,7 @@
     ],
     "signals": [
       {
-        "audio": "planets/quantum.wav",
+        "audio": "planets/quantum.mp3",
         "detectionRadius": 2000.0,
         "frequency": "Quantum Consciousness",
         "identificationRadius": 500.0,

@@ -17,7 +17,7 @@
     <ID>4</ID>
     <ParentID>3</ParentID>
     <Text>SOLANUM: I'm not sure if this happened because of me or because of the black hole effect, but I cannot be 100% certain this one will be stable either.</Text>
-  </TextBlock>
+  </TextBlock>  
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_BH_EVENT</FactID>

@@ -32,7 +32,8 @@ namespace TheVision
             effect.FlickerOffAndOn(offDuration: 0.5f, onDuration: 0.3f);
         }
         public void Destroying()
-        {
+        {           
+
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeGalaxyBlowAway); 

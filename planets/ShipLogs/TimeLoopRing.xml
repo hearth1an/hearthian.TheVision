@@ -15,16 +15,16 @@
     </RumorFact>
     <ExploreFact>
       <ID>SOLANUM_ON_ATP</ID>
-      <Text>Solanum is already here and is observing the time loop ring's logs.</Text>
+      <Text>Solanum is already here. She observing the time loop ring's logs.</Text>
     </ExploreFact>
     <ExploreFact>
       <ID>SOLANUM_ATP_RECORDER</ID>
-      <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape the supernova. Seems like we will meet again inside the Vessel.</Text>
+      <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside The Vessel.</Text>
     </ExploreFact>
 
     <Entry>
       <ID>STATUE_ATP</ID>
-      <Name>Unlinked Statue</Name>
+      <Name>Linked Statue</Name>
       <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
       <ExploreFact>

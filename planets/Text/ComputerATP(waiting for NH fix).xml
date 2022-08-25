@@ -1,0 +1,28 @@
+﻿<NomaiObject>
+  <TextBlock>
+    <ID>1</ID>
+    <Text><![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Received data from previous cycles.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <Text>MASKS RECEIVING DATA FROM:\\n<![CDATA[<color=orange>Probe Tracking Module</color>]]>\\n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue\\n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue\\n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue
+    </Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <Text><![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION</Text>
+  </TextBlock>
+
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>TT_TIME_LOOP_DEVICE_X2</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>STATUE_ATP_LINK</FactID>
+      <Condition>2</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

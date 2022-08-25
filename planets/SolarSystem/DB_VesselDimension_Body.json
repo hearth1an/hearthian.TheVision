@@ -72,20 +72,20 @@
       }
     ],
     "signals": [
-      {
-        "audio": "planets/quantum.wav",
-        "detectionRadius": 2000.0,
-        "frequency": "Quantum Consciousness",
-        "identificationRadius": 500.0,
-        "name": "Solanum",
-        "onlyAudibleToScope": false,
-        "position": {
-          "x": 148.221,
-          "y": 25.8914,
-          "z": 0.2369
-        },
-        "sourceRadius": 2.0
-      }
+        {
+            "audio": "planets/quantum.mp3",
+            "detectionRadius": 2000.0,
+            "frequency": "Quantum Consciousness",
+            "identificationRadius": 500.0,
+            "name": "Solanum",
+            "onlyAudibleToScope": false,
+            "position": {
+                "x": 148.221,
+                "y": 25.8914,
+                "z": 0.2369
+            },
+            "sourceRadius": 2.0
+        }
     ]
   },
   "ReferenceFrame": {

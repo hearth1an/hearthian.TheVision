@@ -92,6 +92,101 @@
                 },
                 "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
                 "rename": "Solanum_EmberTwin_ToyShip"
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+                "position": {
+                    "x": 34.1675,
+                    "y": -104.4503,
+                    "z": -23.0298
+                },
+                "rotation": {
+                    "x": 7.7,
+                    "y": 237.1,
+                    "z": 162.32
+                },
+                "parentPath": "Sector_CaveTwin/SandPile",
+                "rename": "SandPile_1",
+                "scale": 1
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+                "position": {
+                    "x": 34.36,
+                    "y": -104.5503,
+                    "z": -22.2
+                },
+                "rotation": {
+                    "x": 7.7,
+                    "y": 285,
+                    "z": 162.32
+                },
+                "parentPath": "Sector_CaveTwin/SandPile",
+                "rename": "SandPile_2",
+                "scale": 0.7
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+                "position": {
+                    "x": 33.8,
+                    "y": -104.8286,
+                    "z": -21.6408
+                },
+                "rotation": {
+                    "x": 7.7,
+                    "y": 200,
+                    "z": 162.32
+                },
+                "parentPath": "Sector_CaveTwin/SandPile",
+                "rename": "SandPile_3"
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
+                "position": {
+                    "x": 34.7247,
+                    "y": -106.3462,
+                    "z": -22.5131
+                },
+                "rotation": {
+                    "x": 306,
+                    "y": 270,
+                    "z": 165
+                },
+                "parentPath": "Sector_CaveTwin/SandFall",
+                "rename": "SandFall_1",
+                "scale": 0.06
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
+                "position": {
+                    "x": 34.5793,
+                    "y": -105.9462,
+                    "z": -21.6132
+                },
+                "rotation": {
+                    "x": 306,
+                    "y": 270,
+                    "z": 165
+                },
+                "parentPath": "Sector_CaveTwin/SandFall",
+                "rename": "SandFall_2",
+                "scale": 0.04
+            },
+            {
+                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
+                "position": {
+                    "x": 34.6247,
+                    "y": -105.7462,
+                    "z": -23.2
+                },
+                "rotation": {
+                    "x": 306,
+                    "y": 270,
+                    "z": 165
+                },
+                "parentPath": "Sector_CaveTwin/SandFall",
+                "rename": "SandFall_3",
+                "scale": 0.065
             }
 
         ],
@@ -131,7 +226,7 @@
         ],
         "signals": [
             {
-                "audio": "planets/quantum.wav",
+                "audio": "planets/quantum.mp3",
                 "detectionRadius": 2000.0,
                 "frequency": "Quantum Consciousness",
                 "identificationRadius": 500.0,

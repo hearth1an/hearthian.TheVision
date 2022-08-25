@@ -1,17 +1,15 @@
 ﻿<NomaiObject>
   <TextBlock>
     <ID>1</ID>
-    <Text><![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Received data from previous cycles.</Text>
+    <Text>ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
-    <Text>
-      MASKS RECEIVING DATA FROM:\\n<![CDATA[<color=orange>Probe Tracking Module</color>]]>\\n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue\\n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue\\n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue
-    </Text>
+    <Text>MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
-    <Text><![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION</Text>
+    <Text>ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]></Text>
   </TextBlock>
 
   <ShipLogConditions>

@@ -12,8 +12,10 @@
             "z": 8000
         }
     },
-    "canEnterViaWarpDrive": false,
-    "factRequiredForWarp": "HOLOGRAM_CHANGED"
+
+    "factRequiredForWarp": "HOLOGRAM_CHANGED",
+    "canEnterViaWarpDrive": false
     
+
 
 }

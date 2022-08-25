@@ -10,20 +10,7 @@
     },
     "Props": {
         "details": [
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-                "position": {
-                    "x": 48.510067,
-                    "y": 15.6914063,
-                    "z": 252.313049
-                },
-                "rotation": {
-                    "x": 276.159821,
-                    "y": 320.478241,
-                    "z": 312.779083
-                },
-                "scale": 5.0
-            },
+
             {
                 "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
                 "position": {
@@ -36,6 +23,21 @@
                     "y": 279.0402,
                     "z": 275.7439
                 }
+            },
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "position": {
+                    "x": 48.510067,
+                    "y": 15.6914063,
+                    "z": 252.313049
+                },
+                "rotation": {
+                    "x": 276.159821,
+                    "y": 320.478241,
+                    "z": 312.779083
+                },
+                "scale": 5.0,
+                "parentPath": "Sector_TH/Nomai_ANIM_SkyWatching_Idle"
             }
         ],
         "nomaiText": [
@@ -58,7 +60,7 @@
         ],
         "signals": [
             {
-                "audio": "planets/quantum.wav",
+                "audio": "planets/quantum.mp3",
                 "detectionRadius": 2000.0,
                 "frequency": "Quantum Consciousness",
                 "identificationRadius": 500.0,

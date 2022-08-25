@@ -31,7 +31,7 @@
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>SOLANUM: According to your vision, the <![CDATA[<color=orange>Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
+    <Text>SOLANUM: According to your vision, <![CDATA[<color=orange>The Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>
