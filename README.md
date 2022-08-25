@@ -6,7 +6,7 @@ Check out [The Vision trailer!](https://youtu.be/iUcBzdljHfE)
 
 This mod continues the story from both base game and Echoes of the Eye DLC. Load the mod and check your ship logs!
 
-Works only on PC and compitable with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr))!
+Works only on PC and compitable with both flat version and VR ([NomaiVR](https://outerwildsmods.com/mods/nomaivr)).
 
 Join the [Outer Wilds Modding Discord](https://discord.gg/MvbCbBz6Q6) if you have any questions or just want to chat about modding.
 
