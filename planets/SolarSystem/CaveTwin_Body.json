@@ -32,20 +32,36 @@
                 "rename": "Solanum_EmberTwin_Character"
             },
             {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
                 "position": {
-                    "x": 35.2789,
-                    "y": -105.9786,
-                    "z": -25.86
+                    "x": -5.529667,
+                    "y": -71.07074,
+                    "z": 1.43984985
                 },
                 "rotation": {
-                    "x": 19.2319,
-                    "y": 306.6399,
-                    "z": 180.81
+                    "x": 317.328369,
+                    "y": 2.65918,
+                    "z": 168.477509
                 },
-                "scale": 5.0,
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
-                "rename": "Solanum_EmberTwin_Particles"
+                "scale": 5,
+                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+            },
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+                "position": {
+                    "x": -5.529667,
+                    "y": -71.07074,
+                    "z": 1.43984985
+                },
+                "rotation": {
+                    "x": 317.328369,
+                    "y": 2.65918,
+                    "z": 168.477509
+                },
+                "scale": 5,
+                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+                "rename": "Particles_2"
+
             },
             {
                 "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_PyramidBlck",
@@ -227,7 +243,7 @@
         "signals": [
             {
                 "audio": "planets/quantum.mp3",
-                "detectionRadius": 2000.0,
+                "detectionRadius": 10000.0,
                 "frequency": "Quantum Consciousness",
                 "identificationRadius": 500.0,
                 "name": "Solanum",

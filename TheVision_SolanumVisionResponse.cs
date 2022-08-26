@@ -87,7 +87,7 @@ namespace TheVision.CustomProps
             qmWhiteHole.SetActive(true);
 
             Invoke("ApplyForce", 0.5f);
-            Invoke("CameraShaking", 0.5f);
+            Invoke("CameraShaking", 1.5f);
 
             Invoke("SolanumAnim", 10f);
 

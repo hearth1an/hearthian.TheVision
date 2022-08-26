@@ -20,22 +20,6 @@
 
             },
             {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
-                "position": {
-                    "x": 0,
-                    "y": 2.2,
-                    "z": 0.3
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "scale": 5.0,
-                "parentPath": "Sector_BH/Solanum_BH_Character",
-                "rename": "Solanum_BH_Particles"
-            },
-            {
                 "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
                 "position": {
                     "x": -1.8564,
@@ -48,7 +32,7 @@
                     "z": 2.3999
                 },
                 "parentPath": "Sector_BH/Solanum_BH_Character",
-                "rename": "Solanum_BH_Crystal"                
+                "rename": "Solanum_BH_Crystal"
             },
             {
                 "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/Fragment OldSettlement 3/Core_OldSettlement 3/Interactables_Core_OldSettlement3/Prefab_NOM_GravityCrystal_Cracked",
@@ -66,6 +50,38 @@
                 "scale": 0.5,
                 "rename": "Solanum_BH_Crystal_Cracked",
                 "parentPath": "Sector_BH/Solanum_BH_Character"
+            },
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+                "position": {
+                    "x": -5.529667,
+                    "y": -71.07074,
+                    "z": 1.43984985
+                },
+                "rotation": {
+                    "x": 317.328369,
+                    "y": 2.65918,
+                    "z": 168.477509
+                },
+                "scale": 5,
+                "parentPath": "Sector_BH/Solanum_BH_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+            },
+            {
+                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+                "position": {
+                    "x": -5.529667,
+                    "y": -71.07074,
+                    "z": 1.43984985
+                },
+                "rotation": {
+                    "x": 317.328369,
+                    "y": 2.65918,
+                    "z": 168.477509
+                },
+                "scale": 5,
+                "parentPath": "Sector_BH/Solanum_BH_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+                "rename": "Particles_2"
+
             }
         ],
         "reveal": [
@@ -107,7 +123,7 @@
         "signals": [
             {
                 "audio": "planets/quantum.mp3",
-                "detectionRadius": 2000.0,
+                "detectionRadius": 10000.0,
                 "frequency": "Quantum Consciousness",
                 "identificationRadius": 500.0,
                 "name": "Solanum",

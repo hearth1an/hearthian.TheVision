@@ -36,9 +36,11 @@ namespace TheVision
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
 
+
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
             TitleProps();
+            
 
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
             {
@@ -94,28 +96,49 @@ namespace TheVision
 
             ///////////// Making Solanum anim on Ember Twin !//////////
 
-            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET/InteractSphere").GetComponentInParent<SphereShape>().radius = 1.5f;
-
-            var maskMesh = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Mesh:Mesh/Nomai_Mesh:Props_NOM_Mask_GearNew/Nomai_Mesh:Props_NOM_Mask_GearNew_Geo").transform;
-            var particlesParenting = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Particles");
-            particlesParenting.transform.SetParent(maskMesh, false);
-            particlesParenting.transform.localPosition = new Vector3(0f, 0.2084f, 0.0151f);            
+            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET/InteractSphere").GetComponentInParent<SphereShape>().radius = 1.5f;                      
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 Locator.GetShipLogManager().RevealFact("IP_ZONE_3_ENTRANCE_X1");               
             });
-            
 
-            ///////////// Making Solanum anim on Brittle Hollow !//////////
 
-            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Particles").transform.localPosition = new Vector3(0f, 2.2f, 0.3f);
+            ///////////// Making Solanum anim on Brittle Hollow !//////////   
+            ///
+
+            // Particles QM and TH
+            SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            // Particles GD
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            // Particles ATP
+            SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            // Particles DB
+            SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            // Particles BH
+            SearchUtilities.Find("Sector_BH/Solanum_BH_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("Sector_BH/Solanum_BH_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
+            // Particles ET
+            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
+
 
             SearchUtilities.Find("DB_HubDimension_Body/Sector_HubDimension/Interactables_HubDimension/Pivot/InnerWarp_ToAnglerNest/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/InnerWarp_ToVessel/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
-            SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Effects_NOM_WarpParticles").transform.localPosition = new Vector3(0f, 2.2f, 0.3f);
-            SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Effects_NOM_WarpParticles").transform.localPosition = new Vector3(0f, 2.2f, 0.3f);
+
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Prefab_NOM_Recorder_BH").transform.localPosition = new Vector3(1.3f, 1f, 1.2f);
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
@@ -124,8 +147,7 @@ namespace TheVision
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").transform.localPosition = new Vector3(-1.8564f, -0.1f, 0.7f);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").SetActive(false);
-            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole/DestructionVolume").gameObject.SetActive(false);
-            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle/Effects_NOM_WarpParticles").transform.localPosition = new Vector3(0f, 2.3f, 0.8f);
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole/DestructionVolume").gameObject.SetActive(false);            
 
             // SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").gameObject.SetActive(false);
 
@@ -143,13 +165,11 @@ namespace TheVision
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole").gameObject.SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/WhiteHole").gameObject.SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation").gameObject.SetActive(false);
-
-            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Effects_NOM_WarpParticles").transform.localPosition = new Vector3(0f, 2.2f, 0.3f);
+            
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/SunkenModuleWater_ExteriorStencil").gameObject.SetActive(true);
-
-            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Effects_NOM_WarpParticles").transform.localPosition = new Vector3(0f, 2.2f, 0.3f);
+            
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ET_FOUND"), () =>
@@ -351,6 +371,7 @@ namespace TheVision
 
                 visionTorchMesh.SetActive(true);
                 visionTorchActive.SetActive(false);
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
 
             });
 
@@ -360,6 +381,7 @@ namespace TheVision
 
                 visionTorchMesh2.SetActive(true);
                 visionTorchActive2.SetActive(false);
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
 
             });
 
@@ -399,12 +421,34 @@ namespace TheVision
             string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
             Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
             Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
-            DetailBuilder.MakeDetail(_vessel, _vesselSector, path, position, rotation, 1, false);           
-            
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path,
+                position = position,
+                rotation = rotation
+            });
+
             string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
             Vector3 position2 = new Vector3(-2.7f, -4.8872f, 5.8744f);
             Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
-            DetailBuilder.MakeDetail(_vessel, _vesselSector, path2, position2, rotation2, 5, false);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path2,
+                position = position2,
+                rotation = rotation2,
+                scale = 5
+            });
+
+            string path3 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
+            Vector3 position3 = new Vector3(-2.7f, -4.8872f, 5.8744f);
+            Vector3 rotation3 = new Vector3(351.6485f, 10.514f, 355.3143f);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path2,
+                position = position2,
+                rotation = rotation2,
+                scale = 5
+            });
         }
 
         // Function for teleporting ship to TH State on QM so player can continue the journey
@@ -530,8 +574,11 @@ namespace TheVision
             var signalDB_nest = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/InnerWarp_ToVessel/Signal_Solanum").gameObject;
             signalDB_nest.SetActive(isActive);            
 
-            var particlesQM = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Effects_NOM_WarpParticles").gameObject;
-            particlesQM.SetActive(isActive);                      
+            var particlesQM = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").gameObject;
+            particlesQM.SetActive(isActive);
+
+            var particlesQM_2 = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").gameObject;
+            particlesQM_2.SetActive(isActive);
 
             var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Signal_Solanum");
             signalATP.SetActive(isActive);

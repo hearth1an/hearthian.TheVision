@@ -10,47 +10,64 @@
   },
   "Props": {
     "details": [
-      {
-        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-        "position": {
-          "x": 26.3102,
-          "y": 6.239,
-          "z": -2.236
-        },
-        "rotation": {
-          "x": 329.464,
-          "y": 353.79,
-          "z": 90.0
-        },
-        "parentPath": "Characters_TimeLoopRing"
-      },
         {
-            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_Tower_SS/Interactables_Tower_SS/Tower_SS_VisibleFrom_TowerTwin/Prefab_NOM_WarpTransmitter/Props_NOM_WarpCoreBlack/Effects_NOM_WarpParticles",
+            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
             "position": {
-                "x": 0,
-                "y": 2.2,
-                "z": 0.3
+                "x": 26.3102,
+                "y": 6.239,
+                "z": -2.236
             },
             "rotation": {
-                "x": 0,
-                "y": 0,
-                "z": 0
+                "x": 329.464,
+                "y": 353.79,
+                "z": 90.0
             },
-            "scale": 5.0,
-            "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle"
+            "parentPath": "Characters_TimeLoopRing"
         },
-      {
-        "assetBundle": "planets/mask",
-        "path": "Assets/Monolith.prefab",
-        "position": {
-          "y": 250.0
+        {
+            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+            "position": {
+                "x": -5.529667,
+                "y": -71.07074,
+                "z": 1.43984985
+            },
+            "rotation": {
+                "x": 317.328369,
+                "y": 2.65918,
+                "z": 168.477509
+            },
+            "scale": 5,
+            "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
         },
-        "rotation": {
-          "x": 270.0,
-          "y": 90.0
+        {
+            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+            "position": {
+                "x": -5.529667,
+                "y": -71.07074,
+                "z": 1.43984985
+            },
+            "rotation": {
+                "x": 317.328369,
+                "y": 2.65918,
+                "z": 168.477509
+            },
+            "scale": 5,
+            "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+            "rename": "Particles_2"
+
         },
-        "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
-      }
+        {
+            "assetBundle": "planets/mask",
+            "path": "Assets/Monolith.prefab",
+            "position": {
+                "y": 250.0
+            },
+            "rotation": {
+                "x": 270.0,
+                "y": 90.0
+            },
+            "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
+        }
     ],
     "nomaiText": [
       {

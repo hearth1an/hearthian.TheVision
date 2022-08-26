@@ -17,9 +17,9 @@
 
 		// This for computer ATP when time things will be fixed
 
-		// "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Received data from previous cycles.": "<![CDATA[<TimeMinutes>]]> МИН., <![CDATA[<TimeSeconds>]]> CЕК. НАЗАД:  получены данные из предыдущих циклов.",
-		// "MASKS RECEIVING DATA FROM:\\n<![CDATA[<color=orange>Probe Tracking Module</color>]]>\\n<![CDATA[<color=lightblue>Giant's Deep</color>]]> memory statue\\n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue\\n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue": "МАСКИ ПОЛУЧАЮТ ДАННЫЕ ОТ: \\n<![CDATA[<color=orange>модуль орбитального зонда</color>]]>\\n статуи памяти на Пучине Гиганта\\n статуи памяти на Камельке\\n статуи памяти Часа Пепла",
-		// "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION": "<![CDATA[<TimeMinutesRemaining>]]> МИН. ДО КОНЦА ЦИКЛА И НОВОЙ ПЕРЕДАЧИ ДАННЫХ",
+		// "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles.": "<![CDATA[<TimeMinutes>]]> МИН., <![CDATA[<TimeSeconds>]]> CЕК. НАЗАД:  получены данные из предыдущих циклов.",
+		// "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "МАСКИ ПОЛУЧАЮТ ДАННЫЕ ОТ: <![CDATA[<color=orange>модуля отслеживания зонда</color>]]> , <![CDATA[<color=lightblue>статуи памяти на Пучине Гиганта</color>]]> , <![CDATA[<color=lightblue>статуи памяти на Камельке</color>]]> , <![CDATA[<color=orange>статуи памяти проекта Час Пепла</color>]]>.",
+		// "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION.": "<![CDATA[<TimeMinutesRemaining>]]> МИН. ДО КОНЦА ЦИКЛА И НОВОЙ ПЕРЕДАЧИ ДАННЫХ",
 
 		// QM ground
 		"SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving. I'll take my recorder. If you are reading this - please find me outside.": "СОЛАНУМ: Что? Как? ... существую ли я вообще? Это я, но... как такое возможно? Мне нельзя здесь больше находится. Я заберу свой диктофон и покину это место. Если ты это читаешь - пожалуйста найди меня.",
@@ -82,7 +82,7 @@
 		"Quantum Consciousness": "Квантовое Сознание",
 		"Solanum": "Соланум",
 		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
-	    "Gloaming Galaxy": "Сумеречная Галактика"  // Add this to other translations
+		"Gloaming Galaxy": "Сумеречная Галактика" // Add this to other translations
 
 
 	},
@@ -120,7 +120,7 @@
 		"Solanum on Quantum Moon": "Соланум на Квантовой Луне",
 		"What if..?": "А что если..?",
 		"Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Соланум - последняя из Номаи. Что если я покажу ей всё что знаю с помощью Посоха видений из Разрушенной лаборатории на Незнакомце?",
-		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on their mask.": "После видения произошло что-то странное. Облака одномоментно исчезли и от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
+		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "После видения произошло что-то странное. Облака одномоментно исчезли и от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
 		"Solanum looks disoriented according to her reply.": "Соланум очень растерялась, судя по её ответу на Квантовой Луне.",
 		"Inscription near Solanum's body": "Надпись рядом с трупом Соланум",
 		"Solanum left some text near her body": "Соланум оставила послание рядом со своим трупом",
