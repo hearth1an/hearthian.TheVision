@@ -48,7 +48,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ATP_RECORDER</FactID>
-      <Condition>1</Condition>
+      <Condition>7</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>

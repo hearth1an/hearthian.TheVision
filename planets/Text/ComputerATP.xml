@@ -11,7 +11,10 @@
     <ID>3</ID>
     <Text>ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]></Text>
   </TextBlock>
-
+  <TextBlock>
+    <ID>4</ID>
+    <Text>WARNING: Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.</Text>
+  </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>TT_TIME_LOOP_DEVICE_X2</FactID>

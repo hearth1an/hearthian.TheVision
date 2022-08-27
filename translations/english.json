@@ -5,15 +5,16 @@
 		// Hint: use «» instead of "".
 
 		// Computer GD
-		"MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...",
-		"MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.",
+		"MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "MAIN COMPUTER: Log access granted, SOLANUM. \nUSER REQUEST: «Last access granted». Calculating...",
+		"MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "MAIN COMPUTER: Last access granted 281,042 years ago. \nUSER = Mallow.",
 		"Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.",
 
 		// Computer ATP
 
-		"ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.",
-		"MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.",
-		"ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>",
+		"ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles.",
+		"MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue",
+		"ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION.",
+		"WARNING: Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "WARNING: Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.",
 
 		// This for computer ATP when time things will be fixed
 
@@ -21,8 +22,8 @@
 		// "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "МАСКИ ПОЛУЧАЮТ ДАННЫЕ ОТ: <![CDATA[<color=orange>модуля отслеживания зонда</color>]]> , <![CDATA[<color=lightblue>статуи памяти на Пучине Гиганта</color>]]> , <![CDATA[<color=lightblue>статуи памяти на Камельке</color>]]> , <![CDATA[<color=orange>статуи памяти проекта Час Пепла</color>]]>.",
 		// "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION.": "<![CDATA[<TimeMinutesRemaining>]]> МИН. ДО КОНЦА ЦИКЛА И НОВОЙ ПЕРЕДАЧИ ДАННЫХ",
 
-		// QM ground
-		"SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving. I'll take my recorder. If you are reading this - please find me outside.": "SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving. I'll take my recorder. If you are reading this - please find me outside.",
+		// QM ground // CHANGE WITH TRANSLATION
+		"SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving. I'll take my recorder. If you are reading this - please find me outside.": "SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving and I took my recorder. Where am I? Is it the state of Timber Hea....",
 
 		// QM response
 		"SOLANUM: I.. I don't understand.. wh.. what just.. what is this feeling? What is all of this? All answers are in the sky?": "SOLANUM: I.. I don't understand.. wh.. what just.. what is this feeling? What is all of this? All answers are in the sky?",
@@ -125,7 +126,7 @@
 		"Inscription near Solanum's body": "Inscription near Solanum's body",
 		"Solanum left some text near her body": "Solanum left some text near her body",
 		"There are some new inscriptions left very recently": "There are some new inscriptions left very recently",
-		"It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and asked me to find her. Maybe I should start by searching Timber Hearth.": "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and asked me to find her. Maybe I should start by searching Timber Hearth.",
+		"It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and asked me to find her. Maybe I should start by searching Timber Hearth.": "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and ... message interrupted when she was saying about Timber Hearth. Maybe I should start by searching her there?",
 
 
 		// Ring World (Stranger)

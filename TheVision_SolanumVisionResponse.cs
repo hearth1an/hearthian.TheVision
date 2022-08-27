@@ -72,6 +72,7 @@ namespace TheVision.CustomProps
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
             
+            
 
             // wh parameters
             var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
@@ -87,7 +88,7 @@ namespace TheVision.CustomProps
             qmWhiteHole.SetActive(true);
 
             Invoke("ApplyForce", 0.5f);
-            Invoke("CameraShaking", 1.5f);
+            Invoke("CameraShaking", 0.5f);
 
             Invoke("SolanumAnim", 10f);
 
@@ -117,7 +118,7 @@ namespace TheVision.CustomProps
         {
             // Camera shaking
             var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
-            StartCoroutine(cameraShaking.Shake(5f, 0.05f));
+            StartCoroutine(cameraShaking.Shake(5f, 0.005f));
         }
 
         public void SolanumAnim()

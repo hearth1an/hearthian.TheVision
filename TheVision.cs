@@ -36,6 +36,7 @@ namespace TheVision
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
 
+            
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
@@ -47,7 +48,11 @@ namespace TheVision
                 if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
                 {
                     EyeOfTheUniverseProps();
-                }               
+                }
+                if (loadScene == OWScene.TitleScreen)
+                {
+                    TitleProps();
+                }
             };
 
         }
@@ -96,16 +101,23 @@ namespace TheVision
 
             ///////////// Making Solanum anim on Ember Twin !//////////
 
-            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET/InteractSphere").GetComponentInParent<SphereShape>().radius = 1.5f;                      
+            SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET/InteractSphere").GetComponentInParent<SphereShape>().radius = 1.5f;
+
+            var torchFix = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/VisionStaffDetector").GetComponent<SphereShape>();
+            torchFix.enabled = true;
+
+            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(false);
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
-                Locator.GetShipLogManager().RevealFact("IP_ZONE_3_ENTRANCE_X1");               
+                Locator.GetShipLogManager().RevealFact("IP_ZONE_3_ENTRANCE_X1");
+                
             });
 
+            
 
             ///////////// Making Solanum anim on Brittle Hollow !//////////   
-            ///
+            
 
             // Particles QM and TH
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
@@ -187,15 +199,10 @@ namespace TheVision
                 SolanumGreetingsDB();
             });
 
-            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("STATUE_ATP_LINK"), () =>
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ATP_RECORDER"), () =>
             {
                 SolanumGreetingsATP();
-            });
-
-            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_TH"), () =>
-            {
-                SolanumGreetingsTH();
-            });
+            });           
 
         }
 
@@ -251,7 +258,34 @@ namespace TheVision
         public void SolanumGreetingsATP()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
-            solanumAnimController.StartWatchingPlayer();           
+            solanumAnimController.StartWatchingPlayer();
+            solanumAnimController.PlayRaiseCairns();
+
+            Invoke("SolanumGreetingsATP_DeactivateRing", 4f);
+            Invoke("SolanumGreetingsATP_ShowRing", 5f);
+            Invoke("SolanumGreetingsATP_OpenCore", 6f);
+            
+        }
+
+        public void SolanumGreetingsATP_OpenCore()
+        {
+            SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/CoreCasingController").GetComponent<TimeLoopCoreController>().OpenCore();
+
+            SolanumAnimController solanumAnimController = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
+            solanumAnimController.StopWatchingPlayer();
+        }
+
+        public void SolanumGreetingsATP_ShowRing()
+        {
+            var atpRing3 = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").GetComponent<NomaiComputerRing>();
+            atpRing3.Activate(4, 1.3f);
+
+            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(true); 
+        }
+
+        public void SolanumGreetingsATP_DeactivateRing()
+        {
+            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring2").GetComponent<NomaiComputerRing>().Deactivate(0.5f);
         }
 
         public void SolanumGreetingsDB()
@@ -261,11 +295,13 @@ namespace TheVision
             solanumAnimController.PlayGestureToWordStones();
         }
 
+
+        // Delete if works
         public void SolanumGreetingsTH()
         {
-            SolanumAnimController solanumAnimController = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
-            solanumAnimController.StartWatchingPlayer();
-            solanumAnimController.StartConversation();
+            SolanumAnimController solanumAnimController2 = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
+            solanumAnimController2.StartWatchingPlayer();
+            solanumAnimController2.StartConversation();
         }
 
 
@@ -444,11 +480,23 @@ namespace TheVision
             Vector3 rotation3 = new Vector3(351.6485f, 10.514f, 355.3143f);
             DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
             {
-                path = path2,
+                path = path3,
                 position = position2,
                 rotation = rotation2,
                 scale = 5
             });
+
+            // To not fall on eye scene
+            ApplyForce();
+
+        }
+
+        public void ApplyForce()
+        {
+            // Pushing out force for flat version and VR version
+            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
+            Vector3 pushUp = new Vector3(0f, 0.2f, 0f);
+            applyForce.AddLocalImpulse(pushUp);
         }
 
         // Function for teleporting ship to TH State on QM so player can continue the journey
@@ -495,6 +543,8 @@ namespace TheVision
                 PlayGaspSound();
                 PlayThunderSound();
 
+                
+
             });
 
             // Enabling json props
@@ -504,9 +554,19 @@ namespace TheVision
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
 
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.BreakLock(1f);
+            cameraFixedPosition.BreakLock(0.5f);
 
             TeleportShip();
+
+            SolanumAnimController solanumAnimController2 = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
+            solanumAnimController2.StartWatchingPlayer();
+            solanumAnimController2.StartConversation();
+
+
+            var learnSignal = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum").GetComponent<AudioSignal>();
+            learnSignal.IdentifyFrequency();
+            learnSignal.IdentifySignal();
+
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_BH_EVENT"), () =>
             {
