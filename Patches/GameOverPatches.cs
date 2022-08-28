@@ -7,7 +7,7 @@ namespace TheVision.Patches
     internal static class GameOverPatches
     {
         private static bool skipPostCredits = false;
-       
+
 
         [HarmonyPatch(nameof(GameOverController.SetupGameOverScreen))]
         [HarmonyPrefix]
@@ -17,10 +17,11 @@ namespace TheVision.Patches
             __instance._deathText.text = "TO BE CONTINUED...";
 
             SubmitActionLoadScene actionLoadScene = new SubmitActionLoadScene();
-            actionLoadScene.SetSceneToLoad(SubmitActionLoadScene.LoadableScenes.CREDITS);
-           
+            actionLoadScene.SetSceneToLoad(SubmitActionLoadScene.LoadableScenes.CREDITS);            
 
-        }
+        } 
+
+        /*
 
          [HarmonyPatch(nameof(GameOverController.Update))]
          [HarmonyPrefix]
@@ -46,7 +47,8 @@ namespace TheVision.Patches
              {
                  __instance._type = Credits.CreditsType.Fast;
                  skipPostCredits = false;
+                
              }
-         } 
+         } */
     }
 }

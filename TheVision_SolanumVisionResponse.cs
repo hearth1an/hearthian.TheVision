@@ -118,7 +118,7 @@ namespace TheVision.CustomProps
         {
             // Camera shaking
             var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
-            StartCoroutine(cameraShaking.Shake(5f, 0.005f));
+            StartCoroutine(cameraShaking.Shake(5f, 0.075f));
         }
 
         public void SolanumAnim()

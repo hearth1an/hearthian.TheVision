@@ -20,7 +20,7 @@ Help with code:
 - [JohnCorby](https://github.com/JohnCorby)
 - [xen](https://github.com/xen-42)
 - [piggeywig2000](https://github.com/piggeywig2000)
-- [Hawkbar](https://github.com/Hawkbat)
+- [Hawkbat](https://github.com/Hawkbat)
 - [nebula](https://github.com/misternebula)
 
 and [Outer Wilds Modding Discord](https://discord.gg/MvbCbBz6Q6) community.
@@ -31,7 +31,10 @@ Testers:
 - [nebula](https://github.com/misternebula)
 - Greenpixel
 - SolarReaction
-- Fixxion6 
+- Fixxion
+- TimLikeHero
+- Jammer
+- 2walker2
 
 and others.
  

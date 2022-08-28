@@ -18,7 +18,7 @@ namespace TheVision
                 float y = UnityEngine.Random.Range(-1f, 1f) * magnitude;
                 float z = UnityEngine.Random.Range(-1f, 1f) * magnitude;
 
-                transform.position = new Vector3(x, y, -1);
+                transform.position = new Vector3(x, 0, 0);
                 elapsed += Time.deltaTime;
                 yield return 0;
             }

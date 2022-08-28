@@ -53,6 +53,13 @@ namespace TheVision
                 {
                     TitleProps();
                 }
+                
+                if (loadScene == OWScene.Credits_Fast)
+                {
+                    CreditsMusic();
+                }
+                
+
             };
 
         }
@@ -62,6 +69,24 @@ namespace TheVision
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Effects/Effects_HEA_SmokeColumn/Effects_HEA_SmokeColumn_Title").GetComponent<MeshRenderer>().material.color = new Color(1, 2, 2, 1);            
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Flames").GetComponent<MeshRenderer>().material.color = new Color(0, 5, 4, 1);
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Embers").SetActive(false);
+
+
+            
+            PopupInputMenu theVisionPopup = new PopupInputMenu();
+            
+            string _text = "Thank you for downloading The Vision! You can use your existing save or start new game. Load up and don't forget to check out your ship logs.";
+            
+
+            // theVisionPopup.SetUpPopup(_text, okCommand: "Ok", cancelCommand: "cancel", okPrompt: "Ok", cancelPrompt: "cancel", true, false);
+            // theVisionPopup.Activate();
+                 
+        }
+
+        public void CreditsMusic()
+        {            
+            var addMusic = GameObject.Find("AudioSource").GetComponent<OWAudioSource>();
+            addMusic.AssignAudioLibraryClip(AudioType.FinalCredits);
+            addMusic.Play();
         }
 
         private void SpawnStartProps()
@@ -105,6 +130,12 @@ namespace TheVision
 
             var torchFix = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/VisionStaffDetector").GetComponent<SphereShape>();
             torchFix.enabled = true;
+
+            var torchSocketFix = SearchUtilities.Find("Ship_Body/ShipSector/VisionTorchSocket").GetComponent<VisionTorchSocket>();
+            torchSocketFix.EnableInteraction(true);
+            torchSocketFix.enabled = true;
+            
+
 
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(false);
 
@@ -278,14 +309,14 @@ namespace TheVision
         public void SolanumGreetingsATP_ShowRing()
         {
             var atpRing3 = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").GetComponent<NomaiComputerRing>();
-            atpRing3.Activate(4, 1.3f);
+            atpRing3.Activate(4, 2.5f);
 
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(true); 
         }
 
         public void SolanumGreetingsATP_DeactivateRing()
         {
-            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring2").GetComponent<NomaiComputerRing>().Deactivate(0.5f);
+            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring6").GetComponent<NomaiComputerRing>().Deactivate(0.5f);
         }
 
         public void SolanumGreetingsDB()
@@ -484,20 +515,11 @@ namespace TheVision
                 position = position2,
                 rotation = rotation2,
                 scale = 5
-            });
-
-            // To not fall on eye scene
-            ApplyForce();
+            });           
 
         }
 
-        public void ApplyForce()
-        {
-            // Pushing out force for flat version and VR version
-            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushUp = new Vector3(0f, 0.2f, 0f);
-            applyForce.AddLocalImpulse(pushUp);
-        }
+        
 
         // Function for teleporting ship to TH State on QM so player can continue the journey
         public static void TeleportShip()
