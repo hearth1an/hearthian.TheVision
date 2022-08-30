@@ -1,0 +1,57 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Hornfelis</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page><![CDATA[<color=orange>Ernesto</color>]]> disappeared!</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hey! What's going on? Where's anglerfish?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Who is <![CDATA[<color=orange>Ernesto</color>]]>?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>			
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>1</Name>
+		<Dialogue>
+			<Page>My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that... </Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Oh, I'm sorry about that...</Text>
+				<DialogueTarget>END</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+
+		<RevealFacts>
+			<FactID>ERNESTO_RUMOR</FactID>
+		</RevealFacts>	
+		<RevealFacts>
+			<FactID>ERNESTO_FOUND_RUMOR</FactID>
+		</RevealFacts>				
+		
+
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END</Name>
+		<Dialogue>
+			<Page>Poor <![CDATA[<color=orange>Ernesto</color>]]>...</Page>
+		</Dialogue>
+    <RevealFacts>
+			<FactID>ERNESTO_ENTRY</FactID>
+	</RevealFacts>		
+
+	</DialogueNode>
+	
+</DialogueTree>

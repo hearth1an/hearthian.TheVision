@@ -155,54 +155,6 @@
                 },
                 "parentPath": "Sector_CaveTwin/SandPile",
                 "rename": "SandPile_3"
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
-                "position": {
-                    "x": 34.7247,
-                    "y": -106.3462,
-                    "z": -22.5131
-                },
-                "rotation": {
-                    "x": 306,
-                    "y": 270,
-                    "z": 165
-                },
-                "parentPath": "Sector_CaveTwin/SandFall",
-                "rename": "SandFall_1",
-                "scale": 0.06
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
-                "position": {
-                    "x": 34.5793,
-                    "y": -105.9462,
-                    "z": -21.6132
-                },
-                "rotation": {
-                    "x": 306,
-                    "y": 270,
-                    "z": 165
-                },
-                "parentPath": "Sector_CaveTwin/SandFall",
-                "rename": "SandFall_2",
-                "scale": 0.04
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthUnderground/Sector_LakebedCaves/Interactables_LakebedCaves/Prefab_HT_Sandfall (1)/SandfallParticles",
-                "position": {
-                    "x": 34.6247,
-                    "y": -105.7462,
-                    "z": -23.2
-                },
-                "rotation": {
-                    "x": 306,
-                    "y": 270,
-                    "z": 165
-                },
-                "parentPath": "Sector_CaveTwin/SandFall",
-                "rename": "SandFall_3",
-                "scale": 0.065
             }
 
         ],

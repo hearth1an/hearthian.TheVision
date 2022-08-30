@@ -70,40 +70,57 @@
         }
     ],
     "nomaiText": [
-      {
-        "position": {
-          "x": 26.3102627,
-          "y": -2.63600159,
-          "z": -7.83890724
+        {
+            "position": {
+                "x": 26.3102627,
+                "y": -2.63600159,
+                "z": -7.83890724
+            },
+            "rotation": {
+                "x": 301.101257,
+                "y": 190.3913,
+                "z": 257.912048
+            },
+            "type": "recorder",
+            "location": "unspecified",
+            "xmlFile": "planets/Text/RecorderATP.xml",
+            "parentPath": "Interactibles_TimeLoopRing",
+            "rename": "Prefab_NOM_Recorder_ATP"
         },
-        "rotation": {
-          "x": 301.101257,
-          "y": 190.3913,
-          "z": 257.912048
+        {
+            "position": {
+                "x": 26.3102627,
+                "y": -2.63600159,
+                "z": -7.83890724
+            },
+            "rotation": {
+                "x": 301.101257,
+                "y": 190.3913,
+                "z": 257.912048
+            },
+            "type": "recorder",
+            "location": "unspecified",
+            "xmlFile": "planets/Text/RecorderATP_2.xml",
+            "parentPath": "Interactibles_TimeLoopRing",
+            "rename": "Prefab_NOM_Recorder_ATP_2"
         },
-        "type": "recorder",
-        "location": "unspecified",
-        "xmlFile": "planets/Text/RecorderATP.xml",
-        "parentPath": "Interactibles_TimeLoopRing",
-        "rename": "Prefab_NOM_Recorder_ATP"
-      },
-      {
-        "position": {
-          "x": 26.3537,
-          "y": 0.179999352,
-          "z": -6.66997528
-        },
-        "rotation": {
-          "x": 321.000061,
-          "y": 4.39440146E-06,
-          "z": 90.0
-        },
-        "type": "computer",
-        "location": "unspecified",
-        "xmlFile": "planets/Text/ComputerATP.xml",
-        "parentPath": "Interactibles_TimeLoopRing_Hidden",
-        "rename": "Prefab_NOM_Computer_ATP"
-      }
+        {
+            "position": {
+                "x": 26.3537,
+                "y": 0.179999352,
+                "z": -6.66997528
+            },
+            "rotation": {
+                "x": 321.000061,
+                "y": 4.39440146E-06,
+                "z": 90.0
+            },
+            "type": "computer",
+            "location": "unspecified",
+            "xmlFile": "planets/Text/ComputerATP.xml",
+            "parentPath": "Interactibles_TimeLoopRing_Hidden",
+            "rename": "Prefab_NOM_Computer_ATP"
+        }
     ],
     "signals": [
       {

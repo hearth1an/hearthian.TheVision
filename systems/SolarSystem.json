@@ -30,6 +30,20 @@
 			}
 		},
 		{
+			"id": "ERNESTO_ENTRY",
+			"position": {
+				"x": 1245.0,
+				"y": 800.0
+			}
+		},
+		{
+			"id": "ERNESTO_FOUND",
+			"position": {
+				"x": 1300.0,
+				"y": 1100.0
+			}
+		},
+		{
 			"id": "THE_VISION_ENTRY",
 			"position": {
 				"x": 1200.0,
@@ -114,6 +128,21 @@
 				"a": 255
 			},
 			"id": "THE_VISION_CURIOSITY"
+		},
+		{
+			"color": {
+				"r": 106,
+				"g": 108,
+				"b": 109,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 238,
+				"g": 239,
+				"b": 231,
+				"a": 255
+			},
+			"id": "ERNESTO_CURIOSITY"
 		}
 	],
 	"initialReveal": [

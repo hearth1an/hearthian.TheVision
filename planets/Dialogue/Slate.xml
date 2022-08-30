@@ -1,0 +1,115 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Slate</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Is it that anglerfish from the museum?</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text><![CDATA[<color=orange>Ernesto</color>]]>?! NO!</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>				
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>2</Name>
+		<Dialogue>
+			<Page>Who is <![CDATA[<color=orange>Ernesto</color>]]>?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hornfelis calling anglerfish from exhibit like that.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	
+	<DialogueNode>
+		<Name>3</Name>
+		<Dialogue>
+			<Page>Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfelis said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>4</Name>
+		<Dialogue>
+			<Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfelis?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I'll do that!</Text>
+				<DialogueTarget>END</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>That's disgusting.</Text>
+				<DialogueTarget>END2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Nah, enjoy your meal then.</Text>
+				<DialogueTarget>END3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END</Name>
+		<Dialogue>
+			<Page>You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>ERNESTO_POOR_ERNESTO</FactID>
+		</RevealFacts>	
+		<RevealFacts>
+			<FactID>ERNESTO_FOUND_RUMOR</FactID>
+		</RevealFacts>	
+
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END2</Name>
+		<Dialogue>
+			<Page>There is no accounting for tastes.</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>ERNESTO_POOR_ERNESTO</FactID>
+		</RevealFacts>	
+		<RevealFacts>
+			<FactID>ERNESTO_FOUND_RUMOR</FactID>
+		</RevealFacts>	
+
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END3</Name>
+		<Dialogue>
+			<Page>Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite.</Page>
+		</Dialogue>
+
+		<RevealFacts>
+			<FactID>ERNESTO_POOR_ERNESTO</FactID>
+		</RevealFacts>	
+		<RevealFacts>
+			<FactID>ERNESTO_FOUND_RUMOR</FactID>
+		</RevealFacts>	
+
+	</DialogueNode>
+</DialogueTree>

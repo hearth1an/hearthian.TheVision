@@ -21,7 +21,7 @@
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back your memories this time.</Text>
+    <Text>SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back your memories this time.</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
@@ -58,7 +58,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_DB_RECORDER</FactID>
-      <Condition>1</Condition>
+      <Condition>9</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>

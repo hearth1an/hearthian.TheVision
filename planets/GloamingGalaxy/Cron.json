@@ -1,14 +1,15 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
 	"name" : "Cron",
-	"starSystem" : "GloamingGalaxy",
-	"Base" :
-	{
-		"surfaceGravity" : 100,
-		"surfaceSize" : 5000,
-		"hasMapMarker" : true,
-		"gravityFallOff" : "inverseSquared",
-		"centerOfSolarSystem" : true
+	"starSystem": "GloamingGalaxy",
+	
+	"Base": {
+		
+		"surfaceGravity": 100,
+		"surfaceSize": 5000,
+		"hasMapMarker": true,
+		"gravityFallOff": "inverseSquared",
+		"centerOfSolarSystem": true
 	},
 	"Orbit" :
 	{

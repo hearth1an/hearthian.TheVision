@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you connected with the one of statue? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also connected. I wonder who or what that could be?</Text>
+    <Text>SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statues? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
@@ -11,7 +11,7 @@
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: It appears that I am also connected now. I ended up right in front of that nearby statue when I thought about this place.</Text>
+    <Text>SOLANUM: It appears that I am also paired now. I ended up right in front of that nearby statue when I thought about this place.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
@@ -36,7 +36,7 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ATP</FactID>
-      <Condition>1,</Condition>
+      <Condition>1</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>

@@ -1,0 +1,22 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <TextBlock>
+    <ID>1</ID>
+    <Text>SOLANUM: Now I see how this time loop is working. I remember everything and I'm still here!</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.</Text>
+  </TextBlock> 
+  <ShipLogConditions>
+    <RevealFact>
+      <FactID>SOLANUM_ATP_RECORDER_2</FactID>
+      <Condition>3</Condition>
+    </RevealFact>
+  </ShipLogConditions>
+</NomaiObject>

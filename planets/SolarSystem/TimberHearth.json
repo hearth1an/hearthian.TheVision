@@ -23,6 +23,84 @@
                     "y": 279.0402,
                     "z": 275.7439
                 }
+            },
+            {
+                "path": "Anglerfish_Body/Beast_Anglerfish",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick",
+                "rename": "PoorErnesto",
+                "scale": 0.003,
+                "removeChildren": [
+                    "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+                ]
+
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Effects/Effects_HEA_SmokeColumn",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto",
+                "scale": 0.2
+            }
+        ],
+        "dialogue": [
+            {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "xmlFile": "planets/Dialogue/Hornfels.xml",
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working",
+                "lookAtRadius": 3,
+                "radius": 1
+
+            },
+            {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "xmlFile": "planets/Dialogue/Slate.xml",
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+                "lookAtRadius": 3,
+                "radius": 1
+
+            }
+        ],
+        "reveal": [
+            {
+                "maxAngle": 180.0,
+                "maxDistance": -1.0,
+                "position": {
+                    "x": 17.2124,
+                    "y": -41.3629,
+                    "z": 185.5392
+                },
+                "radius": 3.0,
+                "revealOn": "enter",
+                "reveals": [
+                    "ERNESTO_FOUND_FACT",
+                    "ERNESTO_FOUND_RUMOR"
+                ]
             }
         ],
         "nomaiText": [
@@ -64,6 +142,7 @@
     "ReferenceFrame": {
         "bracketRadius": -1.0
     },
+    
     "ShipLog": {
         "mapMode": {},
         "spriteFolder": "planets/ShipLogs/sprites",

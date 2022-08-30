@@ -2,10 +2,10 @@
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/addon_manifest_schema.json",
 
     "credits": [
-        "hearth1an#Mod Author",
-        "Help with code:#clay\n#MegaPiggy\n#JohnCorby\n#xen\n#piggeywig2000\n#Hawkbat\n#nebula\n#and others from Outer Wilds Modding Discord community",
-        "Testers:#JohnCorby\n#MegaPiggy\n#nebula\n#Greenpixel\n#SolarReaction\n#Fixxion\n#TimLikeHero\n#Jammer\n#2walker2\n#JohnCorby\n#JohnCorby\n#and others",
-        "Translation credits:#MegaPiggy - English (grammar fix)\n#hearth1an - Russian\n#Ink - Spanish",
+        "Mod Author#hearth1an",
+        "clay\n#MegaPiggy\n#JohnCorby\n#xen\n#piggeywig2000\n#Hawkbat\n#nebula\n#and others from Outer Wilds Modding Discord community#Help with code:#",
+        "Testers:#JohnCorby\n#MegaPiggy\n#nebula\n#Greenpixel\n#SolarReaction\n#Fixxion\n#TimLikeHero\n#Jammer\n#2walker2\n#Jammer\n#Book\n#and others",
+        "Translation credits:#MegaPiggy, 2walker2  - English (grammar fix)\n#hearth1an - Russian\n#Ink - Spanish",
         "Music used:#Andrew Prahlow - Nomai Meditation",
         "#Thank you for playing The Vision!"
     ]

@@ -19,17 +19,21 @@
     </ExploreFact>
     <ExploreFact>
       <ID>SOLANUM_ATP_RECORDER</ID>
-      <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside The Vessel.</Text>
+      <Text>Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.</Text>
+    </ExploreFact>
+    <ExploreFact>
+      <ID>SOLANUM_ATP_RECORDER_2</ID>
+      <Text>Now Solanum knows how time loop reset is working. We will try reach the Vessel again.</Text>
     </ExploreFact>
 
     <Entry>
       <ID>STATUE_ATP</ID>
-      <Name>Linked Statue</Name>
+      <Name>Paired Statue</Name>
       <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
       <ExploreFact>
         <ID>STATUE_ATP_LINK</ID>
-        <Text>Solanum just happened to pass right by the unlinked statue inside the Ash Twin Project. Now she's stuck in the time loop too.</Text>
+        <Text>Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.</Text>
       </ExploreFact>
     </Entry>
 

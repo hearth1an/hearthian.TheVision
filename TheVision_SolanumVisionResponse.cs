@@ -66,13 +66,15 @@ namespace TheVision.CustomProps
                 PlayStartSound();
                 PlayEnergySound();
                 PlayFadeInSound();
-            });           
+            });
+
+           
 
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
-            
-            
+
+
 
             // wh parameters
             var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
@@ -83,8 +85,8 @@ namespace TheVision.CustomProps
 
             // QM White Hole parameters
             var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
-            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;             
-            
+            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;
+
             qmWhiteHole.SetActive(true);
 
             Invoke("ApplyForce", 0.5f);
@@ -104,14 +106,27 @@ namespace TheVision.CustomProps
             _nomaiConversationManager.enabled = false;
 
             TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
+
+
+            var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
+            HUDreboot._hudFlickerOnLength = 10f;
+            HUDreboot._hudFlickerOutLength = 10f;
+            HUDreboot._hudRebootLength = 2f;
+            HUDreboot._hudRebooting = true;
+
+            
         }
 
         public void ApplyForce()
         {
+            SearchUtilities.Find("Player_Body/PlayerCamera").GetComponent<PlayerCameraEffectController>().ApplyExposureDamage();
+
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
             Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
+
+
         }
 
         public void CameraShaking()
