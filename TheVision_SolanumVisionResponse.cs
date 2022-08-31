@@ -64,8 +64,9 @@ namespace TheVision.CustomProps
                 // sfx             
                 PlayWindSound();
                 PlayStartSound();
-                PlayEnergySound();
+                Invoke("PlayImpactSound", 0.5f);
                 PlayFadeInSound();
+                PlaySystemDownSound();
             });
 
            
@@ -170,14 +171,24 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource.PlayDelayed(4.5f);
 
         }
-        public void PlayEnergySound()
+        public void PlayImpactSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeSphereInflation); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ImpactHighSpeed); // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.PlayDelayed(0.3f);
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
+
+        public void PlaySystemDownSound()
+        {
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ShipDamageElectricalFailure); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
         }
 
         public void PlayStartSound()

@@ -27,7 +27,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Hornfelis calling anglerfish from exhibit like that.</Text>
+				<Text>Hornfels named angler from the exhibitionlike like that.</Text>
 				<DialogueTarget>3</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -41,7 +41,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfelis said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!</Text>
+				<Text>So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!</Text>
 				<DialogueTarget>4</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
@@ -50,7 +50,7 @@
 	<DialogueNode>
 		<Name>4</Name>
 		<Dialogue>
-			<Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfelis?</Page>
+			<Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>

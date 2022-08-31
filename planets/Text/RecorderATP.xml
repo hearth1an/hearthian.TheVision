@@ -21,7 +21,7 @@
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right?</Text>
+    <Text>SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
@@ -31,7 +31,7 @@
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>SOLANUM: According to your vision, <![CDATA[<color=orange>The Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
+    <Text>SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

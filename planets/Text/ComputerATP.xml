@@ -13,7 +13,7 @@
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
-    <Text>WARNING: Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.</Text>
+    <Text>WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

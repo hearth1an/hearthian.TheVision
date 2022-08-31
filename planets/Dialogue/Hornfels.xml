@@ -1,5 +1,5 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Hornfelis</NameField>
+	<NameField>Hornfels</NameField>
 
 	<DialogueNode>
 		<Name>Start</Name>
@@ -23,7 +23,7 @@
 	<DialogueNode>
 		<Name>1</Name>
 		<Dialogue>
-			<Page>My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that... </Page>
+			<Page>My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>

@@ -3,15 +3,15 @@
 
   <Entry>
     <ID>SOLANUM_DB</ID>
-    <Name>Solanum on The Vessel</Name>
+    <Name>Solanum on the Vessel</Name>
 
     <Curiosity>THE_VISION_CURIOSITY</Curiosity>
 
     <RumorFact>
       <ID>SOLANUM_ON_DB</ID>
       <SourceID>SOLANUM_ATP</SourceID>
-      <RumorName>Solanum on The Vessel</RumorName>
-      <Text>Solanum wants to try to get to The Vessel. Is it possible for her to get inside Dark Bramble?</Text>
+      <RumorName>Solanum on the Vessel</RumorName>
+      <Text>Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?</Text>
     </RumorFact>
     <ExploreFact>
       <ID>SOLANUM_DB_VESSEL</ID>

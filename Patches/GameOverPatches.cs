@@ -14,7 +14,7 @@ namespace TheVision.Patches
         public static void SetupGameOverScreenPrefix(GameOverController __instance)
         {
             if (Locator.GetDeathManager()._timeloopEscapeType != (TimeloopEscapeType)8486) return;
-            __instance._deathText.text = "TO BE CONTINUED...";
+            __instance._deathText.text = TheVision.Instance.ToBeContinued;
 
             SubmitActionLoadScene actionLoadScene = new SubmitActionLoadScene();
             actionLoadScene.SetSceneToLoad(SubmitActionLoadScene.LoadableScenes.CREDITS);            

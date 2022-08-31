@@ -14,7 +14,7 @@
 		"ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]> МИН., <![CDATA[<TimeSeconds>]]> CЕК. НАЗАД:  получены данные из предыдущих циклов.",
 		"MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "МАСКИ ПОЛУЧАЮТ ДАННЫЕ ОТ: \n<![CDATA[<color=orange>модуля отслеживания зонда</color>]]> \n<![CDATA[<color=lightblue>статуи памяти на Пучине Гиганта</color>]]> \n<![CDATA[<color=lightblue>статуи памяти на Камельке</color>]]> \n<![CDATA[<color=orange>статуи памяти проекта Час Пепла</color>]]>",
 		"ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "<![CDATA[<TimeMinutesRemaining>]]> МИН. ДО КОНЦА ЦИКЛА И НОВОЙ ПЕРЕДАЧИ ДАННЫХ",
-		"WARNING. Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "ВНИМАНИЕ: Удаление ядра приведёт к завершению <color=orange>проекта «Час Пепла»</color>.",
+		"WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "ВНИМАНИЕ! Удаление ядра приведёт к завершению <color=orange>проекта «Час Пепла»</color>.",
 
 		// QM ground
 
@@ -26,17 +26,17 @@
 
 		// Recorder ATP
 
-		"SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statue? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?": "СОЛАНУМ: Ты знал об этом? Наше <![CDATA[<color=lightblue>солнце</color>]]> умирает, а ты.. ты связан со одной из статуй? Тут указано что есть ещё одна связь со статуей на <![CDATA[<color=lightblue>Пучине Гиганта</color>]]>. Интересно, кто это или что?",
+		"SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statues? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?": "СОЛАНУМ: Ты знал об этом? Наше <![CDATA[<color=lightblue>солнце</color>]]> умирает, а ты.. ты связан со одной из статуй? Тут указано что есть ещё одна связь со статуей на <![CDATA[<color=lightblue>Пучине Гиганта</color>]]>. Интересно, кто это или что?",
 		"SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language.": "СОЛАНУМ: Хотя не важно, я совсем забыла что ты не можешь ответить, точнее я не смогу понять твой язык.",
 		"SOLANUM: It appears that I am also paired now. I ended up right in front of that nearby statue when I thought about this place.": "СОЛАНУМ: Похоже, что теперь я тоже связана с одной из статуй. Я оказалась прямо перед ней, когда захотела появиться этом месте.",
 		"SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.": "СОЛАНУМ: Видимо теперь мы оба застряли во временной петле прямо перед <![CDATA[<color=lightblue>вспышкой сверхновой</color>]]>. Отличный денёк, правда? ...или не очень. Прости.",
-		"SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right?": "СОЛАНУМ: Я только что поняла, что у нас осталось не так много времени. Скорее всего я снова окажусь на <![CDATA[<color=lightblue>Квантовой Луне</color>]]> после окончания цикла, как было в твоих воспоминаниях? Это ведь так работает? Или нет?",
-		"SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.": "СОЛАНУМ: А вообще-то.. разве мы не можем просто улететь отсюда? Радиус вспышка сверхновой должен быть большим, но что если мы просто отлетим от него на достаточное расстояние? Это должно сработать. Усовершенствованное гиперядро заряжено вспышкой из прошлого цикла, так что мы можем попробовать использовать его для побега.",
+		"SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!": "СОЛАНУМ: Я только что поняла, что у нас осталось не так много времени. Скорее всего я снова окажусь на <![CDATA[<color=lightblue>Квантовой Луне</color>]]> после окончания цикла, как было в твоих воспоминаниях? Это ведь так работает? В любом случае, я узнаю это в следующем цикле.",
+		"SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.": "СОЛАНУМ: А вообще-то.. разве мы не можем просто улететь отсюда? Радиус вспышки сверхновой будет очень большим, но что если мы просто отлетим от него на достаточное расстояние? Это должно сработать. Усовершенствованное гиперядро заряжено вспышкой из прошлого цикла, так что мы можем попробовать использовать его для побега.",
 		"SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.": "СОЛАНУМ: Я видела <![CDATA[<color=orange>Зведолёт</color>]]> в твоём видении внутри <![CDATA[<color=lightblue>Чёрного Терновника</color>]]>. Есть шанс, что он всё ещё работает. Я не уверена, что смогу туда добраться, но я должна хотя бы попытаться.",
 
 
 		// Recorder ATP 2
-		"SOLANUM: Now I see how this time loop is working. I remember everything and I'm still here!": "СОЛАНУМ: Кажется, теперь я понимаю как работают временные петли. Я всё помню и я никуда не исчезла!",
+		"SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.": "СОЛАНУМ: Кажется, теперь я понимаю как работают статуи. Я помню всё из предыдущего цикла.",
 		"SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "СОЛАНУМ: Как там говорил Седум? <![CDATA[<i>«Отправлять в прошлое воспоминания и отправляться в прошлое самому - это два разных действия»</i>]]>.",
 		"SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.": "СОЛАНУМ: В любом случае, теперь я понимаю как это работает. Ну так что, продолжим? Я снова открою гиперядро, но в следующий раз твоя очередь.",
 
@@ -48,10 +48,10 @@
 
 		// Recorder DB
 		"SOLANUM: Guess what? Everything works despite the damage! That's incredible! I am a Nomai, so I think can handle its system.": "СОЛАНУМ: Представляешь? Всё работает несмотря на повреждения! Это невероятно! Я ведь Номаи, думаю я смогу справиться с его системой.",
-		"SOLANUM: You see this whiteboard? <![CDATA[<color=orange>the Vessel</color>]]> is still getting incoming signals from other Nomai even here, inside <![CDATA[<color=orange>Dark Bramble</color>]]>.": "СОЛАНУМ: Видишь эту стену сообщений? Оказывается <![CDATA[<color=orange>«Звездолёт»</color>]]> всё ещё получает сигналы от других Номаи даже будучи здесь, в <![CDATA[<color=orange>Чёрном Терновнике</color>]]>.",
+		"SOLANUM: You see this whiteboard? <![CDATA[<color=orange>the Vessel</color>]]> is still getting incoming signals from other Nomai even here, inside <![CDATA[<color=orange>Dark Bramble</color>]]>.": "СОЛАНУМ: Видишь эту стену? Оказывается <![CDATA[<color=orange>«Звездолёт»</color>]]> всё ещё получает сообщения от других кланов Номаи даже будучи внутри <![CDATA[<color=orange>Чёрного Терновника</color>]]>.",
 		"SOLANUM: Wait, is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "СОЛАНУМ:  Подожди, так.. это.. Да! ДА! Самой не верится, но мне удалось отследить координаты сообщений Канны из <![CDATA[<color=lightblue>Сумеречной Галактики</color>]]>.",
 		"SOLANUM: Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under <![CDATA[<color=orange>the Vessel</color>]]> bridge.": "СОЛАНУМ: Канна утверждает, что в системе  «Чёрная Скала» безопасно. То что нужно! Координаты должны отобразиться на голограмме внизу. Можешь проверить?",
-		"SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back your memories this time.": "СОЛАНУМ: Ты ведь принёс <![CDATA[<color=orange>усовершенствованное гиперядро</color>]]>? То, что я держу в руке, сломано. К сожалению, у нас не так много времени. В этот раз <![CDATA[<color=orange>Час Пепла</color>]]> не отправит твои воспоминания в прошлое.",
+		"SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back our memories this time.": "СОЛАНУМ: Ты ведь принёс <![CDATA[<color=orange>усовершенствованное гиперядро</color>]]>? Оригинальное сломано. К сожалению, у нас не так много времени. В этот раз <![CDATA[<color=orange>Час Пепла</color>]]> не отправит наши воспоминания в прошлое.",
 		"SOLANUM: ...": "СОЛАНУМ: ...",
 		"SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.": "СОЛАНУМ: Да уж.. многое случилось здесь, в этой солнечной системе, твоей и моей. Мы жили в разное время, но теперь у нас одна судьба.",
 		"SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...": "СОЛАНУМ: Мне очень жаль твоих близких, друзей и родных. Боюсь, мы не сможем им помочь. Я всегда знала что этот день наступит. Паслён как-то сказал, что этого не случится на нашем веку... что ж.. вот мы здесь и сейчас. Мы должны позаботиться о себе, таковы законы вселенной. Мы над ними не властны...",
@@ -70,23 +70,51 @@
 		"SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "СОЛАНУМ: ..Это что, статуя памяти? Активированная? Рами был бы вне себя от радости. Мне нужно проверить её связь с <![CDATA[<color=orange>проектом Час Пепла</color>]]>.",
 
 		// Recorder TH
-		"SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "СОЛАНУМ: А, это ты мой друг. Мне уже легче, мой разум кристалльно чист, но это странное ощущение. Я не могу объяснить это чувство, даже сама себе.",
+		"SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "СОЛАНУМ: А, это ты, друг мой. Мне уже легче, мой разум кристалльно чист, но это странное ощущение. Я не могу объяснить это чувство, даже сама себе.",
 		"SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.": "СОЛАНУМ: Я ведь правда здесь? Я просто подумала тогда о <![CDATA[<color=lightblue>Камельке</color>]]> и очутилась тут.",
 		"SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.": "СОЛАНУМ: Получается, Номаи вымерли? Все до единого? Очень жаль это слышать, но сколько времени вообще прошло? Последнее что я помню, как Бадан отправил меня в паломничество на <![CDATA[<color=lightblue>Квантовую Луну</color>]]>. Для меня это было совсем недавно, но оказывается все эти годы я находилась в квантовом непостоянстве...",
-		"SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.": "СОЛАНУМ: Кстати, я никогда не встречала представителей твоего вида. Для меня большая честь говорить с тобой! И у вас четыре глаза.. вау! Слушай... я.. я должна принести извинения от лица всего клана. Дело в том, что мы пытались уничтожить <![CDATA[<color=lightblue>солнце</color>]]> и тогда вы могли не появиться вообще. Это ужасно и недопустимо, но я рада что у нас тогда ничего не вышло. Я не могла не извиниться, глядя на то как развивается ваш чудесный вид.",
-		"SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "СОЛАНУМ: Так, пожалуй нужно разобраться во всём что тут происходит. Это что, <![CDATA[<color=orange>Орбитальная Пушка</color>]]>? Она... сломана? Пожалуй нужно проверить, какие данные ей удалось собрать.",
-		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ..."
+		"SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.": "СОЛАНУМ: Кстати, я никогда не встречала представителей твоего вида. Для меня большая честь говорить с тобой! И у вас четыре глаза.. вау! Слушай... я.. я должна принести извинения от лица всего клана. Дело в том, что мы пытались уничтожить <![CDATA[<color=lightblue>солнце</color>]]> и тогда вы могли бы не появиться вообще. Это ужасно и недопустимо, но я рада что у нас тогда ничего не вышло. Я не могла не извиниться, глядя на то как развивается ваш чудесный вид.",
+		"SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "СОЛАНУМ: Так, нужно разобраться во всём что тут происходит. Это что, <![CDATA[<color=orange>Орбитальная Пушка</color>]]>? Она... сломана? Пожалуй нужно проверить, какие данные ей удалось собрать.",
+		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+
+		// Ernesto Quest
 
 
+		// Hornfels
+		"Hornfels": "Роговик",
+		"<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Эрнесто</color>]]> пропал!",
+		"Hey! What's going on? Where's anglerfish?": "Привет! Что тут происходит? И где удильщик?",
+		"Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Кто такой <![CDATA[<color=orange>Эрнесто</color>]]>?",
+		"My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Мой маленький друг исчез! Я назвал этого удильщика <![CDATA[<color=orange>«Эрнесто»</color>]]>. Не могу поверить что он сбежал от меня...",
+		"Oh, I'm sorry about that...": "Ох, мне очень жаль...",
+		"Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Бедный <![CDATA[<color=orange>Эрнесто</color>]]>...",
+
+
+		// Slate
+		"Slate": "Сланец",
+		"Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?": "Эй! Ты почему всё ещё здесь? Ты раздобыл <![CDATA[<color=orange>коды запуска</color>]]>?",
+		"Is it that anglerfish from the museum?": "Это что, удильщик из музея в Обсерватории?",
+		"<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Эрнесто</color>]]>?! НЕЕЕТ!",
+
+		"Hornfels named angler from the exhibitionlike like that.": "Роговик так назвал этого удильщика.",
+		"Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.": "Окей, знаешь что? Да, это тот самый удильщик из музея. Я уже сыт по горло маршмеллоу, не могу их больше есть.",
+		"So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "И поэтому ты решил пожарить <![CDATA[<color=orange>Эрнесто</color>]]>?! Роговик ведь считает <![CDATA[<color=orange>Эрнесто</color>]]> своим другом!",
+		"Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Удильщик - это рыба в первую очередь. Ну или типа того. Неважно как он зовёт её, она уже почти готова... или нет. Мне кажется что <![CDATA[<color=lightblue>минут через 30</color>]]> точно приготовится. Может слетаешь к <![CDATA[<color=orange>Чёрному Терновнику</color>]]> и просто поймаешь ещё одного для Роговика?",
+		"I'll do that!": "Ладно, слетаю.",
+		"That's disgusting.": "Отвратительно.",
+		"Nah, enjoy your meal then.": "Пожалуй нет. Приятного аппетита.",
+		"You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Правда? Огромное спасибо! И ещё, пожалуйста не говори никому что стало с настоящим <![CDATA[<color=orange>Эрнесто</color>]]> хорошо?",
+		"There is no accounting for tastes.": "О вкусах не спорят.",
+		"Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite.": "О да, спасибо! Приходи через <![CDATA[<color=lightblue>30 минут</color>]]> и я дам тебе кусочек."
 
 	},
 
 	"UIDictionary": {
-		
+
 		"Quantum Consciousness": "Квантовое Сознание",
 		"Solanum": "Соланум",
-		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
-		"Gloaming Galaxy": "Сумеречная Галактика" // Add this to other translations
+		"ToBeContinued": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+		"GloamingGalaxy": "Сумеречная Галактика" // Add this to other translations
 
 
 	},
@@ -95,7 +123,7 @@
 		// Brittle Hollow
 		"Solanum in School ruins": "Соланум в руинах школы",
 		"Solanum on Brittle Hollow": "Соланум на Пустотной Сфере",
-		"There's also Solanum signal coming from Brittle Hollow.": "С Пустотной Сферы тоже идёт сигнал Соланум",
+		"There's also Solanum signal coming from Brittle Hollow.": "С Пустотной Сферы доносится сигнал Соланум",
 		"I found Solanum in the School.": "Я обнаружил Соланум в школе.",
 		"Solanum saying that the black hole was smaller and that it was her school. She also don't want to fall down so she took a gravity crystall.": "Соланум училась здесь. Она утверждает, что раньше черная дыра была меньше. Чтобы не упасть, она на всякий случай взяла с собой гравитационный кристалл.",
 
@@ -103,13 +131,13 @@
 		"Solanum in Sunless City": "Соланум в Тёмном Городе",
 		"I can hear Solanum signal from Sunless City.": "Устойчивый сигнал Соланум доносится из Тёмного Города.",
 		"I found Solanum in Sunless City. At the Eye Temple district, she is staying at her home.": "Я обнаружил Соланум в Тёмном Городе. Она находится в квартале Храма Ока в месте, которое зовёт домом.",
-		"Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Соланум грустит из-за слепой веры Номаи в Око. Она уничтожила свои детские игрушки.",
+		"Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Соланум грустит из-за того, к чему привела слепая вера их клана в Око. Она обратила в прах свои детские игрушки.",
 
 		// DB_VesselBody
 		"Solanum on the Vessel": "Соланум на «Звездолёте»",
 		"Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "Соланум хочет попытаться попасть на «Звездолёт». Сможет ли она добраться до него даже в Чёрном Терновнике?",
 		"Solanum did it! Whatever her power is, she's here and waiting for me once again.": "У Соланум получилось! Без понятия, каков предел её сил, но она здесь и снова ожидает меня.",
-		"Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "Соланум удалось отследить координаты входящих сообщений других Номаи. Канна, современная Номаи, зовёт всех в безопасное место - Сумеречную Галактику, звёздную систему «Чёрная Скала». Координаты этого места должны отобразиться внизу на голограмме.",
+		"Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "Ей удалось отследить координаты входящих сообщений других кланов Номаи. Канна, современная Номаи, зовёт всех в безопасное место - Сумеречную Галактику, звёздную систему «Чёрная Скала». Координаты этого места должны отобразиться внизу на голограмме.",
 		"Gloaming Galaxy, Blackrock coordinates hologram": "Голограмма координат Сумеречной галактики, системы «Чёрная Скала»",
 		"New coordinates": "Новые координаты",
 		"I found new coordinates to another Galaxy. We can use the Warp Core from the Ash Twin Project to warp. There will be no turning back once I warp. Am I ready to do this?": "Я нашёл новые координаты другой галактики. Мы можем использовать усовершенствованное гиперядро с Часа Пепла для гипер-прыжка. Обратного пути не будет. Я точно готов к этому?",
@@ -117,14 +145,14 @@
 		// Giants Deep
 		"Solanum on Giant's Deep": "Соланум на Пучине Гиганта",
 		"Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Соланум хочет посетить Пучину Гиганта, но она скорее всего так же останется на Камельке.",
-		"I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "Я обнаружил Соланум, когда она проверяла данные модуля орбитального зонда. Я никогда не видел, чтобы компьютер Номаи светился зелёным цветом. Она запросила у главного компьютера дату последнего взаимодействия с ним, чтобы понять сколько времени прошло.",
-		"Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Соланум очень расстроена тем что узнала об Око Вселенной. С самого детства она была права - у Ока нет желаний или стремлений. Я не удивлён, что она больше не хочет ничего слышать о нём. Соланум обратила своё внимание на работающую статую памяти.",
+		"I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "Я обнаружил Соланум, когда она проверяла данные модуля орбитального зонда. Я никогда не видел, чтобы компьютер Номаи светился зелёным цветом. Она запросила у главного компьютера дату последнего взаимодействия, чтобы понять сколько времени прошло.",
+		"Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Соланум очень расстроена тем что узнала про Око Вселенной. С самого детства она была права - у Ока нет желаний или стремлений. Я не удивлён, что она больше не хочет ничего слышать о нём. Соланум обратила своё внимание на работающую статую памяти.",
 
 		// Quantum Moon
 		"Solanum on Quantum Moon": "Соланум на Квантовой Луне",
 		"What if..?": "А что если..?",
 		"Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Соланум - последняя из Номаи. Что если я покажу ей всё что знаю с помощью Посоха видений из Разрушенной лаборатории на «Незнакомце»?",
-		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "После видения произошло что-то странное. Облака одномоментно исчезли и от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
+		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "После видения произошло нечто странное. Облака растворились, а от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
 		"Solanum looks disoriented according to her reply.": "Соланум очень растерялась, судя по её ответу на Квантовой Луне.",
 		"Inscription near Solanum's body": "Надпись рядом с трупом Соланум",
 		"Solanum left some text near her body": "Соланум оставила послание рядом со своим трупом",
@@ -150,7 +178,7 @@
 		"This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "Это можно классифицировать как новое Квантовое Правило, либо исключение из правил. Моя теория заключается в том, что если сознательный наблюдатель осознаёт свою квантовость, он приобретает Квантовое Сознание. Соланум, возможно, получила данное знание из моего видения.",
 		"Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "Квантовое Сознание обладает устойчивым узнаваемым сигналом. Сигнал похож на Квантовые флуктуации, но имеет больше низких частот. Сигнал настолько сильный, что его можно услышать даже без сигналоскопа.",
 		"Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Другая отличительная черта Квантового Сознания - летающие искры рядом с головой существа. Кстати, похоже, что другие Квантовые Правила не действуют на обладателя Квантового Сознания.",
-		"Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about the certain location and appear there. Hypothesis: she can appear only in known places.": "Похоже что обладатель Квантового Сознания получает возможность существовать в нескольких местах одновременно. Соланум утверждает, что ей нужно просто подумать об определенном месте, чтобы появиться там. Предположение: она может появляться только в известных ей местах.",
+		"Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about a certain location and appear there. Hypothesis: she can appear only in known places.": "Похоже что обладатель Квантового Сознания получает возможность существовать в нескольких местах одновременно. Соланум утверждает, что ей нужно просто подумать об определенном месте, чтобы появиться там. Предположение: она может появляться только в известных ей местах.",
 
 		// ATP Time Loop Ring
 		"Solanum inside Ash Twin Project": "Соланум внутри проекта «Час Пепла»",
@@ -161,7 +189,19 @@
 		"Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Соланум активировала статую памяти на Часе Пепла. Теперь она тоже застряла во временной петле.",
 
 
-		"Now Solanum knows how time loop reset is working. We will try reach the Vessel again.": "Теперь Соланум знает как устроена временная петля. Мы попробуем снова отправиться на Звездолёт."
+		"Now Solanum knows how time loop reset is working. We will try reach the Vessel again.": "Теперь Соланум знает как устроена временная петля. Мы попробуем снова отправиться на Звездолёт.",
+
+
+		// Ernesto Quest
+		//////////////////
+		"Where is Ernesto?": "Где Эрнесто?",
+		"Seriously, how anglerfish could just disappear?": "Нет, правда, куда удильщик мог деться?",
+		"Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Роговик заметил, что пропал ценный экспонат - удильщик по кличке «Эрнесто».",
+		"Ernesto found": "Эрнесто нашёлся",
+		"I found Ernesto": "Я нашёл Эрнесто",
+		"I found Slate with Ernesto. He's cooking him on campfire.": "Сланец забрал Эрнесто. Он готовит его на костре.",
+		"Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention.": "Он сказал, больше не может есть маршмеллоу, поэтому он решил разнообразить рацион и приготовить Эрнесто. Сланец считает, что удильщик приготовится через 30 минут, но учитывая длительность цикла временной петли, проще ничего не делать."
+		//////////////////
 	}
 
 }

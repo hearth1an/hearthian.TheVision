@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Now I see how this time loop is working. I remember everything and I'm still here!</Text>
+    <Text>SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
