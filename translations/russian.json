@@ -113,9 +113,10 @@
 
 		"Quantum Consciousness": "Квантовое Сознание",
 		"Solanum": "Соланум",
-		"THE_VISION_TO_BE_CONTINUED": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",		
-		"GloamingGalaxy": "Сумеречная Галактика" // Add this to other translations
-
+		"THE_VISION_TO_BE_CONTINUED": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+		"ToBeContinued": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+		"GloamingGalaxy": "Сумеречная Галактика", // Add this to other translations
+		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ..."
 
 	},
 	"ShipLogDictionary": {

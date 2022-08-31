@@ -435,7 +435,7 @@ namespace TheVision
                     
 
                     Invoke("DropBrokenCore", 3f);
-                    Invoke("PickBrokenCore", 11.5f);
+                    Invoke("PickBrokenCore", 13.5f);
 
                 });
 
