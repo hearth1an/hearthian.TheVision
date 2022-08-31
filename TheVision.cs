@@ -18,9 +18,8 @@ namespace TheVision
     public class TheVision : ModBehaviour
     {
         public static INewHorizons newHorizonsAPI;
-        public static TheVision Instance;
-        public string ToBeContinued = "TO BE CONTINUED...";
-        public OWAudioSource PlayerHeadsetAudioSource;
+        public static TheVision Instance;        
+        public OWAudioSource PlayerHeadsetAudioSource;        
 
         private void Awake()
         {
@@ -237,7 +236,6 @@ namespace TheVision
                 {
                     SolanumGreetingsTH();
                     ParentCore();
-
                 }
 
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED"))
@@ -1031,9 +1029,9 @@ namespace TheVision
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 
-                // GameObject.Find("Player_Body/PlayerCamera").gameObject.SetActive(false);
                 DeathManager deathManager = Locator.GetDeathManager();
                 deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
+                
             });
 
         }
