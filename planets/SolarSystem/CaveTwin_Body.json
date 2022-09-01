@@ -167,7 +167,7 @@
                     "y": -104.0983,
                     "z": -23.48
                 },
-                "radius": 3,
+                "radius": 5,
                 "revealOn": "enter",
                 "reveals": [
                     "SOLANUM_ET_FOUND"

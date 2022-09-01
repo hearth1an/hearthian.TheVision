@@ -437,7 +437,7 @@ namespace TheVision
                     
 
                     Invoke("DropBrokenCore", 3f);
-                    Invoke("PickBrokenCore", 13.5f);
+                    Invoke("PickBrokenCore", 12.6f);
 
                 });
 
@@ -508,7 +508,7 @@ namespace TheVision
         {
             var vesselCore = SearchUtilities.Find("Prefab_NOM_WarpCoreVesselBroken");
             vesselCore.transform.parent = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:RT_Arm_ClavicleSHJnt/Nomai_Rig_v01:RT_Arm_ShoulderSHJnt/Nomai_Rig_v01:RT_Arm_ElbowSHJnt/Nomai_Rig_v01:RT_Arm_WristSHJnt").transform.parent;
-            vesselCore.transform.localPosition = new Vector3(0.8f, -0.1f, -0.2f);
+            vesselCore.transform.localPosition = new Vector3(0.9f, 0f, -0.1f);
             vesselCore.transform.rotation = new Quaternion(0.3842f, 0.0578f, 0.7798f, -0.4009f);
 
             PlayCorePickSound();
@@ -616,17 +616,17 @@ namespace TheVision
 
                 pyramid.targetPos = new Vector3(35.1789f, -105.9786f, -23.1699f);
                 pyramid.delay = 5f;
-                pyramid.rotationSpeed = 40f;
+                pyramid.rotationSpeed = 20f;
                 pyramid.Start();
 
                 mobius.targetPos = new Vector3(0.7838f, -0.1231f, 0.6973f);
                 mobius.delay = 5.5f;
-                mobius.rotationSpeed = -35f;
+                mobius.rotationSpeed = -15f;
                 mobius.Start();
 
                 ship.targetPos = new Vector3(0.4714f, 0.744f, 0.1487f);
                 ship.delay = 6f;
-                ship.rotationSpeed = 15f;
+                ship.rotationSpeed = 5f;
                 ship.Start();
 
                 Invoke("PlayRaiseCairn", 4.5f);
@@ -716,8 +716,8 @@ namespace TheVision
             if (systemName == "GloamingGalaxy")
             {
                 EndGame();
-            }            
-        }      
+            }
+        }
 
         public void EyeOfTheUniverseProps()
         {
@@ -754,11 +754,20 @@ namespace TheVision
                 position = position2,
                 rotation = rotation2,
                 scale = 5
-            });           
+            });
+
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                var solAnimController = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").AddComponent<SolanumAnimController>();
+                solAnimController._animator = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<UnityEngine.Animator>();
+                solAnimController.StartWatchingPlayer();
+            });
+            
 
         }
 
-        
+
+
 
         // Function for teleporting ship to TH State on QM so player can continue the journey
         public static void TeleportShip()
@@ -1073,6 +1082,16 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.PlayerGasp_Heavy); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning // 854 PlayerGasp_Heavy
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
+
+        public void QuantumLightningSound()
+        {
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeLightning); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning // 854 PlayerGasp_Heavy
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
