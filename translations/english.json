@@ -109,7 +109,7 @@
 		// Hornfels
 		"Hornfels": "Hornfels",
 		"<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!",
-		"Hey! What's going on? Where's anglerfish?": "Hey! What's going on? Where's anglerfish?",
+		"Hey! What's going on? Where's the anglerfish?": "Hey! What's going on? Where's the anglerfish?",
 		"Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Who is <![CDATA[<color=orange>Ernesto</color>]]>?",
 		"My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...",
 		"Oh, I'm sorry about that...": "Oh, I'm sorry about that...",
@@ -188,7 +188,7 @@
 		// Quantum Moon
 		"Solanum on Quantum Moon": "Solanum on Quantum Moon",
 		"What if..?": "What if..?",
-		"Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?",
+		"Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?",
 		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.",
 		"Solanum looks disoriented according to her reply.": "Solanum looks disoriented according to her reply.",
 		"Inscription near Solanum's body": "Inscription near Solanum's body",
@@ -207,6 +207,7 @@
 		// Timber Hearth
 		"Solanum on Timber Hearth": "Solanum on Timber Hearth",
 		"Is Solanum on Timber Hearth?": "Is Solanum on Timber Hearth?",
+		"New quantum frequency": "New quantum frequency",
 
 		//////////////////
 		"Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?": "Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?",

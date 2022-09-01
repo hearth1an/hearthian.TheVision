@@ -69,6 +69,7 @@ namespace TheVision.CustomProps
                 PlayWindSound();
                 PlayStartSound();
                 Invoke("PlayImpactSound", 0.5f);
+                Invoke("PlayShockSound", 0.5f);
                 PlayFadeInSound();
                 PlaySystemDownSound();              
 
@@ -114,7 +115,7 @@ namespace TheVision.CustomProps
                 HUDreboot._hudFlickerOutLength = 10f;
                 HUDreboot._hudRebootLength = 2f;
                 HUDreboot._hudRebooting = true;
-
+                
 
             });
 
@@ -182,6 +183,15 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ImpactHighSpeed); // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
+        public void PlayShockSound()
+        {
+            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ElectricShock); // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();

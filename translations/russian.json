@@ -83,7 +83,7 @@
 		// Hornfels
 		"Hornfels": "Роговик",
 		"<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Эрнесто</color>]]> пропал!",
-		"Hey! What's going on? Where's anglerfish?": "Привет! Что тут происходит? И где удильщик?",
+		"Hey! What's going on? Where's the anglerfish?": "Привет! Что тут происходит? И где удильщик?",
 		"Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Кто такой <![CDATA[<color=orange>Эрнесто</color>]]>?",
 		"My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Мой маленький друг исчез! Я назвал этого удильщика <![CDATA[<color=orange>«Эрнесто»</color>]]>. Не могу поверить что он сбежал от меня...",
 		"Oh, I'm sorry about that...": "Ох, мне очень жаль...",
@@ -152,7 +152,7 @@
 		// Quantum Moon
 		"Solanum on Quantum Moon": "Соланум на Квантовой Луне",
 		"What if..?": "А что если..?",
-		"Solanum is the last Nomai alive. What if I'll show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Соланум - последняя из Номаи. Что если я покажу ей всё что знаю с помощью Посоха видений из Разрушенной лаборатории на «Незнакомце»?",
+		"Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Соланум - последняя из Номаи. Что если я покажу ей всё что знаю с помощью Посоха видений из Разрушенной лаборатории на «Незнакомце»?",
 		"After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "После видения произошло нечто странное. Облака растворились, а от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
 		"Solanum looks disoriented according to her reply.": "Соланум очень растерялась, судя по её ответу на Квантовой Луне.",
 		"Inscription near Solanum's body": "Надпись рядом с трупом Соланум",
@@ -169,6 +169,8 @@
 		// Timber Hearth
 		"Solanum on Timber Hearth": "Соланум на Камельке",
 		"Is Solanum on Timber Hearth?": "Соланум на Камельке?",
+		"New quantum frequency?": "Новая квантовая частота?",
+
 
 		"Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?": "Сообщение Соланум преравалось, когда она упомянула Камелёк. Может стоит поискать её там?",
 

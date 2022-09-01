@@ -10,7 +10,7 @@
 		
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Hey! What's going on? Where's anglerfish?</Text>
+				<Text>Hey! What's going on? Where's the anglerfish?</Text>
 				<DialogueTarget>1</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>

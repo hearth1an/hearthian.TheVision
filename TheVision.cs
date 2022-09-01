@@ -447,14 +447,8 @@ namespace TheVision
         }
 
         public void SolanumDBEvent()
-        {
-
-
+        {   
             PlayTextSound();
-
-            
-
-
 
             SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage/Arc 2").GetComponent<NomaiTextLine>()._state = NomaiTextLine.VisualState.UNREAD;
             SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage/Arc 3").GetComponent<NomaiTextLine>()._state = NomaiTextLine.VisualState.UNREAD;
@@ -556,11 +550,11 @@ namespace TheVision
             {
                 TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_BH_EVENT"), () =>
                 {
-                    Invoke("SolanumEventBH", 1f);
+                    Invoke("SolanumEventBH", 3f);
 
                 });
             }
-            
+
         }
 
         public void SolanumEventBH()
@@ -570,11 +564,14 @@ namespace TheVision
             var crystallGravity = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/CapsuleVolume_NOM_GravityCrystal").GetComponent<DirectionalForceVolume>();
             crystallGravity.SetFieldMagnitude(-0.2f);
 
-            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").GetComponent<OWAudioSource>().AssignAudioLibraryClip(AudioType.NomaiGravCrystalFlickerAmbient_LP);
+            PlayBrokenCrystallSound();
 
             Invoke("SolanumEventBHend", 4f);
-            Invoke("PlayCrackSound", 5.5f);         
-               
+            Invoke("PlayCrackSound", 5.5f);
+            
+
+            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").SetActive(false);
+
         }
 
         public void SolanumEventBHend()
@@ -808,8 +805,13 @@ namespace TheVision
                 PlaySFXSound();
                 PlayGaspSound();
                 PlayThunderSound();
+                PlayQuantumLightningSound();
             });
 
+            var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
+            HUDreboot._hudFlickerOnLength = 2f;
+            HUDreboot._hudFlickerOutLength = 1f;
+            HUDreboot._hudRebootLength = 2f;            
 
             // Enabling json props
             DisabledPropsOnStart(true);
@@ -1087,7 +1089,7 @@ namespace TheVision
             PlayerHeadsetAudioSource.PlayOneShot();
         }
 
-        public void QuantumLightningSound()
+        public void PlayQuantumLightningSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
@@ -1214,14 +1216,28 @@ namespace TheVision
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/CapsuleVolume_NOM_GravityCrystal").SetActive(false);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").SetActive(true);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").SetActive(false);
-            
+            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal").DestroyAllComponents<OWAudioSource>();
+            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal").DestroyAllComponents<AudioSource>();
 
             PlayerHeadsetAudioSource = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.PlayerSuitHelmetCrack);
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.5f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.Play();            
+            PlayerHeadsetAudioSource.Play();
+        }
+
+        public void PlayBrokenCrystallSound()
+        {
+            SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").SetActive(false);
+
+
+            PlayerHeadsetAudioSource = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal").AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.NomaiGravCrystalFlickerAmbient_LP);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.5f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.Play();
         }
 
         public void PlayDeactivateRingSound()
