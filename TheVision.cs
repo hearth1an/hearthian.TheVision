@@ -50,7 +50,7 @@ namespace TheVision
                     TitleProps();
                 }
                 
-                if (loadScene == OWScene.Credits_Fast)
+                if (loadScene == OWScene.Credits_Fast && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED") && Locator.GetShipLogManager().IsFactRevealed("HOLOGRAM_CHANGED"))
                 {
                     CreditsMusic();
                 }               
