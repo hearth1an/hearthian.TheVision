@@ -59,6 +59,10 @@ namespace TheVision.CustomProps
         public void OnVisionEnd()
         {
 
+            // flicker 
+            var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
+
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 // sfx             
@@ -66,56 +70,58 @@ namespace TheVision.CustomProps
                 PlayStartSound();
                 Invoke("PlayImpactSound", 0.5f);
                 PlayFadeInSound();
-                PlaySystemDownSound();
+                PlaySystemDownSound();              
+
+
+            });
+            TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+               
+                // wh parameters
+                var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
+                whiteHoleOptions.color = new Color(1, 1, 2, 1);
+                whiteHoleOptions.range = 30;
+                whiteHoleOptions.intensity = 3;
+                whiteHoleOptions.enabled = true;
+
+                // QM White Hole parameters
+                var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
+                var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;
+
+                qmWhiteHole.SetActive(true);
+
+                Invoke("ApplyForce", 0.5f);
+                Invoke("CameraShaking", 0.5f);
+
+                Invoke("SolanumAnim", 10f);
+
+                Invoke("SolanumAnim2", 25f);
+
+                // Camera lock on target
+                var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
+                cameraFixedPosition.LockOn(qmWhiteHole.transform, 20f, true, 3f);
+
+
+                TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
+                Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
+                _nomaiConversationManager.enabled = false;
+
+                TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
+
+
+                var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
+                HUDreboot._hudFlickerOnLength = 10f;
+                HUDreboot._hudFlickerOutLength = 10f;
+                HUDreboot._hudRebootLength = 2f;
+                HUDreboot._hudRebooting = true;
+
+
             });
 
-           
-
-            // flicker 
-            var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
 
 
 
-            // wh parameters
-            var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
-            whiteHoleOptions.color = new Color(1, 1, 2, 1);
-            whiteHoleOptions.range = 30;
-            whiteHoleOptions.intensity = 3;
-            whiteHoleOptions.enabled = true;
 
-            // QM White Hole parameters
-            var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
-            var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;
-
-            qmWhiteHole.SetActive(true);
-
-            Invoke("ApplyForce", 0.5f);
-            Invoke("CameraShaking", 0.5f);
-
-            Invoke("SolanumAnim", 10f);
-
-            Invoke("SolanumAnim2", 25f);
-
-            // Camera lock on target
-            var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
-            cameraFixedPosition.LockOn(qmWhiteHole.transform, 20f, true, 3f);
-
-
-            TheVision.Instance.ModHelper.Console.WriteLine("PROJECTION COMPLETE");
-            Locator.GetShipLogManager().RevealFact("SOLANUM_PROJECTION_COMPLETE");
-            _nomaiConversationManager.enabled = false;
-
-            TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
-
-
-            var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
-            HUDreboot._hudFlickerOnLength = 10f;
-            HUDreboot._hudFlickerOutLength = 10f;
-            HUDreboot._hudRebootLength = 2f;
-            HUDreboot._hudRebooting = true;
-
-            
         }
 
         public void ApplyForce()

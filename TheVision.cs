@@ -405,12 +405,14 @@ namespace TheVision
             var atpRing3 = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").GetComponent<NomaiComputerRing>();
             atpRing3.Activate(4, 2.5f);
 
-            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(true); 
+            SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(true);
+            PlayActivateRingSound();
         }
 
         public void SolanumGreetingsATP_DeactivateRing()
         {
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring6").GetComponent<NomaiComputerRing>().Deactivate(0.5f);
+            PlayDeactivateRingSound();
         }
 
         public void SolanumGreetingsDB()
@@ -1203,7 +1205,26 @@ namespace TheVision
             PlayerHeadsetAudioSource.Play();            
         }
 
+        public void PlayDeactivateRingSound()
+        {
+            PlayerHeadsetAudioSource = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP").gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.NomaiComputerRingDeactivate); // SingularityOnPlayerEnterExit = 2402            
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
 
+        public void PlayActivateRingSound()
+        {
+            PlayerHeadsetAudioSource = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP").gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.NomaiComputerRingActivate); // SingularityOnPlayerEnterExit = 2402            
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
+       
 
 
     }
