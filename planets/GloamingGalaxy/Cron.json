@@ -10,6 +10,7 @@
 		"hasMapMarker": true,
 		"gravityFallOff": "inverseSquared",
 		"centerOfSolarSystem": true
+	    
 	},
 	"Orbit" :
 	{
@@ -48,6 +49,7 @@
 		},
 		"solarLuminosity" : 1.0,
 		"goSupernova": true
+	
 		
 	}
 }

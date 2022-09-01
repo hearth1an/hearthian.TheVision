@@ -1,15 +1,5 @@
 ﻿using UnityEngine;
-using TheVision.Utilities.ModAPIs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NewHorizons.External.Modules;
 using NewHorizons.Utility;
-using OWML.Common;
-using NewHorizons.Builder.Atmosphere;
-using System.Collections;
 
 
 namespace TheVision.CustomProps
@@ -23,6 +13,7 @@ namespace TheVision.CustomProps
 
         private static readonly int MAX_WAIT_FRAMES = 20;
 
+        // Main
         public void WriteMessage()
         {
             // one-time code that runs after waitFrames are up
@@ -45,7 +36,6 @@ namespace TheVision.CustomProps
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(TheVision.Instance.SpawnOnVisionEnd, 10);
             });
         }
-
         public void OnVisionStart()
         {
             if (_nomaiConversationManager._activeResponseText != null) _nomaiConversationManager._activeResponseText.Hide();
@@ -55,10 +45,8 @@ namespace TheVision.CustomProps
             // Disabling music on QM once the vision is showed
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Volumes/AudioVolume_QM_Music").gameObject.SetActive(false);
         }
-
         public void OnVisionEnd()
         {
-
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
@@ -71,13 +59,11 @@ namespace TheVision.CustomProps
                 Invoke("PlayImpactSound", 0.5f);
                 Invoke("PlayShockSound", 0.5f);
                 PlayFadeInSound();
-                PlaySystemDownSound();              
-
-
+                PlaySystemDownSound(); 
             });
+
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
-            {
-               
+            {               
                 // wh parameters
                 var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
                 whiteHoleOptions.color = new Color(1, 1, 2, 1);
@@ -125,6 +111,7 @@ namespace TheVision.CustomProps
 
         }
 
+        // Utility
         public void ApplyForce()
         {
             SearchUtilities.Find("Player_Body/PlayerCamera").GetComponent<PlayerCameraEffectController>().ApplyExposureDamage();
@@ -133,24 +120,19 @@ namespace TheVision.CustomProps
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
             Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
-
-
         }
-
         public void CameraShaking()
         {
             // Camera shaking
             var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
             StartCoroutine(cameraShaking.Shake(5f, 0.025f));
         }
-
         public void SolanumAnim()
         {
             var SolanumAnim = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
             SolanumAnim.StartWatchingPlayer();
             SolanumAnim.StartConversation();
         }
-
         public void SolanumAnim2()
         {
             var SolanumAnim = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
@@ -158,6 +140,7 @@ namespace TheVision.CustomProps
             SolanumAnim.StopWatchingPlayer();
         }
 
+        // Sounds and music
         public void PlayWindSound()
         {
             // SFX on QM after Solanumptojection
@@ -196,7 +179,6 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlaySystemDownSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -206,7 +188,6 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayStartSound()
         {
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE").gameObject.AddComponent<OWAudioSource>();

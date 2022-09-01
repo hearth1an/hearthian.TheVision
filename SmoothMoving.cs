@@ -11,8 +11,7 @@ namespace TheVision
         bool isActive = false;
         public float delay;
         public float rotationSpeed;
-        public OWAudioSource PlayerHeadsetAudioSource;        
-
+        public OWAudioSource PlayerHeadsetAudioSource;
         public void Start()        
         {            
             Invoke("Init", delay);
@@ -32,18 +31,15 @@ namespace TheVision
             effect.FlickerOffAndOn(offDuration: 0.5f, onDuration: 0.3f);
         }
         public void Destroying()
-        {           
-
+        {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeGalaxyBlowAway); 
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.2f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.PlayOneShot();            
-
-            Destroy(gameObject);            
+            PlayerHeadsetAudioSource.PlayOneShot();
+            Destroy(gameObject);
         }
-
         public void toySFX()
         {
             PlayerHeadsetAudioSource = gameObject.AddComponent<OWAudioSource>();
@@ -54,28 +50,20 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;            
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void Init()
         {                      
             isActive = true;
             toySFX();
-
         }
         void Update()        
         {
             if (transform.localPosition != targetPos && isActive == true)
-
             {                
                 transform.Rotate(new Vector3(rotationSpeed, rotationSpeed, 0) * Time.deltaTime);
                 transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, speed * Time.deltaTime);                
-            }            
-            
+            }
         }
-
-
-
     }
-
 }
 
 

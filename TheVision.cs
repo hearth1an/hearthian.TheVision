@@ -9,9 +9,6 @@ using TheVision.CustomProps;
 using HarmonyLib;
 using System.Reflection;
 using NewHorizons.Utility;
-using NewHorizons.Handlers;
-using System;
-
 
 namespace TheVision
 {
@@ -24,20 +21,19 @@ namespace TheVision
         private void Awake()
         {
             Instance = this;
-            Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());            
+            Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());
         }
-
         private void Start()
-        {     
+        {
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
 
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
-            newHorizonsAPI.LoadConfigs(this);            
+            newHorizonsAPI.LoadConfigs(this);
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
-            TitleProps();            
+            TitleProps();
 
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
             {
@@ -49,29 +45,43 @@ namespace TheVision
                 {
                     TitleProps();
                 }
-                
-                if (loadScene == OWScene.Credits_Fast && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED") && Locator.GetShipLogManager().IsFactRevealed("HOLOGRAM_CHANGED"))
+                if (loadScene == OWScene.Credits_Fast && Locator.GetShipLogManager().IsFactRevealed("GLOAMING_GALAXY_TRIGGER"))
                 {
                     CreditsMusic();
-                }               
-
+                }
             };
         }
 
+        // Spawns control
         private void TitleProps()
         {
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Effects/Effects_HEA_SmokeColumn/Effects_HEA_SmokeColumn_Title").GetComponent<MeshRenderer>().material.color = new Color(1, 2, 2, 1);            
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Flames").GetComponent<MeshRenderer>().material.color = new Color(0, 5, 4, 1);
             GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Embers").SetActive(false);                 
-        }
+        }        
+        private void OnStarSystemLoaded(string systemName)
+        {
+            ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
 
-        public void CreditsMusic()
-        {            
-            var addMusic = GameObject.Find("AudioSource").GetComponent<OWAudioSource>();
-            addMusic.AssignAudioLibraryClip(AudioType.FinalCredits);
-            addMusic.Play();
-        }
+            if (systemName == "SolarSystem")
+            {
+                SpawnStartProps();
+                PickUpTorch();
+                DisabledPropsOnStart(false);
 
+                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
+                {
+                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                    {
+                        DisabledPropsOnStart(true);
+                    }
+                });
+            }
+            if (systemName == "GloamingGalaxy")
+            {
+                EndGame();
+            }
+        }
         private void SpawnStartProps()
         {
             // Making custom text for reply
@@ -146,19 +156,11 @@ namespace TheVision
 
                     ModHelper.Console.WriteLine("Fact Checked, Prefab_NOM_Recorder_ATP_2 loaded", MessageType.Success);
                 }
-
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("ERNESTO_POOR_ERNESTO"))
                 {
-                    ErnestoQuestEntry(true);
+                    ErnestoQuestEntry();
                 }
-
-
-
             });
-
-            ///////////// Making Solanum anim on Brittle Hollow !//////////   
-
-
             // Particles QM and TH
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
@@ -166,7 +168,8 @@ namespace TheVision
             // Particles GD
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
-
+            
+            // Particles GD (teleported copy)
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
 
@@ -186,11 +189,11 @@ namespace TheVision
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
 
-            // Setting positions for Solanum signals in Dark Bramble
+            // Solanum signals in DB
             SearchUtilities.Find("DB_HubDimension_Body/Sector_HubDimension/Interactables_HubDimension/Pivot/InnerWarp_ToAnglerNest/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/InnerWarp_ToVessel/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
-
+            // Positions and rotations for BH event
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Prefab_NOM_Recorder_BH").transform.localPosition = new Vector3(1.3f, 1f, 1.2f);
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
@@ -201,43 +204,35 @@ namespace TheVision
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal_Cracked").SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole/DestructionVolume").gameObject.SetActive(false);
 
-
+            // For ET event
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/SandPile_1").gameObject.SetActive(false);
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/SandPile_2").gameObject.SetActive(false);
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/SandPile_3").gameObject.SetActive(false);
 
-
             // GD teleportation event
-
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole").gameObject.SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/WhiteHole").gameObject.SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation").gameObject.SetActive(false);
-
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
-
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/SunkenModuleWater_ExteriorStencil").gameObject.SetActive(true);
-
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
+            // Fact checker & loader on start for each event
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ET_FOUND"), () =>
             {
                 SolanumGreetingsET();
             });
-
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_BH_FOUND"), () =>
             {
                 SolanumGreetingsBH();
-            });           
-
-
+            });
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
                 {
                     SolanumGreetingsTH();
-                    ParentCore();
+                    ParentBrokenCore();
                 }
-
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED"))
                 {
                     SolanumGreetingsDB();
@@ -245,8 +240,7 @@ namespace TheVision
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("SOLANUM_GD_RECORDER"))
                 {
                     SolanumGreetingsGD();
-                }
-                
+                }                
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ATP_RECORDER"))
                 {
                     SolanumGreetingsATP();
@@ -255,68 +249,241 @@ namespace TheVision
                 {
                     SolanumGreetingsATP_2();
                 }
-            });            
+            });
         }
-
-
-
-        public void ErnestoQuestEntry(bool isActive)
+        public void EyeOfTheUniverseProps()
         {
-            if (isActive == true)
-            {               
+            var _vessel = GameObject.Find("Vessel_Body");
+            var _vesselSector = GameObject.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
 
-                TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_ENTRY"), () =>
-                {
-                    var fish = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/PoorErnesto");
-                    fish.transform.localPosition = new Vector3(0.0127f, 0.08f, 1.64f);
-                    fish.transform.rotation = new Quaternion(0, 0, 0, 0);
-                    fish.GetComponent<AnglerfishAnimController>().OnChangeAnglerState(AnglerfishController.AnglerState.Chasing);
+            // string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
+            string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
+            Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
+            Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path,
+                position = position,
+                rotation = rotation
+            });
 
-                    SearchUtilities.Find("TimberHearth_Body/Sector_TH/Reveal Volume (Enter)").SetActive(true);
-                });
+            string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
+            Vector3 position2 = new Vector3(-2.7f, -4.8872f, 5.8744f);
+            Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path2,
+                position = position2,
+                rotation = rotation2,
+                scale = 5
+            });
 
-                // setting up Hornfels for dialigue
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/ConversationZone_Hornfels").DestroyAllComponents<InteractReceiver>();
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/ConversationZone_Hornfels").DestroyAllComponents<CharacterDialogueTree>();
+            string path3 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
+            Vector3 position3 = new Vector3(-2.7f, -4.8872f, 5.8744f);
+            Vector3 rotation3 = new Vector3(351.6485f, 10.514f, 355.3143f);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
+            {
+                path = path3,
+                position = position2,
+                rotation = rotation2,
+                scale = 5
+            });
 
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working/ConversationZone").transform.localPosition = new Vector3(0f, 1.9649f, 0f);
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                var solAnimController = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").AddComponent<SolanumAnimController>();
+                solAnimController._animator = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<UnityEngine.Animator>();
+                solAnimController.StartWatchingPlayer();
+            });
 
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish").SetActive(false);
-
-                var hornfels = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)");
-                hornfels.transform.localPosition = new Vector3(-5.9667f, 0.2095f, -1.0348f);
-                hornfels.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
-
-                // setting up Slate for dialigue
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").DestroyAllComponents<InteractReceiver>();
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").DestroyAllComponents<CharacterDialogueTree>();
-
-                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/ConversationZone").transform.localPosition = new Vector3(-0.2199f, 1.0245f, -0.322f);
-
-                TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_POOR_ERNESTO"), () =>
-                {
-                    SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Volumes_Village/MusicVolume_Village").SetActive(false);
-                    Invoke("PlaySecretSound", 2f);
-                    ModHelper.Console.WriteLine("Thank you for finding Ernesto! You will never meet him again.", MessageType.Success);
-                });
-            }  
-             
+            // Temporal fix before NH release
+            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
+            Vector3 pushBack = new Vector3(0f, 0f, -0.01f);
+            applyForce.AddLocalImpulse(pushBack);
         }
+        public void DisabledPropsOnStart(bool isActive)
+        {
+            //decloaking QM on signals spawn
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
 
-       
+            //disabling recorder on QM Solanum shuttle
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").gameObject.SetActive(!isActive);
 
+            var QMgroundText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH/QMGroundText").gameObject;
+            QMgroundText.SetActive(isActive);
+
+            var THrecorder = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Prefab_NOM_Recorder_TH").gameObject;
+            THrecorder.SetActive(isActive);
+
+            var GDrecorder = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Recorder_GD").gameObject;
+            GDrecorder.SetActive(isActive);
+
+            var GDcomputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD").gameObject;
+            var GDcomp = GDcomputer.GetComponent<NomaiComputer>();
+            GDcomp.enabled = isActive;
+            GDcomputer.SetActive(isActive);
+
+            // Disabling common computer on GD, placing the right one to correct position
+            var GDcommonComputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Computers/ComputerPivot (1)").gameObject;
+            GDcommonComputer.SetActive(!isActive);
+            GDcomputer.transform.rotation = GDcommonComputer.transform.rotation;
+
+            var DBrecorder = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Prefab_NOM_Recorder_DB").gameObject;
+            DBrecorder.SetActive(isActive);
+
+            var solanumDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject;
+            solanumDB.SetActive(isActive);
+
+            var signalDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Signal_Solanum").gameObject;
+            signalDB.SetActive(isActive);
+
+            var signalDB_body = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Signal_Solanum").gameObject;
+            signalDB_body.SetActive(isActive);
+
+            var signalDB_hub = SearchUtilities.Find("DB_HubDimension_Body/Sector_HubDimension/Interactables_HubDimension/Pivot/InnerWarp_ToAnglerNest/Signal_Solanum").gameObject;
+            signalDB_hub.SetActive(isActive);
+
+            var signalDB_nest = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/InnerWarp_ToVessel/Signal_Solanum").gameObject;
+            signalDB_nest.SetActive(isActive);
+
+            var particlesQM = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").gameObject;
+            particlesQM.SetActive(isActive);
+
+            var particlesQM_2 = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").gameObject;
+            particlesQM_2.SetActive(isActive);
+
+            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Signal_Solanum");
+            signalATP.SetActive(isActive);
+
+            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle");
+            solanumATP.SetActive(isActive);
+
+            var solanumBH = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character");
+            solanumBH.SetActive(isActive);
+
+            var BHreveal = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Reveal Volume (Enter)");
+            BHreveal.SetActive(isActive);
+
+            var DBreveal = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Reveal Volume (Enter)");
+            DBreveal.SetActive(isActive);
+
+            var solanumET = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character");
+            solanumET.SetActive(isActive);
+
+            var ETreveal = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Reveal Volume (Enter)");
+            ETreveal.SetActive(isActive);
+
+            var ETrecorder = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET").gameObject;
+            ETrecorder.SetActive(isActive);
+
+            var ATPhidden = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden").transform;
+
+            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP").gameObject;
+            ATPrecorder.SetActive(isActive);
+
+            ATPhidden.GetComponentInChildren<NomaiComputerSlotInterface>().gameObject.name = "Prefab_NOM_Computer_WarpCore";
+
+            var ATPcomputerOld = ATPhidden.Find("Prefab_NOM_Computer").gameObject;
+            ATPcomputerOld.SetActive(!isActive);
+
+            var ATPcomputer = ATPhidden.Find("Prefab_NOM_Computer_ATP").gameObject;
+            var ATPcomp = ATPcomputer.GetComponent<NomaiComputer>();
+            ATPcomp.SetSector(SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior").GetComponent<Sector>());
+            ATPcomp.enabled = isActive;
+            ATPcomputer.SetActive(isActive);
+            ATPcomputer.transform.position = ATPcomputerOld.transform.position;
+            ATPcomputer.transform.rotation = ATPcomputerOld.transform.rotation;
+
+            ATPrecorder.transform.localPosition = new Vector3(26.31f, -2.63f, -7.83f);
+
+            var THsignal = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Signal_Solanum").gameObject;
+            THsignal.SetActive(isActive);
+
+            var QMsignal = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum").gameObject;
+            QMsignal.SetActive(isActive);
+
+            var solanumTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Nomai_ANIM_SkyWatching_Idle").gameObject;
+            solanumTH.SetActive(isActive);
+
+            var solanumGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Nomai_ANIM_SkyWatching_Idle").gameObject;
+            solanumGD.SetActive(isActive);
+
+            var monolith = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group/Monolith");
+            monolith.SetActive(isActive);
+
+            if (isActive)
+            {
+                var statueHead = SearchUtilities.Find("TimeLoopRing_Body/Props_TimeLoopRing/OtherComponentsGroup/Props_NOM_StatueHead");
+
+                var topRotation = new Vector3(301.73f, 90, 270);
+                var bottomRotation = new Vector3(17.1f, 90, 270);
+
+                var eyelidL = statueHead.transform.Find("eyelid_l");
+                eyelidL.transform.Find("eyelid_top").localEulerAngles = topRotation;
+                eyelidL.transform.Find("eyelid_bot").localEulerAngles = bottomRotation;
+
+                var eyelidMid = statueHead.transform.Find("eyelid_mid");
+                eyelidMid.transform.Find("eyelid_top 1").localEulerAngles = topRotation;
+                eyelidMid.transform.Find("eyelid_bot 1").localEulerAngles = bottomRotation;
+
+                var eyelidR = statueHead.transform.Find("eyelid_r");
+                eyelidR.transform.Find("eyelid_top 2").localEulerAngles = topRotation;
+                eyelidR.transform.Find("eyelid_bot 2").localEulerAngles = bottomRotation;
+
+                var copperEyes = SearchUtilities.FindResourceOfTypeAndName<Material>("Structure_NOM_GlowingCopper_mat");
+                var statueEyes = statueHead.transform.Find("Statue_Eyes").GetComponent<MeshRenderer>();
+                var statueEyesOW = statueHead.transform.Find("Statue_Eyes").gameObject.GetAddComponent<OWRenderer>();
+                statueEyes.sharedMaterial = copperEyes;
+                statueEyesOW._renderer = statueEyes;
+                statueEyesOW.SetEmissionColor(Color.black);
+            }
+
+            if (isActive)
+            {
+                //placing orb on GD to the slot (1)
+                var nomaiSlot = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
+                var nomaiInterfaceOrb = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
+                var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
+                var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
+                nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
+                nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
+
+                //decloaking QM on signals spawn
+                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
+                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
+
+                //decloaking QM on signals spawn
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
+                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/WatchZone").SetActive(false);
+            }
+
+            // Deactivating it so it will be no sound or flickers
+            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject.SetActive(!isActive);
+
+            //Enabling hologram on Vessel
+            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject.SetActive(!isActive);
+            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/VesselHologram_GloamingGalaxy").gameObject.SetActive(isActive);
+        }
+        public void EndGame()
+        {
+            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                DeathManager deathManager = Locator.GetDeathManager();
+                deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
+            });
+        }        
+
+        // GD teleportation event
         public void SolanumGreetingsGD()
         {
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_GD_RECORDER"), () =>
             {
                 SolanumGreetingsGD_Entry();
-
             });            
         }
-
         public void SolanumGreetingsGD_Entry()
-        {
-            
+        {            
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/SunkenModuleWater_ExteriorStencil").gameObject.SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/sunkenModuleStencil").gameObject.SetActive(false);
             Invoke("SolanumPrepareTeleportationGD", 1f);
@@ -330,23 +497,13 @@ namespace TheVision
             PlaySingularityCreateSound();
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole").SetActive(true);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/WhiteHole").SetActive(true);
-        }
-
-        public void Flicker()
-        {
-            SearchUtilities.Find("Player_Body/PlayerCamera/ScreenEffects/UnderwaterEffectBubble").SetActive(false);           
-            PlayFlickerSound();
-            var effect = SearchUtilities.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
-            effect.FlickerOffAndOn(offDuration: 2f, onDuration: 3f);            
-        }
-
+        }        
         public void SolanumSingularityEndGD()
         {
             
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/BlackHole").SetActive(false);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/WhiteHole").SetActive(false);           
         }
-
         public void SolanumPrepareTeleportationGD()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
@@ -354,7 +511,6 @@ namespace TheVision
             solanumAnimController.StartWritingMessage();
             Invoke("Flicker", 4f);
         }
-
         public void SolanumTeleportationGD()
         {
             SearchUtilities.Find("Player_Body/PlayerCamera/ScreenEffects/UnderwaterEffectBubble").SetActive(true);
@@ -364,6 +520,7 @@ namespace TheVision
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/sunkenModuleStencil").gameObject.SetActive(true);
         }
 
+        // ATP events
         public void SolanumGreetingsATP()
         {
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ATP_RECORDER"), () =>
@@ -377,7 +534,6 @@ namespace TheVision
                 Invoke("SolanumGreetingsATP_OpenCore", 6f);
             });           
         }
-
         public void SolanumGreetingsATP_2()
         {    
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ATP_RECORDER_2"), () =>
@@ -391,7 +547,6 @@ namespace TheVision
                 Invoke("SolanumGreetingsATP_OpenCore", 6f);
             });
         }
-
         public void SolanumGreetingsATP_OpenCore()
         {
             SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/CoreCasingController").GetComponent<TimeLoopCoreController>().OpenCore();
@@ -399,7 +554,6 @@ namespace TheVision
             SolanumAnimController solanumAnimController = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
             solanumAnimController.StopWatchingPlayer();
         }
-
         public void SolanumGreetingsATP_ShowRing()
         {
             var atpRing3 = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").GetComponent<NomaiComputerRing>();
@@ -408,13 +562,13 @@ namespace TheVision
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring5").gameObject.SetActive(true);
             PlayActivateRingSound();
         }
-
         public void SolanumGreetingsATP_DeactivateRing()
         {
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP/Ring6").GetComponent<NomaiComputerRing>().Deactivate(0.5f);
             PlayDeactivateRingSound();
         }
 
+        // DB events
         public void SolanumGreetingsDB()
         {
 
@@ -445,7 +599,6 @@ namespace TheVision
 
 
         }
-
         public void SolanumDBEvent()
         {   
             PlayTextSound();
@@ -481,10 +634,7 @@ namespace TheVision
             SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage/Arc 14").GetComponent<NomaiTextLine>().SetActive(true, true, 7f);
             SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage/Arc 15").GetComponent<NomaiTextLine>().SetActive(true, true, 6f);
             SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/Arc_DB_Vessel_IncomingMessage/Arc 16").GetComponent<NomaiTextLine>().SetActive(true, true, 5f);
-
-
         }
-
         public void DropBrokenCore()
         {
             var core = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:RT_Arm_ClavicleSHJnt/Nomai_Rig_v01:RT_Arm_ShoulderSHJnt/Nomai_Rig_v01:RT_Arm_ElbowSHJnt/Prefab_NOM_WarpCoreVesselBroken");
@@ -494,10 +644,8 @@ namespace TheVision
             core.transform.localPosition = new Vector3(147.5621f,26.6017f, -0.4492f);
             core.transform.rotation = new Quaternion(0.004f, -0.942f, 0.1201f, -0.3134f);
 
-
             PlayCoreDropSound();
         }
-
         public void PickBrokenCore()
         {
             var vesselCore = SearchUtilities.Find("Prefab_NOM_WarpCoreVesselBroken");
@@ -508,8 +656,7 @@ namespace TheVision
             PlayCorePickSound();
 
         }
-
-        public void ParentCore()
+        public void ParentBrokenCore()
         {
             var vesselCore = SearchUtilities.Find("Prefab_NOM_WarpCoreVesselBroken");
 
@@ -523,11 +670,9 @@ namespace TheVision
             SolanumAnimController solanumAnimController = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
             solanumAnimController.StartWatchingPlayer();
             solanumAnimController.StopWritingMessage(true);
+        }        
 
-
-        }
-
-        // Delete if works
+        // TH event
         public void SolanumGreetingsTH()
         {
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"), () =>
@@ -535,11 +680,10 @@ namespace TheVision
                 SolanumAnimController solanumAnimController2 = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
                 solanumAnimController2.StartWatchingPlayer();
                 solanumAnimController2.StartConversation();
-            });
-            
+            });            
         }
 
-
+        // BH event
         public void SolanumGreetingsBH()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character").GetComponent<SolanumAnimController>();
@@ -551,12 +695,9 @@ namespace TheVision
                 TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_BH_EVENT"), () =>
                 {
                     Invoke("SolanumEventBH", 3f);
-
                 });
             }
-
         }
-
         public void SolanumEventBH()
         {
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/CapsuleVolume_NOM_GravityCrystal").GetComponent<CapsuleCollider>().enabled = true;
@@ -567,19 +708,17 @@ namespace TheVision
             PlayBrokenCrystallSound();
 
             Invoke("SolanumEventBHend", 4f);
-            Invoke("PlayCrackSound", 5.5f);
-            
+            Invoke("PlayCrackSound", 5.5f);            
 
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").SetActive(false);
-
-        }
-
+        }        
         public void SolanumEventBHend()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character").GetComponent<SolanumAnimController>();
             solanumAnimController.PlayGestureToCairns();
         }
 
+        // ET event
         public void SolanumGreetingsET()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character").GetComponent<SolanumAnimController>();
@@ -593,9 +732,7 @@ namespace TheVision
                     Invoke("SolanumEventET", 3f);
 
                 });
-            }
-            
-            
+            }  
         }
         public void SolanumStartEventET()
         {
@@ -631,10 +768,7 @@ namespace TheVision
                 Invoke("PlayStepSound", 4f);
                 Invoke("SolanumETEndEvent", 17f);
                 Invoke("SolanumEventET_SandPileEnd", 19f);
-            
-            
         }       
-
         public void SolanumEventET_SandPileEnd()
         {
             SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/SandPile_1").gameObject.SetActive(true);
@@ -647,8 +781,43 @@ namespace TheVision
             solanumAnimController.PlayGestureToCairns(); 
         }
 
-        // Makes the Vision Torch more lore-friendly to pick
-        public static void PickUpTorch()
+        // Ernesto
+        public void ErnestoQuestEntry()
+        {
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_ENTRY"), () =>
+            {
+                var fish = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/PoorErnesto");
+                fish.transform.localPosition = new Vector3(0.0127f, 0.08f, 1.64f);
+                fish.transform.rotation = new Quaternion(0, 0, 0, 0);
+                fish.GetComponent<AnglerfishAnimController>().OnChangeAnglerState(AnglerfishController.AnglerState.Chasing);
+
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Reveal Volume (Enter)").SetActive(true);
+            });
+
+            // setting up Hornfels for dialogue
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/ConversationZone_Hornfels").DestroyAllComponents<InteractReceiver>();
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/ConversationZone_Hornfels").DestroyAllComponents<CharacterDialogueTree>();
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working/ConversationZone").transform.localPosition = new Vector3(0f, 1.9649f, 0f);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/AnglerFishExhibit/AnglerFishTankPivot/Beast_Anglerfish").SetActive(false);
+
+            var hornfels = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)");
+            hornfels.transform.localPosition = new Vector3(-5.9667f, 0.2095f, -1.0348f);
+            hornfels.transform.localRotation = new Quaternion(0f, 0f, 0f, 0f);
+
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").DestroyAllComponents<InteractReceiver>();
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci").DestroyAllComponents<CharacterDialogueTree>();
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/ConversationZone").transform.localPosition = new Vector3(-0.2199f, 1.0245f, -0.322f);
+
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_POOR_ERNESTO"), () =>
+            {
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Volumes_Village/MusicVolume_Village").SetActive(false);
+                Invoke("PlaySecretSound", 2f);
+                ModHelper.Console.WriteLine("Thank you for finding Ernesto! You will never meet him again.", MessageType.Success);
+            });
+        }
+
+        // Utility
+        public void PickUpTorch()
         {
             // Vision Torch 1 (first room)
             var visionTorchMesh = SearchUtilities.Find("RingWorld_Body/Sector_RingWorld/Prefab_IP_VisionTorchItem/Prefab_IP_VisionTorchProjector/Props_IP_ScannerStaff");
@@ -688,85 +857,7 @@ namespace TheVision
 
             });
 
-        }
-        // Load StartProps and DisabledPropsOnStart
-        public void OnStarSystemLoaded(string systemName)
-        {
-            ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
-
-            if (systemName == "SolarSystem")
-            {
-                SpawnStartProps();
-                PickUpTorch();
-                DisabledPropsOnStart(false);
-
-                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
-                {
-                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
-                    {
-                        DisabledPropsOnStart(true);
-                    }
-                });
-
-                
-            }
-            if (systemName == "GloamingGalaxy")
-            {
-                EndGame();
-            }
-        }
-
-        public void EyeOfTheUniverseProps()
-        {
-            var _vessel = GameObject.Find("Vessel_Body");
-            var _vesselSector = GameObject.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
-
-            string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
-            Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
-            Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
-            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
-            {
-                path = path,
-                position = position,
-                rotation = rotation
-            });
-
-            string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
-            Vector3 position2 = new Vector3(-2.7f, -4.8872f, 5.8744f);
-            Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
-            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
-            {
-                path = path2,
-                position = position2,
-                rotation = rotation2,
-                scale = 5
-            });
-
-            string path3 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
-            Vector3 position3 = new Vector3(-2.7f, -4.8872f, 5.8744f);
-            Vector3 rotation3 = new Vector3(351.6485f, 10.514f, 355.3143f);
-            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
-            {
-                path = path3,
-                position = position2,
-                rotation = rotation2,
-                scale = 5
-            });
-
-            ModHelper.Events.Unity.FireOnNextUpdate(() =>
-            {
-                var solAnimController = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").AddComponent<SolanumAnimController>();
-                solAnimController._animator = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<UnityEngine.Animator>();
-                solAnimController.StartWatchingPlayer();
-            });
-            
-
-        }
-
-
-
-
-        // Function for teleporting ship to TH State on QM so player can continue the journey
+        }                        
         public static void TeleportShip()
         {
             var qmStateTH = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH");
@@ -799,8 +890,7 @@ namespace TheVision
         public void SpawnOnVisionEnd()
         {
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
-            {
-                // Playing SFX
+            {               
                 PlayRevealSound();
                 PlaySFXSound();
                 PlayGaspSound();
@@ -858,197 +948,35 @@ namespace TheVision
 
 
         }
-
         public void BreakLock()
         {
             var cameraFixedPosition = Locator.GetPlayerTransform().gameObject.GetComponent<PlayerLockOnTargeting>();
             cameraFixedPosition.BreakLock(0.5f);
         }
-
-
-        //Props from Json files 
-        public void DisabledPropsOnStart(bool isActive)
+        public void Flicker()
         {
-            //decloaking QM on signals spawn
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
-
-            //disabling recorder on QM Solanum shuttle
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/QuantumShuttle/Prefab_NOM_Shuttle/Sector_NomaiShuttleInterior/Interactibles_NomaiShuttleInterior/Prefab_NOM_Recorder").gameObject.SetActive(!isActive);
-
-            var QMgroundText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_TH/QMGroundText").gameObject;
-            QMgroundText.SetActive(isActive);
-
-            var THrecorder = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Prefab_NOM_Recorder_TH").gameObject;
-            THrecorder.SetActive(isActive);
-
-            var GDrecorder = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Recorder_GD").gameObject;
-            GDrecorder.SetActive(isActive);
-
-            var GDcomputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD").gameObject;
-            var GDcomp = GDcomputer.GetComponent<NomaiComputer>();
-            GDcomp.enabled = isActive;
-            GDcomputer.SetActive(isActive);
-
-            // Disabling common computer on GD, placing the right one to correct position
-            var GDcommonComputer = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/Computers/ComputerPivot (1)").gameObject;
-            GDcommonComputer.SetActive(!isActive);
-            GDcomputer.transform.rotation = GDcommonComputer.transform.rotation;
-
-            var DBrecorder = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Prefab_NOM_Recorder_DB").gameObject;
-            DBrecorder.SetActive(isActive);
-
-            var solanumDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject;
-            solanumDB.SetActive(isActive);
-
-            var signalDB = Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Signal_Solanum").gameObject;
-            signalDB.SetActive(isActive);
-
-            var signalDB_body = SearchUtilities.Find("DarkBramble_Body/Sector_DB/Signal_Solanum").gameObject;
-            signalDB_body.SetActive(isActive);
-
-            var signalDB_hub = SearchUtilities.Find("DB_HubDimension_Body/Sector_HubDimension/Interactables_HubDimension/Pivot/InnerWarp_ToAnglerNest/Signal_Solanum").gameObject;
-            signalDB_hub.SetActive(isActive);
-
-            var signalDB_nest = SearchUtilities.Find("DB_AnglerNestDimension_Body/Sector_AnglerNestDimension/Interactables_AnglerNestDimension/InnerWarp_ToVessel/Signal_Solanum").gameObject;
-            signalDB_nest.SetActive(isActive);            
-
-            var particlesQM = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").gameObject;
-            particlesQM.SetActive(isActive);
-
-            var particlesQM_2 = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").gameObject;
-            particlesQM_2.SetActive(isActive);
-
-            var signalATP = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Signal_Solanum");
-            signalATP.SetActive(isActive);
-
-            var solanumATP = SearchUtilities.Find("TimeLoopRing_Body/Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle");
-            solanumATP.SetActive(isActive);
-
-            var solanumBH = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character");
-            solanumBH.SetActive(isActive);
-
-            var BHreveal = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Reveal Volume (Enter)");
-            BHreveal.SetActive(isActive);
-
-            var DBreveal = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Reveal Volume (Enter)");
-            DBreveal.SetActive(isActive);
-
-            var solanumET = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character");
-            solanumET.SetActive(isActive);
-
-            var ETreveal = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Reveal Volume (Enter)");
-            ETreveal.SetActive(isActive);
-
-            var ETrecorder = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Prefab_NOM_Recorder_ET").gameObject;
-            ETrecorder.SetActive(isActive);
-
-            var ATPhidden = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden").transform;
-
-            var ATPrecorder = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP").gameObject;
-            ATPrecorder.SetActive(isActive);            
-
-            ATPhidden.GetComponentInChildren<NomaiComputerSlotInterface>().gameObject.name = "Prefab_NOM_Computer_WarpCore";
-
-            var ATPcomputerOld = ATPhidden.Find("Prefab_NOM_Computer").gameObject;
-            ATPcomputerOld.SetActive(!isActive);
-
-            var ATPcomputer = ATPhidden.Find("Prefab_NOM_Computer_ATP").gameObject;
-            var ATPcomp = ATPcomputer.GetComponent<NomaiComputer>();
-            ATPcomp.SetSector(SearchUtilities.Find("TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior").GetComponent<Sector>());
-            ATPcomp.enabled = isActive;
-            ATPcomputer.SetActive(isActive);
-            ATPcomputer.transform.position = ATPcomputerOld.transform.position;
-            ATPcomputer.transform.rotation = ATPcomputerOld.transform.rotation;
-
-            
-            ATPrecorder.transform.localPosition = new Vector3(26.31f, -2.63f, -7.83f);
-
-            var THsignal = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Signal_Solanum").gameObject;
-            THsignal.SetActive(isActive);           
-
-            var QMsignal = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Signal_Solanum").gameObject;
-            QMsignal.SetActive(isActive);
-
-            var solanumTH = Locator.GetAstroObject(AstroObject.Name.TimberHearth).transform.Find("Sector_TH/Nomai_ANIM_SkyWatching_Idle").gameObject;
-            solanumTH.SetActive(isActive);
-
-            var solanumGD = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Nomai_ANIM_SkyWatching_Idle").gameObject;
-            solanumGD.SetActive(isActive);
-
-            var monolith = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group/Monolith");
-            monolith.SetActive(isActive);
-
-            if (isActive)
-            {
-                var statueHead = SearchUtilities.Find("TimeLoopRing_Body/Props_TimeLoopRing/OtherComponentsGroup/Props_NOM_StatueHead");
-
-                var topRotation = new Vector3(301.73f, 90, 270);
-                var bottomRotation = new Vector3(17.1f, 90, 270);
-
-                var eyelidL = statueHead.transform.Find("eyelid_l");
-                eyelidL.transform.Find("eyelid_top").localEulerAngles = topRotation;
-                eyelidL.transform.Find("eyelid_bot").localEulerAngles = bottomRotation;
-
-                var eyelidMid = statueHead.transform.Find("eyelid_mid");
-                eyelidMid.transform.Find("eyelid_top 1").localEulerAngles = topRotation;
-                eyelidMid.transform.Find("eyelid_bot 1").localEulerAngles = bottomRotation;
-
-                var eyelidR = statueHead.transform.Find("eyelid_r");
-                eyelidR.transform.Find("eyelid_top 2").localEulerAngles = topRotation;
-                eyelidR.transform.Find("eyelid_bot 2").localEulerAngles = bottomRotation;
-
-                var copperEyes = SearchUtilities.FindResourceOfTypeAndName<Material>("Structure_NOM_GlowingCopper_mat");
-                var statueEyes = statueHead.transform.Find("Statue_Eyes").GetComponent<MeshRenderer>();
-                var statueEyesOW = statueHead.transform.Find("Statue_Eyes").gameObject.GetAddComponent<OWRenderer>();
-                statueEyes.sharedMaterial = copperEyes;
-                statueEyesOW._renderer = statueEyes;
-                statueEyesOW.SetEmissionColor(Color.black);
-            }
-
-            if (isActive)
-            {
-                //placing orb on GD to the slot (1)
-                var nomaiSlot = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Slots/Slot (1)");
-                var nomaiInterfaceOrb = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Interactables_Module_Sunken/OrbInterface/Prefab_NOM_InterfaceOrb");
-                var nomaiCorrectSlot = nomaiInterfaceOrb.GetComponent<NomaiInterfaceOrb>();
-                var nomaiCorrectSlot2 = nomaiCorrectSlot.GetComponent<OWRigidbody>();
-                nomaiCorrectSlot.SetOrbPosition(nomaiSlot.transform.position);
-                nomaiCorrectSlot._orbBody.ChangeSuspensionBody(nomaiCorrectSlot2);
-
-               // SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer").gameObject.SetActive(true);
-
-                //decloaking QM on signals spawn
-                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Clouds_QM_EyeState").gameObject.SetActive(!isActive);
-                Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Atmosphere_QM/FogSphere").gameObject.SetActive(!isActive);
-
-                //decloaking QM on signals spawn
-                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
-                SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/WatchZone").SetActive(false);
-            }
-
-            // Deactivating it so it will be no sound or flickers
-            Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/VisionStaffDetector").gameObject.SetActive(!isActive);
-
-            //Enabling hologram on Vessel
-            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/VesselHologram_EyeSignal").gameObject.SetActive(!isActive);
-            Locator.GetMinorAstroObject("Vessel Dimension").transform.Find("Sector_VesselDimension/Sector_VesselBridge/VesselHologram_GloamingGalaxy").gameObject.SetActive(isActive);
-
+            SearchUtilities.Find("Player_Body/PlayerCamera/ScreenEffects/UnderwaterEffectBubble").SetActive(false);
+            PlayFlickerSound();
+            var effect = SearchUtilities.Find("Player_Body/PlayerCamera/ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
+            effect.FlickerOffAndOn(offDuration: 2f, onDuration: 3f);
         }
-
-        public void EndGame()
-        {                       
-
-            ModHelper.Events.Unity.FireOnNextUpdate(() =>
-            {
-                
-                DeathManager deathManager = Locator.GetDeathManager();
-                deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
-                
-            });
-
+        public void ParentCore()
+        {
+            var vesselCore = SearchUtilities.Find("Prefab_NOM_WarpCoreVesselBroken");
+            vesselCore.GetComponent<WarpCoreItem>()._interactable = false;
+            vesselCore.transform.parent = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:RT_Arm_ClavicleSHJnt/Nomai_Rig_v01:RT_Arm_ShoulderSHJnt/Nomai_Rig_v01:RT_Arm_ElbowSHJnt/Nomai_Rig_v01:RT_Arm_WristSHJnt").transform.parent;
+            vesselCore.transform.localPosition = new Vector3(0.8f, -0.1f, -0.2f);
+            vesselCore.transform.rotation = new Quaternion(0.3842f, 0.0578f, 0.7798f, -0.4009f);
         }
+        
 
+        // Music and sounds
+        public void CreditsMusic()
+        {
+            var addMusic = GameObject.Find("AudioSource").GetComponent<OWAudioSource>();
+            addMusic.AssignAudioLibraryClip(AudioType.FinalCredits);
+            addMusic.Play();
+        }
         public void PlayThunderSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1058,7 +986,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayRevealSound()
         {
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum").gameObject.AddComponent<OWAudioSource>();
@@ -1077,8 +1004,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
-
         public void PlayGaspSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1088,7 +1013,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayQuantumLightningSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1098,7 +1022,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayRaiseCairn()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character").AddComponent<OWAudioSource>();
@@ -1109,7 +1032,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play(); 
         }
-
         public void PlayExitRaiseCairn()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character").AddComponent<OWAudioSource>();
@@ -1119,7 +1041,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlayStepSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_Character").AddComponent<OWAudioSource>();
@@ -1129,7 +1050,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlayFlickerSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1139,7 +1059,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlaySingularityCreateSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1149,7 +1068,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlaySingularityCollapseSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1159,7 +1077,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlaySecretSound()
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
@@ -1169,7 +1086,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlaySadNomaiTheme()
         {
             PlayerHeadsetAudioSource = Locator.GetMinorAstroObject("Vessel Dimension").gameObject.AddComponent<OWAudioSource>();
@@ -1179,7 +1095,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlayTextSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
@@ -1189,7 +1104,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayCorePickSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
@@ -1199,7 +1113,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayCoreDropSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
@@ -1209,7 +1122,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayCrackSound()
         {
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/Props_NOM_GravityCrystal").SetActive(false);
@@ -1226,11 +1138,9 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlayBrokenCrystallSound()
         {
             SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal/AudioSource_GravityCrystal").SetActive(false);
-
 
             PlayerHeadsetAudioSource = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character/Solanum_BH_Crystal").AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
@@ -1239,7 +1149,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
-
         public void PlayDeactivateRingSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP").gameObject.AddComponent<OWAudioSource>();
@@ -1249,7 +1158,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
-
         public void PlayActivateRingSound()
         {
             PlayerHeadsetAudioSource = SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing_Hidden/Prefab_NOM_Computer_ATP").gameObject.AddComponent<OWAudioSource>();
@@ -1258,9 +1166,6 @@ namespace TheVision
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-        }
-       
-
-
+        } 
     }
 }

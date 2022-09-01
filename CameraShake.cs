@@ -8,10 +8,8 @@ namespace TheVision
     {
         public IEnumerator Shake(float duration, float magnitude)
         {
-            Vector3 originalPosition = transform.position;
-           
+            Vector3 originalPosition = transform.position;           
             float elapsed = 0f;
-
             while (elapsed < duration)
             {
                 float x = UnityEngine.Random.Range(-1f, 1f) * magnitude;
@@ -22,11 +20,7 @@ namespace TheVision
                 elapsed += Time.deltaTime;
                 yield return 0;
             }
-
             transform.position = originalPosition;
-
-            
-            
         }
     }
 }
