@@ -132,10 +132,6 @@ namespace TheVision
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP_2").SetActive(false);
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP_2").transform.localPosition = new Vector3(26.31f, -2.63f, -7.83f);
 
-
-            
-
-
             // Disabling Ernesto enter volume
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Reveal Volume (Enter)").SetActive(false);
 
@@ -740,34 +736,33 @@ namespace TheVision
             solanumAnimController.PlayRaiseCairns();            
         }
         public void SolanumEventET()
-        {
-           
-                Invoke("SolanumStartEventET", 3f);
+        {           
+            Invoke("SolanumStartEventET", 3f);
 
-                var pyramid = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid").gameObject.AddComponent<SmoothMoving>();
-                var mobius = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid/Solanum_EmberTwin_ToyMobius").gameObject.AddComponent<SmoothMoving>();
-                var ship = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid/Solanum_EmberTwin_ToyShip").gameObject.AddComponent<SmoothMoving>();
+            var pyramid = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid").gameObject.AddComponent<SmoothMoving>();
+            var mobius = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid/Solanum_EmberTwin_ToyMobius").gameObject.AddComponent<SmoothMoving>();
+            var ship = SearchUtilities.Find("CaveTwin_Body/Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid/Solanum_EmberTwin_ToyShip").gameObject.AddComponent<SmoothMoving>();
 
-                pyramid.targetPos = new Vector3(35.1789f, -105.9786f, -23.1699f);
-                pyramid.delay = 5f;
-                pyramid.rotationSpeed = 20f;
-                pyramid.Start();
+            pyramid.targetPos = new Vector3(35.1789f, -105.9786f, -23.1699f);
+            pyramid.delay = 5f;
+            pyramid.rotationSpeed = 20f;
+            pyramid.Start();
 
-                mobius.targetPos = new Vector3(0.7838f, -0.1231f, 0.6973f);
-                mobius.delay = 5.5f;
-                mobius.rotationSpeed = -15f;
-                mobius.Start();
+            mobius.targetPos = new Vector3(0.7838f, -0.1231f, 0.6973f);
+            mobius.delay = 5.5f;
+            mobius.rotationSpeed = -15f;
+            mobius.Start();
 
-                ship.targetPos = new Vector3(0.4714f, 0.744f, 0.1487f);
-                ship.delay = 6f;
-                ship.rotationSpeed = 5f;
-                ship.Start();
+            ship.targetPos = new Vector3(0.4714f, 0.744f, 0.1487f);
+            ship.delay = 6f;
+            ship.rotationSpeed = 5f;
+            ship.Start();
 
-                Invoke("PlayRaiseCairn", 4.5f);
-                Invoke("PlayExitRaiseCairn", 6.3f);
-                Invoke("PlayStepSound", 4f);
-                Invoke("SolanumETEndEvent", 17f);
-                Invoke("SolanumEventET_SandPileEnd", 19f);
+            Invoke("PlayRaiseCairn", 4.5f);
+            Invoke("PlayExitRaiseCairn", 6.3f);
+            Invoke("PlayStepSound", 4f);
+            Invoke("SolanumETEndEvent", 17f);
+            Invoke("SolanumEventET_SandPileEnd", 19f);
         }       
         public void SolanumEventET_SandPileEnd()
         {
@@ -967,8 +962,7 @@ namespace TheVision
             vesselCore.transform.parent = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:RT_Arm_ClavicleSHJnt/Nomai_Rig_v01:RT_Arm_ShoulderSHJnt/Nomai_Rig_v01:RT_Arm_ElbowSHJnt/Nomai_Rig_v01:RT_Arm_WristSHJnt").transform.parent;
             vesselCore.transform.localPosition = new Vector3(0.8f, -0.1f, -0.2f);
             vesselCore.transform.rotation = new Quaternion(0.3842f, 0.0578f, 0.7798f, -0.4009f);
-        }
-        
+        }        
 
         // Music and sounds
         public void CreditsMusic()

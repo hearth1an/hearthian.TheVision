@@ -23,20 +23,7 @@
                     "y": 279.0402,
                     "z": 275.7439
                 }
-            },
-            {
-                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_LowerVillage/Props_LowerVillage/OtherComponentsGroup/Architecture_LowerVillage/OtherComponentsGroup/Village_UnderLaunchTowerProps/LaunchTowerSequoiaProps/WorkBench1/Prefab_HEA_FuelTank (1)",
-                "position": {
-                    "x": 48.5017357,
-                    "y": 15.1184082,
-                    "z": 249.996048
-                },
-                "rotation": {
-                    "x": 332.5521,
-                    "y": 279.0402,
-                    "z": 275.7439
-                }
-            },
+            },            
             {
                 "path": "Anglerfish_Body/Beast_Anglerfish",
                 "position": {
