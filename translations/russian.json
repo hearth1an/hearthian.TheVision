@@ -36,9 +36,9 @@
 
 
     // Recorder ATP 2
-    "SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.": "СОЛАНУМ: Кажется, теперь я понимаю как работают статуи. Я помню всё из предыдущего цикла.",
-    "SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "СОЛАНУМ: Как там говорил Седум? <![CDATA[<i>«Отправлять в прошлое воспоминания и отправляться в прошлое самому - это два разных действия»</i>]]>.",
-    "SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.": "СОЛАНУМ: В любом случае, теперь я понимаю как работает временная петля. Ну так что, продолжим? Я снова открою гиперядро, но в следующий раз твоя очередь.",
+    "SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.": "СОЛАНУМ: Кажется, теперь я понимаю как работают статуи. Я помню всё из предыдущего цикла.",
+    "SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "СОЛАНУМ: Как там говорил Седум? <![CDATA[<i>«Отправлять в прошлое воспоминания и отправляться в прошлое самому - это два разных действия»</i>]]>.",
+    "SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.": "СОЛАНУМ: В любом случае, теперь я понимаю как работает временная петля. Ну так что, продолжим? Я снова открою гиперядро, но в следующий раз твоя очередь.",
 
     // Recorder BH
     "SOLANUM: This place is our school. It teaches us about the universe, stars, singularities, gravity, and everything related to it. It wasn't so unstable before, and I'm not sure, but I remember the black hole being smaller.": "СОЛАНУМ: Это место когда-то было моей школой. Здесь мы изучали вселенную, звёзды, гравитацию и всё что с этим связано. Тут было безопасно... и я не уверена, но кажется что черная дыра была меньше.",
@@ -80,8 +80,8 @@
     // Ernesto Quest
 
     // Slate note
-    "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "Я ушёл за... за... <![CDATA[<i>грибочками</i>]]>. Место не занимать! Cкоро вернусь. Сходи пока за <![CDATA[<color=orange>новыми кодами запуска</color>]]> в обсерватории, Роговик зачем-то поменял их в последний момент.",
 
+    "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "Я ушёл за... за... <![CDATA[<i>грибочками</i>]]>. Место не занимать! Cкоро вернусь. Сходи пока за <![CDATA[<color=orange>новыми кодами запуска</color>]]> в обсерватории, Роговик зачем-то поменял их в последний момент.",
 
     // Hornfels
     "Hornfels": "Роговик",
@@ -95,15 +95,15 @@
 
     // Slate
     "Slate": "Сланец",
-    "Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?": "Эй, ты почему ещё здесь? Ты ведь раздобыл <![CDATA[<color=orange>новые коды запуска</color>]]>?",
-    "Is it that anglerfish from the museum?": "Это что, удильщик из музея в обсерватории?",
+    "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "Эй, ты почему ещё здесь? Ты ведь раздобыл <![CDATA[<color=orange>новые коды запуска</color>]]>?",
+    "Is that the anglerfish from the museum?": "Это что, удильщик из музея в обсерватории?",
     "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Эрнесто</color>]]>?! НЕЕЕТ!",
 
-    "Hornfels named angler from the exhibitionlike like that.": "Роговик так назвал этого удильщика.",
-    "Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.": "Окей, знаешь что? Да, это тот самый удильщик из музея. Я уже сыт по горло маршмеллоу, не могу их больше есть.",
+    "The anglerfish from the museum exhibition. Hornfels named it that.": "Роговик так назвал этого удильщика.",
+    "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "Окей, знаешь что? Да, это тот самый удильщик из музея. Я уже сыт по горло маршмеллоу, не могу их больше есть.",
     "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "И поэтому ты решил пожарить <![CDATA[<color=orange>Эрнесто</color>]]>?! Роговик ведь считает <![CDATA[<color=orange>Эрнесто</color>]]> своим другом!",
-    "Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Удильщик - это рыба в первую очередь. Ну или типа того. Неважно как он зовёт её, она уже почти готова... или нет. Мне кажется что <![CDATA[<i>минут через 30</i>]]> она точно приготовится. Может слетаешь к <![CDATA[<color=orange>Чёрному Терновнику</color>]]> и просто поймаешь ещё одного для Роговика?",
-    "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "Ладно, слетаю! <![CDATA[<i>(вообще-то нет)</i>]]>",
+    "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "Удильщик - это рыба в первую очередь. Ну или типа того. Неважно как он зовёт её, она уже почти готова.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> или нет. Мне кажется что <![CDATA[<i>минут через 30</i>]]> она точно приготовится. Может слетаешь к <![CDATA[<color=orange>Чёрному Терновнику</color>]]> и просто поймаешь ещё одного для Роговика?",
+    "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "Ладно, слетаю. <![CDATA[<i>(вообще-то нет)</i>]]>",
     "That's disgusting.": "Отвратительно.",
     "Nah, enjoy your meal then.": "Пожалуй нет. Приятного аппетита.",
     "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Правда? Огромное спасибо! И ещё, пожалуйста не говори никому что стало с настоящим <![CDATA[<color=orange>Эрнесто</color>]]>, хорошо?",
@@ -125,16 +125,16 @@
   "ShipLogDictionary": {
 
     // Brittle Hollow
-    "Solanum in School ruins": "Соланум в руинах школы",
+    "Solanum in the School Ruins": "Соланум в руинах школы",
     "Solanum on Brittle Hollow": "Соланум на Пустотной Сфере",
-    "There's also Solanum signal coming from Brittle Hollow.": "С Пустотной Сферы доносится сигнал Соланум",
+    "I can hear Solanum's signal coming from Brittle Hollow.": "С Пустотной Сферы доносится сигнал Соланум",
     "I found Solanum in the School.": "Я обнаружил Соланум в школе.",
-    "Solanum saying that the black hole was smaller and that it was her school. She also don't want to fall down so she took a gravity crystall.": "Соланум училась здесь. Она утверждает, что раньше черная дыра была меньше. Чтобы не упасть, она на всякий случай взяла с собой гравитационный кристалл.",
+    "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Соланум училась здесь. Она утверждает, что раньше черная дыра была меньше. Чтобы не упасть, она на всякий случай взяла с собой гравитационный кристалл.",
 
     // CaveTwin_Body
-    "Solanum in Sunless City": "Соланум в Тёмном Городе",
-    "I can hear Solanum signal from Sunless City.": "Устойчивый сигнал Соланум доносится из Тёмного Города.",
-    "I found Solanum in Sunless City. At the Eye Temple district, she is staying at her home.": "Я обнаружил Соланум в Тёмном Городе. Она находится в квартале Храма Ока в месте, которое зовёт домом.",
+    "Solanum in the Sunless City": "Соланум в Тёмном Городе",
+    "I can hear Solanum's signal coming from the Sunless City.": "Устойчивый сигнал Соланум доносится из Тёмного Города.",
+    "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "Я обнаружил Соланум в Тёмном Городе. Она находится в квартале Храма Ока в месте, которое зовёт домом.",
     "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Соланум грустит из-за того, к чему привела слепая вера их клана в Око. Она обратила в прах свои детские игрушки.",
 
     // DB_VesselBody
@@ -174,16 +174,17 @@
     "Is Solanum on Timber Hearth?": "Соланум на Камельке?",
     "New quantum frequency?": "Новая квантовая частота?",
 
-    "Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?": "Сообщение Соланум преравалось, когда она упомянула Камелёк. Может стоит поискать её там?",
 
-    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she's observing the Hearthians.": "Соланум каким-то образом появилась на Камельке рядом с нашим поселением. Похоже, она наблюдает за камелянами.",
-    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum also would like to know more about the Probe Tracking Module inside Giant's Deep.": "В её диктофоне указано, что она подумала об этом месте и просто появилась здесь. Это можно объяснить моим новым Квантовым Правилом. Соланум рассказала мне о Солнечной станции и попросила прощения за то что они хотели сделать, ну да ладно. Я и так это знал. Она также хочет проверить данные модуля Орбитального Зонда, который находится в ядре Пучины Гиганта.",
+    "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Сообщение Соланум преравалось, когда она упомянула Камелёк. Может стоит поискать её там?",
+
+    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Соланум каким-то образом появилась на Камельке рядом с нашим поселением. Похоже, она наблюдает за камелянами.",
+    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "В её диктофоне указано, что она подумала об этом месте и просто появилась здесь. Это можно объяснить моим новым Квантовым Правилом. Соланум рассказала мне о Солнечной станции и попросила прощения за то что они хотели сделать, ну да ладно. Я и так это знал. Она также хочет проверить данные модуля Орбитального Зонда, который находится в ядре Пучины Гиганта.",
     "Quantum Consciousness": "Квантовое Сознание",
     "I've discovered strange frequency called Quantum Consciousness.": "Я открыл странную частоту Квантового Сознания.",
     "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "Это можно классифицировать как новое Квантовое Правило, либо исключение из правил. Моя теория заключается в том, что если сознательный наблюдатель осознаёт свою квантовость, он приобретает Квантовое Сознание. Соланум, возможно, получила данное знание из моего видения.",
     "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "Квантовое Сознание обладает устойчивым узнаваемым сигналом. Сигнал похож на Квантовые флуктуации, но имеет больше низких частот. Сигнал настолько сильный, что его можно услышать даже без сигналоскопа.",
     "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Другая отличительная черта Квантового Сознания - летающие искры рядом с головой существа. Кстати, похоже, что другие Квантовые Правила не действуют на обладателя Квантового Сознания.",
-    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about a certain location and appear there. Hypothesis: she can appear only in known places.": "Похоже что обладатель Квантового Сознания получает возможность существовать в нескольких местах одновременно. Соланум утверждает, что ей нужно просто подумать об определенном месте, чтобы появиться там. Предположение: она может появляться только в известных ей местах.",
+    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "Похоже что обладатель Квантового Сознания получает возможность существовать в нескольких местах одновременно. Соланум утверждает, что ей нужно просто подумать об определенном месте, чтобы появиться там. Предположение: она может появляться только в известных ей местах.",
 
     // ATP Time Loop Ring
     "Solanum inside Ash Twin Project": "Соланум внутри проекта «Час Пепла»",
@@ -194,17 +195,17 @@
     "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Соланум активировала статую памяти на Часе Пепла. Теперь она тоже застряла во временной петле.",
 
     //ADD !
-    "Now Solanum knows how time loop reset is working. We will try reach the Vessel again.": "Теперь Соланум знает как устроена временная петля. Мы попробуем снова отправиться на Звездолёт.",
+    "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "Теперь Соланум знает как устроена временная петля. Мы попробуем снова отправиться на Звездолёт.",
 
     // Ernesto Quest
     //////////////////
     "Where is Ernesto?": "Где Эрнесто?",
-    "Seriously, how anglerfish could just disappear?": "Нет, правда, куда удильщик мог деться?",
+    "Seriously, how could an anglerfish just disappear?": "Нет, правда, куда удильщик мог деться?",
     "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Роговик заметил, что пропал ценный экспонат - удильщик по кличке «Эрнесто».",
     "Ernesto found": "Эрнесто нашёлся",
     "I found Ernesto": "Я нашёл Эрнесто",
     "I found Slate with Ernesto. He's cooking him on campfire.": "Сланец забрал Эрнесто. Он готовит его на костре.",
-    "Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention.": "Он сказал, больше не может есть маршмеллоу, поэтому он решил разнообразить рацион и приготовить Эрнесто. Сланец считает, что удильщик приготовится через 30 минут, но учитывая длительность цикла временной петли, проще ничего не делать."
+    "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Он сказал, больше не может есть маршмеллоу, поэтому он решил разнообразить рацион и приготовить Эрнесто. Сланец считает, что удильщик приготовится через 30 минут, но учитывая длительность цикла временной петли, проще ничего не делать."
     //////////////////
   }
 }

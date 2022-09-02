@@ -49,9 +49,9 @@
     // Recorder ATP 2///// ADD TO TRANSLATIONS!
 
     //////////////////////////////
-    "SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.": "SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.",
-    "SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.",
-    "SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.": "SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.",
+    "SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.": "SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.",
+    "SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.",
+    "SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.": "SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.",
     //////////////////////////////
 
     // Recorder BH
@@ -122,15 +122,15 @@
 
     // Slate
     "Slate": "Slate",
-    "Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?": "Oh, why are you still here? Did you got new <![CDATA[<color=orange>new launch codes</color>]]>?",
-    "Is it that anglerfish from the museum?": "Is it that anglerfish from the museum?",
+    "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?",
+    "Is that the anglerfish from the museum?": "Is that the anglerfish from the museum?",
     "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!",
 
-    "Hornfels named angler from the exhibitionlike like that.": "Hornfels named angler from the exhibitionlike like that.",
-    "Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.": "Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.",
+    "The anglerfish from the museum exhibition. Hornfels named it that.": "The anglerfish from the museum exhibition. Hornfels named it that.",
+    "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.",
     "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!",
-    "Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?",
-    "I'll do that!": "I'll do that!",
+    "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?",
+    "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "I'll do that! <![CDATA[<i>(actually not)</i>]]>",
     "That's disgusting.": "That's disgusting.",
     "Nah, enjoy your meal then.": "Nah, enjoy your meal then.",
     "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?",
@@ -150,19 +150,19 @@
   "ShipLogDictionary": {
 
     // Brittle Hollow
-    "Solanum in School ruins": "Solanum in School ruins",
+    "Solanum in the School Ruins": "Solanum in the School Ruins",
     "Solanum on Brittle Hollow": "Solanum on Brittle Hollow",
-    "There's also Solanum signal coming from Brittle Hollow.": "There's also Solanum signal coming from Brittle Hollow.",
+    "I can hear Solanum's signal coming from Brittle Hollow.": "I can hear Solanum's signal coming from Brittle Hollow.",
     "I found Solanum in the School.": "I found Solanum in the School.",
 
     //////////////////
-    "Solanum saying that the black hole was smaller and that it was her school. She also don't want to fall down so she took a gravity crystall.": "Solanum saying that the black hole was smaller and that it was her school. She also don't want to fall down so she took a gravity crystall.",
+    "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.",
     //////////////////
 
     // CaveTwin_Body
-    "Solanum in Sunless City": "Solanum in Sunless City",
-    "I can hear Solanum signal from Sunless City.": "I can hear Solanum signal from Sunless City.",
-    "I found Solanum in Sunless City. At the Eye Temple district, she is staying at her home.": "I found Solanum in Sunless City. At the Eye Temple district, she is staying at her home.",
+    "Solanum in the Sunless City": "Solanum in the Sunless City",
+    "I can hear Solanum's signal coming from the Sunless City.": "I can hear Solanum's signal coming from the Sunless City.",
+    "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.",
 
     //////////////////
     "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",
@@ -213,11 +213,11 @@
     "New quantum frequency": "New quantum frequency",
 
     //////////////////
-    "Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?": "Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?",
+    "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?",
     //////////////////
 
-    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she's observing the Hearthians.": "Solanum somehow appeared on Timber Hearth near the Village. It seems like she's observing the Hearthians.",
-    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum also would like to know more about the Probe Tracking Module inside Giant's Deep.": "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum also would like to know more about the Probe Tracking Module inside Giant's Deep.",
+    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.",
+    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.",
     "Quantum Consciousness": "Quantum Consciousness",
     "I've discovered strange frequency called Quantum Consciousness.": "I've discovered strange frequency called Quantum Consciousness.",
 
@@ -230,7 +230,7 @@
     "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.",
 
     //////////////////
-    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about a certain location and appear there. Hypothesis: she can appear only in known places.": "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about a certain location and appear there. Hypothesis: she can appear only in known places.",
+    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.",
     //////////////////
 
     // ATP Time Loop Ring
@@ -242,17 +242,17 @@
     "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.",
 
     //ADD !
-    "Now Solanum knows how time loop reset is working. We will try reach the Vessel again.": "Now Solanum knows how time loop reset is working. We will try reach the Vessel again.",
+    "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "Now that Solanum knows how time loop reset works, we will try reach the Vessel.",
 
     // Ernesto Quest
     //////////////////
     "Where is Ernesto?": "Where is Ernesto?",
-    "Seriously, how anglerfish could just disappear?": "Seriously, how anglerfish could just disappear?",
+    "Seriously, how could an anglerfish just disappear?": "Seriously, how could an anglerfish just disappear?",
     "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.",
     "Ernesto found": "Ernesto found",
     "I found Ernesto": "I found Ernesto",
     "I found Slate with Ernesto. He's cooking him on campfire.": "I found Slate with Ernesto. He's cooking him on campfire.",
-    "Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention.": "Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention."
+    "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens."
     //////////////////
   }
 }

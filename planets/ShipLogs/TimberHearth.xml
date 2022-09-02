@@ -11,17 +11,17 @@
       <ID>SOLANUM_RUMOR_TH</ID>
       <SourceID>THE_VISION_ENTRY</SourceID>
       <RumorName>Is Solanum on Timber Hearth?</RumorName>
-      <Text>Solanum's message was interrupted on mentioning Timber Hearth. Maybe she's there?</Text>
+      <Text>Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?</Text>
     </RumorFact>
 
     <ExploreFact>
       <ID>SOLANUM_TH</ID>
-      <Text>Solanum somehow appeared on Timber Hearth near the Village. It seems like she's observing the Hearthians.</Text>
+      <Text>Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.</Text>
     </ExploreFact>
 
     <ExploreFact>
       <ID>SOLANUM_TH_RECORDER</ID>
-      <Text>According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum also would like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
+      <Text>According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
     </ExploreFact>
 
     <Entry>
@@ -52,7 +52,7 @@
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_ABILITY</ID>
-        <Text>Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. Solanum declares that she can only think about a certain location and appear there. Hypothesis: she can appear only in known places.</Text>
+        <Text>Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.</Text>
       </ExploreFact>
     </Entry>
 
@@ -68,7 +68,7 @@
       <ID>ERNESTO_RUMOR</ID>
       <SourceID>TH_VILLAGE</SourceID>
       <RumorName>Where is Ernesto?</RumorName>
-      <Text>Seriously, how anglerfish could just disappear?</Text>
+      <Text>Seriously, how could an anglerfish just disappear?</Text>
     </RumorFact>
 
     <ExploreFact>
@@ -97,7 +97,7 @@
 
     <ExploreFact>
       <ID>ERNESTO_POOR_ERNESTO</ID>
-      <Text>Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention.</Text>
+      <Text>Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.</Text>
     </ExploreFact>
   </Entry>
 

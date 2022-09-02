@@ -5,12 +5,12 @@
     <Name>Start</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?</Page>
+      <Page>Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?</Page>
     </Dialogue>
 
     <DialogueOptionsList>
       <DialogueOption>
-        <Text>Is it that anglerfish from the museum?</Text>
+        <Text>Is that the anglerfish from the museum?</Text>
         <DialogueTarget>3</DialogueTarget>
       </DialogueOption>
       <DialogueOption>
@@ -27,7 +27,7 @@
     </Dialogue>
     <DialogueOptionsList>
       <DialogueOption>
-        <Text>Hornfels named angler from the exhibitionlike like that.</Text>
+        <Text>The anglerfish from the museum exhibition. Hornfels named it that.</Text>
         <DialogueTarget>3</DialogueTarget>
       </DialogueOption>
     </DialogueOptionsList>
@@ -37,7 +37,7 @@
   <DialogueNode>
     <Name>3</Name>
     <Dialogue>
-      <Page>Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.</Page>
+      <Page>Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.</Page>
     </Dialogue>
     <DialogueOptionsList>
       <DialogueOption>
@@ -50,7 +50,7 @@
   <DialogueNode>
     <Name>4</Name>
     <Dialogue>
-      <Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?</Page>
+      <Page>Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?</Page>
     </Dialogue>
     <DialogueOptionsList>
       <DialogueOption>
