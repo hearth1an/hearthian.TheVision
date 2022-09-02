@@ -933,17 +933,8 @@ namespace TheVision
                 PlayRevealSound();
                 PlaySFXSound();
                 PlayGaspSound();
-                PlayThunderSound();
-               // PlayQuantumLightningSound();
-            });
-
-            /*
-            var HUDreboot = Locator.GetActiveCamera().GetComponent<HUDHelmetAnimator>();
-            HUDreboot._hudFlickerOnLength = 2f;
-            HUDreboot._hudFlickerOutLength = 1f;
-            HUDreboot._hudRebootLength = 2f;
-            */
-                       
+                PlayThunderSound();               
+            });   
 
             // Enabling json props
             DisabledPropsOnStart(true);
