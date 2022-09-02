@@ -12,14 +12,14 @@ namespace TheVision
         public float delay;
         public float rotationSpeed;
         public OWAudioSource PlayerHeadsetAudioSource;
-        public void Start()        
-        {            
+        public void Start()
+        {
             Invoke("Init", delay);
             Invoke("onDestroying", 18.6f);
             Invoke("Destroying", 19f);
         }
         public void onDestroying()
-        {            
+        {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolFlashlightFlicker);
@@ -34,7 +34,7 @@ namespace TheVision
         {
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeGalaxyBlowAway); 
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeGalaxyBlowAway);
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.2f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
@@ -45,28 +45,23 @@ namespace TheVision
             PlayerHeadsetAudioSource = gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.loop = false;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolItemSharedStoneDrop); 
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolItemSharedStoneDrop);
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.2f);
-            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;            
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
         public void Init()
-        {                      
+        {
             isActive = true;
             toySFX();
         }
-        void Update()        
+        void Update()
         {
             if (transform.localPosition != targetPos && isActive == true)
-            {                
+            {
                 transform.Rotate(new Vector3(rotationSpeed, rotationSpeed, 0) * Time.deltaTime);
-                transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, speed * Time.deltaTime);                
+                transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, speed * Time.deltaTime);
             }
         }
     }
 }
-
-
-
-
-

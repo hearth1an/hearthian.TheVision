@@ -1,224 +1,220 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-    "Base": {
-        "gravityFallOff": "linear"
-    },
-    "canShowOnTitle": true,
-    "name": "Ember Twin",
-    "Spawn": {
-        "playerSpawnPoint": {
-            "x": 25.4912,
-            "y": -107.7768,
-            "z": -18.84
-        } },
-    "Orbit": {
-        "semiMajorAxis": 0.0
-    },
-    "Props": {
-        "details": [
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": 34.9788,
-                    "y": -103.6786,
-                    "z": -25.7699
-                },
-                "rotation": {
-                    "x": 19.2319,
-                    "y": 306.6399,
-                    "z": 180.81
-                },
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
-                "rename": "Solanum_EmberTwin_Character"
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
-                "rename": "Particles_2"
-
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_PyramidBlck",
-                "position": {
-                    "x": 29.75,
-                    "y": -105.2,
-                    "z": -26.2
-                },
-                "rotation": {
-                    "x": 7,
-                    "y": 11,
-                    "z": 197
-                },
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
-                "rename": "Solanum_EmberTwin_ToyPyramid"
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_Toy",
-                "position": {
-                    "x": 28.2845,
-                    "y": -105.6,
-                    "z": -27
-
-                },
-                "rotation": {
-                    "x": 90,
-                    "y": 331.619,
-                    "z": 0
-                },
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
-                "rename": "Solanum_EmberTwin_ToyMobius"
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_ToyShip",
-                "position": {
-                    "x": 31.15,
-                    "y": -104.4,
-                    "z": -27.7273
-                },
-                "rotation": {
-                    "x": 19.232,
-                    "y": 306.6399,
-                    "z": 181.41
-                },
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
-                "rename": "Solanum_EmberTwin_ToyShip"
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-                "position": {
-                    "x": 34.1675,
-                    "y": -104.4503,
-                    "z": -23.0298
-                },
-                "rotation": {
-                    "x": 7.7,
-                    "y": 237.1,
-                    "z": 162.32
-                },
-                "parentPath": "Sector_CaveTwin/SandPile",
-                "rename": "SandPile_1",
-                "scale": 1
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-                "position": {
-                    "x": 34.36,
-                    "y": -104.5503,
-                    "z": -22.2
-                },
-                "rotation": {
-                    "x": 7.7,
-                    "y": 285,
-                    "z": 162.32
-                },
-                "parentPath": "Sector_CaveTwin/SandPile",
-                "rename": "SandPile_2",
-                "scale": 0.7
-            },
-            {
-                "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-                "position": {
-                    "x": 33.8,
-                    "y": -104.8286,
-                    "z": -21.6408
-                },
-                "rotation": {
-                    "x": 7.7,
-                    "y": 200,
-                    "z": 162.32
-                },
-                "parentPath": "Sector_CaveTwin/SandPile",
-                "rename": "SandPile_3"
-            }
-
-        ],
-        "reveal": [
-            {
-                "maxAngle": 180.0,
-                "maxDistance": -1.0,
-                "position": {
-                    "x": 35.4753,
-                    "y": -104.0983,
-                    "z": -23.48
-                },
-                "radius": 5,
-                "revealOn": "enter",
-                "reveals": [
-                    "SOLANUM_ET_FOUND"
-                ]
-            }
-        ],
-        "nomaiText": [
-            {
-                "position": {
-                    "x": 35.4753,
-                    "y": -104.0983,
-                    "z": -23.48
-                },
-                "rotation": {
-                    "x": 16.2183,
-                    "y": 275.2181,
-                    "z": 170.87
-                },
-                "type": "recorder",
-                "location": "unspecified",
-                "xmlFile": "planets/Text/RecorderET.xml",
-                "rename": "Prefab_NOM_Recorder_ET"
-            }
-        ],
-        "signals": [
-            {
-                "audio": "planets/quantum.mp3",
-                "detectionRadius": 10000.0,
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character",
-                "reveals": "SOLANUM_ET",
-                "sourceRadius": 2.0
-            }
-        ]
-
-    },
-    "ReferenceFrame": {
-        "bracketRadius": -1.0
-    },
-    "ShipLog": {
-        "mapMode": {},         
-        "spriteFolder": "planets/ShipLogs/sprites",
-        "xmlFile": "planets/ShipLogs/CaveTwin_Body.xml"
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Ember Twin",
+  "Spawn": {
+    "playerSpawnPoint": {
+      "x": 25.4912,
+      "y": -107.7768,
+      "z": -18.84
     }
+  },
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 34.9788,
+          "y": -103.6786,
+          "z": -25.7699
+        },
+        "rotation": {
+          "x": 19.2319,
+          "y": 306.6399,
+          "z": 180.81
+        },
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
+        "rename": "Solanum_EmberTwin_Character"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+        "rename": "Particles_2"
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_PyramidBlck",
+        "position": {
+          "x": 29.75,
+          "y": -105.2,
+          "z": -26.2
+        },
+        "rotation": {
+          "x": 7,
+          "y": 11,
+          "z": 197
+        },
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
+        "rename": "Solanum_EmberTwin_ToyPyramid"
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_Toy",
+        "position": {
+          "x": 28.2845,
+          "y": -105.6,
+          "z": -27
 
+        },
+        "rotation": {
+          "x": 90,
+          "y": 331.619,
+          "z": 0
+        },
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
+        "rename": "Solanum_EmberTwin_ToyMobius"
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_ToyShip",
+        "position": {
+          "x": 31.15,
+          "y": -104.4,
+          "z": -27.7273
+        },
+        "rotation": {
+          "x": 19.232,
+          "y": 306.6399,
+          "z": 181.41
+        },
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
+        "rename": "Solanum_EmberTwin_ToyShip"
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+        "position": {
+          "x": 34.1675,
+          "y": -104.4503,
+          "z": -23.0298
+        },
+        "rotation": {
+          "x": 7.7,
+          "y": 237.1,
+          "z": 162.32
+        },
+        "parentPath": "Sector_CaveTwin/SandPile",
+        "rename": "SandPile_1",
+        "scale": 1
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+        "position": {
+          "x": 34.36,
+          "y": -104.5503,
+          "z": -22.2
+        },
+        "rotation": {
+          "x": 7.7,
+          "y": 285,
+          "z": 162.32
+        },
+        "parentPath": "Sector_CaveTwin/SandPile",
+        "rename": "SandPile_2",
+        "scale": 0.7
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+        "position": {
+          "x": 33.8,
+          "y": -104.8286,
+          "z": -21.6408
+        },
+        "rotation": {
+          "x": 7.7,
+          "y": 200,
+          "z": 162.32
+        },
+        "parentPath": "Sector_CaveTwin/SandPile",
+        "rename": "SandPile_3"
+      }
+    ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_ET",
+        "position": {
+          "x": 34.9788,
+          "y": -103.6786,
+          "z": -25.7699
+        }
+      }
+    ],
+    "reveal": [
+      {
+        "maxAngle": 180,
+        "maxDistance": -1,
+        "position": {
+          "x": 35.4753,
+          "y": -104.0983,
+          "z": -23.48
+        },
+        "radius": 5,
+        "revealOn": "enter",
+        "reveals": [
+          "SOLANUM_ET_FOUND"
+        ]
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 35.4753,
+          "y": -104.0983,
+          "z": -23.48
+        },
+        "rotation": {
+          "x": 16.2183,
+          "y": 275.2181,
+          "z": 170.87
+        },
+        "type": "recorder",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/RecorderET.xml",
+        "rename": "Prefab_NOM_Recorder_ET"
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/quantum.mp3",
+        "detectionRadius": 10000,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character",
+        "reveals": "SOLANUM_ET",
+        "sourceRadius": 2
+      }
+    ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/CaveTwin_Body.xml"
+  }
 }

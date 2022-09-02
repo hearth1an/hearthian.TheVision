@@ -15,7 +15,7 @@
       <Text>There's also Solanum signal coming from Brittle Hollow.</Text>
     </RumorFact>
 
-     <ExploreFact>
+    <ExploreFact>
       <ID>SOLANUM_BH_FOUND</ID>
       <Text>I found Solanum in the School.</Text>
     </ExploreFact>

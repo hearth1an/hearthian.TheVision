@@ -1,175 +1,160 @@
 {
-    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-    "Base": {
-        "gravityFallOff": "linear"
-    },
-    "canShowOnTitle": true,
-    "name": "Timber Hearth",
-    "Orbit": {
-        "semiMajorAxis": 0.0
-    },
-    "Props": {
-        "details": [
-
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": 48.5017357,
-                    "y": 15.1184082,
-                    "z": 249.996048
-                },
-                "rotation": {
-                    "x": 332.5521,
-                    "y": 279.0402,
-                    "z": 275.7439
-                }
-            },
-            {
-                "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Journal",
-                "position": {
-                    "x": 16.9945,
-                    "y": -40.7713,
-                    "z": 185.9359
-                },
-                "rotation": {
-                    "x": 342.581,
-                    "y": 356.9867,
-                    "z": 12.2146
-                }
-                
-            },
-            {
-                "path": "Anglerfish_Body/Beast_Anglerfish",
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick",
-                "rename": "PoorErnesto",
-                "scale": 0.003,
-                "removeChildren": [
-                    "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
-                ]
-
-            },
-            {
-                "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Effects/Effects_HEA_SmokeColumn",
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "rotation": {
-                    "x": 31.6786,
-                    "y": 84.4911,
-                    "z": 290.456
-                },
-                "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto",
-                "scale": 0.2
-            }            
-        ],
-        "dialogue": [
-            {
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "xmlFile": "planets/Dialogue/Hornfels.xml",
-                "pathToAnimController": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working",
-                "lookAtRadius": 3,
-                "radius": 1
-
-            },
-            {
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "xmlFile": "planets/Dialogue/Slate.xml",
-                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
-                "lookAtRadius": 3,
-                "radius": 1
-
-            },
-            {
-                "position": {
-                    "x": 16.9945,
-                    "y": -40.7713,
-                    "z": 185.9359
-                },
-                "xmlFile": "planets/Dialogue/Slate_Note.xml",
-                "lookAtRadius": 3,
-                "radius": 1    
-            }
-        ],
-        "reveal": [
-            {
-                "maxAngle": 180.0,
-                "maxDistance": -1.0,
-                "position": {
-                    "x": 17.2124,
-                    "y": -41.3629,
-                    "z": 185.5392
-                },
-                "radius": 3.0,
-                "revealOn": "enter",
-                "reveals": [
-                    "ERNESTO_FOUND_FACT",
-                    "ERNESTO_FOUND_RUMOR"
-                ]
-            }
-        ],
-        "nomaiText": [
-            {
-                "position": {
-                    "x": 50.2780342,
-                    "y": 15.4577,
-                    "z": 249.598343
-                },
-                "rotation": {
-                    "x": 45.7734337,
-                    "y": 96.43863,
-                    "z": 82.68443
-                },
-                "type": "recorder",
-                "location": "unspecified",
-                "xmlFile": "planets/Text/RecorderTH.xml",
-                "rename": "Prefab_NOM_Recorder_TH"
-            }
-        ],
-        "signals": [
-            {
-                "audio": "planets/quantum.mp3",
-                "detectionRadius": 2000.0,
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": 48.5099373,
-                    "y": 15.6914063,
-                    "z": 252.312668
-                },
-                "reveals": "WHAT_IS_NEW_QR",
-                "sourceRadius": 2.0
-            }
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "Timber Hearth",
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 48.5017357,
+          "y": 15.1184082,
+          "z": 249.996048
+        },
+        "rotation": {
+          "x": 332.5521,
+          "y": 279.0402,
+          "z": 275.7439
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Journal",
+        "position": {
+          "x": 16.9945,
+          "y": -40.7713,
+          "z": 185.9359
+        },
+        "rotation": {
+          "x": 342.581,
+          "y": 356.9867,
+          "z": 12.2146
+        }
+      },
+      {
+        "path": "Anglerfish_Body/Beast_Anglerfish",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick",
+        "rename": "PoorErnesto",
+        "scale": 0.003,
+        "removeChildren": [
+          "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
         ]
-    },
-    "ReferenceFrame": {
-        "bracketRadius": -1.0
-    },
-    
-    "ShipLog": {
-        "mapMode": {},
-        "spriteFolder": "planets/ShipLogs/sprites",
-        "xmlFile": "planets/ShipLogs/TimberHearth.xml"
-    }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Effects_HEA_Campfire/Effects/Effects_HEA_SmokeColumn",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 31.6786,
+          "y": 84.4911,
+          "z": 290.456
+        },
+        "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto",
+        "scale": 0.2
+      }
+    ],
+    "dialogue": [
+      {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "xmlFile": "planets/Dialogue/Hornfels.xml",
+        "pathToAnimController": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/Villager_HEA_Hornfels_ANIM_Working",
+        "lookAtRadius": 3,
+        "radius": 1
+
+      },
+      {
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "xmlFile": "planets/Dialogue/Slate.xml",
+        "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+        "lookAtRadius": 3,
+        "radius": 1
+
+      },
+      {
+        "position": {
+          "x": 16.9945,
+          "y": -40.7713,
+          "z": 185.9359
+        },
+        "xmlFile": "planets/Dialogue/Slate_Note.xml",
+        "lookAtRadius": 3,
+        "radius": 1
+      }
+    ],
+    "reveal": [
+      {
+        "maxAngle": 180,
+        "maxDistance": -1,
+        "position": {
+          "x": 17.2124,
+          "y": -41.3629,
+          "z": 185.5392
+        },
+        "radius": 3,
+        "revealOn": "enter",
+        "reveals": [
+          "ERNESTO_FOUND_FACT",
+          "ERNESTO_FOUND_RUMOR"
+        ]
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": 50.2780342,
+          "y": 15.4577,
+          "z": 249.598343
+        },
+        "rotation": {
+          "x": 45.7734337,
+          "y": 96.43863,
+          "z": 82.68443
+        },
+        "type": "recorder",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/RecorderTH.xml",
+        "rename": "Prefab_NOM_Recorder_TH"
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/quantum.mp3",
+        "detectionRadius": 2000,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 48.5099373,
+          "y": 15.6914063,
+          "z": 252.312668
+        },
+        "reveals": "WHAT_IS_NEW_QR",
+        "sourceRadius": 2
+      }
+    ]
+  },
+  "ShipLog": {
+    "spriteFolder": "planets/ShipLogs/sprites",
+    "xmlFile": "planets/ShipLogs/TimberHearth.xml"
+  }
 }

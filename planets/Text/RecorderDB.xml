@@ -66,5 +66,5 @@
       <FactID>IS_HOLOGRAM_CHANGED</FactID>
       <Condition>9</Condition>
     </RevealFact>
-  </ShipLogConditions> 
+  </ShipLogConditions>
 </NomaiObject>

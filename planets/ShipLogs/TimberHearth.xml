@@ -75,30 +75,30 @@
       <ID>ERNESTO_ENTRY</ID>
       <Text>Hornfels said that anglerfish «Ernesto» disappeared from exhibit.</Text>
     </ExploreFact>
- </Entry>  
+  </Entry>
 
- <Entry>
+  <Entry>
     <ID>ERNESTO_FOUND</ID>
-      <Name>Ernesto found</Name>
+    <Name>Ernesto found</Name>
 
-      <Curiosity>ERNESTO_CURIOSITY</Curiosity>
+    <Curiosity>ERNESTO_CURIOSITY</Curiosity>
 
     <RumorFact>
       <ID>ERNESTO_FOUND_RUMOR</ID>
-      <RumorName>I found Ernesto</RumorName>
       <SourceID>ERNESTO_ENTRY</SourceID>
+      <RumorName>I found Ernesto</RumorName>
       <Text>Where is Ernesto?</Text>
     </RumorFact>
 
     <ExploreFact>
-      <ID>ERNESTO_FOUND_FACT</ID>      
+      <ID>ERNESTO_FOUND_FACT</ID>
       <Text>I found Slate with Ernesto. He's cooking him on campfire.</Text>
     </ExploreFact>
 
     <ExploreFact>
-      <ID>ERNESTO_POOR_ERNESTO</ID>      
+      <ID>ERNESTO_POOR_ERNESTO</ID>
       <Text>Slate just fed up with marshmallow, that's why he decided to cook Ernesto. He saying it will be ready in 30 minutes so in case of time-loop reset it doesn't require intervention.</Text>
     </ExploreFact>
-  </Entry>  
+  </Entry>
 
 </AstroObjectEntry>

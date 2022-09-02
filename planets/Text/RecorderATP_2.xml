@@ -12,7 +12,7 @@
     <ID>3</ID>
     <ParentID>2</ParentID>
     <Text>SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.</Text>
-  </TextBlock> 
+  </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ATP_RECORDER_2</FactID>
