@@ -65,6 +65,7 @@
     "entryLocation": [
       {
         "id": "VISION_TORCH_ENTRY",
+        "cloaked": true,
         "position": {
           "x": 207.417908,
           "y": -169.285614,
@@ -73,6 +74,7 @@
       },
       {
         "id": "VISION_TORCH_ENTRY",
+        "cloaked": true,
         "position": {
           "x": 184.88208,
           "y": -169.285919,
