@@ -38,7 +38,7 @@
 		// Recorder ATP 2
 		"SOLANUM: Now I see how this time loop reset is working. I remember everything from previous loop.": "СОЛАНУМ: Кажется, теперь я понимаю как работают статуи. Я помню всё из предыдущего цикла.",
 		"SOLANUM: How was Daz saying it? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "СОЛАНУМ: Как там говорил Седум? <![CDATA[<i>«Отправлять в прошлое воспоминания и отправляться в прошлое самому - это два разных действия»</i>]]>.",
-		"SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.": "СОЛАНУМ: В любом случае, теперь я понимаю как это работает. Ну так что, продолжим? Я снова открою гиперядро, но в следующий раз твоя очередь.",
+		"SOLANUM: Anyway, now I know how it works. So, let's continue? I'll open the core once again, but next loop it's your turn.": "СОЛАНУМ: В любом случае, теперь я понимаю как работает временная петля. Ну так что, продолжим? Я снова открою гиперядро, но в следующий раз твоя очередь.",
 
 		// Recorder BH
 		"SOLANUM: This place is our school. It teaches us about the universe, stars, singularities, gravity, and everything related to it. It wasn't so unstable before, and I'm not sure, but I remember the black hole being smaller.": "СОЛАНУМ: Это место когда-то было моей школой. Здесь мы изучали вселенную, звёзды, гравитацию и всё что с этим связано. Тут было безопасно... и я не уверена, но кажется что черная дыра была меньше.",
@@ -79,6 +79,9 @@
 
 		// Ernesto Quest
 
+		// Slate note
+		"I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "Я ушёл за... за... <![CDATA[<i>грибочками</i>]]>. Место не занимать! Cкоро вернусь. Сходи пока за <![CDATA[<color=orange>новыми кодами запуска</color>]]> в обсерватории, Роговик зачем-то поменял их в последний момент.",
+
 
 		// Hornfels
 		"Hornfels": "Роговик",
@@ -87,25 +90,25 @@
 		"Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Кто такой <![CDATA[<color=orange>Эрнесто</color>]]>?",
 		"My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Мой маленький друг исчез! Я назвал этого удильщика <![CDATA[<color=orange>«Эрнесто»</color>]]>. Не могу поверить что он сбежал от меня...",
 		"Oh, I'm sorry about that...": "Ох, мне очень жаль...",
-		"Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Бедный <![CDATA[<color=orange>Эрнесто</color>]]>...",
-
+		"Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Бедный <![CDATA[<color=orange>Эрнесто</color>]]>... Да, вот <![CDATA[<color=orange>новые коды запуска</color>]]>...",
+		"I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Мне просто нужны <![CDATA[<color=orange>новые коды запуска</color>]]>.",
 
 		// Slate
 		"Slate": "Сланец",
-		"Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?": "Эй! Ты почему всё ещё здесь? Ты раздобыл <![CDATA[<color=orange>коды запуска</color>]]>?",
-		"Is it that anglerfish from the museum?": "Это что, удильщик из музея в Обсерватории?",
+		"Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?": "Эй, ты почему ещё здесь? Ты ведь раздобыл <![CDATA[<color=orange>новые коды запуска</color>]]>?",
+		"Is it that anglerfish from the museum?": "Это что, удильщик из музея в обсерватории?",
 		"<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Эрнесто</color>]]>?! НЕЕЕТ!",
 
 		"Hornfels named angler from the exhibitionlike like that.": "Роговик так назвал этого удильщика.",
 		"Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.": "Окей, знаешь что? Да, это тот самый удильщик из музея. Я уже сыт по горло маршмеллоу, не могу их больше есть.",
 		"So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "И поэтому ты решил пожарить <![CDATA[<color=orange>Эрнесто</color>]]>?! Роговик ведь считает <![CDATA[<color=orange>Эрнесто</color>]]> своим другом!",
-		"Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Удильщик - это рыба в первую очередь. Ну или типа того. Неважно как он зовёт её, она уже почти готова... или нет. Мне кажется что <![CDATA[<color=lightblue>минут через 30</color>]]> точно приготовится. Может слетаешь к <![CDATA[<color=orange>Чёрному Терновнику</color>]]> и просто поймаешь ещё одного для Роговика?",
-		"I'll do that!": "Ладно, слетаю.",
+		"Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Удильщик - это рыба в первую очередь. Ну или типа того. Неважно как он зовёт её, она уже почти готова... или нет. Мне кажется что <![CDATA[<i>минут через 30</i>]]> она точно приготовится. Может слетаешь к <![CDATA[<color=orange>Чёрному Терновнику</color>]]> и просто поймаешь ещё одного для Роговика?",
+		"I'll do that! <![CDATA[<i>(actually not)</i>]]>": "Ладно, слетаю! <![CDATA[<i>(вообще-то нет)</i>]]>",
 		"That's disgusting.": "Отвратительно.",
 		"Nah, enjoy your meal then.": "Пожалуй нет. Приятного аппетита.",
-		"You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Правда? Огромное спасибо! И ещё, пожалуйста не говори никому что стало с настоящим <![CDATA[<color=orange>Эрнесто</color>]]> хорошо?",
+		"You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Правда? Огромное спасибо! И ещё, пожалуйста не говори никому что стало с настоящим <![CDATA[<color=orange>Эрнесто</color>]]>, хорошо?",
 		"There is no accounting for tastes.": "О вкусах не спорят.",
-		"Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite.": "О да, спасибо! Приходи через <![CDATA[<color=lightblue>30 минут</color>]]> и я дам тебе кусочек."
+		"Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "О да, спасибо! Приходи через <![CDATA[<i>30 минут</i>]]> и я дам тебе кусочек."
 
 	},
 
@@ -116,7 +119,8 @@
 		"THE_VISION_TO_BE_CONTINUED": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
 		"ToBeContinued": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
 		"GloamingGalaxy": "Сумеречная Галактика", // Add this to other translations
-		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ..."
+		"TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
+		"THE_VISION_NEW_LAUNCH_CODES": "Новые коды запуска: --|-..|-.--|-."
 
 	},
 	"ShipLogDictionary": {

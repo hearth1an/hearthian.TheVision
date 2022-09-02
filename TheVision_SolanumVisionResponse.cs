@@ -58,8 +58,7 @@ namespace TheVision.CustomProps
                 PlayStartSound();
                 Invoke("PlayImpactSound", 0.5f);
                 Invoke("PlayShockSound", 0.5f);
-                PlayFadeInSound();
-                PlaySystemDownSound(); 
+                PlayFadeInSound();               
             });
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
@@ -94,21 +93,8 @@ namespace TheVision.CustomProps
                 _nomaiConversationManager.enabled = false;
 
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
-
-
-                var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
-                HUDreboot._hudFlickerOnLength = 10f;
-                HUDreboot._hudFlickerOutLength = 10f;
-                HUDreboot._hudRebootLength = 2f;
-                HUDreboot._hudRebooting = true;
                 
-
             });
-
-
-
-
-
         }
 
         // Utility

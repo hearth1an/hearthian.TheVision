@@ -16,7 +16,11 @@
 			<DialogueOption>
 				<Text>Who is <![CDATA[<color=orange>Ernesto</color>]]>?</Text>
 				<DialogueTarget>1</DialogueTarget>
-			</DialogueOption>			
+			</DialogueOption>	
+			<DialogueOption>
+				<Text>I just need <![CDATA[<color=orange>new launch codes</color>]]>.</Text>
+				<DialogueTarget>END</DialogueTarget>
+			</DialogueOption>		
 		</DialogueOptionsList>
 	</DialogueNode>
 	
@@ -30,7 +34,7 @@
 			<DialogueOption>
 				<Text>Oh, I'm sorry about that...</Text>
 				<DialogueTarget>END</DialogueTarget>
-			</DialogueOption>
+			</DialogueOption>			
 		</DialogueOptionsList>
 
 		<RevealFacts>
@@ -46,7 +50,7 @@
 	<DialogueNode>
 		<Name>END</Name>
 		<Dialogue>
-			<Page>Poor <![CDATA[<color=orange>Ernesto</color>]]>...</Page>
+			<Page>Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...</Page>
 		</Dialogue>
     <RevealFacts>
 			<FactID>ERNESTO_ENTRY</FactID>

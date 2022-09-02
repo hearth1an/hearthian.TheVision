@@ -105,6 +105,9 @@
 
 		// Ernesto Quest
 
+		// Slate note
+
+		"I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.",
 
 		// Hornfels
 		"Hornfels": "Hornfels",
@@ -113,25 +116,26 @@
 		"Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Who is <![CDATA[<color=orange>Ernesto</color>]]>?",
 		"My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...",
 		"Oh, I'm sorry about that...": "Oh, I'm sorry about that...",
-		"Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Poor <![CDATA[<color=orange>Ernesto</color>]]>...",
+		"Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...",
+		"I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "I just need <![CDATA[<color=orange>new launch codes</color>]]>.",
 
 
 		// Slate
 		"Slate": "Slate",
-		"Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?": "Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?",
+		"Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?": "Oh, why are you still here? Did you got new <![CDATA[<color=orange>new launch codes</color>]]>?",
 		"Is it that anglerfish from the museum?": "Is it that anglerfish from the museum?",
 		"<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!",
 
 		"Hornfels named angler from the exhibitionlike like that.": "Hornfels named angler from the exhibitionlike like that.",
 		"Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.": "Okay, you know what? Yes it's an anglerfish from the museum. I'm fed up with marshmallow, can't take anymore.",
 		"So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!",
-		"Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?",
+		"Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?": "Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?",
 		"I'll do that!": "I'll do that!",
 		"That's disgusting.": "That's disgusting.",
 		"Nah, enjoy your meal then.": "Nah, enjoy your meal then.",
 		"You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?",
 		"There is no accounting for tastes.": "There is no accounting for tastes.",
-		"Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite.": "Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite."
+		"Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite."
 
 	},
 
@@ -140,7 +144,8 @@
 		"Quantum Consciousness": "Quantum Consciousness",
 		"Solanum": "Solanum",
 		"GloamingGalaxy": "Gloaming Galaxy", // Add this to other translations
-		"THE_VISION_TO_BE_CONTINUED": "TO BE CONTINUED..."
+		"THE_VISION_TO_BE_CONTINUED": "TO BE CONTINUED...",
+		"THE_VISION_NEW_LAUNCH_CODES": "New Launch Codes: --|-..|-.--|-." // New launch codes: --|-..|-.--|-.
 
 
 	},

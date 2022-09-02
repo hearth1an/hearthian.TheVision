@@ -5,7 +5,7 @@
 		<Name>Start</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
-			<Page>Hey, why are you still here? Did you got the <![CDATA[<color=orange>launch codes</color>]]>?</Page>
+			<Page>Oh, why are you still here? Did you got the <![CDATA[<color=orange>new launch codes</color>]]>?</Page>
 		</Dialogue>
 		
 		<DialogueOptionsList>
@@ -16,7 +16,7 @@
 			<DialogueOption>
 				<Text><![CDATA[<color=orange>Ernesto</color>]]>?! NO!</Text>
 				<DialogueTarget>2</DialogueTarget>
-			</DialogueOption>				
+			</DialogueOption>					
 		</DialogueOptionsList>
 	</DialogueNode>
 
@@ -50,11 +50,11 @@
 	<DialogueNode>
 		<Name>4</Name>
 		<Dialogue>
-			<Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<color=lightblue>30 minutes</color>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?</Page>
+			<Page>Anglerfish is still a fish. Whatever he calls it, it's almost done... or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near the <![CDATA[<color=orange>Dark Bramble</color>]]> and just get the new one for Hornfels?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>I'll do that!</Text>
+				<Text>I'll do that! <![CDATA[<i>(actually not)</i>]]></Text>
 				<DialogueTarget>END</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
@@ -101,7 +101,7 @@
 	<DialogueNode>
 		<Name>END3</Name>
 		<Dialogue>
-			<Page>Thank you! Get back within <![CDATA[<color=lightblue>30 minutes</color>]]> and I'll give you a bite.</Page>
+			<Page>Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.</Page>
 		</Dialogue>
 
 		<RevealFacts>

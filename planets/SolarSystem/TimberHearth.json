@@ -23,7 +23,21 @@
                     "y": 279.0402,
                     "z": 275.7439
                 }
-            },            
+            },
+            {
+                "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Hornfels'GrovePivot/Prefab_HEA_Journal",
+                "position": {
+                    "x": 16.9945,
+                    "y": -40.7713,
+                    "z": 185.9359
+                },
+                "rotation": {
+                    "x": 342.581,
+                    "y": 356.9867,
+                    "z": 12.2146
+                }
+                
+            },
             {
                 "path": "Anglerfish_Body/Beast_Anglerfish",
                 "position": {
@@ -52,13 +66,13 @@
                     "z": 0
                 },
                 "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
+                    "x": 31.6786,
+                    "y": 84.4911,
+                    "z": 290.456
                 },
                 "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto",
                 "scale": 0.2
-            }
+            }            
         ],
         "dialogue": [
             {
@@ -84,6 +98,16 @@
                 "lookAtRadius": 3,
                 "radius": 1
 
+            },
+            {
+                "position": {
+                    "x": 16.9945,
+                    "y": -40.7713,
+                    "z": 185.9359
+                },
+                "xmlFile": "planets/Dialogue/Slate_Note.xml",
+                "lookAtRadius": 3,
+                "radius": 1    
             }
         ],
         "reveal": [

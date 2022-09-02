@@ -9,6 +9,7 @@ using TheVision.CustomProps;
 using HarmonyLib;
 using System.Reflection;
 using NewHorizons.Utility;
+using NewHorizons.Handlers;
 
 namespace TheVision
 {
@@ -45,7 +46,7 @@ namespace TheVision
                 {
                     TitleProps();
                 }
-                if (loadScene == OWScene.Credits_Fast && Locator.GetShipLogManager().IsFactRevealed("GLOAMING_GALAXY_TRIGGER"))
+                if (loadScene == OWScene.Credits_Fast)
                 {
                     CreditsMusic();
                 }
@@ -83,7 +84,7 @@ namespace TheVision
             }
         }
         private void SpawnStartProps()
-        {
+        {           
             // Making custom text for reply
             NomaiWallText responseText = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE/QMResponseText").GetComponent<NomaiWallText>();
             responseText.HideTextOnStart();
@@ -132,13 +133,16 @@ namespace TheVision
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP_2").SetActive(false);
             SearchUtilities.Find("TimeLoopRing_Body/Interactibles_TimeLoopRing/Prefab_NOM_Recorder_ATP_2").transform.localPosition = new Vector3(26.31f, -2.63f, -7.83f);
 
-            // Disabling Ernesto enter volume
+            // Disabling Ernesto enter volume and Slate's note
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Reveal Volume (Enter)").SetActive(false);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal").SetActive(false);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/ConversationZone").SetActive(false);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal/InteractVolume").SetActive(false);
+
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
                 Locator.GetShipLogManager().RevealFact("IP_ZONE_3_ENTRANCE_X1");
-
 
 
                 if (Locator.GetShipLogManager().IsFactRevealed("STATUE_ATP_LINK"))
@@ -155,6 +159,7 @@ namespace TheVision
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("ERNESTO_POOR_ERNESTO"))
                 {
                     ErnestoQuestEntry();
+                    SearchUtilities.Find("ScreenPromptCanvas/ScreenPromptListBottomLeft/ScreenPrompt").SetActive(true);
                 }
             });
             // Particles QM and TH
@@ -164,7 +169,7 @@ namespace TheVision
             // Particles GD
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
-            
+
             // Particles GD (teleported copy)
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Effects_NOM_WarpParticlesWhite").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles_2").transform.localPosition = new Vector3(-0.3f, -0.4f, 0f);
@@ -236,7 +241,7 @@ namespace TheVision
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("SOLANUM_GD_RECORDER"))
                 {
                     SolanumGreetingsGD();
-                }                
+                }
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ATP_RECORDER"))
                 {
                     SolanumGreetingsATP();
@@ -247,6 +252,7 @@ namespace TheVision
                 }
             });
         }
+        
         public void EyeOfTheUniverseProps()
         {
             var _vessel = GameObject.Find("Vessel_Body");
@@ -576,6 +582,7 @@ namespace TheVision
                 solanumAnimController.StartWatchingPlayer();
                 solanumAnimController.StartWritingMessage();
                 SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Volumes_VesselDimension/VesselDiscoveryMusicTrigger").SetActive(false);
+                SearchUtilities.Find("GlobalManagers/GlobalAudio/GlobalMusicController/FinalEndTimesLoopSource").SetActive(false);
 
                 PlaySadNomaiTheme();
 
@@ -583,14 +590,10 @@ namespace TheVision
                 Invoke("SolanumDBEventEnd", 10f);
 
                 TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
-                {
-                    
-
+                {      
                     Invoke("DropBrokenCore", 3f);
                     Invoke("PickBrokenCore", 12.6f);
-
                 });
-
             });
 
 
@@ -683,8 +686,7 @@ namespace TheVision
         public void SolanumGreetingsBH()
         {
             SolanumAnimController solanumAnimController = SearchUtilities.Find("BrittleHollow_Body/Sector_BH/Solanum_BH_Character").GetComponent<SolanumAnimController>();
-            solanumAnimController.StartWatchingPlayer();
-            solanumAnimController.PlayGestureToWordStones();
+            solanumAnimController.StartWatchingPlayer();            
 
             if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("SOLANUM_BH_EVENT"))
             {
@@ -725,7 +727,7 @@ namespace TheVision
             {
                 TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ET_EVENT"), () =>
                 {
-                    Invoke("SolanumEventET", 3f);
+                    Invoke("SolanumEventET", 2f);
 
                 });
             }  
@@ -745,17 +747,17 @@ namespace TheVision
 
             pyramid.targetPos = new Vector3(35.1789f, -105.9786f, -23.1699f);
             pyramid.delay = 5f;
-            pyramid.rotationSpeed = 20f;
+            pyramid.rotationSpeed = 6f;
             pyramid.Start();
 
             mobius.targetPos = new Vector3(0.7838f, -0.1231f, 0.6973f);
             mobius.delay = 5.5f;
-            mobius.rotationSpeed = -15f;
+            mobius.rotationSpeed = -9f;
             mobius.Start();
 
             ship.targetPos = new Vector3(0.4714f, 0.744f, 0.1487f);
             ship.delay = 6f;
-            ship.rotationSpeed = 5f;
+            ship.rotationSpeed = 2f;
             ship.Start();
 
             Invoke("PlayRaiseCairn", 4.5f);
@@ -787,7 +789,32 @@ namespace TheVision
                 fish.GetComponent<AnglerfishAnimController>().OnChangeAnglerState(AnglerfishController.AnglerState.Chasing);
 
                 SearchUtilities.Find("TimberHearth_Body/Sector_TH/Reveal Volume (Enter)").SetActive(true);
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate").gameObject.SetActive(true);
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal").SetActive(false);
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/ConversationZone").SetActive(false);
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal/InteractVolume").SetActive(false);
+                SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(true);
+                SearchUtilities.Find("ScreenPromptCanvas/ScreenPromptListBottomLeft/ScreenPrompt/Text").GetComponent<UnityEngine.UI.Text>().text = TranslationHandler.GetTranslation("THE_VISION_NEW_LAUNCH_CODES", TranslationHandler.TextType.UI);
+
+                SearchUtilities.Find("ScreenPromptCanvas/ScreenPromptListBottomLeft/ScreenPrompt").SetActive(true);
             });
+
+            var marshmallow = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteLogAssets/Props_HEA_MarshmallowUncoocked1");
+            marshmallow.transform.localPosition = new Vector3(-1.2897f, 0.15f, -2.0442f);
+            marshmallow.transform.localRotation = new Quaternion(0.2472f, 0.1217f, 0.0551f, 0.9597f);
+
+            var marshmallowCan = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Props_StartingCamp/OtherComponentsGroup/Props_HEA_CampsiteLogAssets/Props_HEA_MarshmallowCanOpened");
+            marshmallowCan.transform.localPosition = new Vector3(-0.3897f, 0.172f, -2.4442f);
+            marshmallowCan.transform.localRotation = new Quaternion(0.633f, -0.6852f, -0.132f, 0.3353f);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/ConversationZone").SetActive(true);            
+
+            PlayerData.SetPersistentCondition("MARK_ON_HUD_TUTORIAL_COMPLETE", true);
+            PlayerData.SetPersistentCondition("COMPLETED_SHIPLOG_TUTORIAL", true);
+
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(false);
+            
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate").gameObject.SetActive(false);
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal").SetActive(true);
 
             // setting up Hornfels for dialogue
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)/ConversationZone_Hornfels").DestroyAllComponents<InteractReceiver>();
@@ -806,9 +833,26 @@ namespace TheVision
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_POOR_ERNESTO"), () =>
             {
                 SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Volumes_Village/MusicVolume_Village").SetActive(false);
-                Invoke("PlaySecretSound", 2f);
+
+                Invoke("PlaySecretSound", 4f);
+                Invoke("PlayErnestoSound", 1f);
+                Invoke("GetTHMusicBack", 25f);
+
                 ModHelper.Console.WriteLine("Thank you for finding Ernesto! You will never meet him again.", MessageType.Success);
+                var newLaunchCodes = SearchUtilities.Find("ScreenPromptCanvas/ScreenPromptListBottomLeft/ScreenPrompt");
+                newLaunchCodes.SetActive(true);
+                
+                var elevatorController = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").GetComponent<InteractZone>();
+               
+                TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => elevatorController._isInteractPressed = true, () =>
+                {
+                    newLaunchCodes.SetActive(false);
+                });
             });
+        }
+        public void GetTHMusicBack()
+        {
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Volumes_Village/MusicVolume_Village").SetActive(true);
         }
 
         // Utility
@@ -890,13 +934,16 @@ namespace TheVision
                 PlaySFXSound();
                 PlayGaspSound();
                 PlayThunderSound();
-                PlayQuantumLightningSound();
+               // PlayQuantumLightningSound();
             });
 
-            var HUDreboot = SearchUtilities.Find("Player_Body/PlayerCamera/Helmet").GetComponent<HUDHelmetAnimator>();
+            /*
+            var HUDreboot = Locator.GetActiveCamera().GetComponent<HUDHelmetAnimator>();
             HUDreboot._hudFlickerOnLength = 2f;
             HUDreboot._hudFlickerOutLength = 1f;
-            HUDreboot._hudRebootLength = 2f;            
+            HUDreboot._hudRebootLength = 2f;
+            */
+                       
 
             // Enabling json props
             DisabledPropsOnStart(true);
@@ -1012,7 +1059,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.EyeLightning); // 2400(whosh) 2407(vessel create singularity, 2408 - vessel out of sing) 2402 - getting in on BH; 2429 - reality broken // 2007 - GD lightning // 854 PlayerGasp_Heavy
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1160,6 +1207,16 @@ namespace TheVision
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-        } 
+        }
+        public void PlayErnestoSound()
+        {
+            PlayerHeadsetAudioSource = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/PoorErnesto").gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource.enabled = true;
+            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.DBAnglerfishDetectTarget); // SingularityOnPlayerEnterExit = 2402            
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
+            PlayerHeadsetAudioSource.pitch = 5f;
+            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
+            PlayerHeadsetAudioSource.PlayOneShot();
+        }
     }
 }
