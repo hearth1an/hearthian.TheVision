@@ -783,7 +783,7 @@ namespace TheVision
         {
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("ERNESTO_ENTRY"), () =>
             {
-                var fish = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/PoorErnesto");
+                var fish = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto");
                 fish.transform.localPosition = new Vector3(0.0127f, 0.08f, 1.64f);
                 fish.transform.rotation = new Quaternion(0, 0, 0, 0);
                 fish.GetComponent<AnglerfishAnimController>().OnChangeAnglerState(AnglerfishController.AnglerState.Chasing);
@@ -1201,7 +1201,7 @@ namespace TheVision
         }
         public void PlayErnestoSound()
         {
-            PlayerHeadsetAudioSource = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/PoorErnesto").gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit/Slate_Skin_01:tall_rig_b_v01:TrajectorySHJnt/Slate_Skin_01:tall_rig_b_v01:ROOTSHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_01SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_02SHJnt/Slate_Skin_01:tall_rig_b_v01:Spine_TopSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ClavicleSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ShoulderSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_ElbowSHJnt/Slate_Skin_01:tall_rig_b_v01:LF_Arm_WristSHJnt/Props_HEA_RoastingStick/RoastingStick_Stick/PoorErnesto").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.DBAnglerfishDetectTarget); // SingularityOnPlayerEnterExit = 2402            
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 0.3f);
