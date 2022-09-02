@@ -82,6 +82,16 @@
         "rename": "Particles_2"
       }
     ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_BH",
+        "position": {
+          "x": 3.3476,
+          "y": 153.4004,
+          "z": -56.1326
+        }
+      }
+    ],
     "reveal": [
       {
         "maxAngle": 180,

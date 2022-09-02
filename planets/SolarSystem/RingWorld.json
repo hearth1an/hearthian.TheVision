@@ -61,6 +61,24 @@
           "VISION_TORCH_FOUND"
         ]
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "VISION_TORCH_ENTRY",
+        "position": {
+          "x": 207.417908,
+          "y": -169.285614,
+          "z": 177.870239
+        }
+      },
+      {
+        "id": "VISION_TORCH_ENTRY",
+        "position": {
+          "x": 184.88208,
+          "y": -169.285919,
+          "z": 200.588913
+        }
+      }
     ]
   },
   "ShipLog": {

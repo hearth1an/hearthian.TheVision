@@ -151,6 +151,24 @@
         "reveals": "WHAT_IS_NEW_QR",
         "sourceRadius": 2
       }
+    ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_TH",
+        "position": {
+          "x": 48.7019,
+          "y": 15.5584,
+          "z": 252.75
+        }
+      },
+      {
+        "id": "ERNESTO_FOUND",
+        "position": {
+          "x": 17.2124,
+          "y": -41.3629,
+          "z": 185.5392
+        }
+      }
     ]
   },
   "ShipLog": {

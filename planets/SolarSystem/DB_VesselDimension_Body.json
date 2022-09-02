@@ -67,6 +67,24 @@
         "rename": "Prefab_NOM_Recorder_DB"
       }
     ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_DB",
+        "position": {
+          "x": 148.22287,
+          "y": 25.890625,
+          "z": 0.237617433
+        }
+      },
+      {
+        "id": "SOLANUM_DB_HOLOGRAM",
+        "position": {
+          "x": 146,
+          "y": -0.4,
+          "z": -18
+        }
+      }
+    ],
     "reveal": [
       {
         "position": {

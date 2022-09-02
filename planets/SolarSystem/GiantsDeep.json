@@ -153,6 +153,16 @@
         "rename": "Prefab_NOM_Computer_GD"
       }
     ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_GD",
+        "position": {
+          "x": -43.6231842,
+          "y": -68.5415039,
+          "z": -31.2538242
+        }
+      }
+    ],
     "signals": [
       {
         "audio": "planets/quantum.mp3",
