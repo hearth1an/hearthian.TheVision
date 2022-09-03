@@ -1,156 +1,152 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
-	"entryPositions": [
-		{
-			"id": "SOLANUM_ATP",
-			"position": {
-				"x": 1200.0,
-				"y": -1850.0
-			}
-		},
-		{
-			"id": "SOLANUM_TH",
-			"position": {
-				"x": 800.0,
-				"y": -1500.0
-			}
-		},
-		{
-			"id": "NEW_QUANTUM_RULE",
-			"position": {
-				"x": 750.0,
-				"y": -1600.0
-			}
-		},
-		{
-			"id": "VISION_TORCH_ENTRY",
-			"position": {
-				"x": 1850.0,
-				"y": -1200.0
-			}
-		},
-		{
-			"id": "ERNESTO_ENTRY",
-			"position": {
-				"x": 1245.0,
-				"y": 800.0
-			}
-		},
-		{
-			"id": "ERNESTO_FOUND",
-			"position": {
-				"x": 1300.0,
-				"y": 1100.0
-			}
-		},
-		{
-			"id": "THE_VISION_ENTRY",
-			"position": {
-				"x": 1200.0,
-				"y": -1400.0
-			}
-		},
-		{
-			"id": "SOLANUM_QM_TH",
-			"position": {
-				"x": 1100.0,
-				"y": -1550.0
-			}
-		},
-		{
-			"id": "SOLANUM_GD",
-			"position": {
-				"x": 900.0,
-				"y": -1750.0
-			}
-		},
-		{
-			"id": "SOLANUM_ET",
-			"position": {
-				"x": 620,
-				"y": -1400.0
-			}
-		},
-		{
-			"id": "SOLANUM_BH",
-			"position": {
-				"x": 570.0,
-				"y": -1660.0
-			}
-		},
-		{
-			"id": "SOLANUM_DB",
-			"position": {
-				"x": 1600.0,
-				"y": -1700.0
-			}
-		},
-		{
-			"id": "SOLANUM_DB_HOLOGRAM",
-			"position": {
-				"x": 1600.0,
-				"y": -1800.0
-			}
-		},
-		{
-			"id": "STATUE_ATP",
-			"position": {
-				"x": 1250.0,
-				"y": -1950.0
-			}
-		}
-	],
-	"curiosities": [
-		{
-			"color": {
-				"r": 106,
-				"g": 108,
-				"b": 109,
-				"a": 255
-			},
-			"highlightColor": {
-				"r": 238,
-				"g": 239,
-				"b": 231,
-				"a": 255
-			},
-			"id": "THE_TORCH_CURIOSITY"
-		},
-		{
-			"color": {
-				"g": 255,
-				"b": 132,
-				"a": 200
-			},
-			"highlightColor": {
-				"g": 255,
-				"b": 132,
-				"a": 255
-			},
-			"id": "THE_VISION_CURIOSITY"
-		},
-		{
-			"color": {
-				"r": 106,
-				"g": 108,
-				"b": 109,
-				"a": 255
-			},
-			"highlightColor": {
-				"r": 238,
-				"g": 239,
-				"b": 231,
-				"a": 255
-			},
-			"id": "ERNESTO_CURIOSITY"
-		}
-	],
-	"initialReveal": [
-		"VISION_TORCH_RUMOR",
-		"SOLANUM_START"
-	],
-
-	"canEnterViaWarpDrive": false
-
-
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "entryPositions": [
+    {
+      "id": "SOLANUM_ATP",
+      "position": {
+        "x": 1200,
+        "y": -2250.0
+      }
+    },
+    {
+      "id": "SOLANUM_TH",
+      "position": {
+        "x": 800,
+        "y": -1900.0
+      }
+    },
+    {
+      "id": "NEW_QUANTUM_RULE",
+      "position": {
+        "x": 750,
+        "y": -2000.0
+      }
+    },
+    {
+      "id": "VISION_TORCH_ENTRY",
+      "position": {
+        "x": 1850,
+        "y": -1600.0
+      }
+    },
+    {
+      "id": "ERNESTO_ENTRY",
+      "position": {
+        "x": 1245,
+        "y": 800.0
+      }
+    },
+    {
+      "id": "ERNESTO_FOUND",
+      "position": {
+        "x": 1300,
+        "y": 1100.0
+      }
+    },
+    {
+      "id": "THE_VISION_ENTRY",
+      "position": {
+        "x": 1200,
+        "y": -1800.0
+      }
+    },
+    {
+      "id": "SOLANUM_QM_TH",
+      "position": {
+        "x": 1100,
+        "y": -1950.0
+      }
+    },
+    {
+      "id": "SOLANUM_GD",
+      "position": {
+        "x": 900,
+        "y": -2150.0
+      }
+    },
+    {
+      "id": "SOLANUM_ET",
+      "position": {
+        "x": 620,
+        "y": -1800.0
+      }
+    },
+    {
+      "id": "SOLANUM_BH",
+      "position": {
+        "x": 570,
+        "y": -2060.0
+      }
+    },
+    {
+      "id": "SOLANUM_DB",
+      "position": {
+        "x": 1600,
+        "y": -2100.0
+      }
+    },
+    {
+      "id": "SOLANUM_DB_HOLOGRAM",
+      "position": {
+        "x": 1600,
+        "y": -2200.0
+      }
+    },
+    {
+      "id": "STATUE_ATP",
+      "position": {
+        "x": 1250,
+        "y": -2350.0
+      }
+    }
+  ],
+  "curiosities": [
+    {
+      "color": {
+        "r": 106,
+        "g": 108,
+        "b": 109,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 238,
+        "g": 239,
+        "b": 231,
+        "a": 255
+      },
+      "id": "THE_TORCH_CURIOSITY"
+    },
+    {
+      "color": {
+        "g": 255,
+        "b": 132,
+        "a": 200
+      },
+      "highlightColor": {
+        "g": 255,
+        "b": 132,
+        "a": 255
+      },
+      "id": "THE_VISION_CURIOSITY"
+    },
+    {
+      "color": {
+        "r": 106,
+        "g": 108,
+        "b": 109,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 238,
+        "g": 239,
+        "b": 231,
+        "a": 255
+      },
+      "id": "ERNESTO_CURIOSITY"
+    }
+  ],
+  "initialReveal": [
+    "VISION_TORCH_RUMOR",
+    "SOLANUM_START"
+  ]
 }

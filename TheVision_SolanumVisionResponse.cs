@@ -26,7 +26,7 @@ namespace TheVision.CustomProps
             _solanumAnimController.StartWritingMessage();
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
-            {              
+            {
 
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _nomaiConversationManager._state = NomaiConversationManager.State.WatchingSky;
@@ -58,11 +58,11 @@ namespace TheVision.CustomProps
                 PlayStartSound();
                 Invoke("PlayImpactSound", 0.5f);
                 Invoke("PlayShockSound", 0.5f);
-                PlayFadeInSound();               
+                PlayFadeInSound();
             });
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
-            {               
+            {
                 // wh parameters
                 var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
                 whiteHoleOptions.color = new Color(1, 1, 2, 1);
@@ -93,7 +93,7 @@ namespace TheVision.CustomProps
                 _nomaiConversationManager.enabled = false;
 
                 TheVision.Instance.ModHelper.Events.Unity.FireInNUpdates(WriteMessage, MAX_WAIT_FRAMES);
-                
+
             });
         }
 

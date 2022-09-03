@@ -47,7 +47,7 @@
 			"b" : 0,
 			"a" : 0
 		},
-		"solarLuminosity" : 1.0,
+		"solarLuminosity" : 1,
 		"goSupernova": true
 	
 		

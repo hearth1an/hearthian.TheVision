@@ -1,13 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {
-    "gravityFallOff": "linear"
-  },
-  "canShowOnTitle": true,
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Ship",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
   "Props": {
     "details": [
       {
@@ -24,11 +17,5 @@
         }
       }
     ]
-  },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
-  "ShipLog": {
-    "mapMode": {}
   }
 }

@@ -1,205 +1,202 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {
-    "gravityFallOff": "linear"
-  },
-  "canShowOnTitle": true,
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Giants Deep",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
-    "Props": {
-        "details": [
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": -43.6231842,
-                    "y": -68.5415039,
-                    "z": -31.2538242
-                },
-                "rotation": {
-                    "x": 350.740326,
-                    "y": 50.803997,
-                    "z": 261.666534
-                }
-            },
-            {
-                "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-                "position": {
-                    "x": -25.7468,
-                    "y": -69.31,
-                    "z": -39.0479
-                },
-                "rotation": {
-                    "x": 280.179,
-                    "y": 103.0535,
-                    "z": 35.9673
-                },
-                "rename": "SolanumTeleportation"
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
-                "rename": "Particles_2"
+  "Props": {
+    "details": [
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": -43.6231842,
+          "y": -68.5415039,
+          "z": -31.2538242
+        },
+        "rotation": {
+          "x": 350.740326,
+          "y": 50.803997,
+          "z": 261.666534
+        }
+      },
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": -25.7468,
+          "y": -69.31,
+          "z": -39.0479
+        },
+        "rotation": {
+          "x": 280.179,
+          "y": 103.0535,
+          "z": 35.9673
+        },
+        "rename": "SolanumTeleportation"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+        "rename": "Particles_2"
 
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
-            },
-            {
-                "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-                "position": {
-                    "x": -5.529667,
-                    "y": -71.07074,
-                    "z": 1.43984985
-                },
-                "rotation": {
-                    "x": 317.328369,
-                    "y": 2.65918,
-                    "z": 168.477509
-                },
-                "scale": 5,
-                "parentPath": "Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
-                "rename": "Particles_2"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Sector_GD/SolanumTeleportation/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+        "rename": "Particles_2"
+      }
+    ],
+    "singularities": [
+      {
+        "uniqueID": "hearthian.SolanumTeleportationB",
+        "position": {
+          "x": -42.176,
+          "y": -68.8415,
+          "z": -32.8538
+        },
+        "size": 1,
+        "type": "blackHole",
+        "makeZeroGVolume": true
+      },
+      {
+        "uniqueID": "hearthian.SolanumTeleportationW",
+        "position": {
+          "x": -26.8469,
+          "y": -68.8081,
+          "z": -37.61
+        },
+        "size": 1,
+        "type": "whiteHole",
+        "makeZeroGVolume": true
 
-            }
-
-        ],
-        "singularities": [
-            {
-                "uniqueID": "hearthian.SolanumTeleportationB",
-                "position": {
-                    "x": -42.176,
-                    "y": -68.8415,
-                    "z": -32.8538
-                },
-                "size": 1,
-                "type": "blackHole",
-                "makeZeroGVolume": true
-            },
-            {
-                "uniqueID": "hearthian.SolanumTeleportationW",
-                "position": {
-                    "x": -26.8469,
-                    "y": -68.8081,
-                    "z": -37.61
-                },
-                "size": 1,
-                "type": "whiteHole",
-                "makeZeroGVolume": true
-
-            }
-        ],
-        "nomaiText": [
-            {
-                "position": {
-                    "x": -43.4399948,
-                    "y": -66.7862,
-                    "z": -31.4335365
-                },
-                "rotation": {
-                    "x": 337.2365,
-                    "y": 52.9308,
-                    "z": 261.0757
-                },
-                "type": "recorder",
-                "location": "unspecified",
-                "xmlFile": "planets/Text/RecorderGD.xml",
-                "rename": "Prefab_NOM_Recorder_GD"
-            },
-            {
-                "position": {
-                    "x": -41.5140533,
-                    "y": -68.2207,
-                    "z": -29.45578
-                },
-                "rotation": {
-                    "x": 312.465057,
-                    "y": 220.367752,
-                    "z": 102.23214
-                },
-                "type": "computer",
-                "location": "unspecified",
-                "xmlFile": "planets/Text/ComputerGD.xml",
-                "rename": "Prefab_NOM_Computer_GD"
-            }
-        ],
-        "signals": [
-            {
-                "audio": "planets/quantum.mp3",
-                "detectionRadius": 2000.0,
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "sourceRadius": 2.0,
-                "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle"
-            },
-            {
-                "audio": "planets/quantum.mp3",
-                "detectionRadius": 2000.0,
-                "frequency": "Quantum Consciousness",
-                "identificationRadius": 500.0,
-                "name": "Solanum",
-                "onlyAudibleToScope": false,
-                "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 0
-                },
-                "sourceRadius": 2.0,
-                "parentPath": "Sector_GD/SolanumTeleportation"
-            }
-        ]
-    },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
+      }
+    ],
+    "nomaiText": [
+      {
+        "position": {
+          "x": -43.4399948,
+          "y": -66.7862,
+          "z": -31.4335365
+        },
+        "rotation": {
+          "x": 337.2365,
+          "y": 52.9308,
+          "z": 261.0757
+        },
+        "type": "recorder",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/RecorderGD.xml",
+        "rename": "Prefab_NOM_Recorder_GD"
+      },
+      {
+        "position": {
+          "x": -41.5140533,
+          "y": -68.2207,
+          "z": -29.45578
+        },
+        "rotation": {
+          "x": 312.465057,
+          "y": 220.367752,
+          "z": 102.23214
+        },
+        "type": "computer",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/ComputerGD.xml",
+        "rename": "Prefab_NOM_Computer_GD"
+      }
+    ],
+    "entryLocation": [
+      {
+        "id": "SOLANUM_GD",
+        "position": {
+          "x": -43.6231842,
+          "y": -68.5415039,
+          "z": -31.2538242
+        }
+      }
+    ],
+    "signals": [
+      {
+        "audio": "planets/quantum.mp3",
+        "detectionRadius": 2000,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "sourceRadius": 2,
+        "parentPath": "Sector_GD/Nomai_ANIM_SkyWatching_Idle"
+      },
+      {
+        "audio": "planets/quantum.mp3",
+        "detectionRadius": 2000,
+        "frequency": "Quantum Consciousness",
+        "identificationRadius": 500,
+        "name": "Solanum",
+        "onlyAudibleToScope": false,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "sourceRadius": 2,
+        "parentPath": "Sector_GD/SolanumTeleportation"
+      }
+    ]
   },
   "ShipLog": {
-    "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",
     "xmlFile": "planets/ShipLogs/GiantsDeep.xml"
   }

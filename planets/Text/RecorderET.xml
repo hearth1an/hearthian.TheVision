@@ -17,7 +17,7 @@
     <ID>4</ID>
     <ParentID>3</ParentID>
     <Text>SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...</Text>
-  </TextBlock>  
+  </TextBlock>
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ET_EVENT</FactID>

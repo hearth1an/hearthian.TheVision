@@ -3,26 +3,25 @@
 
   <Entry>
     <ID>SOLANUM_BH</ID>
-    <Name>Solanum in School ruins</Name>
+    <Name>Solanum in the School Ruins</Name>
 
     <Curiosity>THE_VISION_CURIOSITY</Curiosity>
-
 
     <RumorFact>
       <ID>SOLANUM_BH</ID>
       <SourceID>NEW_QUANTUM_RULE</SourceID>
       <RumorName>Solanum on Brittle Hollow</RumorName>
-      <Text>There's also Solanum signal coming from Brittle Hollow.</Text>
+      <Text>I can hear Solanum's signal coming from Brittle Hollow.</Text>
     </RumorFact>
 
-     <ExploreFact>
+    <ExploreFact>
       <ID>SOLANUM_BH_FOUND</ID>
       <Text>I found Solanum in the School.</Text>
     </ExploreFact>
 
     <ExploreFact>
       <ID>SOLANUM_BH_EVENT</ID>
-      <Text>Solanum saying that the black hole was smaller and that it was her school. She also don't want to fall down so she took a gravity crystall.</Text>
+      <Text>Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.</Text>
     </ExploreFact>
 
   </Entry>

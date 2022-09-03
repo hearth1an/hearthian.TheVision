@@ -1,133 +1,126 @@
 {
-	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "Base": {
-    "gravityFallOff": "linear"
-  },
-  "canShowOnTitle": true,
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "Time Loop Ring",
-  "Orbit": {
-    "semiMajorAxis": 0.0
-  },
   "Props": {
     "details": [
-        {
-            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-            "position": {
-                "x": 26.3102,
-                "y": 6.239,
-                "z": -2.236
-            },
-            "rotation": {
-                "x": 329.464,
-                "y": 353.79,
-                "z": 90.0
-            },
-            "parentPath": "Characters_TimeLoopRing"
+      {
+        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+        "position": {
+          "x": 26.3102,
+          "y": 6.239,
+          "z": -2.236
         },
-        {
-            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-            "position": {
-                "x": -5.529667,
-                "y": -71.07074,
-                "z": 1.43984985
-            },
-            "rotation": {
-                "x": 317.328369,
-                "y": 2.65918,
-                "z": 168.477509
-            },
-            "scale": 5,
-            "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+        "rotation": {
+          "x": 329.464,
+          "y": 353.79,
+          "z": 90
         },
-        {
-            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-            "position": {
-                "x": -5.529667,
-                "y": -71.07074,
-                "z": 1.43984985
-            },
-            "rotation": {
-                "x": 317.328369,
-                "y": 2.65918,
-                "z": 168.477509
-            },
-            "scale": 5,
-            "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
-            "rename": "Particles_2"
+        "parentPath": "Characters_TimeLoopRing"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
+      },
+      {
+        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+        "position": {
+          "x": -5.529667,
+          "y": -71.07074,
+          "z": 1.43984985
+        },
+        "rotation": {
+          "x": 317.328369,
+          "y": 2.65918,
+          "z": 168.477509
+        },
+        "scale": 5,
+        "parentPath": "Characters_TimeLoopRing/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+        "rename": "Particles_2"
 
+      },
+      {
+        "assetBundle": "planets/mask",
+        "path": "Assets/Monolith.prefab",
+        "position": {
+          "y": 250.0
         },
-        {
-            "assetBundle": "planets/mask",
-            "path": "Assets/Monolith.prefab",
-            "position": {
-                "y": 250.0
-            },
-            "rotation": {
-                "x": 270.0,
-                "y": 90.0
-            },
-            "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
-        }
+        "rotation": {
+          "x": 270,
+          "y": 90
+        },
+        "parentPath": "Interactibles_TimeLoopRing/MaskPlatform/Props_NOM_Monolith_group"
+      }
     ],
     "nomaiText": [
-        {
-            "position": {
-                "x": 26.3102627,
-                "y": -2.63600159,
-                "z": -7.83890724
-            },
-            "rotation": {
-                "x": 301.101257,
-                "y": 190.3913,
-                "z": 257.912048
-            },
-            "type": "recorder",
-            "location": "unspecified",
-            "xmlFile": "planets/Text/RecorderATP.xml",
-            "parentPath": "Interactibles_TimeLoopRing",
-            "rename": "Prefab_NOM_Recorder_ATP"
+      {
+        "position": {
+          "x": 26.3102627,
+          "y": -2.63600159,
+          "z": -7.83890724
         },
-        {
-            "position": {
-                "x": 26.3102627,
-                "y": -2.63600159,
-                "z": -7.83890724
-            },
-            "rotation": {
-                "x": 301.101257,
-                "y": 190.3913,
-                "z": 257.912048
-            },
-            "type": "recorder",
-            "location": "unspecified",
-            "xmlFile": "planets/Text/RecorderATP_2.xml",
-            "parentPath": "Interactibles_TimeLoopRing",
-            "rename": "Prefab_NOM_Recorder_ATP_2"
+        "rotation": {
+          "x": 301.101257,
+          "y": 190.3913,
+          "z": 257.912048
         },
-        {
-            "position": {
-                "x": 26.3537,
-                "y": 0.179999352,
-                "z": -6.66997528
-            },
-            "rotation": {
-                "x": 321.000061,
-                "y": 4.39440146E-06,
-                "z": 90.0
-            },
-            "type": "computer",
-            "location": "unspecified",
-            "xmlFile": "planets/Text/ComputerATP.xml",
-            "parentPath": "Interactibles_TimeLoopRing_Hidden",
-            "rename": "Prefab_NOM_Computer_ATP"
-        }
+        "type": "recorder",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/RecorderATP.xml",
+        "parentPath": "Interactibles_TimeLoopRing",
+        "rename": "Prefab_NOM_Recorder_ATP"
+      },
+      {
+        "position": {
+          "x": 26.3102627,
+          "y": -2.63600159,
+          "z": -7.83890724
+        },
+        "rotation": {
+          "x": 301.101257,
+          "y": 190.3913,
+          "z": 257.912048
+        },
+        "type": "recorder",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/RecorderATP_2.xml",
+        "parentPath": "Interactibles_TimeLoopRing",
+        "rename": "Prefab_NOM_Recorder_ATP_2"
+      },
+      {
+        "position": {
+          "x": 26.3537,
+          "y": 0.179999352,
+          "z": -6.66997528
+        },
+        "rotation": {
+          "x": 321,
+          "y": 0,
+          "z": 90
+        },
+        "type": "computer",
+        "location": "unspecified",
+        "xmlFile": "planets/Text/ComputerATP.xml",
+        "parentPath": "Interactibles_TimeLoopRing_Hidden",
+        "rename": "Prefab_NOM_Computer_ATP"
+      }
     ],
     "signals": [
       {
         "audio": "planets/quantum.mp3",
-        "detectionRadius": 2000.0,
+        "detectionRadius": 2000,
         "frequency": "Quantum Consciousness",
-        "identificationRadius": 500.0,
+        "identificationRadius": 500,
         "name": "Solanum",
         "onlyAudibleToScope": false,
         "position": {
@@ -135,16 +128,12 @@
           "y": 6.239,
           "z": -2.236
         },
-        "sourceRadius": 2.0,
+        "sourceRadius": 2,
         "parentPath": "Interactibles_TimeLoopRing"
       }
     ]
   },
-  "ReferenceFrame": {
-    "bracketRadius": -1.0
-  },
   "ShipLog": {
-    "mapMode": {},
     "spriteFolder": "planets/ShipLogs/sprites",
     "xmlFile": "planets/ShipLogs/TimeLoopRing.xml"
   }
