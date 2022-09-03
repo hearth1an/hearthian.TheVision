@@ -149,7 +149,7 @@ namespace TheVision.CustomProps
         }
         public void PlayImpactSound()
         {
-            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = SearchUtilities.Find("Player_Body").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ImpactHighSpeed); // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
@@ -158,22 +158,13 @@ namespace TheVision.CustomProps
         }
         public void PlayShockSound()
         {
-            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
+            PlayerHeadsetAudioSource = SearchUtilities.Find("Player_Body").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ElectricShock); // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-        }
-        public void PlaySystemDownSound()
-        {
-            PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
-            PlayerHeadsetAudioSource.enabled = true;
-            PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ShipDamageElectricalFailure); ; // StationFlicker_RW = 2696// 2005 - electric core //502 -ToolFlashlightFlicker
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
-            PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
-            PlayerHeadsetAudioSource.PlayOneShot();
-        }
+        }        
         public void PlayStartSound()
         {
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE").gameObject.AddComponent<OWAudioSource>();

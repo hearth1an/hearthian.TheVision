@@ -747,7 +747,7 @@ namespace TheVision
 
             pyramid.targetPos = new Vector3(35.1789f, -105.9786f, -23.1699f);
             pyramid.delay = 5f;
-            pyramid.rotationSpeed = 6f;
+            pyramid.rotationSpeed = 15f;
             pyramid.Start();
 
             mobius.targetPos = new Vector3(0.7838f, -0.1231f, 0.6973f);

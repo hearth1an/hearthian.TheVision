@@ -117,489 +117,492 @@
         },
         "rotation": {},
         "slides": [
-          {
-            "beatAudio": "audio/VisionAudio/TheVision.mp3"
-          },
-          {
-            "imagePath": "/images/vision/Slide (0).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (1).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (2).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (3).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (4).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (6).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (7).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (8).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (9).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (10).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (12).png"
-          },
-          {
-            "blackFrameDuration": 0.4
-          },
-          {
-            "imagePath": "/images/vision/Slide (15).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (16).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (17).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (18).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (19).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (20).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (21).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (22).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (23).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (24).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (25).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (26).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (27).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (28).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (29).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (30).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (31).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (32).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (33).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (34).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (35).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (36).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (38).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (39).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (41).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (44).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (45).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (46).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (47).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (48).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (49).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (50).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (52).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (54).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (55).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (57).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (58).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (63).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (64).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (65).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (68).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (69).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (71).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (73).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (75).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (76).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (77).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (80).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (82).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (83).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (84).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (85).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (86).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (87).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (88).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (89).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (91).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (92).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (93).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (94).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (95).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (96).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (97).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (98).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (99).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (100).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (101).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (102).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (103).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (104).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (105).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (106).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (107).png"
-          },
-          {
-            "blackFrameDuration": 0.5
-          },
-          {
-            "imagePath": "/images/vision/Slide (108).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (109).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (110).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (111).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (112).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (113).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (114).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (116).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (117).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (119).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (120).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (121).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (122).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (123).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (124).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (125).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (126).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (128).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (129).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (130).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (131).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (133).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (134).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (135).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (136).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (137).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (138).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (139).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (140).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (141).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (142).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (143).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (144).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (145).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (146).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (147).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (148).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (149).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (150).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (151).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (152).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (153).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (154).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (155).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (156).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (157).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (158).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (160).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (161).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (162).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (163).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (164).png"
-          },
-          {
-            "blackFrameDuration": 0.9
-          },
-          {
-            "imagePath": "/images/vision/Slide (199).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (200).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (201).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (203).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (204).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (205).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (206).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (207).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (208).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (209).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (210).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (211).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (212).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (213).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (214).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (215).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (216).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (217).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (218).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (219).png"
-          },
-          {
-            "imagePath": "/images/vision/Slide (220).png"
-          }
+            {
+                "beatAudio": "audio/VisionAudio/TheVision.mp3"
+            },
+            {
+                "imagePath": "/images/vision/Slide (0).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (1).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (2).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (3).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (4).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (6).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (7).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (8).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (9).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (10).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (12).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (1).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (15).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (16).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (17).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (18).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (19).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (20).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (21).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (22).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (23).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (24).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (25).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (26).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (27).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (28).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (29).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (30).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (31).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (32).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (33).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (34).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (35).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (36).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (38).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (39).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (41).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (44).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (45).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (46).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (47).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (48).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (49).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (50).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (52).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (54).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (55).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (57).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (58).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (63).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (64).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (65).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (68).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (69).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (71).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (73).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (75).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (76).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (77).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (80).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (82).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (83).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (84).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (85).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (86).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (87).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (88).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (89).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (91).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (92).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (93).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (94).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (95).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (96).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (97).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (98).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (99).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (100).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (101).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (102).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (103).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (104).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (105).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (106).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (107).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (1).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (108).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (109).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (110).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (111).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (112).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (113).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (114).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (116).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (117).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (119).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (120).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (121).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (122).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (123).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (124).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (125).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (126).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (128).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (129).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (130).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (131).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (133).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (134).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (135).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (136).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (137).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (138).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (139).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (140).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (141).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (142).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (143).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (144).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (145).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (146).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (147).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (148).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (149).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (150).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (151).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (152).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (153).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (154).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (155).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (156).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (157).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (158).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (160).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (161).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (162).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (163).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (164).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (1).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (1).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (199).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (200).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (201).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (203).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (204).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (205).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (206).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (207).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (208).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (209).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (210).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (211).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (212).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (213).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (214).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (215).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (216).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (217).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (218).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (219).png"
+            },
+            {
+                "imagePath": "/images/vision/Slide (220).png"
+            }
         ],
         "type": "visionTorchTarget",
         "parentPath": "Sector_QuantumMoon/State_EYE"
