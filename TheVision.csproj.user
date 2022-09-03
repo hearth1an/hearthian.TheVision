@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\hearthian.TheVision</OutputPath>
+    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\hearth1an.TheVision</OutputPath>
     <OuterWildsModsDirectory>$(AppData)\OuterWildsModManager\OWML\Mods</OuterWildsModsDirectory>
   </PropertyGroup>
 </Project>
