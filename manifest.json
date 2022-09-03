@@ -4,7 +4,7 @@
   "author": "hearth1an",
   "name": "The Vision",
   "uniqueName": "hearth1an.TheVision",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "owmlVersion": "2.3.2",
   "dependencies": [ "xen.NewHorizons" ]
 }
