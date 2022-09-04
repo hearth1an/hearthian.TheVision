@@ -23,34 +23,46 @@ namespace TheVision
         {
             Instance = this;
             Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());
+            
         }
         private void Start()
         {
-            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-
-            var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
-            newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
-            newHorizonsAPI.LoadConfigs(this);
-
-            ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
-
-            TitleProps();
-
-            LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
+            if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.Owned)
             {
-                if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
+
+
+
+                var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
+                newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
+                newHorizonsAPI.LoadConfigs(this);
+
+                ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
+
+                TitleProps();
+
+                LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
                 {
-                    EyeOfTheUniverseProps();
-                }
-                if (loadScene == OWScene.TitleScreen)
-                {
-                    TitleProps();
-                }
-                if (loadScene == OWScene.Credits_Fast)
-                {
-                    CreditsMusic();
-                }
-            };
+                    if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                    {
+                        EyeOfTheUniverseProps();
+                    }
+                    if (loadScene == OWScene.TitleScreen)
+                    {
+                        TitleProps();
+                    }
+                    if (loadScene == OWScene.Credits_Fast)
+                    {
+                        CreditsMusic();
+                    }
+                };
+
+            }
+            if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.NotOwned)
+            {
+                ModHelper.Console.WriteLine("The Vision requires DLC owned. DLC not found.", MessageType.Error);
+            }
+            
         }
 
         // Spawns control
@@ -66,17 +78,7 @@ namespace TheVision
 
             if (systemName == "SolarSystem")
             {
-                SpawnStartProps();
-                PickUpTorch();
-                DisabledPropsOnStart(false);
-
-                ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
-                {
-                    if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
-                    {
-                        DisabledPropsOnStart(true);
-                    }
-                });
+                SpawnStartProps();                               
             }
             if (systemName == "GloamingGalaxy")
             {
@@ -113,6 +115,14 @@ namespace TheVision
 
             // Disabling WH on QM on the start
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject.SetActive(false);
+
+            // Setting ship dialogue trigger
+            SearchUtilities.Find("Ship_Body/ShipSector/ConversationZone").SetActive(false);
+            SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").SetActive(false);
+
+            SearchUtilities.Find("Ship_Body/ShipSector/VisionTorchSocket").GetComponent<SphereCollider>().radius = 1f;
+
+            
 
             // Setting green color for this one
             var GDcomputerColor = Locator.GetAstroObject(AstroObject.Name.GiantsDeep).transform.Find("Sector_GD/Prefab_NOM_Computer_GD/PointLight_NOM_Computer").GetComponent<Light>();
@@ -218,7 +228,18 @@ namespace TheVision
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/SunkenModuleWater_ExteriorStencil").gameObject.SetActive(true);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
 
-            // Fact checker & loader on start for each event
+            PickUpTorch();
+            DisabledPropsOnStart(false);
+
+            ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null, () =>
+            {
+                if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                {
+                    DisabledPropsOnStart(true);
+                }
+            });
+
+            // Fact checker & loader on start for each event   
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_ET_FOUND"), () =>
             {
                 SolanumGreetingsET();
@@ -233,6 +254,7 @@ namespace TheVision
                 {
                     SolanumGreetingsTH();
                     ParentBrokenCore();
+                    ATPfix();
                 }
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE") && !Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED"))
                 {
@@ -251,6 +273,30 @@ namespace TheVision
                     SolanumGreetingsATP_2();
                 }
             });
+        }
+
+        public void ATPfix()
+        {
+           // ATP memory animation link fix
+
+            var dataStream = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/Effect 2/Effects_NOM_TimeLoopDataStream");
+            dataStream.transform.localRotation = new Quaternion(0.8899f, 0, 0, 0.4562f);
+            dataStream.SetActive(false);
+
+            var newMask = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/Effect 2/centralPulse 1");
+            newMask.transform.localRotation = new Quaternion(0.0274f, -0.0353f, -0.7298f, -0.6822f);
+            newMask.transform.localPosition = new Vector3(22.217f, -6.8984f, 5.1757f);
+            newMask.SetActive(false);
+
+            var checkOtherPulse = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/centralPulse 1");
+            
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => checkOtherPulse.gameObject.activeSelf == true, () =>
+            {
+                dataStream.SetActive(true);
+                newMask.SetActive(true);
+            });
+           
+           
         }
 
         public void EyeOfTheUniverseProps()
@@ -300,7 +346,7 @@ namespace TheVision
 
             // Temporal fix before NH release
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0f, -0.01f);
+            Vector3 pushBack = new Vector3(0f, 0f, -0.03f);
             applyForce.AddLocalImpulse(pushBack);
         }
         public void DisabledPropsOnStart(bool isActive)
@@ -573,9 +619,6 @@ namespace TheVision
         // DB events
         public void SolanumGreetingsDB()
         {
-
-
-
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => Locator.GetShipLogManager() != null && Locator.GetShipLogManager().IsFactRevealed("IS_HOLOGRAM_CHANGED"), () =>
             {
                 SolanumAnimController solanumAnimController = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
@@ -595,8 +638,6 @@ namespace TheVision
                     Invoke("PickBrokenCore", 12.6f);
                 });
             });
-
-
         }
         public void SolanumDBEvent()
         {
@@ -884,6 +925,9 @@ namespace TheVision
                 visionTorchActive.SetActive(false);
                 SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
 
+                SearchUtilities.Find("Ship_Body/ShipSector/ConversationZone").SetActive(true);
+                SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").SetActive(true);
+
             });
 
             // Vision Torch 2 picking up
@@ -894,6 +938,8 @@ namespace TheVision
                 visionTorchActive2.SetActive(false);
                 SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").SetActive(false);
 
+                SearchUtilities.Find("Ship_Body/ShipSector/ConversationZone").SetActive(true);
+                SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").SetActive(true);
             });
 
         }
@@ -936,6 +982,8 @@ namespace TheVision
                 PlayThunderSound();
             });
 
+            ATPfix();
+
             // Enabling json props
             DisabledPropsOnStart(true);
 
@@ -946,6 +994,9 @@ namespace TheVision
             Invoke("BreakLock", 0.8f);
             TeleportShip();
             ParentCore();
+
+            SearchUtilities.Find("Ship_Body/ShipSector/ConversationZone").SetActive(false);
+            SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").SetActive(false);
 
             SolanumAnimController solanumAnimController2 = SearchUtilities.Find("TimberHearth_Body/Sector_TH/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
             solanumAnimController2.StartWatchingPlayer();

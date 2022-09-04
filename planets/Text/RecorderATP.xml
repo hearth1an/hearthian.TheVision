@@ -26,11 +26,16 @@
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.</Text>
+    <Text>SOLANUM: You know, I think I want to visit <![CDATA[<color=orange>my childhood</color>]]> places before we leave.</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
+    <Text>SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>8</ID>
+    <ParentID>7</ParentID>
     <Text>SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
   </TextBlock>
   <ShipLogConditions>
@@ -42,25 +47,25 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ON_DB</FactID>
-      <Condition>7</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ATP_RECORDER</FactID>
-      <Condition>7</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ON_ATP</FactID>
-      <Condition>1</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
       <FactID>STATUE_ATP_LINK</FactID>
-      <Condition>7</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

@@ -11,7 +11,7 @@ namespace TheVision.CustomProps
         public NomaiWallText solanumVisionResponse;
         public OWAudioSource PlayerHeadsetAudioSource;
 
-        private static readonly int MAX_WAIT_FRAMES = 20;
+        public static readonly int MAX_WAIT_FRAMES = 20;
 
         // Main
         public void WriteMessage()
@@ -164,7 +164,7 @@ namespace TheVision.CustomProps
             PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 10f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
-        }        
+        }
         public void PlayStartSound()
         {
             PlayerHeadsetAudioSource = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/State_EYE").gameObject.AddComponent<OWAudioSource>();
