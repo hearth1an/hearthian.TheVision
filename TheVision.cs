@@ -976,6 +976,11 @@ namespace TheVision
                 GlobalMessenger.FireEvent("PlayerEnterQuantumMoon");
                 Locator.GetQuantumMoon()._isShipInside = true;
                 GlobalMessenger.FireEvent("ShipEnterQuantumMoon");
+
+                var interiorVolumes = SearchUtilities.Find("QuantumMoon_Body/Volumes/InteriorVolumes_QM");
+                interiorVolumes.SetActive(false);
+                interiorVolumes.SetActive(true);
+
             });
         }
         public void SpawnOnVisionEnd()
