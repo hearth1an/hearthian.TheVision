@@ -50,6 +50,7 @@ Translation credits:
 - English(grammar fix): [MegaPiggy](https://github.com/MegaPiggy)
 - Russian: [heart1an](https://github.com/hearth1an)
 - Spanish: Ink
+- french: [Deadofnothnig](https://github.com/Deadofnothing)
 
 Other translations will be added later. Let me know if you want to help with translations.
 
