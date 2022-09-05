@@ -27,42 +27,44 @@ namespace TheVision
         }
         private void Start()
         {
-            if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.Owned)
+            ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
-                Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-
-
-
-                var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
-                newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
-                newHorizonsAPI.LoadConfigs(this);
-
-                ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
-
-                TitleProps();
-
-                LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
+                if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.Owned)
                 {
-                    if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
-                    {
-                        EyeOfTheUniverseProps();
-                    }
-                    if (loadScene == OWScene.TitleScreen)
-                    {
-                        TitleProps();
-                    }
-                    if (loadScene == OWScene.Credits_Fast)
-                    {
-                        CreditsMusic();
-                    }
-                };
+                    Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
 
-            }
-            if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.NotOwned)
-            {
-                ModHelper.Console.WriteLine("The Vision requires DLC owned. DLC not found.", MessageType.Error);
-            }
-            
+
+
+                    var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
+                    newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
+                    newHorizonsAPI.LoadConfigs(this);
+
+                    ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
+
+                    TitleProps();
+
+                    LoadManager.OnCompleteSceneLoad += (scene, loadScene) =>
+                    {
+                        if (loadScene == OWScene.EyeOfTheUniverse && Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
+                        {
+                            EyeOfTheUniverseProps();
+                        }
+                        if (loadScene == OWScene.TitleScreen)
+                        {
+                            TitleProps();
+                        }
+                        if (loadScene == OWScene.Credits_Fast)
+                        {
+                            CreditsMusic();
+                        }
+                    };
+
+                }
+                else
+                {
+                    ModHelper.Console.WriteLine("The Vision requires DLC owned. DLC not found.", MessageType.Error);
+                }
+            });
         }
 
         // Spawns control
