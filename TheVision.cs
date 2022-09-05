@@ -971,6 +971,7 @@ namespace TheVision
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
                 s_dmg._invincible = originalInvicibility;
 
+                GlobalMessenger.FireEvent("WarpPlayer");
                 Locator.GetQuantumMoon()._isPlayerInside = true;
                 GlobalMessenger.FireEvent("PlayerEnterQuantumMoon");
                 Locator.GetQuantumMoon()._isShipInside = true;
