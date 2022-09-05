@@ -18,25 +18,24 @@ namespace TheVision
         public static INewHorizons newHorizonsAPI;
         public static TheVision Instance;
         public OWAudioSource PlayerHeadsetAudioSource;
-
+       
         private void Awake()
         {
             Instance = this;
             Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());
-            
+
         }
         private void Start()
         {
-            
+            var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
+            newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
+            newHorizonsAPI.LoadConfigs(this);
+
             ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
                 if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.Owned)
                 {
                     Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-
-                    var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
-                    newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
-                    newHorizonsAPI.LoadConfigs(this);
 
                     ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
@@ -61,7 +60,7 @@ namespace TheVision
                 }
                 else
                 {
-                    ModHelper.Console.WriteLine("The Vision requires DLC owned. DLC not found.", MessageType.Error);
+                    ModHelper.Console.WriteLine("The Vision requires DLC owned. DLC not found.", MessageType.Fatal);                    
                 }
             });
         }
@@ -964,15 +963,10 @@ namespace TheVision
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
                 s_dmg._invincible = originalInvicibility;
 
-                TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
-                {
-                    GlobalMessenger.FireEvent("WarpPlayer");
-                    Locator.GetQuantumMoon()._isPlayerInside = true;
-                    GlobalMessenger.FireEvent("PlayerEnterQuantumMoon");
-                    Locator.GetQuantumMoon()._isShipInside = true;
-                    GlobalMessenger.FireEvent("ShipEnterQuantumMoon");
-                });
-                
+                var interiorVolumes = SearchUtilities.Find("QuantumMoon_Body/Volumes/InteriorVolumes_QM");
+                interiorVolumes.SetActive(false);
+                interiorVolumes.SetActive(true);
+
             });
         }
         public void SpawnOnVisionEnd()

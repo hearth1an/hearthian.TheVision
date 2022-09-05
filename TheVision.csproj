@@ -56,5 +56,5 @@
     <Content Include="TheVision.csproj.user" />
   </ItemGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties planets_4solarsystem_4quantummoon_1json__JsonSchema="" planets_4timeloopring_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties planets_4solarsystem_4quantummoon_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 </Project>
