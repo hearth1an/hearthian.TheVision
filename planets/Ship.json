@@ -28,8 +28,8 @@
                 "xmlFile": "planets/Dialogue/Ship_Socket.xml",
                 "lookAtRadius": 3,
                 "radius": 2,
-                "remoteTriggerRadius": 3,
-                "blockAfterPersistentCondition": "SOLANUM_PROJECTION_COMPLETE"            }
+                "remoteTriggerRadius": 2,
+                "blockAfterPersistentCondition": "SOLANUM_PROJECTION_COMPLETE"}
         ]
     }           
     

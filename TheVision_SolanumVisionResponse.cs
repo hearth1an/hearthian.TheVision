@@ -104,14 +104,14 @@ namespace TheVision.CustomProps
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
+            Vector3 pushBack = new Vector3(0f, 0.006f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
         }
         public void CameraShaking()
         {
             // Camera shaking
             var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
-            StartCoroutine(cameraShaking.Shake(5f, 0.025f));
+            StartCoroutine(cameraShaking.Shake(5f, 0.015f));
         }
         public void SolanumAnim()
         {

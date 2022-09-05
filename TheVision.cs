@@ -27,13 +27,12 @@ namespace TheVision
         }
         private void Start()
         {
+            
             ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
                 if (EntitlementsManager.IsDlcOwned() == EntitlementsManager.AsyncOwnershipStatus.Owned)
                 {
                     Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-
-
 
                     var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
                     newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
@@ -66,7 +65,6 @@ namespace TheVision
                 }
             });
         }
-
         // Spawns control
         private void TitleProps()
         {
@@ -348,7 +346,7 @@ namespace TheVision
 
             // Temporal fix before NH release
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0f, -0.03f);
+            Vector3 pushBack = new Vector3(0f, 0f, -0.025f);
             applyForce.AddLocalImpulse(pushBack);
         }
         public void DisabledPropsOnStart(bool isActive)
@@ -951,27 +949,30 @@ namespace TheVision
             ShipDamageController s_dmg = Locator.GetShipBody().GetComponent<ShipDamageController>();
             bool originalInvicibility = s_dmg._invincible;
             s_dmg._invincible = true;
-
             TheVision.Instance.ModHelper.Console.WriteLine("Ready to teleport ship!");
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => qmStateTH.gameObject.activeSelf, () =>
             {
                 OWRigidbody qm_rb = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).GetComponent<OWRigidbody>();
                 OWRigidbody s_rb = Locator.GetShipBody();
-
                 Vector3 originalVelocity = qm_rb.GetAngularVelocity();
-
                 Vector3 newPosition = qm_rb.transform.TransformPoint(new Vector3(30f, -100f, 0f));
-
                 s_rb.SetPosition(newPosition);
                 s_rb.SetRotation(Quaternion.LookRotation(qm_rb.transform.forward, -qm_rb.transform.up));
                 s_rb.SetVelocity(qm_rb.GetPointVelocity(newPosition));
                 s_rb.SetAngularVelocity(qm_rb.GetAngularVelocity());
-
                 TheVision.Instance.ModHelper.Console.WriteLine("Ship teleported!");
                 s_dmg._invincible = originalInvicibility;
 
-
+                TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+                {
+                    GlobalMessenger.FireEvent("WarpPlayer");
+                    Locator.GetQuantumMoon()._isPlayerInside = true;
+                    GlobalMessenger.FireEvent("PlayerEnterQuantumMoon");
+                    Locator.GetQuantumMoon()._isShipInside = true;
+                    GlobalMessenger.FireEvent("ShipEnterQuantumMoon");
+                });
+                
             });
         }
         public void SpawnOnVisionEnd()
