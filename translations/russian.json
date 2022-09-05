@@ -5,7 +5,7 @@
         // Hint: use «» instead of "".
 
         // Computer GD
-        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "ГЛАВНЫЙ КОМПЬЮТЕР: Доступ разрешён, СОЛАНУМ. \nЗАПРОС ПОЛЬЗОВАТЕЛЯ: «Дата последнего взаимодействия». Произвожу расчет...",
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "ГЛАВНЫЙ КОМПЬЮТЕР: Доступ разрешён, СОЛАНУМ. \nЗАПРОС ПОЛЬЗОВАТЕЛЯ: «Дата последнего взаимодействия». Произвожу расчёт...",
         "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "ГЛАВНЫЙ КОМПЬЮТЕР: Последнее взаимодействие совершено 281,042 года назад. \nПОЛЬЗОВАТЕЛЬ = Мальва.",
         "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Визуализирую результат. Космическая аномалия, соответствующая характеристикам <![CDATA[<color=lightblue>Ока Вселенной</color>]]>, обнаружена.",
 
@@ -131,7 +131,7 @@
         // Brittle Hollow
         "Solanum in the School Ruins": "Соланум в руинах школы",
         "Solanum on Brittle Hollow": "Соланум на Пустотной Сфере",
-        "I can hear Solanum's signal coming from Brittle Hollow.": "С Пустотной Сферы доносится сигнал Соланум",
+        "I can hear Solanum's signal coming from Brittle Hollow.": "С Пустотной Сферы доносится сигнал Соланум.",
         "I found Solanum in the School.": "Я обнаружил Соланум в школе.",
         "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Соланум училась здесь. Она утверждает, что раньше чёрная дыра была меньше. Чтобы не упасть, она на всякий случай взяла с собой гравитационный кристалл.",
 
@@ -152,7 +152,7 @@
 
         // Giants Deep
         "Solanum on Giant's Deep": "Соланум на Пучине Гиганта",
-        "Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Соланум хочет посетить Пучину Гиганта, но она скорее всего так же останется на Камельке.",
+        "Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Соланум хочет посетить Пучину Гиганта, но она скорее всего так же останется и на Камельке.",
         "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "Я обнаружил Соланум, когда она проверяла данные модуля орбитального зонда. Я никогда не видел, чтобы компьютер Номаи светился зелёным цветом. Она запросила у главного компьютера дату последнего взаимодействия, чтобы понять сколько времени прошло.",
         "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Соланум очень расстроена тем что узнала про Око Вселенной. С самого детства она была права - у Ока нет желаний или стремлений. Я не удивлён, что она больше не хочет ничего слышать о нём. Соланум обратила своё внимание на работающую статую памяти.",
 
@@ -163,8 +163,8 @@
         "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "После видения произошло нечто странное. Облака растворились, а от Соланум теперь исходит странный сигнал. Вокруг её маски витают очень странные искры.",
         "Solanum looks disoriented according to her reply.": "Соланум очень растерялась, судя по её ответу на Квантовой Луне.",
         "Inscription near Solanum's body": "Надпись рядом с телом Соланум",
-        "Solanum left some text near her body": "Соланум оставила послание рядом со своим трупом",
-        "There are some new inscriptions left very recently": "Рядом с телом Соланум появилась новая надпись",
+        "Solanum left some text near her body": "Соланум оставила послание рядом со своим трупом.",
+        "There are some new inscriptions left very recently": "Рядом с телом Соланум появилась новая надпись.",
         "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and vanished on mentioning Timber Hearth.": "Это должно быть очень странно видеть самого себя мёртвым. Я не удивлён, что Соланум хочет как можно скорее покинуть это место. Она взяла с собой диктофон и её сообщение странно оборвалось при упоминании Камелька.",
 
 
