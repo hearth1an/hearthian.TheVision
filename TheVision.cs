@@ -345,7 +345,7 @@ namespace TheVision
 
             // Temporal fix before NH release
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0f, -0.025f);
+            Vector3 pushBack = new Vector3(0f, 0f, -0.04f);
             applyForce.AddLocalImpulse(pushBack);
         }
         public void DisabledPropsOnStart(bool isActive)
@@ -916,6 +916,7 @@ namespace TheVision
             visionTorch2.transform.rotation = visionTorchActive2.transform.rotation;
             var visionTorchTaken2 = visionTorch2.GetComponent<OWCollider>();
 
+
             // Vision Torch 1 picking up
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !visionTorchTaken._active, () =>
             {
@@ -939,6 +940,8 @@ namespace TheVision
 
                 SearchUtilities.Find("Ship_Body/ShipSector/ConversationZone").SetActive(true);
                 SearchUtilities.Find("Ship_Body/ShipSector/ConversationTrigger").SetActive(true);
+
+               
             });
 
         }
@@ -977,7 +980,7 @@ namespace TheVision
                 PlaySFXSound();
                 PlayGaspSound();
                 PlayThunderSound();
-            });
+            });            
 
             ATPfix();
 

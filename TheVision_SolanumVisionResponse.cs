@@ -44,15 +44,19 @@ namespace TheVision.CustomProps
 
             // Disabling music on QM once the vision is showed
             Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Volumes/AudioVolume_QM_Music").gameObject.SetActive(false);
+
+            
         }
         public void OnVisionEnd()
         {
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
+            
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
+                
                 // sfx             
                 PlayWindSound();
                 PlayStartSound();
@@ -74,11 +78,11 @@ namespace TheVision.CustomProps
                 var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
                 var qmWhiteHoleLock = qmWhiteHole.AddComponent<MemoryUplinkTrigger>()._lockOnTransform;
 
-                qmWhiteHole.SetActive(true);
+                qmWhiteHole.SetActive(true);               
 
                 Invoke("ApplyForce", 0.5f);
                 Invoke("CameraShaking", 0.5f);
-
+               
                 Invoke("SolanumAnim", 10f);
 
                 Invoke("SolanumAnim2", 25f);
@@ -96,7 +100,6 @@ namespace TheVision.CustomProps
 
             });
         }
-
         // Utility
         public void ApplyForce()
         {
@@ -104,7 +107,7 @@ namespace TheVision.CustomProps
 
             // Pushing out force for flat version and VR version
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0.006f, -0.008f);
+            Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
         }
         public void CameraShaking()
