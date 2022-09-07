@@ -80,8 +80,7 @@ namespace TheVision.CustomProps
 
                 qmWhiteHole.SetActive(true);               
 
-                Invoke("ApplyForce", 0.5f);
-                Invoke("CameraShaking", 0.5f);
+                Invoke("ApplyForce", 0.5f);               
                
                 Invoke("SolanumAnim", 10f);
 
@@ -109,13 +108,7 @@ namespace TheVision.CustomProps
             var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
             Vector3 pushBack = new Vector3(0f, 0.0062f, -0.008f);
             applyForce.AddLocalImpulse(pushBack);
-        }
-        public void CameraShaking()
-        {
-            // Camera shaking
-            var cameraShaking = Locator.GetActiveCamera().gameObject.AddComponent<CameraShake>();
-            StartCoroutine(cameraShaking.Shake(5f, 0.015f));
-        }
+        }       
         public void SolanumAnim()
         {
             var SolanumAnim = SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<SolanumAnimController>();
