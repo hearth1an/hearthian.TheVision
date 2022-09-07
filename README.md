@@ -47,10 +47,13 @@ Mods used:
 - [Sound Test](https://outerwildsmods.com/mods/soundtest)
 
 Translation credits:
-- English(grammar fix): [MegaPiggy](https://github.com/MegaPiggy)
-- Russian: [heart1an](https://github.com/hearth1an)
-- Spanish: Ink
-- french: [Deadofnothnig](https://github.com/Deadofnothing)
+- English(grammar fix): [MegaPiggy](https://github.com/MegaPiggy),
+- Russian: [heart1an](https://github.com/hearth1an), [Leatryx](https://github.com/Leatryx), [Tlya](https://github.com/Tllya)
+- Portuguese: [ShoosGun](https://github.com/ShoosGun),
+- French: [Deadofnothnig](https://github.com/Deadofnothing),
+- Сhinese: [星际拓荒讨论群群友](https://github.com/REME-easy),
+- Japanese: [9638](https://github.com/96-38).
+
 
 Other translations will be added later. Let me know if you want to help with translations.
 
