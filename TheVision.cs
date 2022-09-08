@@ -1080,7 +1080,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SingularityOnPlayerEnterExit); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1135,7 +1135,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolFlashlightFlicker); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1144,7 +1144,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SingularityCreate); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1153,7 +1153,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SingularityCollapse); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1162,7 +1162,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetPlayerTransform().gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SecretKorok); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
@@ -1171,7 +1171,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = Locator.GetMinorAstroObject("Vessel Dimension").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.SadNomaiTheme); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.Play();
         }
@@ -1180,7 +1180,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.NomaiTextReveal_LP); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1189,7 +1189,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolItemWarpCorePickUp); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
@@ -1198,7 +1198,7 @@ namespace TheVision
             PlayerHeadsetAudioSource = SearchUtilities.Find("DB_VesselDimension_Body/Sector_VesselDimension/Nomai_ANIM_SkyWatching_Idle").gameObject.AddComponent<OWAudioSource>();
             PlayerHeadsetAudioSource.enabled = true;
             PlayerHeadsetAudioSource.AssignAudioLibraryClip(AudioType.ToolItemWarpCoreDrop); // SingularityOnPlayerEnterExit = 2402            
-            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 15f);
+            PlayerHeadsetAudioSource.SetMaxVolume(maxVolume: 1f);
             PlayerHeadsetAudioSource.GetComponent<AudioSource>().playOnAwake = false;
             PlayerHeadsetAudioSource.PlayOneShot();
         }
