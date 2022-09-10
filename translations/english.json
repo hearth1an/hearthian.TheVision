@@ -40,7 +40,7 @@
         "SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.": "SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.",
 
         //////////////////////////////
-        "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!": "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!",
+        "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!": "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? We will see in the next loop!",
         //////////////////////////////
 
         "SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.": "SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.",
@@ -80,13 +80,13 @@
         "SOLANUM: I am ready my friend, but the decision is yours.": "SOLANUM: I am ready my friend, but the decision is yours.",
 
         // Recorder ET
-        "SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.": "SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.",
+        "SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.": "SOLANUM: Ah, this is my home... or, it was. Even my toys are still here... see? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.",
         "SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.": "SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.",
         "SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.": "SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.",
         "SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...": "SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...",
 
         // Recorder GD
-        "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.": "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.",
+        "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.": "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy about that, but not me.",
 
         //////////////////////////////
         "SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from another star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.": "SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from another star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.",
@@ -96,11 +96,11 @@
         "SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.",
 
         // Recorder TH
-        "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.",
+        "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even to myself.",
         "SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.": "SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.",
         "SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.": "SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.",
         "SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.": "SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.",
-        "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.",
+        "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check the <![CDATA[<color=orange>Probe Tracking Module</color>]]>.",
         "TO BE CONTINUED...": "TO BE CONTINUED...",
 
         // Ernesto Quest
@@ -127,19 +127,19 @@
         "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!",
 
         "The anglerfish from the museum exhibition. Hornfels named it that.": "The anglerfish from the museum exhibition. Hornfels named it that.",
-        "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.",
+        "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallows. I can't take it anymore.",
         "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!",
         "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?",
         "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "I'll do that! <![CDATA[<i>(actually not)</i>]]>",
         "That's disgusting.": "That's disgusting.",
         "Nah, enjoy your meal then.": "Nah, enjoy your meal then.",
-        "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?",
-        "There is no accounting for tastes.": "There is no accounting for tastes.",
+        "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]>, alright?",
+        "There is no accounting for tastes.": "There is no accounting for taste.",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.",
 
         // Ship dialogue
 
-        "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "Hmm... This seems like a good place for a vision torch! I can put it here if needed."
+        "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "Hmm... This seems like a good place for the Vision Torch! I can put it here if needed."
 
 
     },
@@ -190,7 +190,7 @@
     "Solanum wants to visit Giant's Deep, but she will probably stay on Timber Hearth as well.": "Solanum wants to visit Giant's Deep, but she will probably stay on Timber Hearth as well.",
     //////////////////
 
-    "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.",
+    "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "I found Solanum observing the probe logs. I've never seen Nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.",
     "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.",
 
     // Quantum Moon
@@ -224,15 +224,15 @@
     "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.",
     "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.",
     "Quantum Consciousness": "Quantum Consciousness",
-    "I've discovered strange frequency called Quantum Consciousness.": "I've discovered strange frequency called Quantum Consciousness.",
+    "I've discovered strange frequency called Quantum Consciousness.": "I've discovered a strange frequency called Quantum Consciousness.",
 
     //////////////////
-    "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.",
+    "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "This could be a new quantum rule or a quantum exception. My theory is that if an observer is aware of its quantum properties, it acquires Quantum Consciousness. Solanum got this knowledge from my vision.",
     //////////////////
 
 
-    "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.",
-    "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.",
+    "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without the signalscope.",
+    "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Another noticeable thing about Quantum Consciousness - particles near the head. It seems like other quantum rules do not work with Quantum Consciousness.",
 
     //////////////////
     "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.",
@@ -242,9 +242,9 @@
     "Solanum inside Ash Twin Project": "Solanum inside Ash Twin Project",
     "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.",
     "Solanum is already here. She observing the time loop ring's logs.": "Solanum is already here. She observing the time loop ring's logs.",
-    "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.": "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside he Vessel.",
+    "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.": "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. It seems like we will meet again inside the Vessel.",
     "Paired Statue": "Paired Statue",
-    "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.",
+    "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanum happened to pass by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.",
 
     //ADD !
     "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "Now that Solanum knows how time loop reset works, we will try reach the Vessel.",
