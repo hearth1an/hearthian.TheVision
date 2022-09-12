@@ -143,15 +143,16 @@
 
 
     },
-  "UIDictionary": {
+    "UIDictionary": {
 
-    "Quantum Consciousness": "Quantum Consciousness",
-    "Solanum": "Solanum",
-    "GloamingGalaxy": "Gloaming Galaxy", // Add this to other translations
-    "THE_VISION_TO_BE_CONTINUED": "TO BE CONTINUED...",
-    "THE_VISION_NEW_LAUNCH_CODES": "New Launch Codes: --|-..|-.--|-." // New launch codes: --|-..|-.--|-.
+        "Quantum Consciousness": "Quantum Consciousness",
+        "Solanum": "Solanum",
+        "GloamingGalaxy": "Gloaming Galaxy", // Add this to other translations
+        "THE_VISION_TO_BE_CONTINUED": "TO BE CONTINUED...",
+        "THE_VISION_NEW_LAUNCH_CODES": "New Launch Codes: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
+        "THE_VISION_POPUP": "Thank you for downloading «The Vision»! If you’re having trouble with viewing the vision, please try lower your game resolution."
 
-  },
+    },
   "ShipLogDictionary": {
 
     // Brittle Hollow

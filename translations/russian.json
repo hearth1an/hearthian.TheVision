@@ -123,7 +123,8 @@
         "ToBeContinued": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
         "GloamingGalaxy": "Сумеречная Галактика", // Add this to other translations
         "TO BE CONTINUED...": "ПРОДОЛЖЕНИЕ СЛЕДУЕТ...",
-        "THE_VISION_NEW_LAUNCH_CODES": "Новые коды запуска: --|-..|-.--|-."
+        "THE_VISION_NEW_LAUNCH_CODES": "Новые коды запуска: --|-..|-.--|-.",
+        "THE_VISION_POPUP": "Спасибо за скачивание «The Vision»! Если у вас возникнут сложности при показе «видения», пожалуйста попробуйте поменять разрешение экрана в настройках."
 
     },
     "ShipLogDictionary": {

@@ -10,6 +10,7 @@ using HarmonyLib;
 using System.Reflection;
 using NewHorizons.Utility;
 using NewHorizons.Handlers;
+ 
 
 namespace TheVision
 {
@@ -36,10 +37,11 @@ namespace TheVision
             });
 
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-
+            var menuFrameworkAPI = ModHelper.Interaction.GetModApi<IMenuAPI>("_nebula.MenuFramework");
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
+            menuFrameworkAPI.RegisterStartupPopup(TranslationHandler.GetTranslation("THE_VISION_POPUP", TranslationHandler.TextType.UI));
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
@@ -846,9 +848,10 @@ namespace TheVision
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/ConversationZone").SetActive(true);
 
             PlayerData.SetPersistentCondition("MARK_ON_HUD_TUTORIAL_COMPLETE", true);
-            PlayerData.SetPersistentCondition("COMPLETED_SHIPLOG_TUTORIAL", true);
+            PlayerData.SetPersistentCondition("COMPLETED_SHIPLOG_TUTORIAL", true);            
 
-            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(false);
+            // To make Ernesto quest optional :((
+            // SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(false);
 
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate").gameObject.SetActive(false);
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal").SetActive(true);

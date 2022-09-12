@@ -101,7 +101,7 @@
           "y": 153.4004,
           "z": -56.1326
         },
-        "radius": 3,
+        "radius": 7,
         "revealOn": "enter",
         "reveals": [
           "SOLANUM_BH_FOUND"
