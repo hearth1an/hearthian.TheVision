@@ -28,6 +28,8 @@ namespace TheVision
         }
         private void Start()
         {
+            ModHelper.Console.WriteLine("The Vision is temporary broken after the last game update. It will be available soon after we fix it (I don't want to ruin your experience). Thank you for your patience!", MessageType.Fatal);
+
             ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
                 if (EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.Owned)
