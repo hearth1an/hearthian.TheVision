@@ -3,6 +3,7 @@ using OWML.ModHelper;
 using UnityEngine;
 using TheVision.Utilities.ModAPIs;
 using static NewHorizons.External.Modules.PropModule;
+using static NewHorizons.External.Modules.SignalModule;
 using NewHorizons.Builder.Props;
 using System.Linq;
 using TheVision.CustomProps;
@@ -28,7 +29,7 @@ namespace TheVision
         }
         private void Start()
         {
-            ModHelper.Console.WriteLine("The Vision is temporary broken after the last game update. It will be available soon after we fix it (I don't want to ruin your experience). Thank you for your patience!", MessageType.Fatal);
+            // ModHelper.Console.WriteLine("The Vision is temporary broken after the last game update. It will be available soon after we fix it (I don't want to ruin your experience). Thank you for your patience!", MessageType.Fatal);
 
             ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
@@ -236,6 +237,9 @@ namespace TheVision
                 if (Locator.GetShipLogManager().IsFactRevealed("SOLANUM_PROJECTION_COMPLETE"))
                 {
                     DisabledPropsOnStart(true);
+
+                    SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").GetComponent<InteractReceiver>()._hasInteracted = true;
+                    SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").GetComponent<InteractReceiver>()._isInteractPressed = true;
                 }
             });
 
@@ -295,26 +299,16 @@ namespace TheVision
                 dataStream.SetActive(true);
                 newMask.SetActive(true);
             });
-           
-           
+
+
         }
 
         public void EyeOfTheUniverseProps()
         {
             var _vessel = GameObject.Find("Vessel_Body");
             var _vesselSector = GameObject.Find("Vessel_Body/Sector_VesselBridge").GetComponent<Sector>();
-
-            // string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
-            string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
-            Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
-            Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
-            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
-            {
-                path = path,
-                position = position,
-                rotation = rotation
-            });
-
+            var origSol = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Nomai_Rig_v01:Neck_TopSHJnt");
+                      
             string path2 = "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite";
             Vector3 position2 = new Vector3(-2.7f, -4.8872f, 5.8744f);
             Vector3 rotation2 = new Vector3(351.6485f, 10.514f, 355.3143f);
@@ -332,22 +326,131 @@ namespace TheVision
             DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
             {
                 path = path3,
-                position = position2,
-                rotation = rotation2,
+                position = position3,
+                rotation = rotation3,
                 scale = 5
             });
 
-            ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            var particles1 = GameObject.Find("Vessel_Body/Sector_VesselBridge/Effects_NOM_WarpParticlesWhite");
+            particles1.transform.parent = origSol.transform.parent;
+            particles1.transform.localPosition = new Vector3(-0.2f, -0.3f, 0f);
+            particles1.transform.name = "Particles1";
+
+            var particles2 = GameObject.Find("Vessel_Body/Sector_VesselBridge/Effects_NOM_WarpParticlesWhite");
+            particles2.transform.parent = origSol.transform.parent;
+            particles2.transform.localPosition = new Vector3(-0.2f, -0.3f, 0f);
+            particles2.transform.name = "Particles2";
+
+            string path = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle";
+            Vector3 position = new Vector3(-2.836f, -7.0145f, 5.3782f);
+            Vector3 rotation = new Vector3(357.0274f, 15.49f, 0f);
+            DetailBuilder.Make(_vessel, _vesselSector, new DetailInfo
             {
-                var solAnimController = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").AddComponent<SolanumAnimController>();
-                solAnimController._animator = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle").GetComponent<UnityEngine.Animator>();
-                solAnimController.StartWatchingPlayer();
+                path = path,
+                position = position,
+                rotation = rotation
             });
 
-            // Temporal fix before NH release
-            var applyForce = Locator.GetPlayerTransform().gameObject.GetComponent<OWRigidbody>();
-            Vector3 pushBack = new Vector3(0f, 0f, -0.04f);
-            applyForce.AddLocalImpulse(pushBack);
+
+            // Solanum near the Vortex
+            var _eye = GameObject.Find("EyeOfTheUniverse_Body");
+            var _eyeSector = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/SixthPlanet_Root/Sector_EyeSurface").GetComponent<Sector>();
+
+            string path4 = "Vessel_Body/Sector_VesselBridge/Nomai_ANIM_SkyWatching_Idle";
+            Vector3 position4 = new Vector3(6.6514f, -221.0721f, -2.9294f);
+            Vector3 rotation4 = new Vector3(15f, 280f, 356f);
+
+            DetailBuilder.Make(_eye, _eyeSector, new DetailInfo
+            {
+                path = path4,
+                position = position4,
+                rotation = rotation4
+            });
+
+            // Solanum in the Observatory
+            
+            var _observatory = GameObject.Find("EyeOfTheUniverse_Body");
+            var _observatorySector = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory").GetComponent<Sector>();
+
+            // Solanum spawning
+            string path5 = "Vessel_Body/Sector_VesselBridge/Nomai_ANIM_SkyWatching_Idle";
+            Vector3 position5 = new Vector3(11.5729f, -0.4576f, -3.1575f);
+            Vector3 rotation5 = new Vector3(0f, 270f, 0f);
+
+            DetailBuilder.Make(_observatory, _observatorySector, new DetailInfo
+            {
+                path = path5,
+                position = position5,
+                rotation = rotation5
+            });
+
+            Invoke("StopAnimEyeScene", 5f);
+
+            // Sign observatory
+            string path6 = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/MapSatelliteExhibit/MapSatelliteExhibit_Pivot/MapSatelliteExhibit_DLC/Prefab_HEA_MuseumPlaque";
+            Vector3 position6 = new Vector3(11.5729f, -0.4576f, -3.1575f);
+            Vector3 rotation6 = new Vector3(0f, 0f, 0f);
+            DetailBuilder.Make(_observatory, _observatorySector, new DetailInfo
+            {
+                path = path6,
+                position = position6,
+                rotation = rotation6
+            });
+
+            // Fill light
+            string path7 = "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/FillLight_Statue";
+            Vector3 position7 = new Vector3(11.5729f, -0.4576f, -3.1575f);
+            Vector3 rotation7 = new Vector3(0f, 0f, 0f);
+            DetailBuilder.Make(_observatory, _observatorySector, new DetailInfo
+            {
+                path = path7,
+                position = position7,
+                rotation = rotation7
+            });           
+            
+
+            // Other Sol copies
+            TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
+            {
+                var solVortex = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/SixthPlanet_Root/Sector_EyeSurface/Nomai_ANIM_SkyWatching_Idle");
+                solVortex.transform.localPosition = new Vector3(-8.7184f, -220.6731f, 0.5104f);
+                solVortex.transform.localRotation = new Quaternion(-0.0501f, -0.8016f, 0.1135f, -0.5849f);
+
+                var sign = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Prefab_HEA_MuseumPlaque");
+                sign.transform.localPosition = new Vector3(9.5914f, -0.3883f, -2.7425f);
+                sign.transform.localRotation = new Quaternion(0f, 0.6984f, 0f, -0.7157f);
+
+                var solObservatory = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Nomai_ANIM_SkyWatching_Idle");
+                solObservatory.transform.localPosition = new Vector3(11.7207f, -0.4757f, -2.871f);
+                solObservatory.transform.localRotation = new Quaternion(0f, 0.6984f, 0f, -0.7157f);
+
+                var fillLight = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/FillLight_Statue");
+                fillLight.transform.localPosition = new Vector3(10.1989f, 1.717f, -2.4711f);
+                fillLight.GetComponent<Light>().range = 4f;
+
+                GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Prefab_HEA_MuseumPlaque/AttentionPoint_SatellitePlaque_Antenna").transform.localPosition = new Vector3(-0.2536f, 1.31f, -2.09f);
+                var text = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Prefab_HEA_MuseumPlaque/InteractVolume");
+                text.DestroyAllComponents<CharacterDialogueTree>();
+                text.AddComponent<CharacterDialogueTree>();
+
+                TextAsset text1 = new TextAsset();
+
+
+
+            });
+        }
+        public void StopAnimEyeScene()
+        {
+            GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Nomai_ANIM_SkyWatching_Idle").GetComponent<Animator>().enabled = false;
+            var particles_1 = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles1");
+            var particles_2 = GameObject.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt/Particles2");
+
+            particles_1.GetComponent<RotateTransform>().enabled = false;
+            particles_2.GetComponent<RotateTransform>().enabled = false;
+
+            particles_1.GetComponent<ParticleSystem>().Pause();
+            particles_2.GetComponent<ParticleSystem>().Pause();
+
         }
         public void DisabledPropsOnStart(bool isActive)
         {
