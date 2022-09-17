@@ -1,22 +1,22 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.</Text>
+    <Text>SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.</Text>
+    <Text>SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.</Text>
+    <Text>SOLANUM: It's unsafe here, I think. I can hear the sand rising.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...</Text>
+    <Text>SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

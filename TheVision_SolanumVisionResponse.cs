@@ -52,7 +52,9 @@ namespace TheVision.CustomProps
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);
-            
+
+            PlayerData.SetPersistentCondition("MET_SOLANUM", true);
+            PlayerData.SetPersistentCondition("MET_PRISONER", true);
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {

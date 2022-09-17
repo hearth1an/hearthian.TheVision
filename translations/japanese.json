@@ -1,253 +1,198 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
-  "DialogueDictionary": {
-    // Hint: use «» instead of "".
+    "DialogueDictionary": {
 
-    // Computer GD
-    "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "メインコンピューター: ログアクセス許可、SOLANUM. \nユーザーリクエスト: «最後のアクセス許可». 計算中…", // use \n here to enter new line
-    "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "メインコンピューター: 最後のアクセス許可 281,042 年前. \nユーザー = Mallow.", // and here
-    "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "進行状況. <![CDATA[<color=lightblue>宇宙の眼</color>]]>の条件をすべて満たす、深宇宙の異常が発見されました.",
+        // Hint: use «» instead of "".
+        // Computer GD
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "メインコンピューター: ログアクセス許可、SOLANUM. \nユーザーリクエスト: «最後のアクセス許可». 計算中…", // use \n here to enter new line
+        "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "メインコンピューター: 最後のアクセス許可 281,042 年前. \nユーザー = Mallow.", // and here
+        "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "進行状況. <![CDATA[<color=lightblue>宇宙の眼</color>]]>の条件をすべて満たす、深宇宙の異常が発見されました.",
 
-    // Computer ATP
+        // Computer ATP
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles."
+        "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]>分<![CDATA[<TimeSeconds>]]>秒前: 以前のサイクルから受信したデータ.",
+        // Here ↓ translate this (with same CDATA things): "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue"
+        "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "マスクに保存されるデータの送信元 : \n<![CDATA[<color=orange>探査機追跡モジュール</color>]]> \n<![CDATA[<color=lightblue>巨人の大海</color>]]>の像 \n<![CDATA[<color=lightblue>木の炉辺</color>]]>の像 \n<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>の像",
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
+        "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "サイクル終了時の送信まで<![CDATA[<TimeMinutesRemaining>]]>分",
+        "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "警告！コアを取り外すと<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>が無効になります.",
 
-    // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles."
-    "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]>分<![CDATA[<TimeSeconds>]]>秒前: 以前のサイクルから受信したデータ.",
-    // Here ↓ translate this (with same CDATA things): "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue"
-    "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "マスクに保存されるデータの送信元 : \n<![CDATA[<color=orange>探査機追跡モジュール</color>]]> \n<![CDATA[<color=lightblue>巨人の大海</color>]]>の像 \n<![CDATA[<color=lightblue>木の炉辺</color>]]>の像 \n<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>の像",
-    // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
-    "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "サイクル終了時の送信まで<![CDATA[<TimeMinutesRemaining>]]>分",
-    "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "警告！コアを取り外すと<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>が無効になります.",
+        // Quantum Moon
+        "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.": null,
+        "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": null,
+        // Recorder TH
+        "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.": null,
+        "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.": null,
+        "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.": null,
+        "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.": null,
+        "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.": null,
+        // Recorder GD
+        "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I wish my clan could see this.": null,
+        "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": null,
+        "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": null,
+        "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": null,
+        // Recorder ATP 
+        "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": null,
+        "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": null,
+        "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": null,
+        "SOLANUM: There are four masks active at once! I wish Ramie could see this...": null,
+        "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.": null,
+        "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.": null,
+        "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": null,
+        // Recorder ATP 2
+        "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": null,
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": null,
+        "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": null,
+        // Recorder BH
+        "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": null,
+        "SOLANUM: As a student, I was imagining the universe collapse. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.": null,
+        "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.": null,
+        "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.": null,
+        // Recorder ET
+        "SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.": null,
+        "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.": null,
+        "SOLANUM: It's unsafe here, I think. I can hear the sand rising.": null,
+        "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.": null,
+        // Recorder DB
+        "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": null,
+        "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": null,
+        "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": null,
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": null,
+        "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": null,
+        "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": null,
+        "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": null,
+        "SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.": null,
 
-    // QM ground
+        // EYE SCENE
+        "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": null,
+        "SOLANUM: Would you try to enter it?": null,
+        "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": null,
+        "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": null,
 
-    //////////////////////////////
-    "SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving and I took my recorder. Where am I? Is it the state of Timber Hea....": "SOLANUM:私…私は存在するの？それは私だけど…どうしたらこんなことが？私はもうここにいられない、レコーダーも持って行くわ。ここはどこ？木の炉辺であるなら…",
-    //////////////////////////////
+        // Ernesto Quest
+        // Slate note
 
-    // QM response
-    "SOLANUM: I.. I don't understand.. wh.. what just.. what is this feeling? What is all of this? All answers are in the sky?": "SOLANUM:わ…わからない…な…何？この感覚は何？これは一体何？すべての答えは空にあるの？",
+        "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "…<![CDATA[<i>キノコ</i>]]>を採りに行ってくる。この席を取るなよ！すぐに戻るよ。観測所で<![CDATA[<color=orange>新しい発射コード</color>]]>を手に入れないと打ち上げはできない。Hornfelsが最後の最後で変更したんだ。",
 
-    // Recorder ATP
+        // Hornfels
+        "Hornfels": "Hornfels",
+        "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]>が消えた！",
+        "Hey! What's going on? Where's the anglerfish?": "どうしたんだ？アンコウはどこだ？",
+        "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "<![CDATA[<color=orange>Ernesto</color>]]>？誰だ？",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "小さな友だちがいなくなったんだ！<![CDATA[<color=orange>«Ernesto»</color>]]>はアンコウのことだ。こんな風にいなくなるなんて…",
+        "Oh, I'm sorry about that...": "ああ、それは失礼…",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "かわいそうな<![CDATA[<color=orange>Ernesto</color>]]>…これが<![CDATA[<color=orange>新しい発射コード</color>]]>だ…。",
+        "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "ただ<![CDATA[<color=orange>新しい発射コード</color>]]>が必要なんだ。",
 
-    //////////////////////////////
-    "SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statues? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?": "SOLANUM:これを見たことがある？私たちの<![CDATA[<color=lightblue>太陽</color>]]>は死につつある…あなたは像の一つとペアになっているの？<![CDATA[<color=lightblue>巨人の大海</color>]]>にもペアになっている人がいる。誰なんでしょう？",
-    //////////////////////////////
+        // Slate
+        "Slate": "Slate",
+        "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "あれ、なんでまだいるんだ？<![CDATA[<color=orange>新しい発射コード</color>]]>は手に入れたか？",
+        "Is that the anglerfish from the museum?": "それは博物館のアンコウ…？",
+        "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>？！やめてくれ！",
+        "The anglerfish from the museum exhibition. Hornfels named it that.": "博物館に展示されていたアンコウ。Hornfelsがそう名付けた。",
+        "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "ああ、そうだ。博物館のあのアンコウだ。マシュマロにはうんざりして、もうこれ以上食べられない。",
+        "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "それで<![CDATA[<color=orange>Ernesto</color>]]>を食べるのか？！Hornfelsは<![CDATA[<color=orange>Ernesto</color>]]>を友だちだと言っていたのに！",
+        "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "アンコウだって魚だ。彼が何と呼んでいようと、もう調理中だし<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>とにかく、あと<![CDATA[<i>30分</i>]]>もあれば完成するよ。<![CDATA[<color=orange>闇のイバラ</color>]]>まで飛んで、Hornfelsのためにもう一匹捕まえればいいだろ？",
+        "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "分かった、そうする！<![CDATA[<i>(できっこない！)</i>]]>",
+        "That's disgusting.": "うんざりだ。",
+        "Nah, enjoy your meal then.": "いや、それなら美味しく食べてくれ。",
+        "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "やってくれるのか？感謝するよ！<![CDATA[<color=orange>Ernesto</color>]]>のことは秘密にしてくれよ？",
+        "There is no accounting for tastes.": "…好みは人それぞれだからな。",
+        "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "感謝するよ。<![CDATA[<i>30分</i>]]>以内に戻ってくれば、一口あげるぞ！",
 
-    "SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language.": "SOLANUM:気にしないで、私はあなたの言語が分からないから、あなたが応答できないことを忘れてた。",
-    "SOLANUM: It appears that I am also paired now. I ended up right in front of that nearby statue when I thought about this place.": "SOLANUM:どうやら私もペアになっているようだわ。ここを思い浮かべたら、あの近くの像の前にたどり着いたの。",
-    "SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.": "SOLANUM:太陽が超新星になる直前にタイムループに巻き込まれたようね。ラッキー？…でもないわね。ごめんなさい。",
+        // Ship dialogue
 
-    //////////////////////////////
-    "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!": "SOLANUM:もう時間がないことに気づいた。あなたの記憶によればループがリセットされた後、私は<![CDATA[<color=lightblue>量子の月</color>]]>に戻るの？そういうことでしょう？次のループでまた会いましょう！",
-    //////////////////////////////
+        "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "ふむ…ここはビジョントーチを置くのにぴったりだ！必要なら、ここに置けばいいだろう。"
+    },
+    "UIDictionary": {
+        "Quantum Consciousness": "量子意識",
+        "Solanum": "Solanum",
+        "GloamingGalaxy": "黄昏の銀河", // Add this to other translations        
+        "THE_VISION_NEW_LAUNCH_CODES": "新しい発射コード: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
-    "SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.": "SOLANUM:私たちは逃れられるの？超新星爆発はすごく大きいけれど、そこから飛び去ったらどうでしょう？うまくいくと思う。ワープコアは前回の超新星爆発でチャージされているので、それを使えば<![CDATA[<color=lightblue>太陽</color>]]>がまた爆発する前に脱出できるはず。",
-    "SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.": "SOLANUM:あなたのビジョンによると、<![CDATA[<color=orange>船</color>]]>は<![CDATA[<color=lightblue>闇のイバラ</color>]]>の中にあるようだわ。まだ動作する可能性がある。そこにたどり着ける可能性は低いけれど、挑戦する価値はある。",
 
-    // Recorder ATP 2///// ADD TO TRANSLATIONS!
+        "THE_VISION_TO_BE_CONTINUED": null, // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
+        "THE_VISION_POPUP": null // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
+    },
+    "ShipLogDictionary": {
+        // Brittle Hollow
+        "Solanum in the School Ruins": "廃校の中のSolanum",
+        "Solanum on Brittle Hollow": "脆い空洞のSolanum",
+        "I can hear Solanum's signal coming from Brittle Hollow.": "脆い空洞からSolanumの信号が聞こえる。",
+        "I found Solanum in the School.": "学校にいるSolanumを見つけた。",
+        "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Solanumは、ここが自分が通っていた学校だと言っていた。また、昔はブラックホールがもっと小さかったとも言っていた。彼女は滑り落ちないように重力水晶を持ってきたようだ。",
 
-    //////////////////////////////
-    "SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.": "SOLANUM:タイムループがリセットされる仕組みが分かったわ。私は前のループのことをすべて覚えてる。",
-    "SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM:Dazは何と言った？ <![CDATA[<i>«記憶を過去に送ることと、物理的に過去に戻ることは、別の行為だ»</i>]]>.",
-    "SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.": "SOLANUM:とにかく、仕組みはわかったので、続けましょう。もう一度コアを開けてみるけど、次のループはあなたの番だわ。",
-    //////////////////////////////
+        // CaveTwin_Body
+        "Solanum in the Sunless City": "太陽なき街のSolanum",
+        "I can hear Solanum's signal coming from the Sunless City.": "太陽なき街からSolanumの信号が聞こえる。",
+        "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "太陽なき街にいるSolanumを見つけた。彼女は眼の祭壇地区にある自宅にいる。",
+        "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": null,
 
-    // Recorder BH
+        // DB_VesselBody
+        "Solanum on the Vessel": "船のSolanum",
+        "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "Solanumは船に乗りたいと思っている。闇のイバラの中までたどり着けるのだろうか？",
+        "Solanum did it! Whatever her power is, she's here and waiting for me once again.": "Solanumがやってくれた！ その力がなんであれ、もう一度ここで私を待っている。",
+        "Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "Solanumは他のNomaiから受信したメッセージの発信座標を追跡した。現代のNomaiであるCannaは、「黄昏の銀河」に安住の地があると言っている。その「黒き岩の太陽」からなる星系の座標は、船内の下層にあるホログラムに表示されるはずだ。",
+        "Gloaming Galaxy, Blackrock coordinates hologram": "黄昏の銀河、黒き岩の太陽の座標を示すホログラム",
+        "New coordinates": "新しい座標",
+        "I found the coordinates to the Gloaming Galaxy. We can use the warp core from the Ash Twin Project to warp. There will be no turning back. Am I ready to do this?": null,
 
-    //////////////////////////////
-    "SOLANUM: This place is our school. It teaches us about the universe, stars, singularities, gravity, and everything related to it. It wasn't so unstable before, and I'm not sure, but I remember the black hole being smaller.": "SOLANUM:ここは私たちの学校なの。宇宙、星、特異点、重力、それにまつわる全てを教えてくれる。定かではないけど、以前はこれほど不安定ではなかったし、ブラックホールがもっと小さかったのを覚えてる。",
-    //////////////////////////////
+        // Giants Deep
+        "Solanum on Giant's Deep": "巨人の大海のSolanum",
+        "Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Solanumは巨人の大海に行きたいと言っているが、木の炉辺にもいるのだろう。",
+        "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "Solanumが探査機のログを調べているところを見つけた。こんなに光り輝くNomaiのコンピューターは今まで見たことがない。彼女はメインコンピューターにアクセスし、どのくらいの時間が経過したのかを確認した。",
+        "Solanum is contemplating the Eye, and the vision seen by the inhabitants of The Stranger. She also noticed a working Memory Statue.": null,
 
-    "SOLANUM: As a student, it was easy for me to imagine the universe collapsing because I never imagined it could happen in my lifetime...": "SOLANUM:学生の頃は宇宙が崩壊するのを（恐ろしいけれど）簡単に想像できたわ。まさか自分が生きている間にそれが起きるなんて思いもしなかったから…",
-    "SOLANUM: These buildings are not stable, so I took this gravity crystal just in case. This is the second one by the way. The first one freaked out somehow and inverted gravity, so I had to break it.": "SOLANUM:この辺りの建物は安定しないので、念のために重力水晶を持ってきたわ。ちなみにこれは2つ目で、1つ目は何かの拍子に重力が反転してしまったから壊してしまったの。",
-    "SOLANUM: I'm not sure if this happened because of me or because of the black hole effect, but I cannot be 100% certain this one will be stable either.": "SOLANUM:私のせいなのか、それともブラックホールの影響なのかは分からないけど、これも100%安定しているとは言い切れないでしょうね。",
+        // Quantum Moon
+        "Solanum on Quantum Moon": "量子の月のSolanum",
+        "What if..?": "もし…？",
+        "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "SolanumはNomai最後の生き残りだ。流れ者の損傷した研究所からビジョントーチを持ってきて、私の知っていることのすべてを彼女に見せたらどうだろうか？",
+        "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "ビジョンが見えた後、不思議なことが起こった。雲は霧散し、Solanumから奇妙な信号が聞こえるようになった。彼女のマスクの周りには奇妙な光の粒子が漂っている。",
+        "Solanum looks disoriented according to her reply.": "Solanumはその様子からして、かなり混乱しているようだ。",
+        "Inscription near Solanum's body": "Solanumの遺体近くの碑文",
+        "Solanum left some text near her body": "Solanumは遺体のそばに文章を書き残していた。",
+        "There are some new inscriptions left very recently": "ごく最近、新たに刻まれた文章がある。",
+        "Solanum's message abruptly stopped while mentioning Timber Hearth.": null,
 
-    // Recorder DB
-    "SOLANUM: Guess what? Everything works despite the damage! That's incredible! I am a Nomai, so I think can handle its system.": "SOLANUM:聞いて！損傷してはいるけど全て機能するわ！信じられない！私はNomaiだから、このシステムを使えると思う。",
-    "SOLANUM: You see this whiteboard? <![CDATA[<color=orange>The Vessel</color>]]> is still getting incoming signals from other Nomai even here, inside <![CDATA[<color=orange>Dark Bramble</color>]]>.": "SOLANUM:このホワイトボードが見えるでしょう？<![CDATA[<color=orange>船</color>]]>は<![CDATA[<color=orange>闇のイバラ</color>]]>の中にいるけれど他のNomaiからの信号を受信してる。",
-    "SOLANUM: Wait, is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM:待って、これは…うん…よし！自分でも信じられないけれど、Cannaのメッセージの発信源を<![CDATA[<color=lightblue>黄昏の銀河</color>]]>までたどることができた！",
-    "SOLANUM: Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under <![CDATA[<color=orange>the Vessel</color>]]> bridge.": "SOLANUM:Cannaは<![CDATA[<color=orange>黒き岩の太陽</color>]]>という安全な場所があると言ってた。まさに私たちが必要としているところだわ！座標は<![CDATA[<color=orange>船</color>]]>内の下層にあるホログラムパネルに表示されるはず。",
+        // Ring World (Stranger)
+        "Vision Torch in Damaged Laboratory": "損傷した研究所のビジョントーチ",
+        "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "損傷した研究所のどこかに、まだ使えるビジョントーチがあるかもしれない。",
+        "I found that vision torch. Its flames still work even in space where there is no oxygen.": "ビジョントーチを見つけた。その炎は酸素がない宇宙空間でも機能するようだ。",
 
-    //////////////////////////////
-    "SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back our memories this time.": "SOLANUM:<![CDATA[<color=orange>ワープコア</color>]]>は持ってきた？これは壊れてるの。残念だけれど、もう時間がない。もう後戻りはできないし、<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>は今回の記憶を送り返さないでしょう。",
-    //////////////////////////////
+        // Timber Hearth
+        "Solanum on Timber Hearth": "木の炉辺のSolanum",
+        "Is Solanum on Timber Hearth?": "Solanumは木の炉辺にいるのだろうか？",
+        "New quantum frequency": "新しい量子の周波数",
+        "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Solanumのメッセージは途中で終わっていた。木の炉辺について言い及んでいたが、そこにいるのだろうか？",
+        "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanumは木の炉辺の村の近くに現れた。どうやらHearthianを観察しているようだ。",
+        "Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.": null,
 
-    "SOLANUM: ...": "SOLANUM:…",
-    "SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.": "SOLANUM:ここ私たちの太陽系では多くのことが起こった。私たちの人生は異なっていても、私たちは同じ運命にある。",
-    "SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...": "SOLANUM:悲しいけれど、あなたの友人、あなたたち種族を助けることはできない。この日が来ることは分かってた。昔、Conoyは私たちが生きている間にそんなことは起こらないだろうと言っていたのに…でも、私たちはタイミングよくここにいる。私たちは今できることをしましょう。これは宇宙の法則で、私たちには止められないのだから…",
-    "SOLANUM: I am ready my friend, but the decision is yours.": "SOLANUM:私はもう準備できてる。どうするかはあなたが決めて。",
+        // Quantum Consciousness
+        "Quantum Consciousness": "量子意識",
+        "I've discovered strange frequency called Quantum Consciousness.": "量子意識という不思議な周波数を発見した。",
+        "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "これは新しい量子の法則、または量子的な例外と言えるかもしれない。 私の理論は、観測者が自身の量子的な性質を知覚した時、量子意識を獲得するというものだ。Solanumは、おそらく私のビジョンからこの知識を得たのだろう。",
+        "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "量子意識には認識できる強い信号があり、それは量子ゆらぎに似た響きをしている。実際、その信号は非常に強い。シグナルスコープが無くても聞こえる。",
+        "Another noticeable feature of Quantum Consciousness - particles near the possessor's head. Note: it appears that the other quantum rules do not apply to a Quantum Consciousness.": null,
+        "A possessor of Quantum Consciousness somehow has the ability to exist in multiple places at once. According to Solanum, she is capable of appearing at certain locations by thinking about them. Probably, she can appear only in places she knows.": null,
 
-    // Recorder ET
-    "SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.": "SOLANUM:ああ、ここは私の家だわ…そうだった。私のおもちゃもまだここにある…ほら、小さい頃から<![CDATA[<color=orange>眼</color>]]>に魅せられていたの。",
-    "SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.": "SOLANUM:もちろん、私たちを待つ理由は無いけれど、父たちは知識への欲求に目がくらんでしまったの。",
-    "SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.": "SOLANUM:街中が、子供もお年寄りも、みんな灰になってしまった…これはとても辛いことだわ。私が生きている最後のNomaiだと思うと少しも気分が晴れない。",
-    "SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...": "SOLANUM:これで少なくとも、彼らに別れを告げられる…。そして…どうか下がっていて。灰にしなければならないものはまだあるもの…",
+        // ATP Time Loop Ring
+        "Solanum inside Ash Twin Project": "灰の双子星プロジェクト内部のSolanum",
+        "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "Solanumはタイムループのコントロールパネルを確認したいようだ。灰の双子星プロジェクトの中に彼女がいるかもしれない。",
+        "Solanum is already here. She observing the time loop ring's logs.": "Solanumはもう来ていた。彼女はタイムループ（リング）のログを確認している。",
+        "Now she knows about the time loop and that our Sun will soon go supernova. Solanum wants to reach the Vessel, but she also wants to revisit her childhood places. I can try to find her on the Vessel, or somewhere else.": null,
 
-    // Recorder GD
-    "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.": "SOLANUM:長い時間を経て、私たちはついに<![CDATA[<color=lightblue>眼</color>]]>を見つけた。私たち種族にとっては喜ばしいことだったでしょうね。でも、私にとってはそうではなかったわ。",
+        "Paired Statue": "ペアになった彫像",
+        "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanumは灰の双子星プロジェクトの中にある、まだペアになっていない彫像のすぐそばを偶然通りかかった。そして、彼女もまたタイムループに巻き込まれてしまった。",
+        "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": null,
 
-    //////////////////////////////
-    "SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from another star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.": "SOLANUM:あなたのビジョンには感謝してる。なぜそれが簡単に見つからなかったのか、今でははっきりと分かる。他の星系から来た流れ者たちは<![CDATA[<color=lightblue>宇宙の眼</color>]]>について何でも知っていた。私たちもそうなら良かったのに。",
-    //////////////////////////////
-
-    "SOLANUM: Who knows how many other intelligent life forms it has lured? I don't think I want to know anything more about it. Even in my childhood I knew that it was not waiting for us or anyone else.": "SOLANUM:眼は他の知的生命体をどれだけ誘い込んだんでしょうね。私はもうこれ以上知りたいとは思わないわ。子供の頃から、あれは私たちや他の誰かを待っているのではないと思っていたの。",
-    "SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "SOLANUM:…その記憶の像は起動してる？Ramieにも見せてあげたかった。<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>と接続できているか確認したいわ。",
-
-    // Recorder TH
-    "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "SOLANUM:ああ、あなたね。今は意識がはっきりしている気がするけれど、不思議な感じだわ。この感覚は自分でも説明できない。",
-    "SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.": "SOLANUM:私はここにいる、そうでしょう？でも、どうやって？<![CDATA[<color=lightblue>木の炉辺</color>]]>を思い浮かべたら、ここにたどり着いたの。",
-    "SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.": "SOLANUM:Nomaiは死んだの？一人残らず？本当に悲しいけれど、どれくらい時間が経ったのでしょう。最後に覚えているのは、Bellsが<![CDATA[<color=lightblue>量子の月</color>]]>へ巡礼に行かせてくれたこと。まるで1時間前のことのようだけど、何年も量子の不確かさに囚われていたんだわ。",
-    "SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.": "SOLANUM:あなたの種族には今まで一人も会ったことがない。あなたと話せて光栄だわ！特にその4つの目が素敵。私の種族を代表して謝らないといけないことがあるの。私たちはかつて<![CDATA[<color=lightblue>太陽</color>]]>を爆発させようとした。そうすれば、あなたは現れなかったかもしれない。決して許されないことだけれど、うまくいかなくて良かったと思う。あなたの素晴らしい種族の進化を目の当たりにして、伝えずにはいられなかったわ。",
-    "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "SOLANUM:何が起きているのか、私たちがなぜここにいるのか解明しましょう。<![CDATA[<color=orange>軌道探査砲</color>]]>を見た？あれは壊れてる？まず、<![CDATA[<color=orange>探査機追跡モジュール</color>]]>のデータを確認したほうが良いわ。",
-    "TO BE CONTINUED...": "TO BE CONTINUED...",
-
-    // Ernesto Quest
-
-    // Slate note
-
-    "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "…<![CDATA[<i>キノコ</i>]]>を採りに行ってくる。この席を取るなよ！すぐに戻るよ。観測所で<![CDATA[<color=orange>新しい発射コード</color>]]>を手に入れないと打ち上げはできない。Hornfelsが最後の最後で変更したんだ。",
-
-    // Hornfels
-    "Hornfels": "Hornfels",
-    "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]>が消えた！",
-    "Hey! What's going on? Where's the anglerfish?": "どうしたんだ？アンコウはどこだ？",
-    "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "<![CDATA[<color=orange>Ernesto</color>]]>？誰だ？",
-    "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "小さな友だちがいなくなったんだ！<![CDATA[<color=orange>«Ernesto»</color>]]>はアンコウのことだ。こんな風にいなくなるなんて…",
-    "Oh, I'm sorry about that...": "ああ、それは失礼…",
-    "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "かわいそうな<![CDATA[<color=orange>Ernesto</color>]]>…これが<![CDATA[<color=orange>新しい発射コード</color>]]>だ…。",
-    "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "ただ<![CDATA[<color=orange>新しい発射コード</color>]]>が必要なんだ。",
-
-    // Slate
-    "Slate": "Slate",
-    "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "あれ、なんでまだいるんだ？<![CDATA[<color=orange>新しい発射コード</color>]]>は手に入れたか？",
-    "Is that the anglerfish from the museum?": "それは博物館のアンコウ…？",
-    "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>？！やめてくれ！",
-    "The anglerfish from the museum exhibition. Hornfels named it that.": "博物館に展示されていたアンコウ。Hornfelsがそう名付けた。",
-    "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "ああ、そうだ。博物館のあのアンコウだ。マシュマロにはうんざりして、もうこれ以上食べられない。",
-    "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "それで<![CDATA[<color=orange>Ernesto</color>]]>を食べるのか？！Hornfelsは<![CDATA[<color=orange>Ernesto</color>]]>を友だちだと言っていたのに！",
-    "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "アンコウだって魚だ。彼が何と呼んでいようと、もう調理中だし<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>とにかく、あと<![CDATA[<i>30分</i>]]>もあれば完成するよ。<![CDATA[<color=orange>闇のイバラ</color>]]>まで飛んで、Hornfelsのためにもう一匹捕まえればいいだろ？",
-    "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "分かった、そうする！<![CDATA[<i>(できっこない！)</i>]]>",
-    "That's disgusting.": "うんざりだ。",
-    "Nah, enjoy your meal then.": "いや、それなら美味しく食べてくれ。",
-    "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "やってくれるのか？感謝するよ！<![CDATA[<color=orange>Ernesto</color>]]>のことは秘密にしてくれよ？",
-    "There is no accounting for tastes.": "…好みは人それぞれだからな。",
-    "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "感謝するよ。<![CDATA[<i>30分</i>]]>以内に戻ってくれば、一口あげるぞ！",
-
-    // Ship dialogue
-
-    "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "ふむ…ここはビジョントーチを置くのにぴったりだ！必要なら、ここに置けばいいだろう。"
-  },
-  "UIDictionary": {
-    "Quantum Consciousness": "量子意識",
-    "Solanum": "Solanum",
-    "GloamingGalaxy": "黄昏の銀河", // Add this to other translations
-    "THE_VISION_TO_BE_CONTINUED": "TO BE CONTINUED...",
-    "THE_VISION_NEW_LAUNCH_CODES": "新しい発射コード: --|-..|-.--|-." // New launch codes: --|-..|-.--|-.
-  },
-  "ShipLogDictionary": {
-    // Brittle Hollow
-    "Solanum in the School Ruins": "廃校の中のSolanum",
-    "Solanum on Brittle Hollow": "脆い空洞のSolanum",
-    "I can hear Solanum's signal coming from Brittle Hollow.": "脆い空洞からSolanumの信号が聞こえる。",
-    "I found Solanum in the School.": "学校にいるSolanumを見つけた。",
-
-    //////////////////
-    "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Solanumは、ここが自分が通っていた学校だと言っていた。また、昔はブラックホールがもっと小さかったとも言っていた。彼女は滑り落ちないように重力水晶を持ってきたようだ。",
-    //////////////////
-
-    // CaveTwin_Body
-    "Solanum in the Sunless City": "太陽なき街のSolanum",
-    "I can hear Solanum's signal coming from the Sunless City.": "太陽なき街からSolanumの信号が聞こえる。",
-    "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "太陽なき街にいるSolanumを見つけた。彼女は眼の祭壇地区にある自宅にいる。",
-
-    //////////////////
-    "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanumは「宇宙の眼」に目がくらんだNomaiが招いた事態を悲しんでいる。彼女は子供の頃のおもちゃを壊してしまった。",
-    //////////////////
-
-    // DB_VesselBody
-    "Solanum on the Vessel": "船のSolanum",
-    "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "Solanumは船に乗りたいと思っている。闇のイバラの中までたどり着けるのだろうか？",
-
-    "Solanum did it! Whatever her power is, she's here and waiting for me once again.": "Solanumがやってくれた！ その力がなんであれ、もう一度ここで私を待っている。",
-    "Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "Solanumは他のNomaiから受信したメッセージの発信座標を追跡した。現代のNomaiであるCannaは、「黄昏の銀河」に安住の地があると言っている。その「黒き岩の太陽」からなる星系の座標は、船内の下層にあるホログラムに表示されるはずだ。",
-    "Gloaming Galaxy, Blackrock coordinates hologram": "黄昏の銀河、黒き岩の太陽の座標を示すホログラム",
-    "New coordinates": "新しい座標",
-    "I found new coordinates to another Galaxy. We can use the Warp Core from the Ash Twin Project to warp. There will be no turning back once I warp. Am I ready to do this?": "別の銀河系への新しい座標を発見した。灰の双子星プロジェクトのワープコアを使えばワープできる。一度ワープしたら後戻りはできない。本当にこれでいいのだろうか？",
-
-    // Giants Deep
-    "Solanum on Giant's Deep": "巨人の大海のSolanum",
-
-    //////////////////
-    "Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Solanumは巨人の大海に行きたいと言っているが、木の炉辺にもいるのだろう。",
-    //////////////////
-
-    "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "Solanumが探査機のログを調べているところを見つけた。こんなに光り輝くNomaiのコンピューターは今まで見たことがない。彼女はメインコンピューターにアクセスし、どのくらいの時間が経過したのかを確認した。",
-    "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Solanumは宇宙の眼のことを知って悲しんでいる。彼女が子供の頃から言っていた通り、眼は何も望んでいなかった。これ以上何も知りたくないと思うのも無理はない。彼女は記憶の像が起動していることに気づいた。",
-
-    // Quantum Moon
-    "Solanum on Quantum Moon": "量子の月のSolanum",
-    "What if..?": "もし…？",
-    "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "SolanumはNomai最後の生き残りだ。流れ者の損傷した研究所からビジョントーチを持ってきて、私の知っていることのすべてを彼女に見せたらどうだろうか？",
-    "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "ビジョンが見えた後、不思議なことが起こった。雲は霧散し、Solanumから奇妙な信号が聞こえるようになった。彼女のマスクの周りには奇妙な光の粒子が漂っている。",
-    "Solanum looks disoriented according to her reply.": "Solanumはその様子からして、かなり混乱しているようだ。",
-    "Inscription near Solanum's body": "Solanumの遺体近くの碑文",
-    "Solanum left some text near her body": "Solanumは遺体のそばに文章を書き残していた。",
-    "There are some new inscriptions left very recently": "ごく最近、新たに刻まれた文章がある。",
-
-    //////////////////
-    "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and vanished on mentioning Timber Hearth.": "自分の死体を見るのは、さぞかし奇妙なことだろう。Solanumが一刻も早くこの場を離れたいと思うのも無理はない。彼女は木の炉辺について触れ、姿を消した。", // !!!! UPDATE
-    //////////////////
-
-    // Ring World (Stranger)
-    "Vision Torch in Damaged Laboratory": "損傷した研究所のビジョントーチ",
-    "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "損傷した研究所のどこかに、まだ使えるビジョントーチがあるかもしれない。",
-    "I found that vision torch. Its flames still work even in space where there is no oxygen.": "ビジョントーチを見つけた。その炎は酸素がない宇宙空間でも機能するようだ。",
-
-    // Timber Hearth
-    "Solanum on Timber Hearth": "木の炉辺のSolanum",
-    "Is Solanum on Timber Hearth?": "Solanumは木の炉辺にいるのだろうか？",
-    "New quantum frequency": "新しい量子の周波数",
-
-    //////////////////
-    "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Solanumのメッセージは途中で終わっていた。木の炉辺について言い及んでいたが、そこにいるのだろうか？",
-    //////////////////
-
-    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanumは木の炉辺の村の近くに現れた。どうやらHearthianを観察しているようだ。",
-    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "彼女のレコーダーによれば、木の炉辺を思い浮かべたらそこに現れたようだ。これは私の新しい量子の法則で説明できるかもしれない。Solanumは太陽ステーションについて話し、謝ってくれたが、それは構わない。Solanumは巨人の大海にある探査機追跡モジュールについても知りたがっている。",
-    "Quantum Consciousness": "量子意識",
-    "I've discovered strange frequency called Quantum Consciousness.": "量子意識という不思議な周波数を発見した。",
-
-    //////////////////
-    "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "これは新しい量子の法則、または量子的な例外と言えるかもしれない。 私の理論は、観測者が自身の量子的な性質を知覚した時、量子意識を獲得するというものだ。Solanumは、おそらく私のビジョンからこの知識を得たのだろう。",
-    //////////////////
-
-    "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "量子意識には認識できる強い信号があり、それは量子ゆらぎに似た響きをしている。実際、その信号は非常に強い。シグナルスコープが無くても聞こえる。",
-    "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "量子意識のもう一つの特徴は、観測者の頭の近くに光の粒子が漂っていることだ。ちなみに、量子意識では他の量子の法則は機能していないようだ。",
-
-    //////////////////
-    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "量子意識は、どういうわけか同時に複数の場所に存在する能力を持っている。Solanumによると、彼女は特定の場所を思い浮かべるだけでその場所に現れることができるようだ。仮説:彼女は既知の場所にのみ現れることができる。",
-    //////////////////
-
-    // ATP Time Loop Ring
-    "Solanum inside Ash Twin Project": "灰の双子星プロジェクト内部のSolanum",
-    "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "Solanumはタイムループのコントロールパネルを確認したいようだ。灰の双子星プロジェクトの中に彼女がいるかもしれない。",
-    "Solanum is already here. She observing the time loop ring's logs.": "Solanumはもう来ていた。彼女はタイムループ（リング）のログを確認している。",
-    "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.": "Solanumは私がタイムループの中にいること、そして太陽がもうすぐ超新星爆発を起こすことに気づいた。チャージされたワープコアを使えば脱出できるかもしれない。船の中でまた会うことになりそうだ。",
-    "Paired Statue": "ペアになった彫像",
-    "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanumは灰の双子星プロジェクトの中にある、まだペアになっていない彫像のすぐそばを偶然通りかかった。そして、彼女もまたタイムループに巻き込まれてしまった。",
-
-    //ADD !
-    "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "Solanumがタイムループのリセットについて理解した今、船へ行こうとしている。",
-
-    // Ernesto Quest
-    //////////////////
-    "Where is Ernesto?": "Ernesto行方不明",
-    "Seriously, how could an anglerfish just disappear?": "真面目に、アンコウが消えるなんてありえるのだろうか？",
-    "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfelsによると、アンコウの«Ernesto»が展示から姿を消したようだ。",
-    "Ernesto found": "Ernesto見つかる",
-    "I found Ernesto": "Ernestoを見つけた。",
-    "I found Slate with Ernesto. He's cooking him on campfire.": "SlateがErnestoと一緒にいるのを見つけた。キャンプファイヤーで料理している。",
-    "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Slateはマシュマロにうんざりして、Ernestoを料理することにしたようだ。30分で出来上がるそうだが、その前にループがリセットされるので関係ないだろう。"
-    //////////////////
-  }
+        // Ernesto Quest       
+        "Where is Ernesto?": "Ernesto行方不明",
+        "Seriously, how could an anglerfish just disappear?": "真面目に、アンコウが消えるなんてありえるのだろうか？",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfelsによると、アンコウの«Ernesto»が展示から姿を消したようだ。",
+        "Ernesto found": "Ernesto見つかる",
+        "I found Ernesto": "Ernestoを見つけた。",
+        "I found Slate with Ernesto. He's cooking him on campfire.": "SlateがErnestoと一緒にいるのを見つけた。キャンプファイヤーで料理している。",
+        "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Slateはマシュマロにうんざりして、Ernestoを料理することにしたようだ。30分で出来上がるそうだが、その前にループがリセットされるので関係ないだろう。"
+        
+    }
 }

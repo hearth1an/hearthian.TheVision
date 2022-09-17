@@ -1,202 +1,195 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
-  "DialogueDictionary": {
-    // Hint: use «» instead of "".
-    // Computer GD
-    "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "主电脑：已授权访问日志——所莱内姆。\n用户需求：«上一次授权访问»。计算中...", // use \n here to enter new line
-    "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "主电脑：上一次授权访问—— 281,042 年前。 \n用户名= 玛罗。", // and here
-    "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "正在可视化进程。已发现与 <![CDATA[<color=lightblue>宇宙之眼</color>]]>所有已知指标相符的深空异常现象。",
-    // Computer ATP
-    // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> 分, <![CDATA[<TimeSeconds>]]> 秒前: Data received from previous cycles."
-    "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]>分钟，<![CDATA[<TimeSeconds>]]>秒前：接收到来自之前循环的数据。",
-    // Here ↓ translate this (with same CDATA things): "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue"
-    "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "面具正在接收来自以下对象的数据：\n<![CDATA[<color=orange>探测器跟踪模块</color>]]> \n<![CDATA[<color=lightblue>深巨星</color>]]> 回忆雕像 \n<![CDATA[<color=lightblue>木炉星</color>]]> 回忆雕像 \n<![CDATA[<color=orange>灰烬双星计划</color>]]> 回忆雕像",
-    // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
-    "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "距离循环结束传输前还有<![CDATA[<TimeMinutesRemaining>]]>分钟。",
-    "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "警告！移除核心将会中止 <![CDATA[<color=orange>灰烬双星计划</color>]]>.",
-    // QM ground
-    //////////////////////////////
-    "SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving and I took my recorder. Where am I? Is it the state of Timber Hea....": "所莱内姆：我... 我存在吗？这也是我.... 这怎么可能？ 我不能再呆在这了，我要带着我的录音器离开。我在哪？这是木炉....",
-    //////////////////////////////
-    // QM response
-    "SOLANUM: I.. I don't understand.. wh.. what just.. what is this feeling? What is all of this? All answers are in the sky?": "所莱内姆：我.. 我不能理解.. 刚.. 刚才是.. 这是什么感觉？这一切都是怎么回事？也许一切的解答都在天上？",
-    // Recorder ATP
-    //////////////////////////////
-    "SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statues? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?": "所莱内姆：你看过这个吗？ 我们的<![CDATA[<color=lightblue>太阳</color>]]> 将要死亡，而你.. 你是和其中一座雕像配对了吗？ 有个在 <![CDATA[<color=lightblue>深巨星</color>]]> 的也配对了。 我想知道，是谁或是什么成功配对了？",
-    //////////////////////////////
-    "SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language.": "所莱内姆：当我没说，我忘了你不能回答，毕竟我不懂你们的语言。",
-    "SOLANUM: It appears that I am also paired now. I ended up right in front of that nearby statue when I thought about this place.": "所莱内姆：似乎我现在也成功配对了。当我想起这个地方的时候，我正好就出现在了旁边那个雕像的正前方",
-    "SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.": "所莱内姆：我猜我们俩都被困在了<![CDATA[<color=lightblue>太阳</color>]]>正将要超新星化前的时间循环内。今天真是我们的幸运日，是吧？或者说不是这样的。抱歉。",
-    //////////////////////////////
-    "SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!": "所莱内姆：我才意识到我们快没有时间了。根据你的记忆，我很可能在循环重置后会回到<![CDATA[<color=lightblue>量子卫星</color>]]> ？是这样的，没错吧？下个循环再见！",
-    //////////////////////////////
-    "SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.": "所莱内姆：我们真的能逃脱吗？超新星会非常巨大，但要是我们直接飞离这里呢？这应该是可行的。上一次循环的超新星对跃迁核心进行了充能，而我们可以利用这个核心在<![CDATA[<color=lightblue>太阳</color>]]> 再次爆炸前逃离。",
-    "SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.": "所莱内姆：根据你的影像，<![CDATA[<color=orange>飞船</color>]]> 就在 <![CDATA[<color=lightblue>黑棘星</color>]]>。它可能还能运作。我很难到达那里，但我至少得试试。",
-    // Recorder ATP 2///// ADD TO TRANSLATIONS!
-    //////////////////////////////
-    "SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.": "所莱内姆：现在我明白循环是怎么回事了。我记得上次循环的一切。",
-    "SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "所莱内姆：戴兹是这么说的来着？ <![CDATA[<i>«把记忆送回过去和肉身回到过去不是一回事。»</i>]]>。",
-    "SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.": "所莱内姆：无论如何，既然我已经明白循环的原理，让我们继续吧。我会再次打开核心，不过下个循环就换你来了。",
-    //////////////////////////////
-    // Recorder BH
-    //////////////////////////////
-    "SOLANUM: This place is our school. It teaches us about the universe, stars, singularities, gravity, and everything related to it. It wasn't so unstable before, and I'm not sure, but I remember the black hole being smaller.": "所莱内姆：这地方是我们的学校。在这里我们学习有关宇宙、恒星、奇点、重力等一切有关的知识。过去这里没有这么不稳定，而且虽然我不确定，但我记得以前的黑洞没这么大。",
-    //////////////////////////////
-    "SOLANUM: As a student, it was easy for me to imagine the universe collapsing because I never imagined it could happen in my lifetime...": "所莱内姆：在我还是个学生的时候，我可以轻松地想象宇宙毁灭的景象，因为我从来没有想到过这种事可以在我还活着时就发生...",
-    "SOLANUM: These buildings are not stable, so I took this gravity crystal just in case. This is the second one by the way. The first one freaked out somehow and inverted gravity, so I had to break it.": "所莱内姆：这些建筑物并不稳定，所以我带了一枚重力水晶以防万一。顺便一提这是第二枚了。第一枚不知怎的出了些问题，还反转了重力，所以我不得不弄碎了它。",
-    "SOLANUM: I'm not sure if this happened because of me or because of the black hole effect, but I cannot be 100% certain this one will be stable either.": "所莱内姆：我不确定这是我自己还是黑洞的作用导致的，我也不能百分百确定这枚水晶会是稳定的。",
-    // Recorder DB
-    "SOLANUM: Guess what? Everything works despite the damage! That's incredible! I am a Nomai, so I think can handle its system.": "所莱内姆：你猜怎么着？尽管遭受重创，一切都能运作！这简直不可思议！我是个挪麦人，所以我认为我能操作它的系统。",
-    "SOLANUM: You see this whiteboard? <![CDATA[<color=orange>The Vessel</color>]]> is still getting incoming signals from other Nomai even here, inside <![CDATA[<color=orange>Dark Bramble</color>]]>.": "所莱内姆：你看见这个白板了吗？ <![CDATA[<color=orange>飞船</color>]]>飞船仍然在接收从其他挪麦人那里发来的信号，即使是在这<![CDATA[<color=orange>黑棘星</color>]]>里面。",
-    "SOLANUM: Wait, is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "所莱内姆：等等，这是.. 嗯.. 对！对！我不知道具体是怎么回事，但我成功追踪到了卡纳发送的消息的来源地，以及通往<![CDATA[<color=lightblue>暮色银河</color>]]>的方法。",
-    "SOLANUM: Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under <![CDATA[<color=orange>the Vessel</color>]]> bridge.": "所莱内姆：卡纳说那里有一处安全的地方，叫做<![CDATA[<color=orange>黑石星系</color>]]>。那正是我们需要的！坐标应该显示在了 <![CDATA[<color=orange>飞船</color>]]> 舰桥的下层。",
-    //////////////////////////////
-    "SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back our memories this time.": "所莱内姆：你带来<![CDATA[<color=orange>跃迁核心</color>]]>了吗？这个坏了。很不幸，我们几乎没有时间了。已经没有回头路了，而<![CDATA[<color=orange>灰烬双星计划</color>]]>这次将不会把我们的记忆送回过去了。",
-    //////////////////////////////
-    "SOLANUM: ...": "所莱内姆：...",
-    "SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.": "所莱内姆：在我们的太阳系发生了太多的事情，无论是关于我的还是关于你的。我们的人生或许不同，但我们的命运是相通的。",
-    "SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...": "所莱内姆：我对你的朋友和你们种族的其他人的遭遇深表遗憾。很可惜，我们不能帮助他们。我早已知道这一天将会到来。甚至有一次，科诺伊告诉我这不会在我们活着的时候发生。好吧，现在我们在合适的时间、合适的地点。现在要帮的是我们自己，我们无法改变宇宙法则...",
-    "SOLANUM: I am ready my friend, but the decision is yours.": "所莱内姆：我准备好了，但做决定的是你。",
-    // Recorder ET
-    "SOLANUM: Ah, this is my home... it was. Even my toys are still here... See? The <![CDATA[<color=orange>Eye</color>]]> has always fascinated me since I was a child.": "所莱内姆：啊这是我的家... 曾经是。我的玩具甚至都还在这里... 你看见了吧？<![CDATA[<color=orange>眼</color>]]> 从我还是个孩子的时候就迷住了我。",
-    "SOLANUM: Obviously, it has no reason to wait for us, but my dad and the others were blinded by the desire for knowledge.": "所莱内姆：显然，它没有理由是在等待我们，但我的父亲和其他人都被求知欲蒙蔽了。",
-    "SOLANUM: The whole city, elders and kids, all turned to ashes... This is very hard to handle. It doesn't make it feel any better knowing that I'm the last Nomai alive.": "所莱内姆：整座城市，无论是老人还是孩子，都化成了灰... 这很难接受。而且知道我是最后一个幸存的挪麦人并不会让我觉得好受一些。",
-    "SOLANUM: At least now I can say goodbye to them... and... please stand back. There is more that needs to be turned into ash...": "所莱内姆：至少现在我可以向他们说再见了... 然后... 请稍微退后一点. 还有一些别的东西需要化成灰...",
-    // Recorder GD
-    "SOLANUM: We finally found the <![CDATA[<color=lightblue>Eye</color>]]>. My clan would be happy for that, but not me.": "所莱内姆：我们终于找到了<![CDATA[<color=lightblue>眼</color>]]>。我的族人们会很高兴的，不过我不会。",
-    //////////////////////////////
-    "SOLANUM: I am thankful for your vision, now I know exactly why it was not easy to find. Those strangers from another star system, they knew everything about the <![CDATA[<color=lightblue>Eye of the universe</color>]]>, I wish we could too.": "所莱内姆：我很感激你展示给我的影像，现在我明确地知道了为什么它不容易被找到了。那些来自别的恒星系的外星站居民，他们知道有关于<![CDATA[<color=lightblue>宇宙之眼</color>]]>的一切，我希望我们也能知道。",
-    //////////////////////////////
-    "SOLANUM: Who knows how many other intelligent life forms it has lured? I don't think I want to know anything more about it. Even in my childhood I knew that it was not waiting for us or anyone else.": "所莱内姆：谁知道它诱惑了多少的智慧生命体？我不觉得我想要知道更多关于它的知识。从我儿童时期我就知道它没有在等我们或是其他任何人。",
-    "SOLANUM: .. Is that Memory Statue active? I wish Ramie could see this. I want to check on its connection with <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "所莱内姆：.. 回忆雕像启动了吗？我希望拉米可以看到这个。我想要去检查它与<![CDATA[<color=orange>灰烬双星计划</color>]]>的连接状况。",
-    // Recorder TH
-    "SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.": "所莱内姆：是你啊，朋友。我觉得我现在思路清晰了，但我仍然没法向你解释这件事，我自己也不明白发生了什么。",
-    "SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.": "所莱内姆：我在这里，对吧？但我怎么会在这里？我刚刚在想关于<![CDATA[<color=lightblue>木炉星</color>]]>的事情，任何现在我就在这了。",
-    "SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.": "所莱内姆：所以，挪麦人死了？所有人都死了？知道这种事令人难受，已经过去多久了？我记得大概一小时前贝尔斯还在指导我有关<![CDATA[<color=lightblue>量子卫星</color>]]> 朝圣的事情。那么多年的时间里我都被困住量子不确定性之中。",
-    "SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.": "所莱内姆：我以前从来没遇到过你们种族的人。很荣幸能和你说话！我尤其喜欢你的四只眼睛。而我... 我必须提我的族人向你道歉。我们曾试着引爆<![CDATA[<color=lightblue>太阳</color>]]>，这有可能让你们的种族化为灰烬。这在道德上是无法接受的，我很庆幸我们失败了。在我看到这个年轻而充满好奇心的种族成长的样子后，我想我必须得说这些话。",
-    "SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.": "所莱内姆：我想现在我们应该要去搞清楚这里发生了什么，以及为什么我们在这里。你看见那台<![CDATA[<color=orange>轨道探测炮</color>]]>了吗？它是...坏了吗？首先我需要去检查一下它的<![CDATA[<color=orange>探测器追踪模块</color>]]> 。",
-    "TO BE CONTINUED...": "未完待续...",
-    // Ernesto Quest
-    // Slate note
-    "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "我去... 去... 采<![CDATA[<i>蘑菇</i>]]>了。别占了我的位置！我很快就会回来。去天文台拿<![CDATA[<color=orange>新发射密码</color>]]> ，霍恩费斯一分钟前把它改了。",
-    // Hornfels
-    "Hornfels": "霍恩费斯",
-    "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>厄内斯托</color>]]>失踪了！",
-    "Hey! What's going on? Where's the anglerfish?": "嘿！发生什么事了？那只安康鱼呢？",
-    "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "谁是<![CDATA[<color=orange>厄内斯托</color>]]>？",
-    "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "我的小小伙伴消失了！我把这只安康鱼叫做<![CDATA[<color=orange>«厄内斯托»</color>]]>。我无法相信他就这样离开了我...",
-    "Oh, I'm sorry about that...": "哦，我对此深表遗憾...",
-    "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "可怜的<![CDATA[<color=orange>厄内斯托</color>]]>... 这是你的<![CDATA[<color=orange>新发射密码</color>]]>...",
-    "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "我只是来拿<![CDATA[<color=orange>新发射密码</color>]]>的。",
-    // Slate
-    "Slate": "Slate",
-    "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "噢，你怎么还在这？你拿到<![CDATA[<color=orange>新发射密码</color>]]>了吗？",
-    "Is that the anglerfish from the museum?": "那是博物馆的安康鱼吗？",
-    "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>厄内斯托</color>]]>？！不！",
-    "The anglerfish from the museum exhibition. Hornfels named it that.": "博物馆展览的安康鱼。霍恩费斯这么叫它。",
-    "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "行吧，你猜怎么着？没错，这就是博物馆的那只安康鱼。我吃棉花糖吃腻了。我忍不住了。",
-    "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "所以你决定要吃<![CDATA[<color=orange>厄内斯托</color>]]>？！霍恩费斯说<![CDATA[<color=orange>厄内斯托</color>]]> 是朋友！",
-    "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "安康鱼说到底还是鱼。不管他起了什么名，这条鱼已经快烤熟了。<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>或者说还没。我觉得大概<![CDATA[<i>30 分钟</i>]]>内能烤好。你何不飞去<![CDATA[<color=orange>黑棘星</color>]]>附近，然后抓条新的给霍恩费斯？",
-    "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "我会这么做的！<![CDATA[<i>（其实不会）</i>]]>",
-    "That's disgusting.": "好恶心啊。",
-    "Nah, enjoy your meal then.": "算了，祝你用餐愉快。",
-    "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "你会替我去？多谢！只要记得别把<![CDATA[<color=orange>厄内斯托</color>]]>的事情告诉任何人，行吗？",
-    "There is no accounting for tastes.": "不保证味道如何。",
-    "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "多谢！<![CDATA[<i>30 分钟</i>]]>内回来，我会分你一口的。",
-    // Ship dialogue
-    "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "嗯... 这里似乎很适合放投影火把！如果需要的话，我可以把它放在这。"
-  },
-  "UIDictionary": {
-    "Quantum Consciousness": "量子意识",
-    "Solanum": "所莱内姆",
-    "GloamingGalaxy": "暮色银河", // Add this to other translations
-    "THE_VISION_TO_BE_CONTINUED": "待续...",
-    "THE_VISION_NEW_LAUNCH_CODES": "新的发射密码: --|-..|-.--|-." // New launch codes: --|-..|-.--|-.
-  },
-  "ShipLogDictionary": {
-    // Brittle Hollow
-    "Solanum in the School Ruins": "学校废墟中的所莱内姆",
-    "Solanum on Brittle Hollow": "碎空星上的所莱内姆",
-    "I can hear Solanum's signal coming from Brittle Hollow.": "我可以听见所莱内姆的信号从碎空星传来。",
-    "I found Solanum in the School.": "我在学校里发现了所莱内姆。",
-    //////////////////
-    "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "所莱内姆说这里是她上学的地方。她也提到黑洞在过去比较小。她带了一枚重力水晶以防跌落。",
-    //////////////////
-    // CaveTwin_Body
-    "Solanum in the Sunless City": "背阴城中的所莱内姆",
-    "I can hear Solanum's signal coming from the Sunless City.": "我可以听见所莱内姆的信号从背阴城传来。",
-    "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "我在背阴城内找到了所莱内姆。她呆在位于眼祭坛区的家里。",
-    //////////////////
-    "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "所莱内姆为挪麦人对眼的盲信感到悲伤、她摧毁了她的旧玩具们。",
-    //////////////////
-    // DB_VesselBody
-    "Solanum on the Vessel": "飞船内的所莱内姆",
-    "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "所莱内姆想要尝试抵达飞船。她有可能进入黑棘星内部吗？",
-    "Solanum did it! Whatever her power is, she's here and waiting for me once again.": "所莱内姆做到了！无论她的能力是什么，她抵达了这里并再一次等候我的到来。",
-    "Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "所莱内姆追踪了接收到的挪麦消息的来源坐标。卡纳，现代的挪麦人，声称在暮色银河有安全的地方。通向黑石星系的目标应该代替了眼信号的全息图，显示在飞船的舰桥下层。",
-    "Gloaming Galaxy, Blackrock coordinates hologram": "暮色银河，黑石星系坐标的全息图",
-    "New coordinates": "新坐标",
-    "I found new coordinates to another Galaxy. We can use the Warp Core from the Ash Twin Project to warp. There will be no turning back once I warp. Am I ready to do this?": "我发现通往别的星系的新坐标。我们可以用灰烬双星计划的跃迁核心进行跃迁。一旦我发起跃迁，将没有回头路。我准备好这么做了吗？",
-    // Giants Deep
-    "Solanum on Giant's Deep": "深巨星上的所莱内姆",
-    //////////////////
-    "Solanum wants to visit Giant's Deep, but she will probably stay on Timber Hearth as well.": "所莱内姆想看看深巨星，但她可能也会呆在木炉星上。",
-    //////////////////
-    "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "我看到所莱内姆正在观察航天日志。我从未见过挪麦电脑发出这样的绿色光芒。她正在访问主电脑来知道究竟过去了多久。",
-    "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "所莱内姆对宇宙之眼感到悲伤。她从童年起就知道，眼根本没有自己的意愿。所以不出人意料，她不想了解更多眼的事情。这里有一尊还在运行的记忆雕像吸引了她的注意。",
-    // Quantum Moon
-    "Solanum on Quantum Moon": "量子卫星上的所莱内姆",
-    "What if..?": "假如..?",
-    "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "所莱内姆是最后一个活着的挪麦人。假如我使用外星站上故障实验室中的火把视野向她展示我了解的一切，会发生什么？",
-    "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "在记忆共享之后发现了一些奇怪的事情。云层突然立刻消失了，同时我听到来自所莱内姆的奇怪频率。她的面具上带上了奇怪的火花。",
-    "Solanum looks disoriented according to her reply.": "根据她的回答，所莱内姆有些无所适从。",
-    "Inscription near Solanum's body": "所莱内姆尸体旁的铭文",
-    "Solanum left some text near her body": "所莱内姆在她的尸体旁留下了一些文字",
-    "There are some new inscriptions left very recently": "这里有不久前留下的新的铭文",
-    //////////////////
-    "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and vanished on mentioning Timber Hearth.": "看到自己的尸体一定是非常奇怪的感觉，所以所莱内姆想尽快离开这个地方。她拾起了录像，然后在提到木炉星时消失了。", // !!!! UPDATE 
-    //////////////////
-    // Ring World (Stranger)
-    "Vision Torch in Damaged Laboratory": "故障实验室中的火把视野",
-    "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "我确信在故障实验室的某处有一支火把视野。我想知道它是否还有用。",
-    "I found that vision torch. Its flames still work even in space where there is no oxygen.": "我找到了那支火把视野。即使在没有氧气的太空中，它的火焰依旧跳动。",
-    // Timber Hearth
-    "Solanum on Timber Hearth": "木炉星上的所莱内姆",
-    "Is Solanum on Timber Hearth?": "所莱内姆会在木炉星上吗？",
-    "New quantum frequency": "新的量子频率",
-    //////////////////
-    "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "当所莱内姆提起木炉星时，文字被打断了。也许她在那儿？",
-    //////////////////
-    "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "所莱内姆不知怎么出现在木炉星的村庄附近。看起来她正在观察哈斯人。",
-    "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "所莱内姆的录像写到，她只是想到了木炉星，就到了那里。这用我新的量子法则解释得通。她告诉了我关于太阳站的事情，并向我道歉，但我其实并不在意。所莱内姆还想了解更多关于深巨星上探测跟踪模块的事情。",
-    "Quantum Consciousness": "量子意识",
-    "I've discovered strange frequency called Quantum Consciousness.": "我发现了一种叫做量子意识的奇怪频率。",
-    //////////////////
-    "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "这可能是一个新的量子法则，或是一种例外情况。我的理论是，如果一个观察者意识到它是量子态的，它就会获得量子意识。所莱内姆可能从我的记忆中知道了这个知识。",
-    //////////////////
-    "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "量子意识有强烈的可识别信号，听起来和量子波动很像。事实上，这个信号强到即使不装备信号镜也能听见。",
-    "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "关于量子意识，需要注意的另一件事 - 头部的粒子。另外，其他几条量子法则貌似对量子意识不生效。",
-    //////////////////
-    "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "量子意识似乎具有同时出现在多个地方的能力。据所莱内姆所说，如果她想出现在一些特定的地方，就必须想着它们。假说：她只能出现在她知道的地方。",
-    //////////////////
-    // ATP Time Loop Ring
-    "Solanum inside Ash Twin Project": "灰烬双星计划中的所莱内姆",
-    "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "所莱内姆想查看时间循环的控制面板，我们可以在灰烬双星计划里找到她。",
-    "Solanum is already here. She observing the time loop ring's logs.": "所莱内姆已经到了，她正在查看时间循环的日志。",
-    "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.": "所莱内姆认识到我们正身处时间循环之中而且不久后超新星就会爆发。也许我们可以利用这个充能的跃迁核心逃脱。看起来我们可以在飞船里再见面。",
-    "Paired Statue": "已匹配的雕像",
-    "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "所莱内姆刚刚恰好经过了灰烬双星计划中未被匹配的回忆雕像。现在她也被困进时间循环了。",
-    //ADD !
-    "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "现在所莱内姆知道时间循环是怎样工作的了。接下来我们将尝试前往飞船。",
-    // Ernesto Quest
-    //////////////////
-    "Where is Ernesto?": "厄内斯托在哪？",
-    "Seriously, how could an anglerfish just disappear?": "老实说，那安康鱼怎么可能自己凭空消失。",
-    "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "霍恩菲斯说博物馆里那只叫«厄内斯托»的安康鱼不见了。",
-    "Ernesto found": "找到厄内斯托了",
-    "I found Ernesto": "我找到厄内斯托了",
-    "I found Slate with Ernesto. He's cooking him on campfire.": "我在斯雷特那里找到了厄内斯托，他把厄内斯托夹在篝火上烤了。",
-    "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "斯雷特受够了烤棉花糖，所以他决定把厄内斯托料理了，大概需要30分钟就可以完成。看来不需要阻止他了，在他完事前循环会先到来。"
-    //////////////////
-  }
+    "DialogueDictionary": {
+        // Hint: use «» instead of "".
+        // Computer GD
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "主电脑：已授权访问日志——所莱内姆。\n用户需求：«上一次授权访问»。计算中...", // use \n here to enter new line
+        "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "主电脑：上一次授权访问—— 281,042 年前。 \n用户名= 玛罗。", // and here
+        "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "正在可视化进程。已发现与 <![CDATA[<color=lightblue>宇宙之眼</color>]]>所有已知指标相符的深空异常现象。",
+        // Computer ATP
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> 分, <![CDATA[<TimeSeconds>]]> 秒前: Data received from previous cycles."
+        "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]>分钟，<![CDATA[<TimeSeconds>]]>秒前：接收到来自之前循环的数据。",
+        // Here ↓ translate this (with same CDATA things): "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue"
+        "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "面具正在接收来自以下对象的数据：\n<![CDATA[<color=orange>探测器跟踪模块</color>]]> \n<![CDATA[<color=lightblue>深巨星</color>]]> 回忆雕像 \n<![CDATA[<color=lightblue>木炉星</color>]]> 回忆雕像 \n<![CDATA[<color=orange>灰烬双星计划</color>]]> 回忆雕像",
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
+        "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "距离循环结束传输前还有<![CDATA[<TimeMinutesRemaining>]]>分钟。",
+        "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "警告！移除核心将会中止 <![CDATA[<color=orange>灰烬双星计划</color>]]>.",
+
+        // Quantum Moon
+        "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.": null,
+        "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": null,
+        // Recorder TH
+        "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.": null,
+        "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.": null,
+        "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.": null,
+        "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.": null,
+        "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.": null,
+        // Recorder GD
+        "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I wish my clan could see this.": null,
+        "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": null,
+        "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": null,
+        "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": null,
+        // Recorder ATP 
+        "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": null,
+        "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": null,
+        "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": null,
+        "SOLANUM: There are four masks active at once! I wish Ramie could see this...": null,
+        "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.": null,
+        "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.": null,
+        "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": null,
+        // Recorder ATP 2
+        "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": null,
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": null,
+        "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": null,
+        // Recorder BH
+        "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": null,
+        "SOLANUM: As a student, I was imagining the universe collapse. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.": null,
+        "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.": null,
+        "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.": null,
+        // Recorder ET
+        "SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.": null,
+        "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.": null,
+        "SOLANUM: It's unsafe here, I think. I can hear the sand rising.": null,
+        "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.": null,
+        // Recorder DB
+        "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": null,
+        "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": null,
+        "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": null,
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": null,
+        "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": null,
+        "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": null,
+        "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": null,
+        "SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.": null,
+
+        // EYE SCENE
+        "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": null,
+        "SOLANUM: Would you try to enter it?": null,
+        "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": null,
+        "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": null,
+
+
+        // Ernesto Quest
+        // Slate note
+        "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "我去... 去... 采<![CDATA[<i>蘑菇</i>]]>了。别占了我的位置！我很快就会回来。去天文台拿<![CDATA[<color=orange>新发射密码</color>]]> ，霍恩费斯一分钟前把它改了。",
+        // Hornfels
+        "Hornfels": "霍恩费斯",
+        "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>厄内斯托</color>]]>失踪了！",
+        "Hey! What's going on? Where's the anglerfish?": "嘿！发生什么事了？那只安康鱼呢？",
+        "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "谁是<![CDATA[<color=orange>厄内斯托</color>]]>？",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "我的小小伙伴消失了！我把这只安康鱼叫做<![CDATA[<color=orange>«厄内斯托»</color>]]>。我无法相信他就这样离开了我...",
+        "Oh, I'm sorry about that...": "哦，我对此深表遗憾...",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "可怜的<![CDATA[<color=orange>厄内斯托</color>]]>... 这是你的<![CDATA[<color=orange>新发射密码</color>]]>...",
+        "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "我只是来拿<![CDATA[<color=orange>新发射密码</color>]]>的。",
+        // Slate
+        "Slate": "Slate",
+        "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "噢，你怎么还在这？你拿到<![CDATA[<color=orange>新发射密码</color>]]>了吗？",
+        "Is that the anglerfish from the museum?": "那是博物馆的安康鱼吗？",
+        "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>厄内斯托</color>]]>？！不！",
+        "The anglerfish from the museum exhibition. Hornfels named it that.": "博物馆展览的安康鱼。霍恩费斯这么叫它。",
+        "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "行吧，你猜怎么着？没错，这就是博物馆的那只安康鱼。我吃棉花糖吃腻了。我忍不住了。",
+        "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "所以你决定要吃<![CDATA[<color=orange>厄内斯托</color>]]>？！霍恩费斯说<![CDATA[<color=orange>厄内斯托</color>]]> 是朋友！",
+        "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "安康鱼说到底还是鱼。不管他起了什么名，这条鱼已经快烤熟了。<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>或者说还没。我觉得大概<![CDATA[<i>30 分钟</i>]]>内能烤好。你何不飞去<![CDATA[<color=orange>黑棘星</color>]]>附近，然后抓条新的给霍恩费斯？",
+        "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "我会这么做的！<![CDATA[<i>（其实不会）</i>]]>",
+        "That's disgusting.": "好恶心啊。",
+        "Nah, enjoy your meal then.": "算了，祝你用餐愉快。",
+        "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "你会替我去？多谢！只要记得别把<![CDATA[<color=orange>厄内斯托</color>]]>的事情告诉任何人，行吗？",
+        "There is no accounting for tastes.": "不保证味道如何。",
+        "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "多谢！<![CDATA[<i>30 分钟</i>]]>内回来，我会分你一口的。",
+        // Ship dialogue
+        "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "嗯... 这里似乎很适合放投影火把！如果需要的话，我可以把它放在这。"
+    },
+    "UIDictionary": {
+
+        "Quantum Consciousness": "量子意识",
+        "Solanum": "所莱内姆",
+        "GloamingGalaxy": "暮色银河",
+        "THE_VISION_NEW_LAUNCH_CODES": "新的发射密码: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
+
+        "THE_VISION_TO_BE_CONTINUED": null, // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
+        "THE_VISION_POPUP": null // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
+
+
+    },
+    "ShipLogDictionary": {
+        // Brittle Hollow
+        "Solanum in the School Ruins": "学校废墟中的所莱内姆",
+        "Solanum on Brittle Hollow": "碎空星上的所莱内姆",
+        "I can hear Solanum's signal coming from Brittle Hollow.": "我可以听见所莱内姆的信号从碎空星传来。",
+        "I found Solanum in the School.": "我在学校里发现了所莱内姆。",
+        "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "所莱内姆说这里是她上学的地方。她也提到黑洞在过去比较小。她带了一枚重力水晶以防跌落。",
+
+        // CaveTwin_Body
+        "Solanum in the Sunless City": "背阴城中的所莱内姆",
+        "I can hear Solanum's signal coming from the Sunless City.": "我可以听见所莱内姆的信号从背阴城传来。",
+        "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "我在背阴城内找到了所莱内姆。她呆在位于眼祭坛区的家里。",
+        "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": null,
+
+        // DB_VesselBody
+        "Solanum on the Vessel": "飞船内的所莱内姆",
+        "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "所莱内姆想要尝试抵达飞船。她有可能进入黑棘星内部吗？",
+        "Solanum did it! Whatever her power is, she's here and waiting for me once again.": "所莱内姆做到了！无论她的能力是什么，她抵达了这里并再一次等候我的到来。",
+        "Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "所莱内姆追踪了接收到的挪麦消息的来源坐标。卡纳，现代的挪麦人，声称在暮色银河有安全的地方。通向黑石星系的目标应该代替了眼信号的全息图，显示在飞船的舰桥下层。",
+        "Gloaming Galaxy, Blackrock coordinates hologram": "暮色银河，黑石星系坐标的全息图",
+        "New coordinates": "新坐标",
+        "I found the coordinates to the Gloaming Galaxy. We can use the warp core from the Ash Twin Project to warp. There will be no turning back. Am I ready to do this?": null,
+
+        // Giants Deep
+        "Solanum on Giant's Deep": "深巨星上的所莱内姆",
+        "Solanum wants to visit Giant's Deep, but she will probably stay on Timber Hearth as well.": "所莱内姆想看看深巨星，但她可能也会呆在木炉星上。",
+        "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "我看到所莱内姆正在观察航天日志。我从未见过挪麦电脑发出这样的绿色光芒。她正在访问主电脑来知道究竟过去了多久。",
+        "Solanum is contemplating the Eye, and the vision seen by the inhabitants of The Stranger. She also noticed a working Memory Statue.": null,
+
+        // Quantum Moon
+        "Solanum on Quantum Moon": "量子卫星上的所莱内姆",
+        "What if..?": "假如..?",
+        "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "所莱内姆是最后一个活着的挪麦人。假如我使用外星站上故障实验室中的火把视野向她展示我了解的一切，会发生什么？",
+        "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "在记忆共享之后发现了一些奇怪的事情。云层突然立刻消失了，同时我听到来自所莱内姆的奇怪频率。她的面具上带上了奇怪的火花。",
+        "Solanum looks disoriented according to her reply.": "根据她的回答，所莱内姆有些无所适从。",
+        "Inscription near Solanum's body": "所莱内姆尸体旁的铭文",
+        "Solanum left some text near her body": "所莱内姆在她的尸体旁留下了一些文字",
+        "There are some new inscriptions left very recently": "这里有不久前留下的新的铭文",
+        "Solanum's message abruptly stopped while mentioning Timber Hearth.": null,
+
+        // Ring World (Stranger)
+        "Vision Torch in Damaged Laboratory": "故障实验室中的火把视野",
+        "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "我确信在故障实验室的某处有一支火把视野。我想知道它是否还有用。",
+        "I found that vision torch. Its flames still work even in space where there is no oxygen.": "我找到了那支火把视野。即使在没有氧气的太空中，它的火焰依旧跳动。",
+
+        // Timber Hearth
+        "Solanum on Timber Hearth": "木炉星上的所莱内姆",
+        "Is Solanum on Timber Hearth?": "所莱内姆会在木炉星上吗？",
+        "New quantum frequency": "新的量子频率",
+        "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "当所莱内姆提起木炉星时，文字被打断了。也许她在那儿？",
+        "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "所莱内姆不知怎么出现在木炉星的村庄附近。看起来她正在观察哈斯人。",
+        "Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.": null,
+
+        // Quantum Consciousness
+        "Quantum Consciousness": "量子意识",
+        "I've discovered strange frequency called Quantum Consciousness.": "我发现了一种叫做量子意识的奇怪频率。",
+        "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "这可能是一个新的量子法则，或是一种例外情况。我的理论是，如果一个观察者意识到它是量子态的，它就会获得量子意识。所莱内姆可能从我的记忆中知道了这个知识。",
+        "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "量子意识有强烈的可识别信号，听起来和量子波动很像。事实上，这个信号强到即使不装备信号镜也能听见。",
+        "Another noticeable feature of Quantum Consciousness - particles near the possessor's head. Note: it appears that the other quantum rules do not apply to a Quantum Consciousness.": null,
+        "A possessor of Quantum Consciousness somehow has the ability to exist in multiple places at once. According to Solanum, she is capable of appearing at certain locations by thinking about them. Probably, she can appear only in places she knows.": null,
+
+
+        // ATP Time Loop Ring
+        "Solanum inside Ash Twin Project": "灰烬双星计划中的所莱内姆",
+        "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "所莱内姆想查看时间循环的控制面板，我们可以在灰烬双星计划里找到她。",
+        "Solanum is already here. She observing the time loop ring's logs.": "所莱内姆已经到了，她正在查看时间循环的日志。",
+        "Now she knows about the time loop and that our Sun will soon go supernova. Solanum wants to reach the Vessel, but she also wants to revisit her childhood places. I can try to find her on the Vessel, or somewhere else.": null,
+
+        "Paired Statue": "已匹配的雕像",
+        "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "所莱内姆刚刚恰好经过了灰烬双星计划中未被匹配的回忆雕像。现在她也被困进时间循环了。",
+        "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": null,
+
+        // Ernesto Quest    
+        "Where is Ernesto?": "厄内斯托在哪？",
+        "Seriously, how could an anglerfish just disappear?": "老实说，那安康鱼怎么可能自己凭空消失。",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "霍恩菲斯说博物馆里那只叫«厄内斯托»的安康鱼不见了。",
+        "Ernesto found": "找到厄内斯托了",
+        "I found Ernesto": "我找到厄内斯托了",
+        "I found Slate with Ernesto. He's cooking him on campfire.": "我在斯雷特那里找到了厄内斯托，他把厄内斯托夹在篝火上烤了。",
+        "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "斯雷特受够了烤棉花糖，所以他决定把厄内斯托料理了，大概需要30分钟就可以完成。看来不需要阻止他了，在他完事前循环会先到来。"
+
+    }
 }

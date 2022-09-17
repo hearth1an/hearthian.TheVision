@@ -47,7 +47,7 @@ Mods used:
 - [Sound Test](https://outerwildsmods.com/mods/soundtest)
 
 Translation credits:
-- English(grammar fix): [MegaPiggy](https://github.com/MegaPiggy),
+- English: [MegaPiggy](https://github.com/MegaPiggy), [Alex Chaloner](https://github.com/AlexChaloner)
 - Russian: [heart1an](https://github.com/hearth1an), [Leatryx](https://github.com/Leatryx), [Tlya](https://github.com/Tllya)
 - Portuguese: [ShoosGun](https://github.com/ShoosGun),
 - French: [Deadofnothnig](https://github.com/Deadofnothing),

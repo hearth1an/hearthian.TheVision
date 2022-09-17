@@ -21,7 +21,7 @@
 
     <ExploreFact>
       <ID>SOLANUM_TH_RECORDER</ID>
-      <Text>According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.</Text>
+      <Text>"Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.</Text>
     </ExploreFact>
 
     <Entry>
@@ -47,12 +47,12 @@
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_PARTICLES</ID>
-        <Text>Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.</Text>
+        <Text>Another noticeable feature of Quantum Consciousness - particles near the possessor's head. Note: it appears that the other quantum rules do not apply to a Quantum Consciousness.</Text>
       </ExploreFact>
 
       <ExploreFact>
         <ID>NEW_QUANTUM_RULE_QC_ABILITY</ID>
-        <Text>Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.</Text>
+        <Text>A possessor of Quantum Consciousness somehow has the ability to exist in multiple places at once. According to Solanum, she is capable of appearing at certain locations by thinking about them. Probably, she can appear only in places she knows.</Text>
       </ExploreFact>
     </Entry>
 

@@ -1,37 +1,37 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Have you seen this? Our <![CDATA[<color=lightblue>sun</color>]]> is dying and you.. are you paired with the one of statues? Someone at <![CDATA[<color=lightblue>Giant’s Deep</color>]]> is also paired. I wonder who or what that could be?</Text>
+    <Text>SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: Never mind, I forgot that you can't respond since I cannot understand your language.</Text>
+    <Text>SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: It appears that I am also paired now. I ended up right in front of that nearby statue when I thought about this place.</Text>
+    <Text>SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: I guess we're both trapped in the time loop right before the <![CDATA[<color=lightblue>sun</color>]]> goes supernova. It's our lucky day, huh? ...or not. Sorry.</Text>
+    <Text>SOLANUM: There are four masks active at once! I wish Ramie could see this...</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: I just realized that we're running out of time. Most likely I'll be back on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> after the loop resets according to your memories? That's how it works, right? Will see next loop!</Text>
+    <Text>SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.</Text>
   </TextBlock> 
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>SOLANUM: Can we actually escape? The supernova will be really huge, but what if we just fly away from it? It should work. The warp core is charged from the last loop's supernova so we can try using it to get out of here before the <![CDATA[<color=lightblue>sun</color>]]> explodes again.</Text>
+    <Text>SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>SOLANUM: According to your vision, <![CDATA[<color=orange>the Vessel</color>]]> is inside <![CDATA[<color=lightblue>Dark Bramble</color>]]>. There is a possibility that it is still working. My chances of getting there are slim, but I must at least try.</Text>
+    <Text>SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

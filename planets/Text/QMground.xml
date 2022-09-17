@@ -1,7 +1,7 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: I.. Do I exist? That's me but... How is it possible? I can't stay here anymore, I'm leaving and I took my recorder. Where am I? Is it the state of Timber Hea....</Text>
+    <Text>SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...</Text>
   </TextBlock>
 
   <ShipLogConditions>

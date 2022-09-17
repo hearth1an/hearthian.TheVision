@@ -1,17 +1,17 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Now I see how this time loop reset works. I remember everything from previous loop.</Text>
+    <Text>SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: What did Daz say? <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.</Text>
+    <Text>SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Anyway, now that I know how it works, let's continue. I'll open the core once again, but next loop it's your turn.</Text>
+    <Text>SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.</Text>
   </TextBlock> 
   <ShipLogConditions>
     <RevealFact>

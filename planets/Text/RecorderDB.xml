@@ -1,48 +1,43 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: Guess what? Everything works despite the damage! That's incredible! I am a Nomai, so I think can handle its system.</Text>
+    <Text>SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: You see this whiteboard? <![CDATA[<color=orange>The Vessel</color>]]> is still getting incoming signals from other Nomai even here, inside <![CDATA[<color=orange>Dark Bramble</color>]]>.</Text>
+    <Text>SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: Wait, is it.. Hm.. Yes! YES! I don't know how but I actually managed to trace the location of Canna's messages all the way back to the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.</Text>
+    <Text>SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: Canna said that there is a safe place called <![CDATA[<color=orange>Blackrock</color>]]>. That's exactly what we need! The coordinates should be shown on the hologram panel under <![CDATA[<color=orange>the Vessel</color>]]> bridge.</Text>
+    <Text>SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: Did you bring the <![CDATA[<color=orange>Warp Core</color>]]>? This one is broken. Unfortunately, we have little time. There's no way back and the <![CDATA[<color=orange>Ash Twin Project</color>]]> will not send back our memories this time.</Text>
+    <Text>SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. </Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>SOLANUM: ...</Text>
+    <Text>SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>SOLANUM: So many things happened here in our Solar System, mine and yours. Our lives may have been different, but our destiny is the same.</Text>
+    <Text>SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
     <ParentID>7</ParentID>
-    <Text>SOLANUM: I'm sorry about your friends and your kind. We can't help them, sadly. I knew this day would come. Conoy even told me once that it wouldn't happen in our lifetimes... well, here we are in the right place at the right time. We need to help ourselves for now, this is just the Universe's laws, we can't stop this...</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>9</ID>
-    <ParentID>8</ParentID>
-    <Text>SOLANUM: I am ready my friend, but the decision is yours.</Text>
-  </TextBlock>
+    <Text>SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.</Text>
+  </TextBlock> 
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_ON_DB</FactID>
@@ -58,13 +53,13 @@
   <ShipLogConditions>
     <RevealFact>
       <FactID>SOLANUM_DB_RECORDER</FactID>
-      <Condition>9</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
   <ShipLogConditions>
     <RevealFact>
       <FactID>IS_HOLOGRAM_CHANGED</FactID>
-      <Condition>9</Condition>
+      <Condition>8</Condition>
     </RevealFact>
   </ShipLogConditions>
 </NomaiObject>

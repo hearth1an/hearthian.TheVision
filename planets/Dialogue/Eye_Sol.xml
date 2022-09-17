@@ -1,0 +1,9 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>Slate</NameField>
+
+  <DialogueNode>
+    <Name>Start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>SOLANUM: I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. </DialogueNode>
+</DialogueTree>

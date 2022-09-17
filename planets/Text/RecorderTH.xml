@@ -1,27 +1,27 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <TextBlock>
     <ID>1</ID>
-    <Text>SOLANUM: It's you, friend. I feel like my mind is clear now, but I can't explain this, even for myself.</Text>
+    <Text>SOLANUM: Greetings, friend. I feel different, but it's hard to explain.</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>SOLANUM: I'm here, right? But how I am here? I thought about <![CDATA[<color=lightblue>Timber Hearth</color>]]> and now I am here.</Text>
+    <Text>SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>SOLANUM: So, Nomai are dead? All of them? It's really sad to know, but how much time has passed? Last thing I remember is that Bells guided me on the <![CDATA[<color=lightblue>Quantum Moon</color>]]> pilgrimage like it was an hour ago. All these years I was trapped in quantum uncertainty.</Text>
+    <Text>SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>SOLANUM: I've never met one of your kind before. It's an honor to speak with you! I particularly admire your four eyes. And I... I have to apologize on behalf of the clan. We tried to explode the <![CDATA[<color=lightblue>sun</color>]]> once and that would've turned your race to ashes. This is unacceptable ethically, but I'm happy we failed. It is impossible for me not to say this, when I observe this young, curious race growing up.</Text>
+    <Text>SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>SOLANUM: I think it's time to find out what is happening here and why we are here. You saw that <![CDATA[<color=orange>Orbital Probe Cannon</color>]]>? Is it.. broken? I need to check its <![CDATA[<color=orange>Probe Tracking Module</color>]]> first.</Text>
+    <Text>SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.</Text>
   </TextBlock>
   <ShipLogConditions>
     <RevealFact>

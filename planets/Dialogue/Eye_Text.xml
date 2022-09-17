@@ -1,0 +1,11 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+  <NameField>SIGN</NameField>
+
+  <DialogueNode>
+    <Name>Start</Name>
+    <EntryCondition>DEFAULT</EntryCondition>
+    <Dialogue>
+      <Page>Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.</Page>
+    </Dialogue>
+  </DialogueNode>
+</DialogueTree>
