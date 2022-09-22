@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using NewHorizons.Utility;
 
 namespace TheVision
 {

@@ -1,0 +1,162 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Eye Of The Universe",
+	"starSystem": "EyeOfTheUniverse",
+	"Props": {
+		"details": [
+			{
+				"path": "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+				"position": {
+					"x": -0.2,
+					"y": -0.3,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"scale": 5,
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+				"rename": "Particles_1"
+			},
+
+			{
+				"path": "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+				"position": {
+					"x": -0.2,
+					"y": -0.3,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"scale": 5,
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+				"rename": "Particles_2"
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/FillLight_Statue",
+				"position": {
+					"x": 11.5729,
+					"y": -0.4576,
+					"z": -3.1575
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/MapSatelliteExhibit/MapSatelliteExhibit_Pivot/MapSatelliteExhibit_DLC/Prefab_HEA_MuseumPlaque",
+				"position": {
+					"x": 9.5914,
+					"y": -0.3883,
+					"z": -2.7425
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0.6984,
+					"z": 0
+				},
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"position": {
+					"x": 11.5729,
+					"y": -0.4576,
+					"z": -3.1575
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/Sector_EyeSurface"
+			},
+			{
+				"path": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Campfire/Campsite/Solanum/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"position": {
+					"x": 11.5729,
+					"y": -0.4576,
+					"z": -3.1575
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
+			}
+		],
+		"dialogue": [			
+			{
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"xmlFile": "planets/Dialogue/Eye_Text.xml",
+				"lookAtRadius": 3,
+				"radius": 0.5				
+			}
+		],
+		"nomaiText": [
+			{
+				"arcInfo": [
+					{
+						"position": {
+							"x": 0.4,
+							"y": 0.5
+						},
+						"type": "adult",
+						"variation": 9,
+						"zRotation": 93.0
+					}
+				],
+				"normal": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"position": {
+					"x": 11.0539,
+					"y": -219.8255,
+					"z": 1.8854
+				},
+				"rotation": {
+					"x": 291.6332,
+					"y": 256.5345,
+					"z": 0
+				},
+				"seed": 42,
+				"type": "wall",
+				"location": "unspecified",
+				"xmlFile": "planets/Text/EYEresponse_2.xml",
+				"rename": "EyeText"
+			}
+		],
+		"signals": [
+			{
+				"audio": "planets/quantum.mp3",
+				"detectionRadius": 2000,
+				"frequency": "Quantum Consciousness",
+				"identificationRadius": 500,
+				"name": "Solanum",
+				"onlyAudibleToScope": false,
+				"parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/Sector_EyeSurface/Nomai_ANIM_SkyWatching_Idle",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"sourceRadius": 2
+			}
+		]
+	}
+}

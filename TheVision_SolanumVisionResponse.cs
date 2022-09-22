@@ -49,6 +49,9 @@ namespace TheVision.CustomProps
         }
         public void OnVisionEnd()
         {
+
+            PlayerData.SetPersistentCondition("SOLANUM_PROJECTION_COMPLETE", true);
+
             // flicker 
             var effect = Locator.GetActiveCamera().transform.Find("ScreenEffects/LightFlickerEffectBubble").GetComponent<LightFlickerController>();
             effect.FlickerOffAndOn(offDuration: 6.8f, onDuration: 1f);

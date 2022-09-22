@@ -1,7 +1,5 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-  <DialogueTree>
-	<NameField>Solanum</NameField>
-	
+<NameField>Solanum</NameField>	
 	<DialogueNode>
 		<Name>WaitingForOthers</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
@@ -9,76 +7,6 @@
 		    <Page>I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. </Page>
 			<Page>Hypothesis: Everyone must be here before we can begin.</Page>
 			<Page>Once they arrive, I believe we’ll be ready for the next step.</Page>
-			<Page>I’m glad you remembered me.</Page>
 		</Dialogue>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>ReadyToPlay</Name>
-		<EntryCondition>AllTravelersGathered</EntryCondition>
-		<Dialogue>
-			<Page>A conscious observer has entered the Eye. I wonder what happens now.</Page>
-			<Page>Is it time to find out?</Page>
-		</Dialogue>
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>Yes.</Text>
-				<DialogueTarget>StartPlaying</DialogueTarget>
-			</DialogueOption>
-			<DialogueOption>
-				<Text>Not yet.</Text>
-				<DialogueTarget>NotYet</DialogueTarget>
-			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>StartPlaying</Name>
-		<Dialogue>
-			<Page>This song is new to me, but I am honored to be a part of it.</Page>
-		</Dialogue>
-		<SetCondition>IsSolanumPlaying</SetCondition>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>NotYet</Name>
-		<Dialogue>
-			<Page>Then I will wait until you are ready to know the answer.</Page>
-		</Dialogue>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>Farewell</Name>
-		<EntryCondition>JamSessionIsOver</EntryCondition>
-		<Dialogue>			
-			<Page>All that remains is to collapse the innumerable possibilites before us.</Page>
-			<Page>Are you ready to learn what comes next?</Page>
-		</Dialogue>
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>Yes.</Text>
-				<DialogueTarget>Farewell2</DialogueTarget>
-			</DialogueOption>
-			<DialogueOption>
-				<Text>Not yet.</Text>
-				<DialogueTarget>Farewell3</DialogueTarget>
-			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>Farewell2</Name>
-		<Dialogue>
-			<Page>I admire your curiosity, friend. Let’s find out together.</Page>
-		</Dialogue>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>Farewell3</Name>
-		<Dialogue>
-			<Page>It’s tempting to linger in this moment, while every possibility still exists.</Page>
-			<Page>But unless they are collapsed by an observer, they will never be more than possibilities.</Page>
-		</Dialogue>
-	</DialogueNode>
-
+	</DialogueNode>	
 </DialogueTree>

@@ -10,145 +10,160 @@
   },
   "Props": {
     "details": [
-      {
-        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-        "position": {
-          "x": 34.9788,
-          "y": -103.6786,
-          "z": -25.7699
+        {
+            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+            "position": {
+                "x": 34.9788,
+                "y": -103.6786,
+                "z": -25.7699
+            },
+            "rotation": {
+                "x": 19.2319,
+                "y": 306.6399,
+                "z": 180.81
+            },
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
+            "rename": "Solanum_EmberTwin_Character"
+        },        
+        {
+            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+            "position": {
+                "x": -5.529667,
+                "y": -71.07074,
+                "z": 1.43984985
+            },
+            "rotation": {
+                "x": 317.328369,
+                "y": 2.65918,
+                "z": 168.477509
+            },
+            "scale": 5,
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
         },
-        "rotation": {
-          "x": 19.2319,
-          "y": 306.6399,
-          "z": 180.81
+        {
+            "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+            "position": {
+                "x": -5.529667,
+                "y": -71.07074,
+                "z": 1.43984985
+            },
+            "rotation": {
+                "x": 317.328369,
+                "y": 2.65918,
+                "z": 168.477509
+            },
+            "scale": 5,
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+            "rename": "Particles_2"
         },
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
-        "rename": "Solanum_EmberTwin_Character"
-      },
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-        "position": {
-          "x": -5.529667,
-          "y": -71.07074,
-          "z": 1.43984985
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_PyramidBlck",
+            "position": {
+                "x": 29.75,
+                "y": -105.2,
+                "z": -26.2
+            },
+            "rotation": {
+                "x": 7,
+                "y": 11,
+                "z": 197
+            },
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
+            "rename": "Solanum_EmberTwin_ToyPyramid"
         },
-        "rotation": {
-          "x": 317.328369,
-          "y": 2.65918,
-          "z": 168.477509
-        },
-        "scale": 5,
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt"
-      },
-      {
-        "path": "TowerTwin_Body/Sector_TowerTwin/Sector_TimeLoopInterior/Interactables_TimeLoopInterior/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
-        "position": {
-          "x": -5.529667,
-          "y": -71.07074,
-          "z": 1.43984985
-        },
-        "rotation": {
-          "x": 317.328369,
-          "y": 2.65918,
-          "z": 168.477509
-        },
-        "scale": 5,
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_Character/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
-        "rename": "Particles_2"
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_PyramidBlck",
-        "position": {
-          "x": 29.75,
-          "y": -105.2,
-          "z": -26.2
-        },
-        "rotation": {
-          "x": 7,
-          "y": 11,
-          "z": 197
-        },
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin",
-        "rename": "Solanum_EmberTwin_ToyPyramid"
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_Toy",
-        "position": {
-          "x": 28.2845,
-          "y": -105.6,
-          "z": -27
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_Toy",
+            "position": {
+                "x": 28.2845,
+                "y": -105.6,
+                "z": -27
 
+            },
+            "rotation": {
+                "x": 90,
+                "y": 331.619,
+                "z": 0
+            },
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
+            "rename": "Solanum_EmberTwin_ToyMobius"
         },
-        "rotation": {
-          "x": 90,
-          "y": 331.619,
-          "z": 0
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_ToyShip",
+            "position": {
+                "x": 31.15,
+                "y": -104.4,
+                "z": -27.7273
+            },
+            "rotation": {
+                "x": 19.232,
+                "y": 306.6399,
+                "z": 181.41
+            },
+            "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
+            "rename": "Solanum_EmberTwin_ToyShip"
         },
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
-        "rename": "Solanum_EmberTwin_ToyMobius"
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Sector_ChildDistrict/Props_FossilDistrict/OtherComponentsGroup/Furniture_FossilDistrict/Prefab_NOM_Toys/Props_NOM_ToyShip",
-        "position": {
-          "x": 31.15,
-          "y": -104.4,
-          "z": -27.7273
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+            "position": {
+                "x": 34.1675,
+                "y": -104.4503,
+                "z": -23.0298
+            },
+            "rotation": {
+                "x": 7.7,
+                "y": 237.1,
+                "z": 162.32
+            },
+            "parentPath": "Sector_CaveTwin/SandPile",
+            "rename": "SandPile_1",
+            "scale": 1
         },
-        "rotation": {
-          "x": 19.232,
-          "y": 306.6399,
-          "z": 181.41
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+            "position": {
+                "x": 34.36,
+                "y": -104.5503,
+                "z": -22.2
+            },
+            "rotation": {
+                "x": 7.7,
+                "y": 285,
+                "z": 162.32
+            },
+            "parentPath": "Sector_CaveTwin/SandPile",
+            "rename": "SandPile_2",
+            "scale": 0.7
         },
-        "parentPath": "Sector_CaveTwin/Solanum_EmberTwin_ToyPyramid",
-        "rename": "Solanum_EmberTwin_ToyShip"
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-        "position": {
-          "x": 34.1675,
-          "y": -104.4503,
-          "z": -23.0298
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+            "position": {
+                "x": 33.8,
+                "y": -104.8286,
+                "z": -21.6408
+            },
+            "rotation": {
+                "x": 7.7,
+                "y": 200,
+                "z": 162.32
+            },
+            "parentPath": "Sector_CaveTwin/SandPile",
+            "rename": "SandPile_3"
         },
-        "rotation": {
-          "x": 7.7,
-          "y": 237.1,
-          "z": 162.32
-        },
-        "parentPath": "Sector_CaveTwin/SandPile",
-        "rename": "SandPile_1",
-        "scale": 1
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-        "position": {
-          "x": 34.36,
-          "y": -104.5503,
-          "z": -22.2
-        },
-        "rotation": {
-          "x": 7.7,
-          "y": 285,
-          "z": 162.32
-        },
-        "parentPath": "Sector_CaveTwin/SandPile",
-        "rename": "SandPile_2",
-        "scale": 0.7
-      },
-      {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
-        "position": {
-          "x": 33.8,
-          "y": -104.8286,
-          "z": -21.6408
-        },
-        "rotation": {
-          "x": 7.7,
-          "y": 200,
-          "z": 162.32
-        },
-        "parentPath": "Sector_CaveTwin/SandPile",
-        "rename": "SandPile_3"
-      }
+        {
+            "path": "CaveTwin_Body/Sector_CaveTwin/Sector_NorthHemisphere/Sector_NorthSurface/Sector_TimeLoopExperiment/Props_TimeLoopExperiment/Props/OtherComponentsGroup/Prefab_SandpileStatic",
+            "position": {
+                "x": 30.66,
+                "y": -105.6503,
+                "z": -22.2
+            },
+            "rotation": {
+                "x": 7.7,
+                "y": 285,
+                "z": 162.32
+            },
+            "parentPath": "Sector_CaveTwin/SandPile",
+            "rename": "SandPile_4"
+        }
     ],
     "entryLocation": [
       {

@@ -25,7 +25,7 @@ Help with code:
 
 and [Outer Wilds Modding Discord](https://discord.gg/MvbCbBz6Q6) community.
 
-Testers:
+Playtesters:
 - [JohnCorby](https://github.com/JohnCorby)
 - [MegaPiggy](https://github.com/MegaPiggy)
 - [nebula](https://github.com/misternebula)
