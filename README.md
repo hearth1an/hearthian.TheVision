@@ -52,6 +52,8 @@ Translation credits:
 - Portuguese: [ShoosGun](https://github.com/ShoosGun),
 - French: [Deadofnothnig](https://github.com/Deadofnothing),
 - Сhinese: [星际拓荒讨论群群友](https://github.com/REME-easy),
+- Spanish: [Alejandro-SB](https://github.com/Alejandro-SB),
+- German: [Derko],
 - Japanese: [9638](https://github.com/96-38).
 
 

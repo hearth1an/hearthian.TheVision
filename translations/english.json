@@ -70,7 +70,7 @@
         "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.",
         "SOLANUM: Would you try to enter it?": "SOLANUM: Would you try to enter it?",
         "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.",
-        "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "SOLANUM: I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ",
+        "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ",
 
         // Ernesto Quest
 
@@ -118,7 +118,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "New Launch Codes: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT.",
-        "THE_VISION_POPUP": "Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution."
+        "THE_VISION_POPUP": "Thank you for downloading «The Vision»! Check your ship logs to start new story."
 
     },
     "ShipLogDictionary": {
