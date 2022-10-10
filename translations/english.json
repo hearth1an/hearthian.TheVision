@@ -7,7 +7,7 @@
     // Computer GD
     "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "MAIN COMPUTER: Log access granted, SOLANUM. \nUSER REQUEST: \"Last access granted\". Calculating...", // use \n here to enter new line
     "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "MAIN COMPUTER: Last access granted 281,042 years ago. \nUSER = Mallow.", // and here
-    "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.",
+    "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the Universe</color>]]> has been found.",
 
     // Computer ATP
     // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles."
