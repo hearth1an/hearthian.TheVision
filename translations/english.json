@@ -118,7 +118,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "New Launch Codes: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT.",
-        "THE_VISION_POPUP": "Thank you for downloading \"The Vision\"! Check your ship logs to start a new story."
+        "THE_VISION_POPUP": "Thank you for downloading The Vision! Check your ship logs to start a new story."
 
     },
     "ShipLogDictionary": {
@@ -162,7 +162,7 @@
         // Quantum Moon
         "Solanum on Quantum Moon": "Solanum on the Quantum Moon",
         "What if..?": "What if..?",
-        "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Solanum is the last Nomai alive. What if I show her all I know with a vision torch from the Damaged Laboratory on The Stranger?",
+        "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?": "Solanum is the last Nomai alive. What if I show her all I know using a vision torch from the Damaged Laboratory on The Stranger?",
         "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "After the vision something strange happened. The clouds disappeared immediately and I can now hear a strange frequency coming from Solanum. There are bizarre looking sparks on her mask.",
         "Solanum looks disoriented according to her reply.": "Solanum seems disoriented according to her reply.",
         "Inscription near Solanum's body": "An inscription near Solanum's body",
