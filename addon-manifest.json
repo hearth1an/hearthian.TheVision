@@ -54,5 +54,6 @@
         " ",
         " ",
         "Thank you for playing «The Vision»!"
-    ]
+    ],
+    "popupMessage": "THE_VISION_POPUP"
 }

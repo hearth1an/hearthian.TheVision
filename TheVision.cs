@@ -42,7 +42,7 @@ namespace TheVision
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);
-            menuFrameworkAPI.RegisterStartupPopup(TranslationHandler.GetTranslation("THE_VISION_POPUP", TranslationHandler.TextType.UI));
+            // menuFrameworkAPI.RegisterStartupPopup(TranslationHandler.GetTranslation("THE_VISION_POPUP", TranslationHandler.TextType.UI));
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
