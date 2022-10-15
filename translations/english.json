@@ -67,7 +67,7 @@
 
 
     // EYE SCENE	
-    "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM: Two conscious observers have reached the Eye of the Universe. I accept your decision.",
+    "SOLANUM: Two conscious observers have reached <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I accept your decision.": "SOLANUM: Two conscious observers have reached <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I accept your decision.",
     "SOLANUM: Would you try to enter it?": "SOLANUM: Would you try to enter it?",
     "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.",
     "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ",

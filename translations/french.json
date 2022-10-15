@@ -64,7 +64,7 @@
           "SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.": "SOLANUM : Il n'y aura pas de retour en arrière. Je suis prêt pour ce qui va suivre, mon ami. La décision vous appartient.",
   
           // EYE SCENE
-          "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM : Deux observateurs conscients ont atteint l'Œil de l'univers. J'accepte votre décision.",
+          "SOLANUM: Two conscious observers have reached <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I accept your decision.": "SOLANUM : Deux observateurs conscients ont atteint l'<![CDATA[<color=lightblue>Œil de l'univers</color>]]>. J'accepte votre décision.",
           "SOLANUM: Would you try to enter it?": "SOLANUM : Essayeriez-vous d'y entrer ?",
           "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, la dernière Nomai en vie, a acquis la Conscience Quantique à la suite d'un paradoxe. Elle est entrée dans l'Oeil avec moi.",
           "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "J'étais dans la < ![CDATA[<color=lightblue>Cité Obscure</color>]]>. J'y ai rencontré d'autres Nomai : Laevi, Tage, Lami et d'autres. Peut-être que notre voyage a atteint sa fin.",
