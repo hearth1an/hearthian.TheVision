@@ -31,7 +31,7 @@
         "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": "SOLANUM: De qualquer modo, desconhecidos de um outro sistema solar tinham um importante conhecimento. Tinham a técnologia para entender melhor o <![CDATA[<color=lightblue>Olho</color>]]>. Hipótese: o <![CDATA[<color=lightblue>Olho</color>]]> é perigoso, baseando-se na visão deles. Todavia, a interpretação deles poderia estar equivocada.",
         "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": "SOLANUM: O que faremos com esse conhecimento sobre o <![CDATA[<color=lightblue>Olho</color>]]>? Quero aprender sobre ele, quero encontralo - mas não tenho certeza nem de como alcança-lo.",
         "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": "SOLANUM: Estou enganada? Aquela Estátua de Memória está ativa? Em seu estado de ativada, ela deve estar transmitindo dados para o <![CDATA[<color=orange>Projeto do Gêmeo Cinzento</color>]]>.. Irei dar uma olhada nele.",
-        // Recorder ATP 
+        // Recorder ATP
         "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": "SOLANUM: Suspeito que tu já saibas disso? Que o nosso Sol está morrendo... mas tu estás pareado com uma das estátuas? Agora entendo. Tu tens ideia de quem mais está pareado nas ![CDATA[<color=lightblue>Profundezas do Gigante</color>]]>?",
         "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": "SOLANUM: É uma pena. Há tantas questões que eu perguntaria se eu compreende-se tua linguagem.",
         "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": "SOLANUM: Talvez, agora estou ligada com a Estátua da mesma maneira que tu. Acabei em frente daquela máscara perto e seus olhos abriram.",
@@ -111,7 +111,7 @@
 
         "Quantum Consciousness": "Conciência Quântica",
         "Solanum": "Solanum",
-        "GloamingGalaxy": "Galáxia Gloaming", // Add this to other translations      
+        "GloamingGalaxy": "Galáxia Gloaming", // Add this to other translations
         "THE_VISION_NEW_LAUNCH_CODES": "Novos códigos de lançamento: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "VOCÊ E SOLANUM ESCAPARAM PARA ALÉM DO ALCANCE DA SUPERNOVA E CONHECERAM A NOMAI EM BLACKROCK. \nJUNTOS VOCÊS ASSITEM AS ESTRELAS SE EXTINGUIREM.", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
@@ -167,7 +167,7 @@
         // Timber Hearth
         "Solanum on Timber Hearth": "Solanum no Recanto Lenhoso",
         "Is Solanum on Timber Hearth?": "Solanum está no Recanto Lenhoso?",
-        "New quantum frequency": "Nova frequência quântica",
+        "New quantum frequency?": "Nova frequência quântica?",
         "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "A mensagem da Solanum foi interrompida quando ela mencionou o Recanto Lenhoso. Talvez ela esteja lá?",
         "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanum de alguma maneira apareçeu no Recanto Lenhoso perto da vila. Parece que ela está observando os Lenhosos.",
         "Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.": "Solanum pensou no Recanto Lenhoso, e lá apareceu. Ele quer saber mais sobre o Módulo de Rastreamento de Sondas nas Profundezas do Gigante.",
@@ -191,7 +191,7 @@
         "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": "Em ciclos anteriores, Solanum não sabia como o loop funcionava. Agora parece que ela tudo entende e quer ire ao Hospedeiro.",
 
 
-        // Ernesto Quest        
+        // Ernesto Quest
         "Where is Ernesto?": "Onde está Ernesto?",
         "Seriously, how could an anglerfish just disappear?": "É sério, como que um tamboril apenas desaparece?",
         "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Corneana disse que aquele tamboril «Ernesto» desapareceu da exibição.",
@@ -199,6 +199,6 @@
         "I found Ernesto": "Encontrei Ernesto",
         "I found Slate with Ernesto. He's cooking him on campfire.": "Encontrei Ardósia com Ernesto. Ardósia está cozinhando ele no fogueira.",
         "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Ardósia está de saco cheio de comer apenas marshmallows, por isso está cozinhando o Ernerto. Dentro de 30 min ele estará pronto. Não é necessário uma intervensão pois o loop irá reiniciar antes que isso aconteça."
-        
+
     }
   }

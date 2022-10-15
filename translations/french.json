@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
       "DialogueDictionary": {
-  
+
           // Hint: use «» instead of "".
           // Computer GD
           "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "ORDINATEUR PRINCIPAL: accès au journal accordé, SOLANUM. \nREQUETE UTILISATEUR: «Dernier accès accorder». calcul en cours...", // use \n here to enter new line
           "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "ORDINATEUR PRINCIPAL: Dernier accès accorder il y a 281,042 années. \nUTILISATEUR = Mallow.", // and here
           "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualisation du progrès. Une anomalie dans l'espace lointain correspondant à tous les critères connus pour l'<![CDATA[<color=lightblue>Œil de l'univers</color>]]> a été découverte.",
-  
+
           // Computer ATP
           // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles."
           "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "IL Y A <![CDATA[<TimeMinutes>]]> MINUTES ET <![CDATA[<TimeSeconds>]]> SECONDES: Données reçues des cycles précédents.",
@@ -16,7 +16,7 @@
           // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
           "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "<![CDATA[<TimeMinutesRemaining>]]> MINUTES AVANT LA TRANSMISSION DE FIN DE CYCLE.",
           "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "ATTENTION: Retirer le générateur désactivera le <![CDATA[<color=orange>Projet Sablière noir</color>]]>.",
-  
+
           // Quantum Moon
           "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.": "SOLANUM : C'est étrange. Où suis-je ? Je vois des étoiles maintenant. Il est probable que je trouve les réponses dans le ciel.",
           "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": "SOLANUM : C'est étrange, je ne me sens pas morte. C'est peut-être mon incertitude passée. Cet endroit me semble familier. Je suppose que c'est un état de Âtrebo...",
@@ -31,7 +31,7 @@
           "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": "SOLANUM : Pourtant, des étrangers venus d'un autre système stellaire avaient des connaissances importantes. Ils avaient une technologie permettant de mieux comprendre l'<![CDATA[<color=lightblue>Oeil</color>]]>. J'ai une hypothèse que l'<![CDATA[<color=lightblue>Oeil</color>]]> est dangereux, basée sur leur vision. Cependant, leur interprétation pourrait être erronée.",
           "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": "SOLANUM : Que faisons-nous de ces connaissances sur l' < ![CDATA[<color=lightblue>Eye</color>]]> ? Je veux en apprendre davantage à son sujet, et je veux le trouver - mais je ne sais pas comment l'atteindre.",
           "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": "SOLANUM : Est-ce que je me trompe ? Est-ce que cette Statue mnémonique est active ? Dans cet état actif, elle devrait transmettre des données au <!CDATA[<color=orange>Projet Sablière noir</color>]>... Je vais y jeter un coup d'oeil.",
-          // Recorder ATP 
+          // Recorder ATP
           "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": "SOLANUM : Je suppose que vous avez vu ceci ? Notre soleil est en train de mourir... mais vous êtes liés à l'une des statues ? Maintenant je comprends. Savez-vous qui d'autre est jumelé la statue de < ![CDATA[<color=lightblue>Léviathe</color>]]> ?",
           "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": "SOLANUM : C'est regrettable. Il y a beaucoup de questions que je voudrais vous poser si je pouvais comprendre votre langue.",
           "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": "SOLANUM : Peut-être, maintenant je suis lié à la Statue de la même façon que vous. Je me suis retrouvé juste en face de cette statue toute proche et elle a ouvert les yeux.",
@@ -62,17 +62,17 @@
           "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": "SOLANUM : Penser à une telle possibilité est excitant. Mais je n'en ai pas peur. En fait, après tout ce qui s'est passé, je n'ai aucune crainte. Ce sont simplement les lois par lesquelles l'univers vie.",
           "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": "SOLANUM: Deux observateurs conscients entament un voyage vers le destin. Je sens que l'incertitude grandit énormément. Elle n'a pas été aussi forte depuis que j'ai quitté la < ![CDATA[<color=lightblue>Lune Quantique</color>]]>.",
           "SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.": "SOLANUM : Il n'y aura pas de retour en arrière. Je suis prêt pour ce qui va suivre, mon ami. La décision vous appartient.",
-  
+
           // EYE SCENE
           "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM : Deux observateurs conscients ont atteint l'Œil de l'univers. J'accepte votre décision.",
           "SOLANUM: Would you try to enter it?": "SOLANUM : Essayeriez-vous d'y entrer ?",
           "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, la dernière Nomai en vie, a acquis la Conscience Quantique à la suite d'un paradoxe. Elle est entrée dans l'Oeil avec moi.",
           "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "J'étais dans la < ![CDATA[<color=lightblue>Cité Obscure</color>]]>. J'y ai rencontré d'autres Nomai : Laevi, Tage, Lami et d'autres. Peut-être que notre voyage a atteint sa fin.",
-  
+
           // Ernesto Quest
           // Slate note
           "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "Je suis aller chercher des... des ...<![CDATA[<i>Champignons</i>]]>. Ne prends pas ma place ! Je reviens vite. Va récupérer les <![CDATA[<color=orange>nouveaux codes de lancement</color>]]> à l'Observatoire, Cornée les a changés à la dernière minute.",
-  
+
           // Hornfels
           "Hornfels": "Cornée",
           "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]> a disparu !",
@@ -82,13 +82,13 @@
           "Oh, I'm sorry about that...": "Oh, je suis désolé pour ça...",
           "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Pauvre <![CDATA[<color=orange>Ernesto</color>]]>... Voici tes <![CDATA[<color=orange>nouveaux codes de lancement</color>]]>...",
           "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "J'ai juste besoin des <![CDATA[<color=orange>nouveaux codes de lancement</color>]]>.",
-  
+
           // Slate
           "Slate": "Ardoise",
           "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "Oh, pourquoi es-tu encore là ? As-tu déjà récupéré les <![CDATA[<color=orange>nouveaux codes de lancement</color>]]> ?",
           "Is that the anglerfish from the museum?": "C'est le cœlacanthe du musée?",
           "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>Ernesto</color>]]>?! NON!",
-  
+
           "The anglerfish from the museum exhibition. Hornfels named it that.": "Le cœlacanthe de l'exposition du musée. Cornée l'a appelée comme ça.",
           "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "Ok, tu sais quoi ? Oui, c'est le cœlacanthe du musée. J'en ai marre des guimauves. Je ne peux plus le supporter.",
           "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "Alors tu as décidé de manger <![CDATA[<color=orange>Ernesto</color>]]>?! Cornée a dit que <![CDATA[<color=orange>Ernesto</color>]]> est un ami !",
@@ -99,39 +99,39 @@
           "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Tu feras ça pour moi ? Merci. Mais ne parle à personne de <![CDATA[<color=orange>Ernesto</color>]]>, d'accord?",
           "There is no accounting for tastes.": "Les goûts ne se discutent pas.",
           "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Merci ! Reviens dans <![CDATA[<i>30 minutes</i>]]> et je t'en donnerai une bouchée.",
-  
+
           // Ship dialogue
           "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "Hmm... Cela semble être un bon endroit pour une torche de vision ! Je peux la mettre ici si nécessaire."
-  
-  
+
+
       },
       "UIDictionary": {
-  
+
           "Quantum Consciousness": "Conscience quantique",
           "Solanum": "Solanum",
           "GloamingGalaxy": "Vesperal",
           "THE_VISION_NEW_LAUNCH_CODES": "Nouveaux codes de lancement: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
-  
+
           "THE_VISION_TO_BE_CONTINUED": "TOI ET SOLANUM VOUS ÉCHAPPEZ BIEN AU-DELÀ DE LA PORTÉE DE LA SUPERNOVA ET RENCONTREZ LES NOMAI SUR FULIGINA. \nENSEMBLE, VOUS VOYEZ LES ÉTOILES S'ÉTEINDRE.", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
           "THE_VISION_POPUP": "Merci d'avoir téléchargé «The Vision» ! Vérifiez les journaux de bord de votre vaisseau pour commencer une nouvelle histoire."
           // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
-  
+
       },
       "ShipLogDictionary": {
-  
+
           // Brittle Hollow
           "Solanum in the School Ruins": "Solanum dans les ruines de l'école",
           "Solanum on Brittle Hollow": "Solanum sur Cravité",
           "I can hear Solanum's signal coming from Brittle Hollow.": "Je peux entendre le signal de Solanum venant de Cravité.",
           "I found Solanum in the School.": "J'ai trouvé Solanum dans l'école.",
           "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "Solanum a dit que c'est ici qu'elle allait à l'école. Elle a aussi mentionné que le trou noir était beaucoup plus petit avant. Elle a pris un cristal de gravité pour éviter de tomber.",
-  
+
           // CaveTwin_Body
           "Solanum in the Sunless City": "Solanum dans la cité obscure",
           "I can hear Solanum's signal coming from the Sunless City.": "Je peux entendre le signal de Solanum venant de la cité obscure.",
           "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "J'ai trouvé Solanum dans la cité obscure. Elle est chez elle dans le quartier du Temple de l'Oeil.",
           "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": "Elle est attristée de voir la Cité Obscure en ruines. Solanum a raconté un peu de son enfance.",
-  
+
           // DB_VesselBody
           "Solanum on the Vessel": "Solanum dans le Vaisseau",
           "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "Solanum veut essayer d'atteindre le Vaisseau. Est-il possible pour elle d'entrer dans Sombronces?",
@@ -140,13 +140,13 @@
           "Gloaming Galaxy, Blackrock coordinates hologram": "hologramme des coordonnées de Fuligina,Vesperal",
           "New coordinates": "Nouvelles coordonnées",
           "I found the coordinates to the Gloaming Galaxy. We can use the warp core from the Ash Twin Project to warp. There will be no turning back. Am I ready to do this?": "J'ai trouvé les coordonnées de la Vesperal. Nous pouvons utiliser le générateur de distorsion du Projet Sablière noire pour nous téléporter. Il n'y aura pas de retour en arrière. Suis-je prêt à le faire ?",
-  
+
           // Giants Deep
           "Solanum on Giant's Deep": "Solanum sur Léviathe",
           "Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.": "Solanum veut visiter le Léviathe, mais elle restera probablement aussi à Âtrebois.",
           "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "J'ai trouvé Solanum en train d'observer les journaux de bord de la sonde. Je n'ai jamais vu d'ordinateurs Nomaï avec une telle lueur verte. Elle accède à l'ordinateur principal pour savoir combien de temps s'est écoulé.",
           "Solanum is contemplating the Eye, and the vision seen by the inhabitants of The Stranger. She also noticed a working Memory Statue.": "Solanum contemple l'Œil, et la vision qu'en ont les habitants de l'Étranger. Elle a aussi remarqué une Statue mnémonique qui fonctionne.",
-  
+
           // Quantum Moon
           "Solanum on Quantum Moon": "Solanum sur la Lune quantique",
           "What if..?": "Et si... ?",
@@ -157,20 +157,20 @@
           "Solanum left some text near her body": "Solanum a laissé un texte près de son corps",
           "There are some new inscriptions left very recently": "Il y a de nouvelles inscriptions laissées très récemment",
           "Solanum's message abruptly stopped while mentioning Timber Hearth.": "Le message de Solanum s'est brusquement interrompu alors qu'elle mentionnait Âtrebois.",
-  
+
           // Ring World (Stranger)
           "Vision Torch in Damaged Laboratory": "Torche de vision dans le laboratoire endommagé",
           "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "Je crois qu'il y a une torche de vision quelque part dans le laboratoire endommagé. Je me demande si elle fonctionne encore.",
           "I found that vision torch. Its flames still work even in space where there is no oxygen.": "J'ai trouvé cette torche de vision. Ses flammes fonctionnent toujours même dans l'espace où il n'y a pas d'oxygène.",
-  
+
           // Timber Hearth
           "Solanum on Timber Hearth": "Solanum sur Âtrebois",
           "Is Solanum on Timber Hearth?": "Est-ce que Solanum est sur Âtrebois?",
-          "New quantum frequency": "Nouvelle fréquence quantique",
+          "New quantum frequency?": "Nouvelle fréquence quantique?",
           "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Le message de Solanum a été interrompu quand elle a mentionné Âtrebois. Peut-être qu'elle est là-bas ?",
           "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanum est en quelque sorte apparue sur Âtrebois près du village. Il semble qu'elle observe les Âtriens.",
           "Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.": "Solanum a pensé à Âtrebois, puis y est apparue. Elle veut en savoir plus sur le module de Pistage sur Léviathe.",
-  
+
           // Quantum Consciousness
           "Quantum Consciousness": "Conscience quantique",
           "I've discovered strange frequency called Quantum Consciousness.": "J'ai découvert une fréquence étrange appelée Conscience quantique.",
@@ -178,20 +178,20 @@
           "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "La Conscience quantique a un signal fort et reconnaissable qui ressemble aux Fluctuations quantiques. En outre, le signal est très fort. On peut l'entendre même sans onduloscope.",
           "Another noticeable feature of Quantum Consciousness - particles near the possessor's head. Note: it appears that the other quantum rules do not apply to a Quantum Consciousness.": "Autre caractéristique notable de la Conscience quantique : des particules près de la tête du possesseur. Remarque : il semble que les autres règles quantiques ne s'appliquent pas à une Conscience quantique.",
           "A possessor of Quantum Consciousness somehow has the ability to exist in multiple places at once. According to Solanum, she is capable of appearing at certain locations by thinking about them. Probably, she can appear only in places she knows.": "Un possesseur de Conscience quantique a en quelque sorte la capacité d'exister en plusieurs endroits à la fois. Selon Solanum, elle est capable d'apparaître à certains endroits en y pensant. Probablement, elle ne peut apparaître que dans les endroits qu'elle connaît.",
-  
-  
+
+
           // ATP Time Loop Ring
           "Solanum inside Ash Twin Project": "Solanum à l'intérieur du Projet Sablière Noire",
           "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "Solanum veut vérifier le panneau de contrôle de la boucle temporelle. Je la trouverai peut-être à l'intérieur du Projet Sablière Noire.",
           "Solanum is already here. She observing the time loop ring's logs.": "Solanum est déjà là. Elle observe les journaux de la boucle temporelle.",
           "Now she knows about the time loop and that our Sun will soon go supernova. Solanum wants to reach the Vessel, but she also wants to revisit her childhood places. I can try to find her on the Vessel, or somewhere else.": " À présent, qu'elle sait pour la boucle temporelle et que notre Soleil va bientôt devenir une supernova. Solanum veut atteindre le Vaisseau, mais elle souhaite aussi revisiter les lieux de son enfance. Je peux essayer de la trouver sur le Vaisseau, ou ailleurs.",
-  
+
           "Paired Statue": "Statue liée",
           "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "Solanum est passée juste à côté de la statue non liée dans le projet Sablière Noire. Maintenant, elle est aussi coincée dans la boucle temporelle.",
           "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": "Au cycle précédent, Solanum n'était pas sûre du fonctionnement de la boucle temporelle. Ce cycle, il semble qu'elle ait tout compris et veut maintenant aller sur le Vaisseau.",
-  
-  
-          // Ernesto Quest        
+
+
+          // Ernesto Quest
           "Where is Ernesto?": "Où est Ernesto?",
           "Seriously, how could an anglerfish just disappear?": "Sérieusement, comment un coelacanthe peut-il disparaître ?",
           "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Cornée a déclaré que le coelacanthe «Ernesto» avait disparu de l'exposition.",
@@ -199,6 +199,6 @@
           "I found Ernesto": "J'ai trouvé Ernesto",
           "I found Slate with Ernesto. He's cooking him on campfire.": "J'ai trouvé Ardoise avec Ernesto. Il le fait cuire sur le feu de camp.",
           "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Ardoise en a marre des guimauves, c'est pourquoi il a décidé de faire cuire Ernesto. Il a dit qu'il sera prêt dans 30 minutes. Aucune intervention n'est nécessaire car la boucle se réinitialisera avant que cela n'arrive."
-          
+
       }
   }

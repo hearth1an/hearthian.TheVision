@@ -18,21 +18,21 @@
         "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "NOCH <![CDATA[<TimeMinutesRemaining>]]> MINUTEN BIS ZUR ZYKLUS-ENDÜBERTRAGUNG.",
         "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "WARNUNG! Das Entfernen des Kerns deaktiviert das <![CDATA[<color=orange>Projekt Zwillingsasche</color>]]>.",
 
-        // Quantum Moon	
+        // Quantum Moon
         "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.": "SOLANUM: Das ist seltsam. Wo bin ich? Ich sehe jetzt Sterne. Wahrscheinlich finde ich die Antworten oben im Himmel.",
         "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": "SOLANUM: Seltsam, ich fühle mich nicht tot. Vielleicht ist das meine vergangene Unbestimmbarkeit. Dieser Ort kommt mir bekannt vor. Ich nehme an das ist der Zustand von Holzka...",
-        // Recorder TH	
+        // Recorder TH
         "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.": "SOLANUM: Grüße, mein Freund. Ich fühle mich anders, aber es ist schwer zu erklären.",
         "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.": "SOLANUM: Ich bin mir nicht sicher wie ich hier her kam. Ich würde mutmaßen, dass der Gedanke an diesen Ort mich irgendwie hier her brachte. Das ist mir vorher noch nie passiert.",
         "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.": "SOLANUM: Du hast mir den Tod meines Clans gezeigt. Es ist schwer das zu verarbeiten. Was denkst du, wie lange es seitdem her ist? Ich kann mich genau erinnern, wie mich Bells auf meine Pilgerreise zum <![CDATA[<color=lightblue>Quantummond</color>]]> führte. Ich vermute, dass meine Pilgerreise ihr Ende gefunden hat.",
         "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.": "SOLANUM: Ich habe noch nie jemanden von deiner Spezies getroffen. Es ist mir eine Ehre mit dir zu sprechen, selbst per Rekorder. Du hast meinen Dank dafür, dass du meine Sprache verstehen kannst.",
         "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.": "SOLANUM: Ich bin froh deine Rasse beobachten zu können. Ich kann mir vorstellen, dass du den selben Durst nach Wissen hast, wie wir es tun. Ich glaube, ich habe die <![CDATA[<color=orange>Sonden-Orbitalkanone</color>]]> gesehen und dass es kaputt ist. Es ist Zeit herauszufinden, welche Daten es sammeln konnte.",
-        // Recorder GD	
+        // Recorder GD
         "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I wish my clan could see this.": "SOLANUM: Wir haben endlich das <![CDATA[<color=lightblue>Auge des Universum</color>]]> gefunden. Ich wünschte mein Clan könnte das sehen.",
         "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": "SOLANUM: Trotzdem, die Fremden von einem anderen Sternsystem hatten wichtiges Wissen. Sie hatten Technologie, womit sie das <![CDATA[<color=lightblue>Auge</color>]]> besser verstehen konnten. Ich habe die Hypothese, dass das <![CDATA[<color=lightblue>Auge</color>]]> gefährlich ist, basierend auf deren Vision. Jedoch könnte ihre Interpretation auch falsch sein.",
         "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": "SOLANUM: Was tun wir mit diesem Wissen über das <![CDATA[<color=lightblue>Auge</color>]]>? Ich möchte mehr darüber lernen und ich möchte es finden - aber ich bin mir nicht sicher, wie wir es erreichen sollen.",
         "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": "SOLANUM: Liege ich falsch? Ist diese Gedächtnisstatue aktiv? In diesem aktivierten Zustand sollte es Daten an <![CDATA[<color=orange>Projekt Zwillingsasche</color>]]> übertragen.. Ich schaue mir das mal an.",
-        // Recorder ATP 	
+        // Recorder ATP
         "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": "SOLANUM: Ich vermute, dass du es schon gesehen hast? Unsere Sonne stirbt... aber bist du mit einer der Statuen verknüpft? Jetzt verstehe ich es. Weißt du wer auf den <![CDATA[<color=lightblue>Untiefen der Riesen</color>]]> verknüpft ist?",
         "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": "SOLANUM: Es ist schade. Es gibt so viele Fragen, die ich stellen würde, wenn ich deine Sprache verstehen könnte.",
         "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": "SOLANUM: Möglicherweise bin ich jetzt, auf die selbe Weise wie du, mit dieser Statue dort drüben verbunden. Ich landete direkt vor der Statue und sie öffnete ihre Augen.",
@@ -40,21 +40,21 @@
         "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.": "SOLANUM: Ich hatte ein Zeitschleifen-Spielzeug als ich ein Kind war, aber ich war mir nicht sicher wie die echte Zeitschleife funktioniert hätte. Ich sollte, vor der Abreise, zuerst ein paar <![CDATA[<color=lightblue>Orte meiner Kindheit</color>]]> besuchen.",
         "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.": "SOLANUM: Wenn die <![CDATA[<color=lightblue>Sonne</color>]]> stirbt, müssten wir gefangen sein. Hypothese: Es ist möglich zu überleben, wenn wir weit genug davon wegkommen. Das wäre eine mögliche Lösung.",
         "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "SOLANUM: Von deiner Vision weiß ich jetzt, dass <![CDATA[<color=orange>das Gefährt</color>]]> sich in <![CDATA[<color=lightblue>Schwarzdorn</color>]]> befindet. Denkst ich könnte es erreichen, so wie ich diesen Ort erreicht habe?",
-        // Recorder ATP 2	
+        // Recorder ATP 2
         "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "SOLANUM: Ich verstehe jetzt, wie die Zeitschleife funktioniert und ich kann mich auch an alles aus dem vorherigen Zyklus erinnern.",
         "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz sagte: <![CDATA[<i>«Das Zurücksenden von Erinnerungen in der Zeit und selbst in der Zeit zurückreisen sind zwei verschiedene Aktionen»</i>]]>.",
         "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "SOLANUM: Ich kann mir vorstellen, dass solch eine Technologie es würdig wäre, auf dem Nomaifestival gefeiert zu werden. Wir sollten jetzt versuchen zum <![CDATA[<color=orange>Gefährt</color>]]> zu kommen. Ich werde den Kern noch einmal öffnen, aber in der nächsten Schleife bist du dran.",
-        // Recorder BH	
+        // Recorder BH
         "SOLANUM: This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "SOLANUM: Dies war meine Schule, wo wir beide jetzt stehen. Hier lernte ich über das Universum: Sterne, Raum und Zeit. Ich gehe davon aus, dass es kein sicherer Ort mehr ist. Ich bin mir nicht sicher, aber ich habe das schwarze Loch viel kleiner in Erinnerung.",
         "SOLANUM: As a student, I was imagining the universe collapse. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.": "SOLANUM: Als ein Schüler stellte ich mir vor wie das Universum kollabiert. Conoy erzählte mir, dass es nicht zu unseren Lebzeiten passieren würde. Es war gruselig daran zu denken. Aber was kommt danach? Vielleicht bildet es etwas neues.",
         "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.": "SOLANUM: Es könnte hier unsicher sein, deswegen brachte ich diesen Gravitationskristall. Auf diesem Planeten sind Raum und Zeit untrennbar verbunden und begrenzt.",
         "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.": "SOLANUM: Ich nehme an, dass dieser Kristall nicht komplett stabil ist. Womöglich liegt das an der steigenden Fluktuation des schwarzen Lochs. Sei vorsichtig.",
-        // Recorder ET	
+        // Recorder ET
         "SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.": "SOLANUM: Ich verbrachte meine Kindheit hier. Mein Zuhause und das meiner Familie und meinen Freunden. Die Stadt liegt nun in Trümmern...es ist traurig es so anzusehen.",
         "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.": "SOLANUM: Als ich ein Kind war, liebte ich diese Spielzeuge. Das Pyramidion und das Shuttle waren beide meine Favoriten. Das ist nur ein kleiner Teil vom kulturellem Erbe der Nomai.",
         "SOLANUM: It's unsafe here, I think. I can hear the sand rising.": "SOLANUM: Ich denke, hier ist es nicht sicher. Ich kann den Sand aufsteigen hören.",
         "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.": "SOLANUM: Ich glaube nicht, dass sie noch für jemandem einen Nutzen haben werden. Bitte nimm etwas Abstand.",
-        // Recorder DB	
+        // Recorder DB
         "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "SOLANUM: Es ist unglaublich! Die Hauptsysteme funktionieren, trotz des Schadens. Ich bin sicher ich kann damit umgehen.",
         "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "SOLANUM: Diese Wand zeigt eingehende Nachrichten von anderen Nomaiclans an. Es mag seltsam klingen, aber sie glauben, dass das Verschwinden von Escalls Gefährt bloß ein Mythos war.",
         "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "SOLANUM: Es ist unglaublich, dass <![CDATA[<color=orange>das Gefährt</color>]]> Nachrichten hier in <![CDATA[<color=lightblue>Schwarzdorn</color>]]> empfangen kann. Vielleicht kann ich diese zurückverfolgen...",
@@ -66,7 +66,7 @@
 
 
 
-        // EYE SCENE	
+        // EYE SCENE
         "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM: Zwei bewusste Beobachter haben das Auge des Universums erreicht. Ich akzeptiere deine Entscheidung.",
         "SOLANUM: Would you try to enter it?": "SOLANUM: Würdest du versuchen es zu betreten?",
         "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, die letzte lebende Nomai, erhielt das Quantenbewusstsein durch das Resultat eines Paradoxons. Sie hat mit mir das Auge betreten.",
@@ -134,7 +134,7 @@
         "Solanum in the Sunless City": "Solanum in der Sonnenlosen Stadt",
         "I can hear Solanum's signal coming from the Sunless City.": "Ich kann Solanums Signal von der Sonnenlosen Stadt aus hören.",
         "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "Ich fand Solanum in der Sonnenlosen Stadt. Sie bleibt bei ihrem Zuhause im Augenschreinbezirk.",
-        // "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",        
+        // "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",
         "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": "Sie fühlt sich traurig dabei die Ruinen der Sonnenlosen Stadt zu sehen. Solanum hatte mir etwas über ihre Kindheit erzählt.",
 
 
@@ -180,7 +180,7 @@
         // Timber Hearth
         "Solanum on Timber Hearth": "Solanum auf Holzkamin",
         "Is Solanum on Timber Hearth?": "Ist Solanum auf Holzkamin?",
-        "New quantum frequency": "Neue Quantenfrequenz",
+        "New quantum frequency?": "Neue Quantenfrequenz?",
         "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "Solanums Nachricht wurde unterbrochen, als sie Holzkamin erwähnte. Vielleicht ist sie dort?",
         "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "Solanum ist irgendwie auf Holzkamin in der Nähe des Dorfes aufgetaucht. Es scheint, als würde sie die Kamina beobachten.",
         //"According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.",
@@ -213,7 +213,7 @@
         "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": "Im letzten Zyklus war sich Solanum nicht sicher, wie die Zeitschleife funktioniert. In diesem Zyklus scheint sie aber alles verstanden zu haben und möchte jetzt zum Gefährt.",
 
 
-        // Ernesto Quest        
+        // Ernesto Quest
         "Where is Ernesto?": "Wo ist Ernesto?",
         "Seriously, how could an anglerfish just disappear?": "Ernsthaft, wie kann ein Anglerfisch einfach verschwinden?",
         "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfels sagte, dass der Anglerfisch «Ernesto» aus der Ausstellung verschwunden ist.",
