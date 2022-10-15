@@ -18,21 +18,21 @@
     "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION.",
     "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.",
 
-    // Quantum Moon
+    // Quantum Moon	
     "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.": "SOLANUM: This is strange. Where am I? I see stars now. Likely, I will find the answers in the sky above.",
     "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...",
-    // Recorder TH
+    // Recorder TH	
     "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.": "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.",
     "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.": "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.",
     "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.": "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.",
     "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.": "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.",
     "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.": "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Probe Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.",
-    // Recorder GD
+    // Recorder GD	
     "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I wish my clan could see this.": "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the Universe</color>]]>. I wish my clan could see this.",
     "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": "SOLANUM: Still, the strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.",
     "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ",
     "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>... I'll take a look at it.",
-    // Recorder ATP
+    // Recorder ATP 	
     "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant's Deep</color>]]>?",
     "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.",
     "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": "SOLANUM: Perhaps, now I am linked to the statue in the same way as you. I ended up right in front of that nearby statue and it opened its eyes.",
@@ -40,21 +40,21 @@
     "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.": "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit the <![CDATA[<color=lightblue>places from my childhood</color>]]> first, before departing.",
     "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.": "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.",
     "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "SOLANUM: From your vision, I now know <![CDATA[<color=orange>the Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?",
-    // Recorder ATP 2
+    // Recorder ATP 2	
     "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.",
     "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz said: <![CDATA[<i>\"Sending memories back in time and going back in time physically are two different actions\"</i>]]>.",
     "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.",
-    // Recorder BH
+    // Recorder BH	
     "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.",
     "SOLANUM: As a student, I was imagining the universe collapse. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.": "SOLANUM: As a student, I would imagine the universe ending. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.",
     "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.": "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.",
     "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.": "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.",
-    // Recorder ET
+    // Recorder ET	
     "SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.": "SOLANUM: I spent my childhood here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.",
     "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.": "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.",
     "SOLANUM: It's unsafe here, I think. I can hear the sand rising.": "SOLANUM: It's unsafe here, I think. I can hear the sand rising.",
     "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.": "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.",
-    // Recorder DB
+    // Recorder DB	
     "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.",
     "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe the disappearance of Escall's Vessel was a myth.",
     "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...",
@@ -66,7 +66,7 @@
 
 
 
-    // EYE SCENE
+    // EYE SCENE	
     "SOLANUM: Two conscious observers have reached Eye of the universe. I accept your decision.": "SOLANUM: Two conscious observers have reached the Eye of the Universe. I accept your decision.",
     "SOLANUM: Would you try to enter it?": "SOLANUM: Would you try to enter it?",
     "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.",
@@ -134,7 +134,7 @@
         "Solanum in the Sunless City": "Solanum in the Sunless City",
         "I can hear Solanum's signal coming from the Sunless City.": "I can hear Solanum's signal coming from the Sunless City.",
         "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.",
-        // "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",
+        // "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",        
         "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": "She feels sad seeing the Sunless City in ruins. Solanum told me a little about her childhood.",
 
 
@@ -213,7 +213,7 @@
         "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems as if she understands everything, and wants to go to the Vessel.",
 
 
-        // Ernesto Quest
+        // Ernesto Quest        
         "Where is Ernesto?": "Where is Ernesto?",
         "Seriously, how could an anglerfish just disappear?": "Seriously, how could an anglerfish just disappear?",
         "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfels said that the anglerfish \"Ernesto\" disappeared from its exhibit.",
