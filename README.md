@@ -1,5 +1,4 @@
-![For github](https://user-images.githubusercontent.com/106444732/186694560-4665cb15-2c78-4d36-a05e-47988c733d9a.png)
-
+![the_vision](https://user-images.githubusercontent.com/106444732/195997278-130e4ceb-7c56-4948-b300-110500de6bc8.gif)
 
 # The Vision - unofficial story mod for Outer Wilds
 Check out [The Vision trailer!](https://youtu.be/iUcBzdljHfE)
@@ -47,13 +46,13 @@ Mods used:
 - [Sound Test](https://outerwildsmods.com/mods/soundtest)
 
 Translation credits:
-- English: [MegaPiggy](https://github.com/MegaPiggy), [Alex Chaloner](https://github.com/AlexChaloner)
+- English: [MegaPiggy](https://github.com/MegaPiggy), [Alex Chaloner](https://github.com/AlexChaloner), [xen](https://github.com/xen-42)
 - Russian: [heart1an](https://github.com/hearth1an), [Leatryx](https://github.com/Leatryx), [Tlya](https://github.com/Tllya)
 - Portuguese: [ShoosGun](https://github.com/ShoosGun),
 - French: [Deadofnothnig](https://github.com/Deadofnothing),
 - Сhinese: [星际拓荒讨论群群友](https://github.com/REME-easy),
 - Spanish: [Alejandro-SB](https://github.com/Alejandro-SB),
-- German: [Derko],
+- German: Derko,
 - Japanese: [9638](https://github.com/96-38).
 
 
