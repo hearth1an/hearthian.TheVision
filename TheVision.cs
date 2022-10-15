@@ -41,8 +41,7 @@ namespace TheVision
             var menuFrameworkAPI = ModHelper.Interaction.GetModApi<IMenuAPI>("_nebula.MenuFramework");
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
-            newHorizonsAPI.LoadConfigs(this);
-            // menuFrameworkAPI.RegisterStartupPopup(TranslationHandler.GetTranslation("THE_VISION_POPUP", TranslationHandler.TextType.UI));
+            newHorizonsAPI.LoadConfigs(this);            
 
             ModHelper.Console.WriteLine($"{nameof(TheVision)} is loaded!", MessageType.Success);
 
@@ -248,6 +247,7 @@ namespace TheVision
 
                     PlayerData.SetPersistentCondition("MET_SOLANUM", true);
                     PlayerData.SetPersistentCondition("MET_PRISONER", true);
+                    PlayerData.SetPersistentCondition("SOLANUM_PROJECTION_COMPLETE", true);
 
                     SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").GetComponent<InteractReceiver>()._hasInteracted = true;
                     SearchUtilities.Find("QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/ConversationZone").GetComponent<InteractReceiver>()._isInteractPressed = true;
