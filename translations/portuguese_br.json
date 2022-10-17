@@ -4,7 +4,7 @@
 
         // Hint: use «» instead of "".
         // Computer GD
-        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "COMPUTADOR PRINCIPAL: Acesso concedido, SOLANUM. \nPEDIDO DO USUÁRIO: «Ultimo acesso consedido». Calculando...", // use \n here to enter new line
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "COMPUTADOR PRINCIPAL: Acesso concedido, SOLANUM. \nPEDIDO DO USUÁRIO: \"Ultimo acesso consedido\". Calculando...", // use \n here to enter new line
         "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "COMPUTADOR PRINCIPAL: Ultimo acesso consedido a 281,042 anos atrás. \nUsuário = Mallow.", // and here
         "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualizando Progresso. Anomalia no espaço profundo com todos os critérios do <![CDATA[<color=lightblue>Olho do universo</color>]]> foi encontrado.",
 
@@ -41,7 +41,7 @@
         "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "SOLANUM: Apartir da tua visão, agora sei que o <![CDATA[<color=orange>Hospedeiro</color>]]> está no <![CDATA[<color=lightblue>Abrolho Sombrio</color>]]>. Achas que eu conseguiria alcança-lo, da mesma maneira que eu alcancei este lugar?",
         // Recorder ATP 2
         "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "SOLANUM: Entendo como o loop temporal funciona e agora lembro-me de tudo dos ciclos anteriores.",
-        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz disse: <![CDATA[<i>«Enviar memórias ao passado e voltar físicamente a ele são duas ações distintas»</i>]]>.",
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz disse: <![CDATA[<i>\"Enviar memórias ao passado e voltar físicamente a ele são duas ações distintas\"</i>]]>.",
         "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "SOLANUM: Consigo imaginar essa tecnologia sendo digna de celebração no festival Nomai. Agora podemos tentar chegar no <![CDATA[<color=orange>Hospedeiro</color>]]>. Abrirei novamente o núcleo, mas no próximo ciclo será de tua responsabilidade.",
         // Recorder BH
         "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "SOLANUM: Esta fora a minha escola, onde nós nos encontramos. Aqui, eu aprendi sobre o universo: estrelas, espaço, e tempo. Assumo que não mais é um lugar seguro. Estou incerta, mas me lembro do buraco negro ser menor.",
@@ -57,7 +57,7 @@
         "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "SOLANUM: Isso é incrível! Os sistemas principais continuam funcionando mesmo avariados. Tenho certeza que sou capaz de controla-los.",
         "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "SOLANUM: Essas mensagem mostram mensagem originadas de um outro clã Nomai. Parece estranho, mas eles acreditam que o desaparecimento do Hospedeiro de Escall seja um mito.",
         "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "SOLANUM: Incrível que <![CDATA[<color=orange>o Hospedeiro</color>]]> seja capaz de receber essas mensagens no <![CDATA[<color=lightblue>Abrolho Sombrio</color>]]>. Talvez seja possível rastrear a sua origem...",
-        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM: Uma Nomai, Canna, menciona um local seguro chamado sistema <![CDATA[<color=orange>«Blackrock»</color>]]>, em algum lugar na <![CDATA[<color=lightblue>Galáxia Gloaming</color>]]>.",
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM: Uma Nomai, Canna, menciona um local seguro chamado sistema <![CDATA[<color=orange>\"Blackrock\"</color>]]>, em algum lugar na <![CDATA[<color=lightblue>Galáxia Gloaming</color>]]>.",
         "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": "A nave tem as coordenadas de origem da mensagem! Consigo coloca-las em um visor, que deve estar em algum local. Por favor o encontre. Se decidirmos nos translocarmos, iremos precisar do núcleo de translocação avançado do <![CDATA[<color=orange> Projeto do Gêmeo Cinzento</color>]]>. O núcleo original está irreparavelmente danificado.",
         "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": "SOLANUM: Pensando nessa emocionante possibilidade. Mas não a temo. Na realidade, depois de tudo que ocorreu, nada mais temo. Estas são apenas as leis que regem o universo.",
         "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": "SOLANUM: Dois observadores concientes iniciando uma jornada ao destino. Sinto a incerteza crescendo enormemente. Ela não estava forte assim desde que saimos da <![CDATA[<color=lightblue>Lua Quântica</color>]]>.",
@@ -79,7 +79,7 @@
         "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]> desapareceu!",
         "Hey! What's going on? Where's the anglerfish?": "Ei! O que está acontecendo? Onde está o tamboril?",
         "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Quem é <![CDATA[<color=orange>Ernesto</color>]]>?",
-        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Meu pegueno amigo foi embora! Eu chamei o tamboril de <![CDATA[<color=orange>«Ernesto»</color>]]>. Eu não consigo acreditar que ele me abandonou desse jeito...",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Meu pegueno amigo foi embora! Eu chamei o tamboril de <![CDATA[<color=orange>\"Ernesto\"</color>]]>. Eu não consigo acreditar que ele me abandonou desse jeito...",
         "Oh, I'm sorry about that...": "Oh, eu sinto muito por isso...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Pobre <![CDATA[<color=orange>Ernesto</color>]]>... Aqui está os seus <![CDATA[<color=orange>novos códigos de lançamento</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Eu só preciso dos <![CDATA[<color=orange>novos códigos de lançamento</color>]]>.",
@@ -115,7 +115,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "Novos códigos de lançamento: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "VOCÊ E SOLANUM ESCAPARAM PARA ALÉM DO ALCANCE DA SUPERNOVA E CONHECERAM A NOMAI EM BLACKROCK. \nJUNTOS VOCÊS ASSITEM AS ESTRELAS SE EXTINGUIREM.", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
-        "THE_VISION_POPUP": "Obrigado por instalar o «The Vision»! Cheque os marcadores da sua nova para iniciar a nova história." // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
+        "THE_VISION_POPUP": "Obrigado por instalar o \"The Vision\"! Cheque os marcadores da sua nova para iniciar a nova história." // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
 
     },
     "ShipLogDictionary": {
@@ -194,11 +194,11 @@
         // Ernesto Quest        
         "Where is Ernesto?": "Onde está Ernesto?",
         "Seriously, how could an anglerfish just disappear?": "É sério, como que um tamboril apenas desaparece?",
-        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Corneana disse que aquele tamboril «Ernesto» desapareceu da exibição.",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Corneana disse que aquele tamboril \"Ernesto\" desapareceu da exibição.",
         "Ernesto found": "Ernesto encontrado",
         "I found Ernesto": "Encontrei Ernesto",
         "I found Slate with Ernesto. He's cooking him on campfire.": "Encontrei Ardósia com Ernesto. Ardósia está cozinhando ele no fogueira.",
         "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "Ardósia está de saco cheio de comer apenas marshmallows, por isso está cozinhando o Ernerto. Dentro de 30 min ele estará pronto. Não é necessário uma intervensão pois o loop irá reiniciar antes que isso aconteça."
-        
+
     }
   }

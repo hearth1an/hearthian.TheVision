@@ -5,7 +5,7 @@
         // Hint: use «» instead of "".
 
         // Computer GD
-        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "HAUPTCOMPUTER: Zugriff auf Log gewährt, SOLANUM. \nNUTZERANFRAGE: «Letzter Zugriff gewährt». Berechne...", // use \n here to enter new line
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "HAUPTCOMPUTER: Zugriff auf Log gewährt, SOLANUM. \nNUTZERANFRAGE: \"Letzter Zugriff gewährt\". Berechne...", // use \n here to enter new line
         "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "HAUPTCOMPUTER: Letzter Zugriff vor 281.042 Jahren gewährt. \nNUTZER = Mallow.", // and here
         "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "Visualisiere Fortschritt. Gefundene Weltraumanomalie trifft alle Kriterien für das <![CDATA[<color=lightblue>Auge des Universums</color>]]>.",
 
@@ -42,7 +42,7 @@
         "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "SOLANUM: Von deiner Vision weiß ich jetzt, dass <![CDATA[<color=orange>das Gefährt</color>]]> sich in <![CDATA[<color=lightblue>Schwarzdorn</color>]]> befindet. Denkst ich könnte es erreichen, so wie ich diesen Ort erreicht habe?",
         // Recorder ATP 2	
         "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "SOLANUM: Ich verstehe jetzt, wie die Zeitschleife funktioniert und ich kann mich auch an alles aus dem vorherigen Zyklus erinnern.",
-        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz sagte: <![CDATA[<i>«Das Zurücksenden von Erinnerungen in der Zeit und selbst in der Zeit zurückreisen sind zwei verschiedene Aktionen»</i>]]>.",
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM: Daz sagte: <![CDATA[<i>\"Das Zurücksenden von Erinnerungen in der Zeit und selbst in der Zeit zurückreisen sind zwei verschiedene Aktionen\"</i>]]>.",
         "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "SOLANUM: Ich kann mir vorstellen, dass solch eine Technologie es würdig wäre, auf dem Nomaifestival gefeiert zu werden. Wir sollten jetzt versuchen zum <![CDATA[<color=orange>Gefährt</color>]]> zu kommen. Ich werde den Kern noch einmal öffnen, aber in der nächsten Schleife bist du dran.",
         // Recorder BH	
         "SOLANUM: This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "SOLANUM: Dies war meine Schule, wo wir beide jetzt stehen. Hier lernte ich über das Universum: Sterne, Raum und Zeit. Ich gehe davon aus, dass es kein sicherer Ort mehr ist. Ich bin mir nicht sicher, aber ich habe das schwarze Loch viel kleiner in Erinnerung.",
@@ -58,7 +58,7 @@
         "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "SOLANUM: Es ist unglaublich! Die Hauptsysteme funktionieren, trotz des Schadens. Ich bin sicher ich kann damit umgehen.",
         "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "SOLANUM: Diese Wand zeigt eingehende Nachrichten von anderen Nomaiclans an. Es mag seltsam klingen, aber sie glauben, dass das Verschwinden von Escalls Gefährt bloß ein Mythos war.",
         "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "SOLANUM: Es ist unglaublich, dass <![CDATA[<color=orange>das Gefährt</color>]]> Nachrichten hier in <![CDATA[<color=lightblue>Schwarzdorn</color>]]> empfangen kann. Vielleicht kann ich diese zurückverfolgen...",
-        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM: Ein Nomai, Canna, erwähnt einen sicheren Ort, namens <![CDATA[<color=orange>«Schwarzfels»</color>]]>, irgendwo in der <![CDATA[<color=lightblue>Zwielicht-Galaxie</color>]]>.",
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM: Ein Nomai, Canna, erwähnt einen sicheren Ort, namens <![CDATA[<color=orange>\"Schwarzfels\"</color>]]>, irgendwo in der <![CDATA[<color=lightblue>Zwielicht-Galaxie</color>]]>.",
         "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": "SOLANUM: Das Schiff hat die Koordinaten der Nachrichtenquelle! Ich kann es auf dem Display anzeigen lassen, der irgendwo hier sein sollte. Bitte finde es. Wenn wir uns dazu entscheiden zu warpen, brauchen wir den Warpkern von <![CDATA[<color=orange>Projekt Zwillingsasche</color>]]>. Der Kern des Schiffs ist irreparabel beschädigt.",
         "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": "SOLANUM: An so eine Möglichkeit zu denken ist aufregend, aber ich fürchte mich nicht. In der Tat, nach allem was passiert ist, habe ich überhaupt keine Angst. Das sind nunmal die Gesetze nach denen das Universum funktioniert.",
         "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": "SOLANUM: Zwei bewusste Beobachter starten eine Reise Richtung Schicksal. Ich kann fühlen wie die Unbestimmbarkeit enorm wächst. Es hat sich nicht so stark angefühlt, seit ich den <![CDATA[<color=lightblue>Quantummond</color>]]> verlassen habe.",
@@ -82,7 +82,7 @@
         "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]> ist verschwunden!",
         "Hey! What's going on? Where's the anglerfish?": "Hey! Was ist los? Wo ist der Anglerfisch?",
         "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "Wer ist <![CDATA[<color=orange>Ernesto</color>]]>?",
-        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Mein kleiner Freund ist weg! Ich nannte diesen Anglerfisch <![CDATA[<color=orange>«Ernesto»</color>]]>. Ich kann nicht glauben, dass er mich einfach so verlassen hat...",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "Mein kleiner Freund ist weg! Ich nannte diesen Anglerfisch <![CDATA[<color=orange>\"Ernesto\"</color>]]>. Ich kann nicht glauben, dass er mich einfach so verlassen hat...",
         "Oh, I'm sorry about that...": "Oh, das tut mir leid...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Armer <![CDATA[<color=orange>Ernesto</color>]]>... Hier sind deine <![CDATA[<color=orange>neuen Startcodes</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Ich brauch nur die <![CDATA[<color=orange>neuen Startcodes</color>]]>.",
@@ -118,7 +118,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "Neue Startcodes: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "DU UND SOLANUM ENTKOMMT WEIT AUSSERHALB DER REICHWEITE DER SUPERNOVA UND TRIFFT DIE NOMAI AUF SCHWARZFELS. \nZUSAMMEN SCHAUT IHR ZU WIE DIE LETZTEN STERNE ERLÖSCHEN.",
-        "THE_VISION_POPUP": "Danke für das Herunterladen von «The Vision»! Schau dir deinen Schiffslog an, um die neue Story zu beginnen."
+        "THE_VISION_POPUP": "Danke für das Herunterladen von \"The Vision\"! Schau dir deinen Schiffslog an, um die neue Story zu beginnen."
 
     },
     "ShipLogDictionary": {
@@ -216,7 +216,7 @@
         // Ernesto Quest        
         "Where is Ernesto?": "Wo ist Ernesto?",
         "Seriously, how could an anglerfish just disappear?": "Ernsthaft, wie kann ein Anglerfisch einfach verschwinden?",
-        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfels sagte, dass der Anglerfisch «Ernesto» aus der Ausstellung verschwunden ist.",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfels sagte, dass der Anglerfisch \"Ernesto\" aus der Ausstellung verschwunden ist.",
         "Ernesto found": "Ernesto gefunden",
         "I found Ernesto": "Ich habe Ernesto gefunden.",
         "I found Slate with Ernesto. He's cooking him on campfire.": "Ich habe Schiefer mit Ernesto gefunden. Er kocht ihn am Lagerfeuer...",

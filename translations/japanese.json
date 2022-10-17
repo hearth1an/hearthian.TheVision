@@ -4,7 +4,7 @@
 
         // Hint: use «» instead of "".
         // Computer GD
-        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "メインコンピューター:ログアクセス許可、SOLANUM。\nユーザーリクエスト:«最後のアクセス許可»。\n計算中…", // use \n here to enter new line
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "メインコンピューター:ログアクセス許可、SOLANUM。\nユーザーリクエスト:\"最後のアクセス許可\"。\n計算中…", // use \n here to enter new line
         "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "メインコンピューター: 最後のアクセス許可 281,042 年前。\nユーザー = Mallow。", // and here
         "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "進行状況。\n<![CDATA[<color=lightblue>宇宙の眼</color>]]>の条件をすべて満たす、深宇宙の異常が発見されました。",
 
@@ -41,7 +41,7 @@
         "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "SOLANUM:あなたのビジョンによれば、<![CDATA[<color=orange>船</color>]]>は<![CDATA[<color=lightblue>闇のイバラ</color>]]>の中にあるようだわ。私がここにたどり着いたように、船にもたどり着けると思う？",
         // Recorder ATP 2
         "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "SOLANUM:タイムループの仕組みが分かったわ。私は前のループのことをすべて覚えてる。",
-        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM:Dazはこう言ってた。<![CDATA[<i>«ある人間の記憶を過去に送ることと、その人間そのものを過去に送り返すことは、別だ。»</i>]]>",
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "SOLANUM:Dazはこう言ってた。<![CDATA[<i>\"ある人間の記憶を過去に送ることと、その人間そのものを過去に送り返すことは、別だ。\"</i>]]>",
         "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "SOLANUM:これはNomaiの祝祭に相応しい技術だわ。これで、<![CDATA[<color=orange>船</color>]]>に乗り込める。もう一度コアを開けてみるけど、次のループはあなたの番だわ。",
         // Recorder BH
         "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "SOLANUM:私たちが立ってるここは私の学校だったの。宇宙、星、空間、時間、それにまつわる全てを教えてくれる。もう安全な場所ではないのでしょうね。定かではないけど、ブラックホールがもっと小さかったのを覚えてる。",
@@ -57,7 +57,7 @@
         "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "SOLANUM:信じられない！損傷してるけど、システムは機能するわ！これならなんとかできると思う。",
         "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "SOLANUM:この壁には他のNomai族から受信したメッセージが表示されてる。不思議なことに、彼らは「Escallの神隠し」はおとぎ話だと思っているようだわ。",
         "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "SOLANUM:<![CDATA[<color=orange>船</color>]]>がこの<![CDATA[<color=lightblue>闇のイバラ</color>]]>の中でメッセージを受信できるなんて信じられない。もしかしたら発信源をたどれるかもしれない…",
-        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM:NomaiのCannaが、<![CDATA[<color=orange>«黒き岩の太陽»</color>]]>の星系という<![CDATA[<color=lightblue>黄昏の銀河</color>]]>のどこかにある安全な場所について呼びかけているわ。",
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "SOLANUM:NomaiのCannaが、<![CDATA[<color=orange>\"黒き岩の太陽\"</color>]]>の星系という<![CDATA[<color=lightblue>黄昏の銀河</color>]]>のどこかにある安全な場所について呼びかけているわ。",
         "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": "SOLANUM:メッセージの発信源の座標が船に記録されていたわ！船内のどこかにあるディスプレイに表示できたから確認して。ワープするなら、<![CDATA[<color=orange>灰の双子星プロジェクト</color>]]>のワープコアが必要だわ。元のコアは壊れていて直せないの。",
         "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": "SOLANUM:これからどうなるか考えるとわくわくするわ。でも、もう怖くはないの。実際、これだけのことが起こった後では全く恐れることはないわ。これは、宇宙の法則に他ならないのだから。",
         "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": "SOLANUM: 運命に向かって旅に出る二人の意識的観察者。不確実性が非常に大きくなっているのを感じる。こんなに強く感じるのは<![CDATA[<color=lightblue>量子の月</color>]]>を離れてから初めてだわ。",
@@ -79,7 +79,7 @@
         "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>Ernesto</color>]]>が消えた！",
         "Hey! What's going on? Where's the anglerfish?": "どうしたんだ？アンコウはどこだ？",
         "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "<![CDATA[<color=orange>Ernesto</color>]]>？誰だ？",
-        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "小さな友だちがいなくなったんだ！<![CDATA[<color=orange>«Ernesto»</color>]]>はアンコウのことだ。こんな風にいなくなるなんて…",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "小さな友だちがいなくなったんだ！<![CDATA[<color=orange>\"Ernesto\"</color>]]>はアンコウのことだ。こんな風にいなくなるなんて…",
         "Oh, I'm sorry about that...": "ああ、それは失礼…",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "かわいそうな<![CDATA[<color=orange>Ernesto</color>]]>…これが<![CDATA[<color=orange>新しい発射コード</color>]]>だ…。",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "ただ<![CDATA[<color=orange>新しい発射コード</color>]]>が必要なんだ。",
@@ -111,7 +111,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "新しい発射コード: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "あなたとSolanumは超新星の影響が及ばないところまで旅をしました。\n何光年もはなれた宇宙でNomaiと出あい、あなたとNomaiは星が死んでいくのを目にしました。", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
-        "THE_VISION_POPUP": "「TheVision」をダウンロードしていただき、ありがとうございます。新しいストーリーを始めるには、船のログを確認してください。もし、ビジョンがうまく表示されない場合は、ゲームの解像度を下げてみてください。" // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
+        "THE_VISION_POPUP": "「TheVision」をダウンロードしていただき、ありがとうございます。新しいストーリーを始めるには、船のログを確認してください。" // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
     },
     "ShipLogDictionary": {
         // Brittle Hollow
@@ -187,7 +187,7 @@
         // Ernesto Quest
         "Where is Ernesto?": "Ernesto行方不明",
         "Seriously, how could an anglerfish just disappear?": "真面目に、アンコウが消えるなんてありえるのだろうか？",
-        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfelsによると、アンコウの«Ernesto»が展示から姿を消したようだ。",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "Hornfelsによると、アンコウの\"Ernesto\"が展示から姿を消したようだ。",
         "Ernesto found": "Ernesto見つかる",
         "I found Ernesto": "Ernestoを見つけた。",
         "I found Slate with Ernesto. He's cooking him on campfire.": "SlateがErnestoと一緒にいるのを見つけた。キャンプファイヤーで料理している。",
