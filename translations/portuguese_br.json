@@ -115,8 +115,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "Novos códigos de lançamento: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "VOCÊ E SOLANUM ESCAPARAM PARA ALÉM DO ALCANCE DA SUPERNOVA E CONHECERAM A NOMAI EM BLACKROCK. \nJUNTOS VOCÊS ASSITEM AS ESTRELAS SE EXTINGUIREM.", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
-        "THE_VISION_POPUP": "Obrigado por instalar o \"The Vision\"! Cheque os marcadores da sua nova para iniciar a nova história." // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
-
+        "THE_VISION_POPUP": "Obrigado por instalar o \"The Vision\"! Cheque os marcadores da sua nova para iniciar a nova história."
     },
     "ShipLogDictionary": {
 

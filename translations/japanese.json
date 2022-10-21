@@ -111,7 +111,7 @@
         "THE_VISION_NEW_LAUNCH_CODES": "新しい発射コード: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
 
         "THE_VISION_TO_BE_CONTINUED": "あなたとSolanumは超新星の影響が及ばないところまで旅をしました。\n何光年もはなれた宇宙でNomaiと出あい、あなたとNomaiは星が死んでいくのを目にしました。", // "YOU AND SOLANUM ESCAPE FAR BEYOND THE REACH OF THE SUPERNOVA AND MEET THE NOMAI ON BLACKROCK. \nTOGETHER YOU WATCH THE STARS GO OUT."
-        "THE_VISION_POPUP": "「TheVision」をダウンロードしていただき、ありがとうございます。新しいストーリーを始めるには、船のログを確認してください。" // Thank you for downloading «The Vision»! Check your ship logs to start new story. If you’re having trouble with viewing the vision, please try lower your game resolution.
+        "THE_VISION_POPUP": "「TheVision」をダウンロードしていただき、ありがとうございます。新しいストーリーを始めるには、船のログを確認してください。"
     },
     "ShipLogDictionary": {
         // Brittle Hollow

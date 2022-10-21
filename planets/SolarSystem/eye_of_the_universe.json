@@ -91,7 +91,41 @@
 					"y": 0,
 					"z": 0
 				},
-				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory",
+				"rename": "SolanumObservatory"
+			},
+			{
+				"path": "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+				"position": {
+					"x": -0.2,
+					"y": -0.3,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"scale": 5,
+				"parentPath": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/SolanumObservatory/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+				"rename": "Particles1"
+			},
+
+			{
+				"path": "Vessel_Body/Sector_VesselBridge/Interactibles_VesselBridge/WarpController/WarpCoreSocket/Prefab_NOM_WarpCoreVessel/Effects_NOM_AdvancedWarpCore/Effects_NOM_WarpParticlesWhite",
+				"position": {
+					"x": -0.2,
+					"y": -0.3,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"scale": 5,
+				"parentPath": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/SolanumObservatory/Nomai_Rig_v01:TrajectorySHJnt/Nomai_Rig_v01:ROOTSHJnt/Nomai_Rig_v01:Spine_01SHJnt/Nomai_Rig_v01:Spine_02SHJnt/Nomai_Rig_v01:Spine_TopSHJnt/Nomai_Rig_v01:Neck_01SHJnt",
+				"rename": "Particles2"
 			}
 		],
 		"dialogue": [			
