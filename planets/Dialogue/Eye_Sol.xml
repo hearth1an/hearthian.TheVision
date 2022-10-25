@@ -5,5 +5,9 @@
     <Name>Start</Name>
     <EntryCondition>DEFAULT</EntryCondition>
     <Dialogue>
-      <Page>SOLANUM: I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. </DialogueNode>
+      <Page>
+        SOLANUM: I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end.
+      </Page>
+    </Dialogue>
+  </DialogueNode>
 </DialogueTree>
