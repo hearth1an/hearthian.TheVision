@@ -4,7 +4,7 @@
     "author": "hearth1an",
     "name": "The Vision",
     "uniqueName": "hearth1an.TheVision",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "owmlVersion": "2.3.2",
     "dependencies": [ "xen.NewHorizons", "JohnCorby.VanillaFix", "_nebula.MenuFramework" ],
     "conflicts": [ "Raicuparta.QuantumSpaceBuddies", "PacificEngine.OW_Randomizer" ]
