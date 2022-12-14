@@ -1001,8 +1001,8 @@ namespace TheVision
             PlayerData.SetPersistentCondition("MARK_ON_HUD_TUTORIAL_COMPLETE", true);
             PlayerData.SetPersistentCondition("COMPLETED_SHIPLOG_TUTORIAL", true);            
 
-            // To make Ernesto quest optional :((
-            // SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(false);
+            // Making Ernesto quest optional if disabled :((
+            SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/LaunchTower/Launch_Tower/ElevatorController/Elevator/AttachPoint_LaunchTowerElevator").gameObject.SetActive(false);
 
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate").gameObject.SetActive(false);
             SearchUtilities.Find("TimberHearth_Body/Sector_TH/Prefab_HEA_Journal").SetActive(true);

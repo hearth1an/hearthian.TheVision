@@ -27,7 +27,6 @@ namespace TheVision.CustomProps
 
             TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => !_solanumAnimController.isStartingWrite && !solanumVisionResponse.IsAnimationPlaying(), () =>
             {
-
                 _solanumAnimController.StopWritingMessage(gestureToText: false);
                 _nomaiConversationManager._state = NomaiConversationManager.State.WatchingSky;
                 _solanumAnimController.StopWatchingPlayer();
@@ -72,12 +71,15 @@ namespace TheVision.CustomProps
 
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
-                // wh parameters
+               /* No such parameters in New Horizons v1.8.0
+                
+                // wh parameters 
                 var whiteHoleOptions = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole/AmbientLight").GetComponent<Light>();
                 whiteHoleOptions.color = new Color(1, 1, 2, 1);
                 whiteHoleOptions.range = 30;
                 whiteHoleOptions.intensity = 3;
                 whiteHoleOptions.enabled = true;
+               */
 
                 // QM White Hole parameters
                 var qmWhiteHole = Locator.GetAstroObject(AstroObject.Name.QuantumMoon).transform.Find("Sector_QuantumMoon/WhiteHole").gameObject;
