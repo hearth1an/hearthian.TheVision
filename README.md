@@ -1,4 +1,5 @@
-![the_vision] ![final gif](https://user-images.githubusercontent.com/106444732/209952555-1690702a-56a9-4adb-9d9e-cb16cc2b6313.gif)
+![final gif](https://user-images.githubusercontent.com/106444732/209952654-e4d22230-6a74-4c82-9a04-811aebfaaf01.gif)
+
 
 
 # The Vision - unofficial story mod for Outer Wilds
