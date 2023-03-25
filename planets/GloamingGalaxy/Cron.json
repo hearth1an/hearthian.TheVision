@@ -1,55 +1,66 @@
 {
 	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-	"name" : "Cron",
+	"name": "Cron",
 	"starSystem": "GloamingGalaxy",
-	
+
 	"Base": {
-		
+
 		"surfaceGravity": 100,
 		"surfaceSize": 5000,
 		"hasMapMarker": true,
 		"gravityFallOff": "inverseSquared",
 		"centerOfSolarSystem": true
-	    
+
 	},
-	"Orbit" :
-	{
-		"isStatic" : true
+	"Orbit": {
+		"isStatic": true
 	},
-	"Atmosphere" :
-	{
-		"size" : 5000,
-		"fogTint" : 
-		{
-			"r" : 245,
-			"g" : 197,
-			"b" : 126,
-			"a" : 255
+	"Atmosphere": {
+		"size": 5000,
+		"fogTint": {
+			"r": 245,
+			"g": 197,
+			"b": 126,
+			"a": 255
 		},
 		"fogDensity": 0.4,
 		"fogSize": 5500
 	},
-	"Star" :
-	{
-		"size" : 5000,
+	"Star": {
+		"size": 5000,
 		"lightRadius": 500000,
-		"tint" : 
-		{
-			"r" : 0,
-			"g" : 0,
-			"b" : 0,
-			"a" : 0
+		"tint": {
+			"r": 0,
+			"g": 0,
+			"b": 0,
+			"a": 0
 		},
-		"lightTint" : 
-		{
-			"r" : 0,
-			"g" : 0,
-			"b" : 0,
-			"a" : 0
+		"lightTint": {
+			"r": 0,
+			"g": 0,
+			"b": 0,
+			"a": 0
 		},
-		"solarLuminosity" : 1,
+		"solarLuminosity": 1,
 		"goSupernova": true
-	
-		
+
+
+	},
+	"Volumes": {
+		"creditsVolume": [
+			{
+				"creditsType": "fast",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"radius": 100000,
+				"gameOverText": "THE_VISION_TO_BE_CONTINUED",
+				
+				"deathType": "blackHole",
+				"rename": "Death_Trigger"
+			}
+		]
 	}
 }

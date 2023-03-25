@@ -651,11 +651,13 @@ namespace TheVision
         }
         public void EndGame()
         {
+            /*
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
-                DeathManager deathManager = Locator.GetDeathManager();
-                deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
+                // DeathManager deathManager = Locator.GetDeathManager();
+                // deathManager.BeginEscapedTimeLoopSequence((TimeloopEscapeType)8486);
             });
+            */
         }
 
         // GD teleportation event
