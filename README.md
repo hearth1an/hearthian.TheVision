@@ -55,7 +55,8 @@ Translation credits:
 - Сhinese: [星际拓荒讨论群群友](https://github.com/REME-easy),
 - Spanish: [Alejandro-SB](https://github.com/Alejandro-SB),
 - German: Derko,
-- Japanese: [9638](https://github.com/96-38).
+- Japanese: [9638](https://github.com/96-38)
+- Italian: ilyNerY.
 
 
 Other translations will be added later. Let me know if you want to help with translations.
