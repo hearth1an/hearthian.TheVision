@@ -16,7 +16,7 @@
                     "y": 0.8,
                     "z": 0
                 },
-                "parentPath": "Vessel_Body/Sector_VesselBridge"
+                "parentPath": "Sector_VesselBridge"
             }            
 
         ],
@@ -81,7 +81,8 @@
                     "z": 0
                 },
                 "parentPath": "Sector_VesselBridge/Nomai_ANIM_SkyWatching_Idle",
-                "sourceRadius": 2
+                "sourceRadius": 2,
+                "rename": "Signal_Solanum"
             }
         ]
     }

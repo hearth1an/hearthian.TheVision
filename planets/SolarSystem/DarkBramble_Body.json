@@ -3,20 +3,22 @@
   "name": "Dark Bramble",
   "Props": {
     "signals": [
-      {
-        "audio": "planets/quantum.mp3",
-        "detectionRadius": 2000,
-        "frequency": "Quantum Consciousness",
-        "identificationRadius": 500,
-        "name": "Solanum",
-        "onlyAudibleToScope": false,
-        "position": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "sourceRadius": 2
-      }
+        {
+
+            "audio": "planets/quantum.mp3",
+            "detectionRadius": 2000,
+            "frequency": "Quantum Consciousness",
+            "identificationRadius": 500,
+            "name": "Solanum",
+            "onlyAudibleToScope": false,
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "sourceRadius": 2,
+            "rename": "Signal_Solanum"
+        }
     ]
   }
 }

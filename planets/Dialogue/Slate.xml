@@ -70,6 +70,7 @@
 
   <DialogueNode>
     <Name>END</Name>
+    <SetCondition>Start_New</SetCondition>
     <Dialogue>
       <Page>You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?</Page>
     </Dialogue>
@@ -83,6 +84,7 @@
 
   <DialogueNode>
     <Name>END2</Name>
+    <SetCondition>Start_New</SetCondition>
     <Dialogue>
       <Page>There is no accounting for tastes.</Page>
     </Dialogue>
@@ -96,6 +98,7 @@
 
   <DialogueNode>
     <Name>END3</Name>
+    <SetCondition>Start_New</SetCondition>
     <Dialogue>
       <Page>Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.</Page>
     </Dialogue>
@@ -105,5 +108,13 @@
       <FactID>ERNESTO_FOUND_RUMOR</FactID>
     </RevealFacts>
 
+  </DialogueNode>
+
+  <DialogueNode>
+    <Name>Start_New</Name>
+    <EntryCondition>Start_New</EntryCondition>
+    <Dialogue>
+      <Page>Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.</Page>
+    </Dialogue>  
   </DialogueNode>
 </DialogueTree>

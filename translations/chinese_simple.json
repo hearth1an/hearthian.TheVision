@@ -79,6 +79,7 @@
         "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "我的小小伙伴消失了！我把这只安康鱼叫做<![CDATA[<color=orange>\"厄内斯托\"</color>]]>。我无法相信他就这样离开了我...",
         "Oh, I'm sorry about that...": "哦，我对此深表遗憾...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "可怜的<![CDATA[<color=orange>厄内斯托</color>]]>... 这是你的<![CDATA[<color=orange>新发射密码</color>]]>...",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "可怜的<![CDATA[<color=orange>厄内斯托</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "我只是来拿<![CDATA[<color=orange>新发射密码</color>]]>的。",
         // Slate
         "Slate": "斯雷特",
@@ -95,6 +96,8 @@
         "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "你会替我去？多谢！只要记得别把<![CDATA[<color=orange>厄内斯托</color>]]>的事情告诉任何人，行吗？",
         "There is no accounting for tastes.": "不保证味道如何。",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "多谢！<![CDATA[<i>30 分钟</i>]]>内回来，我会分你一口的。",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "<![CDATA[<i>30 分钟</i>]]>内回来，我会分你一口的。",
+
         // Ship dialogue
         "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "嗯... 这里似乎很适合放投影火把！如果需要的话，我可以把它放在这。"
     },

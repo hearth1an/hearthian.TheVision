@@ -66,9 +66,9 @@ namespace TheVision
         // Spawns control
         private void TitleProps()
         {
-            GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Effects/Effects_HEA_SmokeColumn/Effects_HEA_SmokeColumn_Title").GetComponent<MeshRenderer>().material.color = new Color(1, 2, 2, 1);
-            GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Flames").GetComponent<MeshRenderer>().material.color = new Color(0, 5, 4, 1);
-            GameObject.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Embers").SetActive(false);
+            SearchUtilities.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Effects/Effects_HEA_SmokeColumn/Effects_HEA_SmokeColumn_Title").GetComponent<MeshRenderer>().material.color = new Color(1, 2, 2, 1);
+            SearchUtilities.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Flames").GetComponent<MeshRenderer>().material.color = new Color(0, 5, 4, 1);
+            SearchUtilities.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Embers").SetActive(false);
         }
         private void OnStarSystemLoaded(string systemName)
         {
@@ -241,6 +241,8 @@ namespace TheVision
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Sector_GDInterior/Sector_GDCore/Sector_Module_Sunken/Effects_Module_Sunken/SunkenModuleWater_ExteriorStencil").gameObject.SetActive(true);
             SearchUtilities.Find("GiantsDeep_Body/Sector_GD/Nomai_ANIM_SkyWatching_Idle/Signal_Solanum").transform.localPosition = new Vector3(0f, 0f, 0f);
+            SearchUtilities.Find("GiantsDeep_Body/Sector_GD/SolanumTeleportation").AddComponent<CapsuleCollider>().radius = 1f;
+
 
             PickUpTorch();
             DisabledPropsOnStart(false);
@@ -350,6 +352,9 @@ namespace TheVision
             var fillLight = SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/FillLight_Statue");
             fillLight.transform.localPosition = new Vector3(10.1989f, 1.717f, -2.4711f);
             fillLight.GetComponent<Light>().range = 4f;
+
+            SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/Prefab_HEA_MuseumPlaque (4)").DestroyAllComponents<CharacterDialogueTree>();
+            SearchUtilities.Find("EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/Prefab_HEA_MuseumPlaque (4)").DestroyAllComponents<InteractVolume>();
 
             Invoke("SolDialogueFix", 1f);
             TheVision.Instance.ModHelper.Events.Unity.FireOnNextUpdate(() =>

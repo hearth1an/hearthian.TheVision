@@ -86,7 +86,7 @@
         "Oh, I'm sorry about that...": "Oh, lo siento...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Pobre <![CDATA[<color=orange>Ernesto</color>]]>... Aquí tienes tus <![CDATA[<color=orange>nuevos códigos de lanzamiento</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Necesito los <![CDATA[<color=orange>nuevos códigos de lanzamiento</color>]]>.",
-
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Pobre <![CDATA[<color=orange>Ernesto</color>]]>...",
 
         // Slate
         "Slate": "Launa",
@@ -104,6 +104,7 @@
         "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "¿Harías eso por mí? ¡Gracias! Solo no le digas a nadie lo de <![CDATA[<color=orange>Ernesto</color>]]>, ¿vale?",
         "There is no accounting for tastes.": "Sobre gustos no hay nada escrito.",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "¡Gracias! Vuelve en unos <![CDATA[<i>30 minutos</i>]]> y te dejo un pedazo.",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Vuelve en unos <![CDATA[<i>30 minutos</i>]]> y te dejo un pedazo.",
 
         // Ship dialogue
         "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "Hmm... Este parece un buen lugar para dejar mi linterna proyectora."

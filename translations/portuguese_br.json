@@ -83,7 +83,7 @@
         "Oh, I'm sorry about that...": "Oh, eu sinto muito por isso...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Pobre <![CDATA[<color=orange>Ernesto</color>]]>... Aqui está os seus <![CDATA[<color=orange>novos códigos de lançamento</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Eu só preciso dos <![CDATA[<color=orange>novos códigos de lançamento</color>]]>.",
-
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Pobre <![CDATA[<color=orange>Ernesto</color>]]>...",
 
         // Slate
         "Slate": "Ardósia",
@@ -101,6 +101,7 @@
         "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Você faria isso por mim? Obrigado! Apenas não diga a ninguem sobre o <![CDATA[<color=orange>Ernesto</color>]]>, ok?",
         "There is no accounting for tastes.": "Não há julgamento sobre gostos.",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Obrigado! Volte em <![CDATA[<i>30 minutos</i>]]> e te darei um pedaço.",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Volte em <![CDATA[<i>30 minutos</i>]]> e te darei um pedaço.",
 
         // Ship dialogue
 

@@ -149,7 +149,8 @@
                     "z": 252.312668
                 },
                 "reveals": "WHAT_IS_NEW_QR",
-                "sourceRadius": 2
+                "sourceRadius": 2,
+                "rename": "Signal_Solanum"
             }
         ],
         "entryLocation": [

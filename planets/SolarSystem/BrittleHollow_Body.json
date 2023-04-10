@@ -3,21 +3,21 @@
   "name": "Brittle Hollow",
   "Props": {
     "details": [
-      {
-        "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
-        "position": {
-          "x": 3.3476,
-          "y": 153.4004,
-          "z": -56.1326
+        {
+            "path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+            "position": {
+                "x": 3.3476,
+                "y": 153.4004,
+                "z": -56.1326
+            },
+            "rotation": {
+                "x": 338.3891,
+                "y": 352.2668,
+                "z": 0
+            },
+            "parentPath": "Sector_BH/Solanum_BH_Character",
+            "rename": "Solanum_BH_Character"
         },
-        "rotation": {
-          "x": 338.3891,
-          "y": 352.2668,
-          "z": 0
-        },
-        "parentPath": "Sector_BH/Solanum_BH",
-        "rename": "Solanum_BH_Character"
-      },
       {
         "path": "BrittleHollow_Body/Sector_BH/Sector_Crossroads/Interactables_Crossroads/VisibleFrom_BH/GravityCrystals/OtherComponentsGroup/Prefab_NOM_GravityCrystal",
         "position": {
@@ -143,7 +143,8 @@
           "z": 0
         },
         "reveals": "SOLANUM_BH",
-        "sourceRadius": 2
+        "sourceRadius": 2,
+        "rename": "Signal_Solanum"
       }
     ]
   },

@@ -17,7 +17,7 @@
         <Text>Who is <![CDATA[<color=orange>Ernesto</color>]]>?</Text>
         <DialogueTarget>1</DialogueTarget>
       </DialogueOption>
-      <DialogueOption>
+      <DialogueOption>      
         <Text>I just need <![CDATA[<color=orange>new launch codes</color>]]>.</Text>
         <DialogueTarget>END</DialogueTarget>
       </DialogueOption>
@@ -33,7 +33,8 @@
     <DialogueOptionsList>
       <DialogueOption>
         <Text>Oh, I'm sorry about that...</Text>
-        <DialogueTarget>END</DialogueTarget>
+        <ConditionToSet>Ernesto_Asked</ConditionToSet>
+        <DialogueTarget>END</DialogueTarget>        
       </DialogueOption>
     </DialogueOptionsList>
 
@@ -41,19 +42,32 @@
       <FactID>ERNESTO_RUMOR</FactID>
       <FactID>ERNESTO_FOUND_RUMOR</FactID>
     </RevealFacts>
-
-
   </DialogueNode>
 
   <DialogueNode>
     <Name>END</Name>
+    <SetCondition>Start_2</SetCondition>
     <Dialogue>
       <Page>Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...</Page>
     </Dialogue>
     <RevealFacts>
       <FactID>ERNESTO_ENTRY</FactID>
     </RevealFacts>
+  </DialogueNode>
 
+  <DialogueNode>
+    <Name>Start_2</Name>
+    <EntryCondition>Start_2</EntryCondition>
+    <Dialogue>
+      <Page>Poor <![CDATA[<color=orange>Ernesto</color>]]>...</Page>
+    </Dialogue>
+    <DialogueOptionsList>     
+      <DialogueOption>
+      <CancelledCondition>Ernesto_Asked</CancelledCondition>
+        <Text>Who is <![CDATA[<color=orange>Ernesto</color>]]>?</Text>
+        <DialogueTarget>1</DialogueTarget>
+      </DialogueOption>      
+    </DialogueOptionsList>
   </DialogueNode>
 
 </DialogueTree>

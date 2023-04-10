@@ -83,6 +83,8 @@
         "Oh, I'm sorry about that...": "ああ、それは失礼…",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "かわいそうな<![CDATA[<color=orange>Ernesto</color>]]>…これが<![CDATA[<color=orange>新しい発射コード</color>]]>だ…。",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "ただ<![CDATA[<color=orange>新しい発射コード</color>]]>が必要なんだ。",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "かわいそうな<![CDATA[<color=orange>Ernesto</color>]]>…",
+
 
         // Slate
         "Slate": "Slate",
@@ -99,6 +101,7 @@
         "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "やってくれるのか？感謝するよ！<![CDATA[<color=orange>Ernesto</color>]]>のことは秘密にしてくれよ？",
         "There is no accounting for tastes.": "…好みは人それぞれだからな。",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "感謝するよ。<![CDATA[<i>30分</i>]]>以内に戻ってくれば、一口あげるぞ！",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "<![CDATA[<i>30分</i>]]>以内に戻ってくれば、一口あげるぞ！",
 
         // Ship dialogue
 

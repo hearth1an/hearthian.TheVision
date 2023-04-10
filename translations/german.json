@@ -86,7 +86,7 @@
         "Oh, I'm sorry about that...": "Oh, das tut mir leid...",
         "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "Armer <![CDATA[<color=orange>Ernesto</color>]]>... Hier sind deine <![CDATA[<color=orange>neuen Startcodes</color>]]>...",
         "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "Ich brauch nur die <![CDATA[<color=orange>neuen Startcodes</color>]]>.",
-
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "Armer <![CDATA[<color=orange>Ernesto</color>]]>...",
 
         // Slate
         "Slate": "Schiefer",
@@ -104,6 +104,7 @@
         "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "Du tust das für mich? Danke! Erzähl einfach niemandem von <![CDATA[<color=orange>Ernesto</color>]]>, in Ordnung?",
         "There is no accounting for tastes.": "Über Geschmack lässt sich nicht streiten.",
         "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Danke! Komm in <![CDATA[<i>30 Minuten</i>]]> zurück und ich geb dir einen Bissen.",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "Komm in <![CDATA[<i>30 Minuten</i>]]> zurück und ich geb dir einen Bissen.",
 
         // Ship dialogue
         "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "Hmm... Das sieht nach einem guten Platz für das Visionslicht aus! Ich kann es hier hin tun, wenn ich es brauche."

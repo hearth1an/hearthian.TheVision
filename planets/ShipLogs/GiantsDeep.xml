@@ -11,7 +11,7 @@
       <ID>SOLANUM_GD</ID>
       <SourceID>SOLANUM_TH</SourceID>
       <RumorName>Solanum on Giant's Deep</RumorName>
-      <Text>Solanum wants to visit Giant's Deep, but she probably will stay on Timber Hearth as well.</Text>
+      <Text>Solanum wants to visit Giant's Deep, but she will probably will stay on Timber Hearth as well.</Text>
     </RumorFact>
     <ExploreFact>
       <ID>SOLANUM_ON_GD</ID>

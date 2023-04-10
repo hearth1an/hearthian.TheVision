@@ -128,7 +128,7 @@
 				"rename": "Particles2"
 			}
 		],
-		"dialogue": [			
+		"dialogue": [
 			{
 				"position": {
 					"x": 0,
@@ -137,7 +137,19 @@
 				},
 				"xmlFile": "planets/Dialogue/Eye_Text.xml",
 				"lookAtRadius": 3,
-				"radius": 0.5				
+				"radius": 0.5
+			},
+			{
+				"isRelativeToParent": true,
+				"parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory/Interactables_Observatory/LightsAndPlaques/Prefab_HEA_MuseumPlaque (4)/InteractVolume",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"xmlFile": "planets/Dialogue/Eye_Text_Ernesto.xml",
+				"lookAtRadius": 3,
+				"radius": 0.5
 			}
 		],
 		"nomaiText": [
@@ -189,7 +201,8 @@
 					"y": 0,
 					"z": 0
 				},
-				"sourceRadius": 2
+				"sourceRadius": 2,
+				"rename": "Signal_Solanum"
 			}
 		]
 	}
