@@ -37,8 +37,7 @@ namespace TheVision
                 }
             });
 
-            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());
-            var menuFrameworkAPI = ModHelper.Interaction.GetModApi<IMenuAPI>("_nebula.MenuFramework");
+            Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly());           
             var newHorizonsAPI = ModHelper.Interaction.GetModApi<INewHorizons>("xen.NewHorizons");
             newHorizonsAPI.GetStarSystemLoadedEvent().AddListener(OnStarSystemLoaded);
             newHorizonsAPI.LoadConfigs(this);            
