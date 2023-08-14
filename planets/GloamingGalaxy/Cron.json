@@ -4,17 +4,18 @@
 	"starSystem": "GloamingGalaxy",
 
 	"Base": {
-
 		"surfaceGravity": 100,
-		"surfaceSize": 5000,
-		"hasMapMarker": true,
+		"surfaceSize": 1000,
 		"gravityFallOff": "inverseSquared",
-		"centerOfSolarSystem": true
-
+		"centerOfSolarSystem": true,
+		"groundSize": 500
 	},
+
 	"Orbit": {
 		"isStatic": true
+			
 	},
+
 	"Atmosphere": {
 		"size": 5000,
 		"fogTint": {
@@ -26,38 +27,26 @@
 		"fogDensity": 0.4,
 		"fogSize": 5500
 	},
-	"Star": {
-		"size": 5000,
-		"lightRadius": 500000,
-		"tint": {
-			"r": 0,
-			"g": 0,
-			"b": 0,
-			"a": 0
-		},
-		"lightTint": {
-			"r": 0,
-			"g": 0,
-			"b": 0,
-			"a": 0
-		},
-		"solarLuminosity": 1,
-		"goSupernova": true
-
-
+	"Spawn": {
+		"playerSpawn": {
+			"position": { "y": 20 },
+			"startWithSuit": true
+		}
+		
 	},
+
 	"Volumes": {
 		"creditsVolume": [
 			{
 				"creditsType": "fast",
 				"position": {
-					"x": 0,
-					"y": 0,
-					"z": 0
+					"x": 1000,
+					"y": 1000,
+					"z": 1000
 				},
 				"radius": 100000,
 				"gameOverText": "THE_VISION_TO_BE_CONTINUED",
-				
+
 				"deathType": "blackHole",
 				"rename": "Death_Trigger"
 			}

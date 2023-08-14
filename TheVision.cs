@@ -20,6 +20,7 @@ namespace TheVision
         public static INewHorizons newHorizonsAPI;
         public static TheVision Instance;
         public OWAudioSource PlayerHeadsetAudioSource;
+        public bool isAtpFixNeeded = false;
        
         private void Awake()
         {
@@ -27,7 +28,7 @@ namespace TheVision
             Harmony.CreateAndPatchAll(System.Reflection.Assembly.GetExecutingAssembly());
 
         }
-        private void Start()        
+        public void Start()        
         {
             ModHelper.Events.Unity.RunWhen(() => EntitlementsManager.IsDlcOwned() != EntitlementsManager.AsyncOwnershipStatus.NotReady, () =>
             {
@@ -69,13 +70,14 @@ namespace TheVision
             SearchUtilities.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Flames").GetComponent<MeshRenderer>().material.color = new Color(0, 5, 4, 1);
             SearchUtilities.Find("Scene/Background/PlanetPivot/Prefab_HEA_Campfire/Props_HEA_Campfire/Campfire_Embers").SetActive(false);
         }
-        private void OnStarSystemLoaded(string systemName)
+        public void OnStarSystemLoaded(string systemName)
         {
             ModHelper.Console.WriteLine("LOADED SYSTEM " + systemName);
 
             if (systemName == "SolarSystem")
             {
-                SpawnStartProps();                               
+                SpawnStartProps();
+                isAtpFixNeeded = true;
             }
             if (systemName == "EyeOfTheUniverse")
             {
@@ -83,7 +85,9 @@ namespace TheVision
             }
             if (systemName == "GloamingGalaxy")
             {
+                isAtpFixNeeded = false;
                 EndGame();
+                
             }
         }
         private void SpawnStartProps()
@@ -299,6 +303,7 @@ namespace TheVision
 
         public void ATPfix()
         {
+            
            // ATP memory animation link fix
             var dataStream = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/Effect 2/Effects_NOM_TimeLoopDataStream");
             dataStream.transform.localRotation = new Quaternion(0.8899f, 0, 0, 0.4562f);
@@ -309,9 +314,10 @@ namespace TheVision
             newMask.transform.localPosition = new Vector3(22.217f, -6.8984f, 5.1757f);
             newMask.SetActive(false);
 
-            var checkOtherPulse = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/centralPulse 1");
+            var checkOtherPulse = SearchUtilities.Find("TimeLoopRing_Body/Effects_TimeLoopRing/centralPulse 1");           
             
-            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => checkOtherPulse.gameObject.activeSelf == true, () =>
+            
+            TheVision.Instance.ModHelper.Events.Unity.RunWhen(() => isAtpFixNeeded != false && checkOtherPulse != null && checkOtherPulse.gameObject.activeSelf == true , () =>
             {
                 dataStream.SetActive(true);
                 newMask.SetActive(true);
@@ -655,6 +661,7 @@ namespace TheVision
         }
         public void EndGame()
         {
+            isAtpFixNeeded = false;
             /*
             ModHelper.Events.Unity.FireOnNextUpdate(() =>
             {
