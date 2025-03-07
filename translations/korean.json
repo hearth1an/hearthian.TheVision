@@ -1,0 +1,232 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "DialogueDictionary": {
+
+        // Hint: use \" instead of ".
+
+        // Computer GD
+        "MAIN COMPUTER: Log access granted, SOLANUM. USER REQUEST: «Last access granted». Calculating...": "메인 컴퓨터: 기록 접근 허가됨, 사용자 : 솔라눔. \n\n사용자 요청 : \"마지막 접근 허가\". 계산중...", // use \n here to enter new line
+        "MAIN COMPUTER: Last access granted 281,042 years ago. USER = Mallow.": "메인 컴퓨터: 281,042년 전 접근 허가됨 \n사용자 : 말로우.", // and here
+        "Visualizing progress. Deep space anomaly matching all known criteria for the <![CDATA[<color=lightblue>Eye of the universe</color>]]> has been found.": "시각화 진행 중. <![CDATA[<color=lightblue>우주의 눈</color>]]>에 대해 알려진 조건과 일치하는 심우주 이상 현상 발견됨.",
+
+        // Computer ATP
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutes>]]> MINUTES, <![CDATA[<TimeSeconds>]]> SECONDS AGO: Data received from previous cycles."
+        "ASH TWIN PROJECT: Receiving data cycle set up to <![CDATA[<color=orange>22 MINUTES</color>]]>.": "<![CDATA[<TimeMinutes>]]>분 <![CDATA[<TimeSeconds>]]> 초 전: 이전 주기로부터 데이터 수신됨.",
+        // Here ↓ translate this (with same CDATA things): "MASKS RECEIVING DATA FROM: \n<![CDATA[<color=orange>Probe Tracking Module</color>]]> \n<![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue \n<![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue \n<![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue"
+        "MASKS RECEIVING DATA FROM: <![CDATA[<color=orange>Probe Tracking Module</color>]]>, <![CDATA[<color=lightblue>Giant’s Deep</color>]]> memory statue, <![CDATA[<color=lightblue>Timber Hearth</color>]]> memory statue, <![CDATA[<color=orange>Ash Twin Project</color>]]> memory statue.": "다음으로부터 가면 정보 수신중: \n<![CDATA[<color=orange>탐사정 추적 모듈</color>]]> \n<![CDATA[<color=lightblue>거인의 심연</color>]]> 기억 조각상 \n<![CDATA[<color=lightblue>목재 화로</color>]]> 기억 조각상 \n<![CDATA[<color=orange>재 쌍둥이 프로젝트</color>]]> 기억 조각상",
+        // Here ↓ translate this (with same CDATA things): "<![CDATA[<TimeMinutesRemaining>]]> MINUTES UNTIL END-OF-CYCLE TRANSMISSION."
+        "ALL SYSTEMS ARE <![CDATA[<color=orange>STABLE</color>]]>": "다음 주기로 전송까지 <![CDATA[<TimeMinutesRemaining>]]>분.",
+        "WARNING! Removing the core will disable the <![CDATA[<color=orange>Ash Twin Project</color>]]>.": "경고! 워프 코어를 제거하면 <![CDATA[<color=orange>재 쌍둥이 프로젝트</color>]]>가 비활성화됩니다.",
+
+        // 양자의 달
+        "SOLANUM: This is strangers. Where am I? I see stars now. Likely, I will find the answers in the sky above.": "솔라눔 : 이상하네요. 이제 별이 보여요. 여기가 어디죠? 아마, 저 하늘에서 답을 찾을 수 있을 것 같습니다.",
+        "SOLANUM: It's strange, I don't feel dead. Perhaps this is my past uncertainty. This place looks familiar. I assume it's a state of Timber Hea...": "솔라눔 : 이상하게도, 죽었다는 기분이 들지 않아요. 아마 이것이 과거의 불확실성 일지도 모릅니다. 제 생각엔 여기가 목재 화...",
+        
+        // 목재 화로 녹음기
+        "SOLANUM: Greetings, friend. I feel different, but it's hard to explain.": "솔라눔 : 반가워요, 친구. 느낌이 다르지만, 설명하기가 어렵습니다.",
+        "SOLANUM: I’m unsure how I arrived here. I would conjecture that the thought of this place somehow forced my displacement. This has never happened to me before.": "솔라눔: 여기에 어떻게 도착했는지 모르겠습니다. 이곳에 대한 생각이 어떻게 저를 강제로 이동시켰다고 추측됩니다.",
+        "SOLANUM: You showed me the death of my clan. It's very hard to comprehend. How long do you think it's been since then? I clearly remember Bells guiding me on a pilgrimage to the <![CDATA[<color=lightblue>Quantum Moon</color>]]>. I suppose my pilgrimage has reached its end.": "솔라눔: 당신은 제 부족의 죽음을 보여줬어요. 이해하기가 매우 어렵습니다. 그떄부터 시간이 얼마나 지났을까요? 벨이 저를 <![CDATA[<color=lightblue>양자의 달</color>]]>으로의 순례를 안내한것이 분명히 기억납니다. 제 순례는 이제 끝났나봐요.",
+        "SOLANUM: I’ve never met one of your kind before. It’s a great honor to speak with you, even by recorder. You have my gratitude for understanding my language.": "솔라눔: 당신같은 존재는 처음 만나봅니다. 녹음기로라도 당신과 대화하게 되어 큰 영광입니다. 제 언어를 이해해 주셔서 감사합니다.",
+        "SOLANUM: I am glad to observe your race. I imagine you have the same thirst for knowledge as ours. I think I saw the <![CDATA[<color=orange>Orbital Cannon</color>]]> and it's broken. It's time to find out what data it managed to collect.": "솔라눔: 당신의 종족을 관찰하게 되어 기쁩니다. 당신들도 우리와 같은 지식에 대한 갈증이 있을 거라 생각해요. 하늘에서 <![CDATA[<color=orange>탐사정 궤도포</color>]]>를 본 것 같은데, 고장난거 같아요. 어떤 데이터가 수집되었는지 살펴볼 차례입니다.",
+        
+        // 거인의 심연 녹음기
+        "SOLANUM: We've finally found the <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I wish my clan could see this.": "솔라눔: 드디어 <![CDATA[<color=lightblue>우주의 눈</color>]]>을 찾았습니다. 제 부족이 이걸 봤었으면 좋겠네요.",
+        "SOLANUM: Still, strangers from another star system had important knowledge. They had technology that could understand the <![CDATA[<color=lightblue>Eye</color>]]> better. I have a hypothesis that the <![CDATA[<color=lightblue>Eye</color>]]> is dangerous, based on their vision. However, their interpretation could be wrong.": "솔라눔: 다른 항성계에서 온 이방인들은 중요한 지식을 가지고 있었습니다. 그들은 <![CDATA[<color=lightblue>눈</color>]]>을 더 잘 이해할 수 있는 기술을 가지고 있었죠. 저는 이방인들에 대한 환영을 근거로 <![CDATA[<color=lightblue>눈</color>]]>이 위험하다는 가설을 세웠습니다. 하지만, 그들의 해석이 틀렸을 수도 있습니다.",
+        "SOLANUM: What do we do with this knowledge about the <![CDATA[<color=lightblue>Eye</color>]]>? I want to learn about it, and I want to find it - but I'm not sure how to reach it. ": "솔라눔: <![CDATA[<color=lightblue>눈</color>]]>에 대한 이 지식을 바탕으로 무엇을 할 수 있을까요? 눈에 대해 배우고, 찾고 싶지만 - 어떻게 접근해야 할지 모르겠습니다.",
+        "SOLANUM: Am I wrong? Is that Memory Statue active? In this activated state, it should be transmitting data to the <![CDATA[<color=orange>Ash Twin Project</color>]]>.. I'll take a look at it.": "솔라눔: 제가 틀렸을까요? 기억 조각상이 활성화되어 있나요? 만약 활성화되어 있다면, <![CDATA[<color=orange>재 쌍둥이 프로젝트</color>]]>로 데이터를 전송하고 있어야 합니다... 제가 살펴보겠습니다.",
+        
+        // 재 쌍둥이 프로젝트 녹음기
+        "SOLANUM: I suspect you have seen this? Our Sun is dying... but you are paired with one of the statues? Now I understand. Do you know who else is paired at <![CDATA[<color=lightblue>Giant’s Deep</color>]]>?": "솔라눔: 이걸 보셨나요? 우리의 태양이 죽어가고 있어요... 그런데 당신은 조각상 중 하나와 연결되어 있나요? ...이제 알겠군요. <![CDATA[<color=lightblue>거인의 심연</color>]]>에 또 누가 연결되어 있는지 아시나요?",
+        "SOLANUM: It's a pity. There are many questions I would ask if I could comprehend your language.": "솔라눔: 유감입니다. 제가 여러분의 언어를 이해할 수만 있었다면 물어보고 싶은 질문이 많습니다.",
+        "SOLANUM: Perhaps, now I am linked to the Statue same way as you. I ended up right in front of that nearby statue and it opened its eyes.": "솔라눔: 아마도, 이제 저도 여러분과 같은 방식으로 조각상과 연결되어 있는것 같습니다. 저 조각상 바로 앞에 도착하니 조각상이 눈을 떴어요.",
+        "SOLANUM: There are four masks active at once! I wish Ramie could see this...": "솔라눔: 한번에 네 개의 가면이 활성화되어 있습니다! 라미가 이걸 봤으면 좋겠어요...",
+        "SOLANUM: I had a time loop toy when I was a child, but I'm unsure how the time loop itself functioned. I may want to visit my <![CDATA[<color=lightblue>childhood places</color>]]> first, before departing.": "솔라눔: 어렸을 때 타임 루프 장난감을 가지고 있었는데, 타임루프 자체가 어떻게 작동했는지 잘 모르겠어요. 출발하기 전에 <![CDATA[<color=lightblue>어린 시절의 장소</color>]]>를 먼저 방문하고 싶네요.",
+        "SOLANUM: If the <![CDATA[<color=lightblue>Sun</color>]]> is dying, we must be trapped. Hypothesis: it is possible to survive, if we could get far enough. This is a possible solution.": "솔라눔: 만약 <![CDATA[<color=lightblue>태양</color>]]>이 죽어간다면, 우리는 갇혀 있는 게 틀림없습니다. 가설: 충분히 멀리 갈 수 있다면, 살아남을 수 있습니다.",
+        "SOLANUM: From your vision, I now know the <![CDATA[<color=orange>Vessel</color>]]> is in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Do you think I could reach it, like how I reached this place?": "솔라눔: 당신의 환영을 통해서, <![CDATA[<color=orange>함선</color>]]>이 <![CDATA[<color=lightblue>검은 가시덤불</color>]]> 안에 있다는 걸 알았습니다. 제가 이곳에 도달한 것처럼, 저도 함선에 도달할 수 있을까요?",
+        
+        // 재 쌍둥이 프로젝트 녹음기 2
+        "SOLANUM: I understand how the time loop works now and I remember everything from previous cycle.": "솔라눔: 이제 타임 루프가 어떻게 작동하는지 이해했고, 이전 주기의 모든 것을 기억할 수 있습니다.",
+        "SOLANUM: Daz said: <![CDATA[<i>«Sending memories back in time and going back in time physically are two different actions»</i>]]>.": "솔라눔: 데즈는 이렇게 말했습니다: <![CDATA[<i>\"과거로 기억을 보내는 것과 물리적으로 시간을 거슬러 올라가는 것은 서로 다른 행동이다.\"</i>]]>.",
+        "SOLANUM: I can imagine such technology would be worthy of celebration at the Nomai festival. Now we can try to get to <![CDATA[<color=orange>the Vessel</color>]]>. I'll open the core once again, but next loop it's your turn.": "솔라눔: 이런 기술은 노마이 축제에서 축하할 만한 가치가 있을 것 같아요. 이제 <![CDATA[<color=orange>함선</color>]]>에 가볼 수 있습니다. 제가 다시 한 번 코어를 열테니, 다음 주기는 당신의 차례입니다.",
+        
+        // 조각난 공동 녹음기	
+        "SOLANUM:  This was my school, where we both are standing. Here, I learned about the universe: stars, space, and time. I assume it's not a safe place anymore. I'm unsure, but I remember the black hole being smaller.": "솔라눔:  우리 둘이 서있는 이곳이 저의 학교였습니다. 여기서, 저는 우주에 대해 배웠어요- 별, 우주, 그리고 시간에 대해서 말이죠. 더 이상 안전한 곳은 아닌 것 같군요. 확신이 들지는 않지만, 블랙홀이 더 작았던 것으로 기억합니다.",
+        "SOLANUM: As a student, I was imagining the universe collapse. Conoy told me it wouldn't happen in our lifetimes. That was scary to think about. But what comes after? Perhaps it forms something new.": "솔라눔: 학생이었을때, 저는 우주가 멸망하는 상상을 했습니다. '코노이'는 우리가 살아있는 동안에는 그런 일이 일어나지 않을 거라고 했어요. 생각만 해도 무서웠죠. 하지만 멸망 다음에는 무엇이 있을까요? 아마 새로운 무언가일 겁니다.",
+        "SOLANUM: It might be unsafe here, so I brought this gravity crystal. On this planet, space and time are inextricably linked and limited.": "솔라눔: 여긴 위험할 것 같아서, 이 중력 수정을 가져왔어요. 이 행성에서 공간과 시간은 뗄 수 없이 연결되어 있고, 제한되어 있습니다.",
+        "SOLANUM: I suppose this crystal is not completely stable. It's probably because of the black hole's increasing fluctuations. Be careful here.": "솔라눔: 이 수정은 완전히 안정적이지는 않다고 추측됩니다. 아마 블랙홀의 변동이 심하기 때문일 거에요. 조심하세요.",
+        
+        // Recorder ET	<< ??? 아직 게임 안해봄
+        "SOLANUM: I spent my childhoom here. Home for me and my family and friends. The city lies in ruins now... it is sad to see it like this.": "솔라눔: 제 어린 시절을 여기서 보냈습니다. 저와 제 가족, 친구들의 집이었죠. 도시는 이제 폐허가 되어버렸습니다... 이런 모습을 보니 슬프네요.",
+        "SOLANUM: When I was a child, I loved these toys. Pyramidion and shuttle were both my favorites. This is only a small part of the Nomai cultural heritage.": "솔라눔: 어렸을 떄, 저는 이 장난감들을 정말 좋아했어요. 피라미디온(* 피라미드 꼭대기에 올려놓는 사각뿔 모양의 돌) 과 우주선은 제가 가장 좋아하는 장난감이었어요. 이것은 노마이 문화유산의 일부에 불과합니다.",
+        "SOLANUM: It's unsafe here, I think. I can hear the sand rising.": "솔라눔: 여긴 안전하지 않은 것 같네요. 모래가 올라가는 소리가 들립니다.",
+        "SOLANUM: I don't think they'll be of any use to anyone else. Stay back, please.": "솔라눔: 제 장난감들은 다른 사람에게는 아무 쓸모가 없을 것 같네요. 뒤로 물러나주세요.",
+        
+        // 검은 가시덤불 녹음기
+        "SOLANUM: That's incredible! The main systems work despite the damage. I'm sure I can handle this.": "솔라눔: 믿을 수 없군요! 손상에도 불구하고 주요 시스템이 작동하고 있어요. 아마 제가 다룰 수 있을 것 같습니다.",
+        "SOLANUM: This wall shows incoming messages from other Nomai clans. It may be strange, but they believe Escall's Vessel Disappearance was a myth.": "솔라눔: 이 벽에는 다른 노마이 부족으로부터 수신되는 메세지가 표시됩니다. 이상하게 들릴 수도 있지만, 그들은 에스콜의 실종이 신화라고 믿고 있습니다.",
+        "SOLANUM: It's incredible <![CDATA[<color=orange>the Vessel</color>]]> can receive these messages here in <![CDATA[<color=lightblue>Dark Bramble</color>]]>. Perhaps I can trace them back...": "솔라눔: <![CDATA[<color=orange>함선</color>]]>이 <![CDATA[<color=lightblue>검은 가시덤불</color>]]> 안에서도 이런 메세지를 받을 수 있다니 놀랍습니다. 아마 메세지의 발신지를 추척할 수 있을거 같아요...",
+        "SOLANUM: A Nomai, Canna, mentions a safe place called <![CDATA[<color=orange>«Blackrock»</color>]]> system, somewhere in the <![CDATA[<color=lightblue>Gloaming Galaxy</color>]]>.": "솔라눔: '칸나'라는 노마이는 <![CDATA[<color=lightblue>황혼 은하계</color>]]> 안 어딘가에 있는 <![CDATA[<color=orange>검은바위</color>]]> 항성계라는 안전한 장소를 언급하고 있습니다.",
+        "SOLANUM: The ship has the message source's coordinates! I can put it up on the display, which must be somewhere. Please find it. If we decide to warp, we need the warp core from <![CDATA[<color=orange> Ash Twin Project</color>]]>. The original core is irreparably damaged. ": "솔라눔: 함선에 메시지 발신자의 좌표가 있어요! 화면에 띄울 수 있는데, 어딘가에 화면이 있을거에요. 그걸 찾아주세요. 만약 우리가 워프를 하려면, <![CDATA[<color=orange>재 쌍둥이 프로젝트</color>]]>에 있는 워프 코어가 필요해요. 원래 코어는 돌이킬 수 없을 정도로 손상되었어요. ",
+        "SOLANUM: Thinking of such a possibility is exciting. But I do not fear this. In fact, after all that has happened, I have no fear at all. These are simply the laws by which the universe lives.": "솔라눔: <![CDATA[<color=orange>재 쌍둥이 프로젝트</color>]]>의 워프 코어를 제거한다고 생각하면 흥분됩니다. 하지만 두렵진 않아요. 사실, <![CDATA[<i>그런 일</i>]]>이 일어난 이후에도 전혀 두려움이 없습니다. 이건 단순히 우주가 살아가는 법칙입니다.",
+        "SOLANUM: Two conscious observers starting a journey towards destiny. I can feel the uncertainty grow enormously. It hasn't felt this strong since I left the <![CDATA[<color=lightblue>Quantum Moon</color>]]>.": "솔라눔: 운명을 향한 여정을 시작하는 두 의식있는 관찰자. 불확실성이 엄청나게 커지는게 느껴져요. \n<![CDATA[<color=lightblue>양자의 달</color>]]>을 떠난 이후 이런 느낌은 처음입니다.",
+        "SOLANUM: There will be no turning back. I am ready for whatever is next, friend. The decision is yours.": "솔라눔: 되돌릴 순 없어요. ㄹ이 다음에 무엇이 있던지, 전 준비됬습니다, 친구. 결정은 당신의 몫이에요.",
+
+
+
+        // EYE SCENE	
+        "SOLANUM: Two conscious observers have reached <![CDATA[<color=lightblue>Eye of the universe</color>]]>. I accept your decision.": "솔라눔: 두 명의 의식있는 관찰자가 <![CDATA[<color=lightblue>우주의 눈</color>]]>에 도달했습니다. 당신의 결정을 받아들일게요.",
+        "SOLANUM: Would you try to enter it?": "솔라눔: 들어가 보시겠습니까?",
+        "Solanum, the last Nomai alive, acquired Quantum Consciousness as a result of a paradox. She entered the Eye with me.": "마지막으로 남은 노마이인 솔라눔은 패러독스의 결과로 양자 의식을 얻었다. 그녀는 나와 함께 눈에 진입했다.",
+        "I was in the <![CDATA[<color=lightblue>Sunless City</color>]]>. I met other Nomai there: Laevi, Tage, Lami and others. Perhaps our journey has reached its end. ": "저는 <![CDATA[<color=lightblue>태양 없는 도시</color>]]>에 있었어요. 거기서 라에비, 타게, 라미 등을 만났어요. 어쩌면, 우리의 여정은 끝났을지도 몰라요. ",
+
+        // 에르네스토 Quest
+
+        // 슬레이트의 노트
+        "I went for ... for ... <![CDATA[<i>mushrooms</i>]]>. Don't take my place! I'll be back soon. Get <![CDATA[<color=orange>new launch codes</color>]]> at the Observatory, Hornfels changed them at the last minute.": "나는... 어... <![CDATA[<i>버섯</i>]]>을 먹으러 갔어. 내 자리 차지하지 마! 곧 돌아올거야. 천문대에서 <![CDATA[<color=orange>새로운 발사 코드</color>]]>를 가져와, 혼펠스가 마지막 순간에 코드를 바꿨어.",
+
+        // 혼펠스
+        "Hornfels": "혼펠스",
+        "<![CDATA[<color=orange>Ernesto</color>]]> disappeared!": "<![CDATA[<color=orange>에르네스토</color>]]>가 사라졌어!",
+        "Hey! What's going on? Where's the anglerfish?": "안녕하세요! 무슨일이죠? 아귀는 어디있어요?",
+        "Who is <![CDATA[<color=orange>Ernesto</color>]]>?": "<![CDATA[<color=orange>에르네스토</color>]]>가 누구죠?",
+        "My tiny friend is gone! I called this anglerfish <![CDATA[<color=orange>«Ernesto»</color>]]>. I can't believe he left me like that...": "내 작은 친구가 사라졌어! 난 여기 있던 아귀를 <![CDATA[<color=orange>«에르네스토»</color>]]>라고 불러. 그가 나를 이렇게 떠나갔다니 믿기지가 않는군...",
+        "Oh, I'm sorry about that...": "오, 저런...",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>... Here's your <![CDATA[<color=orange>new launch codes</color>]]>...": "불쌍한 <![CDATA[<color=orange>에르네스토</color>]]>... 여기 <![CDATA[<color=orange>새로운 발사 코드</color>]]>야...",
+        "I just need <![CDATA[<color=orange>new launch codes</color>]]>.": "<![CDATA[<color=orange>새로운 발사 코드</color>]]>가 필요해요.",
+        "Poor <![CDATA[<color=orange>Ernesto</color>]]>...": "불쌍한 <![CDATA[<color=orange>에르네스토</color>]]>...",
+
+        // Slate
+        "Slate": "슬레이트",
+        "Oh, why are you still here? Did you get the <![CDATA[<color=orange>new launch codes</color>]]> yet?": "안녕, 왜 아직도 여기있는거야? 아직 혼펠스한테서 <![CDATA[<color=orange>새로운 발사 코드</color>]]>를 받지 않은거야?",
+        "Is that the anglerfish from the museum?": "슬레이트, 그거... 박물관에 있던 아귀에요?",
+        "<![CDATA[<color=orange>Ernesto</color>]]>?! NO!": "<![CDATA[<color=orange>에르네스토</color>]]>?! 안돼!!!",
+
+        "The anglerfish from the museum exhibition. Hornfels named it that.": "박물관에 전시괸 아귀야. 혼펠스가 그렇게 이름지었어.",
+        "Okay, you know what? Yes, it is the anglerfish from the museum. I'm fed up with marshmallow. I can't take it anymore.": "그래, 뭔지 알아? 맞아, 박물관에 전시된 아귀야. 마시멜로를 먹는건 질렸어. 더 못 먹겠다고.",
+        "So you decided to eat <![CDATA[<color=orange>Ernesto</color>]]>?! Hornfels said <![CDATA[<color=orange>Ernesto</color>]]> is a friend!": "그래서 <![CDATA[<color=orange>에르네스토</color>]]>를 먹기로 한거에요?! 혼펠스는 <![CDATA[<color=orange>에르네스토</color>]]>가 친구라고 말했어요!",
+        "Anglerfish is still a fish. Whatever he calls it, is almost done cooking.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> or not. I think it will be prepared in like <![CDATA[<i>30 minutes</i>]]>. Why don't you fly near <![CDATA[<color=orange>Dark Bramble</color>]]> and just get a new one for Hornfels?": "이건 그냥 물고기일 뿐이야. 그들이 뭐라고 부르던지 간에, 요리는 거의 끝났어.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]>.<![CDATA[<Pause=1>]]> 아닌가? 내 생각에는 아마, 음... <![CDATA[<Pause=1>]]><![CDATA[<i>30 minutes</i>]]>분 정도 걸릴거 같아. <![CDATA[<color=orange>검은 가시덤불</color>]]> 근처로 가서 혼펠스를 위해 아귀를 데려오는건 어떄?",
+        "I'll do that! <![CDATA[<i>(actually not)</i>]]>": "그렇게 할게요. <![CDATA[<i>(사실은 안 할거지만)</i>]]>",
+        "That's disgusting.": "역겹네요.",
+        "Nah, enjoy your meal then.": "뭐, 그럼 맛있게 드세요.",
+        "You'll do that for me? Thanks! Just don't tell anyone about <![CDATA[<color=orange>Ernesto</color>]]> alright?": "날 위해서 그렇게 해준거야? 고마워! 그냥 아무한테도 <![CDATA[<color=orange>에르네스토</color>]]>에 대해 말하지 마, 알겠어?",
+        "There is no accounting for tastes.": "맛에 대해선 설명하지마세요.",
+        "Thank you! Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "고마워! <![CDATA[<i>30분</i>]]> 쯤 뒤에 돌아오면 한 입 먹게 해줄게.",
+        "Get back within <![CDATA[<i>30 minutes</i>]]> and I'll give you a bite.": "<![CDATA[<i>30분</i>]]> 쯤 뒤에 돌아오면 한 입 먹게 해줄게.",
+
+        // Ship dialogue
+        "Hmm... This seems like a good place for a vision torch! I can put it here if needed.": "흠... 환상 횃불을 놓기에 좋은 장소 같다! 필요하면 여기에 놔둬야겠다."
+
+
+    },
+    "UIDictionary": {
+
+        "Quantum Consciousness": "양자 의식",
+        "Solanum": "솔라눔",
+        "GloamingGalaxy": "황혼 은하계",
+        "THE_VISION_NEW_LAUNCH_CODES": "새로운 발사 코드: --|-..|-.--|-.", // New launch codes: --|-..|-.--|-.
+
+        "THE_VISION_TO_BE_CONTINUED": "당신과 솔라눔은 초신성으로부터 멀리 탈출해 검은바위 항성계에서 살아있는 노마이를 만났다. \n\n당신과 솔라눔은 함께 별들이 꺼지는 걸 지켜봤다.",
+        "THE_VISION_POPUP": "\"The Vision\"을 다운로드 해주셔서 감사합니다! 새로운 이야기를 시작하기 위해 함선 일지를 확인해주세요."
+
+    },
+    "ShipLogDictionary": {
+
+        // Brittle Hollow
+        "Solanum in the School Ruins": "학교 유적의 솔라눔",
+        "Solanum on Brittle Hollow": "조각난 공동의 솔라눔",
+        "I can hear Solanum's signal coming from Brittle Hollow.": "조각난 공동에서 솔라눔의 신호가 들린다.",
+        "I found Solanum in the School.": "조각난 공동의 학교 유적에서 솔라눔을 발견했다.",
+        "Solanum said this is where she went to school. She also mentioned that the black hole used to be much smaller. She took a gravity crystal to avoid falling.": "솔라눔은 이곳이 그녀가 다닌 학교라고 말했다. 또한 그녀는 예전에는 블랙홀이 더 작았다고 언급했다. 그녀는 추락하는걸 피하기 위해 중력 수정을 가져왔다.",
+
+        // CaveTwin_Body
+        "Solanum in the Sunless City": "태양 없는 도시의 솔라눔",
+        "I can hear Solanum's signal coming from the Sunless City.": "태양 없는 도시에서 솔라눔의 신호가 들린다.",
+        "I found Solanum in the Sunless City. She is staying at her home in the Eye Temple district.": "태양 없는 도시에서 솔라눔을 찾았다. 그녀는 눈의 성소 구역에 있는 그녀의 집에서 머무르고 있다.",
+        // "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.": "Solanum feels sad about the Nomai's blind faith in the Eye. She destroyed her old toys.",        
+        "She feels sad seeing the Sunless City in ruins. Solanum told a little about her childhood.": "그녀는 폐허가 된 태양 없는 도시를 보고 슬퍼했다. 솔라눔은 그녀의 어린 시절에 대해 약간 이야기했다.",
+
+
+        // DB_VesselBody
+        "Solanum on the Vessel": "함선의 솔라눔",
+        "Solanum wants to try to get to the Vessel. Is it possible for her to get inside Dark Bramble?": "솔라눔은 함선에 가 보길 원한다. 그녀가 검은 가시덤불 안에 들어가는 게 가능할까??",
+            "Solanum did it! Whatever her power is, she's here and waiting for me once again.": "솔라눔이 해냈다! 그녀의 능력이 무엇이든 간에, 그녀는 여기 와서 나를 다시 한 번 기다리고 있었다.", 
+            "Solanum has traced the coordinates of incoming Nomai messages. Canna, the modern Nomai, declares that there's a safe place in the Gloaming Galaxy. The coordinates to Blackrock should be shown under the Vessel's bridge instead of the Eye signal hologram.": "솔라눔은 들려오는 노마이 신호의 발신지를 추적했다. 현대 노마이인 '칸나'는 황혼 은하계에 안전한 장소가 있다고 말했다. 함선의 다리 아래에 눈의 신호 홀로그램 대신 검은바위 항성계의 좌표가 나타나야 한다.",
+        "Gloaming Galaxy, Blackrock coordinates hologram": "황혼 은하계\n검은바위 좌표 홀로그램",
+        "New coordinates": "새로운 좌표",
+        // "I found new coordinates to another Galaxy. We can use the Warp Core from the Ash Twin Project to warp. There will be no turning back once I warp. Am I ready to do this?": "I found new coordinates to another Galaxy. We can use the Warp Core from the Ash Twin Project to warp. There will be no turning back once I warp. Am I ready to do this?",
+        "I found the coordinates to the Gloaming Galaxy. We can use the warp core from the Ash Twin Project to warp. There will be no turning back. Am I ready to do this?": "황혼 은하계로 향하는 좌표를 발견했다. 우리는 워프하기 위해 재 쌍둥이 프로젝트의 워프 코어를 이용할 수 있다. 돌아올 수는 없다. 충분한 준비가 됐을까?",
+
+
+
+
+        // Giants Deep
+        "Solanum on Giant's Deep": "거인의 심연의 솔라눔",
+        "Solanum wants to visit Giant's Deep, but she will probably stay on Timber Hearth as well.": "솔라눔은 거인의 심연에 가고 싶어하지만, 그녀는 아마도 목재 화로에 머물 것이다.",
+        "I found Solanum observing the probe logs. I've never seen nomai computers with such a green glow. She's accessing the Main Computer to know how much time has passed.": "솔라눔이 탐사정의 기록을 관찰하는 것을 발견했다. 노마이 컴퓨터가 이렇게 초록빛으로 빛나는건 처음 본다. 그녀는 얼마나 많은 시간이 지났는지 알기 위해 메인 컴퓨터에 접속하고 있었다",
+        // "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.": "Solanum feels sad about the Eye of the Universe. Since childhood, she knew - the Eye has no wishes at all. It's not surprising that she don't want to know anything more about it. There was an active Memory Statue here that caught her eye.",
+        "Solanum is contemplating the Eye, and the vision seen by the inhabitants of The Stranger. She also noticed a working Memory Statue.": "솔라눔은 우주의 눈과, 이방인의 주민들의 환영에 대해 생각하고 있다. 또한 그녀는 작동하는 기억 조각상에 대해 알아냈다.",
+
+
+        // Quantum Moon
+        "Solanum on Quantum Moon": "양자의 달의 솔라눔",
+        "What if..?": "만약에...?   ",
+        "Solanum is the last Nomai alive. What if I show her all I know with vision torch from the Damaged Laboratory on The Stranger?":  "솔라눔은 살아있는 마지막 노마이이다. 만약 손상된 실험실의 환상 횃불로 내가 아는 모든것을 솔라눔에게 보여주면 어떻게 될까?",
+        "After the vision something strange happened. The clouds disappeared immediately and I can now hear strange frequency coming from Solanum. There are bizarre looking sparks on her mask.": "솔라눔에게 환상을 보여준 이후 이상한 일이 일어났다. 양자의 달의 구름이 곧바로 사라졌고 이제 솔라눔에게서 낮선 주파수가 들린다. 그녀의 가면에서는 이상한 불꽃이 보인다.",
+        "Solanum looks disoriented according to her reply.": "솔라눔은 혼란스러워 하는것 같다.",
+        "Inscription near Solanum's body": "솔라눔의 시체 근처의 문구",
+        "Solanum left some text near her body": "솔라눔은 그녀의 시체 근처에 글을 남겼다",
+        "There are some new inscriptions left very recently": "매우 최근에 남겨진 새로운 문장이 있다.",
+        // "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and vanished on mentioning Timber Hearth.": "It must be very strange to see your own dead body. I'm not surprised Solanum that wants to leave this place as soon as possible. She took her recorder and vanished on mentioning Timber Hearth.",
+        "Solanum's message abruptly stopped while mentioning Timber Hearth.": "솔라눔의 메세지가 목재 화로를 언급하던 중 갑자기 멈췄다.",
+
+
+        // Ring World (Stranger)
+        "Vision Torch in Damaged Laboratory": "손상된 실험실의 환영 횃불",
+        "I believe there is a vision torch somewhere in the Damaged Laboratory. I wonder if it's still working.": "손상된 실험실의 어딘가에 환영 횃불이 있었다. 그게 아직도 작동할까?",
+        "I found that vision torch. Its flames still work even in space where there is no oxygen.": "손상된 실험실에서 환영 횃불을 찾았다. 산소가 없는 우주에서도 여전히 불꽃은 타오르고 있다.",
+
+        // Timber Hearth
+        "Solanum on Timber Hearth": "목재 화로의 솔라눔",
+        "Is Solanum on Timber Hearth?": "목재 화로에 솔라눔이 있을까?",
+        "New quantum frequency?": "새로운 양자 주파수?",
+        "Solanum's message was interrupted when she mentioned Timber Hearth. Maybe she is there?": "솔라눔의 메세지는 목재 화로를 언급하던 중 멈췄다. 그녀가 거기 있을까?",
+        "Solanum somehow appeared on Timber Hearth near the Village. It seems like she is observing the Hearthians.": "목재 화로의 마을 근처에 솔라눔이 나타났다. 그녀는 화로인들을 관찰하고 있는 것 같다.",
+        //"According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.": "According to her recorder, she just thought of Timber Hearth and appeared there. That could be explainable with my new Quantum Rule. Solanum told me about the Sun Station, she apologized, but that's ok. Solanum would also like to know more about the Probe Tracking Module inside Giant's Deep.",
+        "Solanum thought of Timber Hearth, then appeared there. She wants to know more about the Probe Tracking Module inside Giant's Deep.": "솔라눔은 목재 화로를 떠올리고는, 거기 나타났다. 그녀는 거인의 심연 내부의 탐사정 추적 모듈에 대해 더 알고 싶어한다.",
+
+
+
+        // Quantum Consciousness
+        "Quantum Consciousness": "양자 의식",
+        "I've discovered strange frequency called Quantum Consciousness.": "양자 의식이라고 불리는 새로운 주파수를 발견했다.",
+        "This could be a new quantum rule or an quantum exception. My theory is that if an observer is aware of its quantum properties, it acquire Quantum Consciousness. Solanum probably got this knowledge from my vision.": "이건 새로운 양자 규칙이 될 수도 있고, 예외가 될 수도 있다. 내 이론은 만약 관찰자가 양자 속성을 인식하면 양자 의식을 획득한다는 것이다. 솔라눔은 내 환상을 통해 이 지식을 얻었다.",
+        "Quantum Consciousness has a strong recognizable signal and it sounds similar to the Quantum Fluctuations. In fact, the signal is very strong. It can be heard even without signalscope.": "양자 의식은 양자 파동과 비슷한 소리를 내는 강력하고 알아볼 수 있는 신호를 가지고 있다. 사실, 신호가 너무 강해서 신호탐지기 없이도 들을 수 있다.",
+        // "Another noticable thing about Quantum Consciousness - particles near the head. By the way, seems like other quantum rules are not working with Quantum Consciousness.": "Another noticeable thing about Quantum Consciousness - particles near the head. It seems like other quantum rules do not work with Quantum Consciousness.",
+        // "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.": "Quantum Consciousness somehow has the ability to exist in a multiple places at the same time. According to Solanum, she is only capable of appearing at certain locations by thinking about them. Hypothesis: she can appear only in known places.",
+        "Another noticeable feature of Quantum Consciousness - particles near the possessor's head. Note: it appears that the other quantum rules do not apply to a Quantum Consciousness.": "양자 의식의 또 다른 눈에 띄는 특징 - 입자가 소유자의 머리 근처에 나타난다. 양자 의식을 가진 존재에게는 다른 양자 규칙이 적용되지 않는 것으로 보인다.",
+        "A possessor of Quantum Consciousness somehow has the ability to exist in multiple places at once. According to Solanum, she is capable of appearing at certain locations by thinking about them. Probably, she can appear only in places she knows.": "양자 의식의 소유자는 한 번에 여러 장소에 존재할 수 있는것 같다. 그녀는 특정한 장소에 대해 생각함으로써 그 장소에 나타날 수 있다고 한다. 아마도 그녀는 자신이 아는 장소에만 나타날 수 있는것 같다.",
+
+        // ATP Time Loop Ring
+        "Solanum inside Ash Twin Project": "재 쌍둥이 프로젝트의 솔라눔",
+        "Solanum wants to check the time loop control panel. I might find her inside the Ash Twin Project.": "솔라눔은 타임 루프 조작 패널을 확인하고 싶어한다. 재 쌍둥이 프로젝트 안에서 그녀를 찾을 수 있을지도 모른다.",
+        "Solanum is already here. She observing the time loop ring's logs.": "솔라눔은 이미 여기에 있었다. 그녀는 타임 루프의 기록을 관찰하고 있다.",
+        // "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. Seems like we will meet again inside the Vessel.": "Solanum just realized I'm in the time loop and that our Sun will supernova soon. Using the charged warp core, we might be able to escape. It seems like we will meet again inside the Vessel.",
+        "Now she knows about the time loop and that our Sun will soon go supernova. Solanum wants to reach the Vessel, but she also wants to revisit her childhood places. I can try to find her on the Vessel, or somewhere else.": "솔라눔은 이제 타임 루프에 대해서와 우리 태양이 곧 초신성이 될 것이라는 사실을 알고 있다. 그녀는 함선에 도달하고 싶지만, 먼저 어린 시절의 장소를 다시 방문하고 싶어한다. 함선이나 다른 곳에서 그녀를 찾을 수 있을 것이다.",
+
+        "Paired Statue": "연결된 조각상",
+        "Solanum just happened to pass right by the unpaired statue inside the Ash Twin Project. Now she's stuck in the time loop too.": "솔라눔은 우연히 재 쌍둥이 프로젝트의 연결되지 않은 가면 앞을 지나갔다. 이제 그녀도 타임 루프에 갇혔다.",
+        // "Now that Solanum knows how time loop reset works, we will try reach the Vessel.": "Now that Solanum knows how time loop reset works, we will try reach the Vessel.",
+        "Last cycle, Solanum was not sure how the time loop worked. This cycle it seems like she understood everything and now wants to go to the Vessel.": "지난 루프에서 솔라눔은 타임 루프가 어떻게 작동하는지 잘 몰랐다. 이번 루프에서는 모든 것을 이해한 것처럼 보이며, 검은 가시덤불에 있는 함선으로 가고 싶어한다.",
+
+
+        // Ernesto Quest        
+        "Where is Ernesto?": "에르네스토가 어딨지?",
+        "Seriously, how could an anglerfish just disappear?": "어떻게 아귀가 그냥 사라질 수 있을까?",
+        "Hornfels said that anglerfish «Ernesto» disappeared from exhibit.": "호넬스는 \"에르네스토\"라는 이름의 아귀가 전시된 곳에서 사라졌다고 말했다.",
+        "Ernesto found": "발견된 에르네스토",
+        "I found Ernesto": "에르네스토를 찾았다.",
+        "I found Slate with Ernesto. He's cooking him on campfire.": "에르네스토와 함께 있는 슬레이트를 찾았다. 슬레이트는 모닥불에서 에르네스토를 요리하고 있었다.",
+        "Slate is just fed up with marshmallow, that's why he decided to cook Ernesto. He said it will be ready in 30 minutes. Intervention isn't required because the loop will reset before that happens.": "슬레이트는 마시멜로에 질려 에르네스토를 먹기로 결정했다. 슬레이트는 30분이면 요리가 완성된다고 한다."
+
+    }
+}
