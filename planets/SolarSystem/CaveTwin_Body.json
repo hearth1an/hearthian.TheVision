@@ -1,13 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "Ember Twin",
-  "Spawn": {
-    "playerSpawnPoint": {
-      "x": 25.4912,
-      "y": -107.7768,
-      "z": -18.84
-    }
-  },
+  "name": "Ember Twin",  
   "Props": {
     "details": [
         {
