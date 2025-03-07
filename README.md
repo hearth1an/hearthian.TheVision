@@ -56,6 +56,7 @@ Translation credits:
 - Spanish: [Alejandro-SB](https://github.com/Alejandro-SB),
 - German: Derko,
 - Japanese: [9638](https://github.com/96-38)
+- Korean: [Barirn](https://github.com/Barirn)
 - Italian: ilyNerY.
 
 
